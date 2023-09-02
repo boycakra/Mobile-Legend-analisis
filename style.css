@@ -64,3 +64,11 @@
 #stats-table th {
   background-color: #f2f2f2;
   }
+  
+.mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+}
