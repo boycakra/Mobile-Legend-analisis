@@ -9,6 +9,7 @@
   border-color: red;
 }
 
+
 #image {
   display: flex;
   justify-content: center;
@@ -16,6 +17,8 @@
   width: 500px;
   height: 300px;
   margin: 0 auto;
+  position: relative;
+  
   }
       
 #image img {
