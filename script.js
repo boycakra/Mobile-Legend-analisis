@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const y = event.clientY - rect.top;
 
             const circle = document.createElement('div');
-            circle.style.width = '20px'; 
-            circle.style.height = '20px';
+            circle.style.width = '14px'; 
+            circle.style.height = '14px';
             circle.style.borderRadius = '50%';
             circle.style.background = 'red';
             circle.style.position = 'absolute';
