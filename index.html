@@ -11,22 +11,7 @@
     <div id="stats">
       <div id="stats1">
         <h3>Status Fighter 1</h3>
-      </div>
-      <div id="image">
-        <img src="body.png" alt="body">
-        <img src="body.png" alt="body">
-      </div>
-      <div id="stats2">
-        <h3>Status Fighter 2</h3>
-      </div>
-    </div>
-    <div id="footer">
-      <div id="stats1-now">
-        <p>NEWEST STATUS</p>
-        <button id="uppercut">Uppercut</button>
-        <div id="coordinate-display"></div>
-        <div id="value-display"></div>
-        <table>
+        <table id="player1-table">
           <thead>
             <tr>
               <th>Mark Coordinate</th>
@@ -38,6 +23,33 @@
             <!-- Table rows will be inserted dynamically using JavaScript -->
           </tbody>
         </table>
+      </div>
+      <div id="image">
+        <img src="body.png" alt="body">
+        <img src="body.png" alt="body">
+      </div>
+      <div id="stats2">
+        <h3>Status Fighter 2</h3>
+        <table id="player2-table">
+          <thead>
+            <tr>
+              <th>Mark Coordinate</th>
+              <th>Value</th>
+              <th>Player</th>
+            </tr>
+          </thead>
+          <tbody id="mark-table-body-2">
+            <!-- Table rows will be inserted dynamically using JavaScript -->
+          </tbody>
+        </table> 
+      </div>
+    </div>
+    <div id="footer">
+      <div id="stats1-now">
+        <p>NEWEST STATUS</p>
+        <button id="uppercut">Uppercut</button>
+        <div id="coordinate-display"></div>
+        <div id="value-display"></div>
       </div>
       <div id="stats2-now">
         <p>NEWEST STATUS</p>

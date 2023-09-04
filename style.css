@@ -36,6 +36,14 @@
 #stats1, #stats2 {
   width: 50%; 
 }
+
+#player1-table {
+  margin-left : 25%;
+}
+
+#player2-table {
+  margin-left : 25%;
+}
       
 #footer {
   display: flex;
