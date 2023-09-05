@@ -9,23 +9,33 @@
   border-color: red;
 }
 
-
-#image {
+#image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 100%;
+}
+
+.image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%; /* Membagi lebar container menjadi dua bagian */
+  height: 300px; /* Sesuaikan dengan tinggi gambar */
+}
+
+#image, #image2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
   height: 300px;
   margin: 0 auto;
   position: relative;
   
   }
-      
-#image img {
-  max-width: 100%;
-  max-height: 100%;
-  }
-      
+     
 #stats {
   display: flex;
   justify-content: space-between;
