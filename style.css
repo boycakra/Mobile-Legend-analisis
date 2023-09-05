@@ -1,92 +1,114 @@
 #container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 1200px;
-  margin: 0 auto;
-  border-style: solid;
-  border-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: red;
 }
 
 #image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .image-wrapper {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%; /* Membagi lebar container menjadi dua bagian */
-  height: 300px; /* Sesuaikan dengan tinggi gambar */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Membagi lebar container menjadi dua bagian */
+    height: 300px; /* Sesuaikan dengan tinggi gambar */
 }
 
-#image, #image2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-  position: relative;
-  
-  }
-     
-#stats {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 10px auto;
-  }
+#image,
+#image2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
 
-#stats1, #stats2 {
-  width: 50%; 
+#stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px auto;
+}
+
+#stats1,
+#stats2 {
+    width: 50%;
 }
 
 #player1-table {
-  margin-left : 25%;
+    margin-left: 25%;
 }
 
 #player2-table {
-  margin-left : 25%;
+    margin-left: 25%;
 }
-      
+
 #footer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 10px auto;
-  }
-#stats1-now, #stats2-now {
-  width: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px auto;
 }
-#fighter1, #fighter2 {
-  margin: 10px;
+#stats1-now,
+#stats2-now {
+    width: 50%;
 }
-      
+#fighter1,
+#fighter2 {
+    margin: 10px;
+}
+
 #stats-table {
-  border-collapse: collapse;
-  width: 100%;
-  }
-      
-#stats-table th, #stats-table td {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-  }
-      
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#stats-table th,
+#stats-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
 #stats-table th {
-  background-color: #f2f2f2;
-  }
-  
+    background-color: #f2f2f2;
+}
+
+/* Mark circle - sebagai penanda user ngeklik  */
 .mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background: red;
     position: absolute;
+}
+
+/* ========== Pemisah antar 2 gambar */
+#image-container {
+    display: flex; /* Menggunakan flexbox untuk mengatur layout */
+    justify-content: space-between; /* Mengatur jarak antara elemen */
+}
+
+/* Style untuk gambar */
+.image-wrapper {
+    margin-right: 10px; /* Memberi margin kanan 10px antara gambar */
+}
+
+/* Style untuk elemen gambar */
+img {
+    max-width: 100%;
+    height: auto;
 }
