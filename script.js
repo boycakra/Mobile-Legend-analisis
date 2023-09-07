@@ -3,10 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentPlayer = "";
 
     // Ambil ID dari image
-    const imageDiv = document.getElementById("image");
-    const imageDiv2 = document.getElementById("image2");
+    const imageDiv = document.querySelector("#image-container #image1");
+    const imageDiv2 = document.querySelector("#image-container #image2");
+    // const imageDiv = document.getElementById("image1");
+    // const imageDiv2 = document.getElementById("image2");
 
-    // Tampilkan titik kordinat
+    // Tampilkan hasil titik kordinat
     const coordinateDisplays = {
         Player: document.getElementById("coordinate-display"),
         Player2: document.getElementById("coordinate-display_player2"),
@@ -20,11 +22,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Penangkap reaksi tombol uppercut
     function uppercutHandler(player) {
+        console.log("Masuk Uppercut Handler");
         return function () {
             marking = true;
             currentPlayer = player;
             valueDisplays[player].innerHTML = "Value: Uppercut";
         };
+    }
+
+    function printMousePos(e) {
+        const event = window.event;
+        const test = document.createElement("div");
+        test.setAttribute(
+            "style",
+            `position:absolute; left:${event.pageX}px; top:${event.pageY}px; background-color:red; color:red; width:10px; height:10px; z-index:20; font-size:2em; border-radius: 50%;`
+        );
+        document.body.appendChild(test);
     }
 
     // Tambahkan event listener ke elemen gambar
@@ -40,16 +53,12 @@ document.addEventListener("DOMContentLoaded", function () {
             const x = event.clientX - rect.left;
             const y = event.clientY - rect.top;
 
-            // Memunculkan titik pilih user
-            const circle = document.createElement("div");
-            circle.classList.add("mark-circle");
-            circle.style.left = `${x - 10}px`;
-            circle.style.top = `${y - 10}px`;
-            imageDiv.appendChild(circle);
+            printMousePos(imageDiv);
 
             coordinateDisplays[
                 currentPlayer
             ].innerHTML = `Coordinates: (${x.toFixed(2)}, ${y.toFixed(2)})`;
+            marking = false;
 
             if (currentPlayer === "Player") {
                 const newRow = tableBody1.insertRow();
@@ -64,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Tambahkan event listener ke elemen gambar
+    // // Tambahkan event listener ke elemen gambar
     document
         .getElementById("uppercutplayer2")
         .addEventListener("click", uppercutHandler("Player2"));
@@ -77,11 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const x = event.clientX - rect.left;
             const y = event.clientY - rect.top;
 
-            const circle = document.createElement("div");
-            circle.classList.add("mark-circle");
-            circle.style.left = `${x - 10}px`;
-            circle.style.top = `${y - 10}px`;
-            imageDiv.appendChild(circle);
+            printMousePos(imageDiv);
 
             coordinateDisplays[
                 currentPlayer
