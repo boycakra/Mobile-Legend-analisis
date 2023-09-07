@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tinju Anal</title>
+        <title>Ini yg baru</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -27,15 +27,11 @@
                 </div>
                 <!-- Lokasi gambar -->
                 <div id="image-container">
-                    <div class="image-wrapper">
-                        <img id="image" src="body.png" alt="body" />
-                    </div>
-
-                    <div class="image-wrapper">
-                        <img id="image2" src="body.png" alt="body2" />
-                    </div>
+                    <img src="body.png" alt="body" />
+                    <!-- <img src="body.png" alt="body2" /> -->
                 </div>
                 <!-- Lokasi table player sebelah kanan -->
+                <!--  
                 <div id="stats2">
                     <h3>Status Fighter 2</h3>
                     <table id="player2-table">
@@ -47,10 +43,11 @@
                             </tr>
                         </thead>
                         <tbody id="mark-table-body-2">
-                            <!-- Table rows will be inserted dynamically using JavaScript -->
+                            
                         </tbody>
                     </table>
                 </div>
+                -->
             </div>
             <!-- Footer | Text dan tombol bagian bawah pada masing-masing gambar -->
             <div id="footer">
@@ -60,14 +57,27 @@
                     <div id="coordinate-display"></div>
                     <div id="value-display"></div>
                 </div>
+                <!--  
                 <div id="stats2-now">
                     <p>Ini yang kanan</p>
                     <button id="uppercutplayer2">Uppercut</button>
                     <div id="coordinate-display_player2"></div>
                     <div id="value-display_player2"></div>
                 </div>
+                -->
             </div>
         </div>
-        <script src="script.js" defer></script>
+        <!-- <script src="script.js" defer></script> -->
+        <script>
+            function printMousePos(e) {
+                const event = window.event;
+                const test = document.createElement("div");
+                test.setAttribute(
+                    "style",
+                    `position:absolute; left:${event.x}px; top:${event.y}px; background-color:red; color:red; width:20px; height:20px; z-index:20; font-size:2em;`
+                );
+                document.body.appendChild(test);
+            }
+        </script>
     </body>
 </html>

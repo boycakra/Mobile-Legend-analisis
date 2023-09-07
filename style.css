@@ -56,6 +56,7 @@
     margin-left: 25%;
 }
 
+/* Footer - Title and button */
 #footer {
     display: flex;
     justify-content: space-between;
@@ -71,6 +72,7 @@
     margin: 10px;
 }
 
+/* Table stats player kiri & kanan */
 #stats-table {
     border-collapse: collapse;
     width: 100%;
@@ -87,6 +89,23 @@
     background-color: #f2f2f2;
 }
 
+/* ========== Pemisah antar 2 gambar */
+/* #image-container {
+    display: flex; 
+    justify-content: space-between; 
+} */
+
+/* Style untuk gambar */
+/* .image-wrapper {
+    margin-right: 10px; 
+} */
+
+/* Style untuk elemen gambar */
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
+
 /* Mark circle - sebagai penanda user ngeklik  */
 .mark-circle {
     width: 20px;
@@ -94,21 +113,4 @@
     border-radius: 50%;
     background: red;
     position: absolute;
-}
-
-/* ========== Pemisah antar 2 gambar */
-#image-container {
-    display: flex; /* Menggunakan flexbox untuk mengatur layout */
-    justify-content: space-between; /* Mengatur jarak antara elemen */
-}
-
-/* Style untuk gambar */
-.image-wrapper {
-    margin-right: 10px; /* Memberi margin kanan 10px antara gambar */
-}
-
-/* Style untuk elemen gambar */
-img {
-    max-width: 100%;
-    height: auto;
 }
