@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
             circle.style.border = '2px solid red';
         }
     
-        document.body.appendChild(test);
+        document.body.appendChild(circle);
     }
     
 
