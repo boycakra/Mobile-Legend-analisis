@@ -101,6 +101,7 @@ tbody {
     margin: 10px;
 }
 
+
 /* Table stats player kiri & kanan */
 #stats-table {
     border-collapse: collapse;
@@ -159,4 +160,12 @@ img {
     position: absolute;
     background: radial-gradient(circle, red 40%, transparent 40%);
     border: 2px solid red;
+}
+.jabf-mark-innercircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, blue 40%, transparent 40%);
+    border: 2px solid blue;
 }
