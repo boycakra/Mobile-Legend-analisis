@@ -20,28 +20,28 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     function printMousePos(event, element) {
-        const test = document.createElement("div");
+        const circle = document.createElement("div");
     
         // Using clientX and clientY to get coordinates relative to viewport
         const x = event.clientX; 
         const y = event.clientY;
     
-        test.style.left = `${x}px`;
-        test.style.top = `${y}px`;
-        test.style.position = 'absolute';
-        test.style.zIndex = 20;
-        test.style.width = '20px';
-        test.style.height = '20px';
-        test.style.borderRadius = '50%';
+        circle.style.left = `${x}px`;
+        circle.style.top = `${y}px`;
+        circle.style.position = 'absolute';
+        circle.style.zIndex = 20;
+        circle.style.width = '20px';
+        circle.style.height = '20px';
+        circle.style.borderRadius = '50%';
     
         // Apply the appropriate class styles based on markingCircleClass
         if (markingCircleClass === 'mark-circle') {
-            test.style.background = 'red';
+            circle.style.background = 'red';
         } else if (markingCircleClass === 'jab-mark-circle') {
-            test.style.background = 'blue';
+            circle.style.background = 'blue';
         } else if (markingCircleClass === 'mark-innercircle') {
-            test.style.background = 'radial-gradient(circle, red 40%, transparent 40%)';
-            test.style.border = '2px solid red';
+            circle.style.background = 'radial-gradient(circle, red 40%, transparent 40%)';
+            circle.style.border = '2px solid red';
         }
     
         document.body.appendChild(test);
