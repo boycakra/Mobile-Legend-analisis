@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const circle = document.createElement("div");
     
         // Using clientX and clientY to get coordinates relative to viewport
-        const x = event.clientX; 
-        const y = event.clientY;
+        const x = event.clientX + window.scrollX - 10;
+        const y = event.clientY + window.scrollY - 10;
     
         circle.style.left = `${x}px`;
         circle.style.top = `${y}px`;
