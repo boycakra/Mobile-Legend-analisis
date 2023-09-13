@@ -9,6 +9,16 @@
     border-color: red;
 }
 
+#timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Adjust the margin as needed for spacing */
+}
+
+/* Add any additional styles for #timer-container here */
+
+
 #container {
     display: flex;
     flex-direction: column;
