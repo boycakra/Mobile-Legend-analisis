@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tinju Anal</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+    </head>
+    <body>
+        <!--                                                                   -->
+       <!-- VIDEO KONTAINER -->
+        <div id="video-container">
+            <video width="500px" src="../assets/video/video.mp4" controls></video>
+            
+        </div>
+        <!-- New timer-container div -->
+        <div id="timer-container">
+            <h3>Timer</h3>
+            <span id="timer-display">00:00</span>
+        </div>
+        
+        <div id="container">
+            <div id="stats">
+                <!-- Lokasi table player sebelah kiri -->
+                <div id="stats1">
+                    <h3>Status Fighter 1</h3>
+                    <table id="player1-table">
+                        <thead>
+                            <tr>
+                                <th>Mark Coordinate</th>
+                                <th>Value</th>
+                                <th>Player</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mark-table-body">
+                            <!-- Table rows will be inserted dynamically using JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Lokasi gambar -->
+                <div id="image-container">
+                    <div class="image-wrapper">
+                        <img id="image1" src="../assets/image/body.png" alt="body" />
+                        <img id="image2" src="../assets/image/body.png" alt="body2" />
+                    </div>
+                </div>
+                <!-- Lokasi table player sebelah kanan -->
+                <div id="stats2">
+                    <h3>Status Fighter 2</h3>
+                    <table id="player2-table">
+                        <thead>
+                            <tr>
+                                <th>Mark Coordinate</th>
+                                <th>Value</th>
+                                <th>Player</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mark-table-body-2"></tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Footer | Text dan tombol bagian bawah pada masing-masing gambar -->
+            <div id="footer">
+                <div id="stats1-now">
+                    <p>Ini yang kiri</p>
+                    <button id="uppercut">Uppercut</button>
+                    <button id="UppercutF">UppercutF</button>
+                    <button id="jabf">Jabf</button>
+                    <button id="jab">Jab</button> <!-- New Jab button -->
+                    <div id="coordinate-display"></div>
+                    <div id="value-display"></div>
+                </div>
+                <div id="stats2-now">
+                    <p>Ini yang kanan</p>
+                    <button id="uppercutplayer2">Uppercut</button>
+                    <button id="UppercutFp2">UppercutF Player 2</button>
+                    <button id="jabfp2">Jabf</button> <!-- New JabPlayer2 button -->
+                    <button id="jabplayer2">Jab</button> <!-- New JabPlayer2 button -->
+                    <div id="coordinate-display_player2"></div>
+                    <div id="value-display_player2"></div>
+                </div>
+            </div>
+        </div>
+        <script src="{{url_for('static', filename= 'script.js')}}" defer></script>
+    </body>
+</html>
