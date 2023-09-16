@@ -4,13 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tinju Anal</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
     </head>
     <body>
         <!--                                                                   -->
        <!-- VIDEO KONTAINER -->
         <div id="video-container">
-            <video width="500px" src="./assets/video/video.mp4" controls></video>
+            <video width="500px" src="/static/assets/video/video.mp4" controls></video>
             
         </div>
         <!-- New timer-container div -->
@@ -40,8 +40,8 @@
                 <!-- Lokasi gambar -->
                 <div id="image-container">
                     <div class="image-wrapper">
-                        <img id="image1" src="./assets/image/body.png" alt="body" />
-                        <img id="image2" src="./assets/image/body.png" alt="body2" />
+                        <img id="image1" src="/static/assets/image/body.png" alt="body" />
+                        <img id="image2" src="/static/assets/image/body.png" alt="body2" />
                     </div>
                 </div>
                 <!-- Lokasi table player sebelah kanan -->
@@ -81,6 +81,6 @@
                 </div>
             </div>
         </div>
-        <script src="script.js" defer></script>
+        <script src="{{url_for('static', filename= 'script.js')}}" defer></script>
     </body>
 </html>
