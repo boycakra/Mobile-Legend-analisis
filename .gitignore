@@ -14,4 +14,3 @@ venv.bak/
 
 # Flask stuff:
 instance/
-.webassets-cache
