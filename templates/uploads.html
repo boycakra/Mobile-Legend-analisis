@@ -20,11 +20,12 @@
         {% for video in videos %}
             <li>
                 <h3>{{ video.title }}</h3>
-                <video width="320" height="240" controls>
-                    <source src="{{ video.file_path }}" controls>
-                    Your browser does not support the video tag.
-                </video>
+                <p>{{video.file_path}}</p>
             </li>
+
+            <div id="video-container">
+                <video width="500px" src="/static/{{video.video_file}}" controls></video> 
+            </div>
         {% endfor %}
     </ul>
 </body>
