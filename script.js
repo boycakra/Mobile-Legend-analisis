@@ -36,39 +36,28 @@ document.addEventListener("DOMContentLoaded", function () {
         circle.style.height = '20px';
         circle.style.borderRadius = '50%';
     
-        // Apply the appropriate class styles based on markingCircleClass
-        if (markingCircleClass === 'mark-circle') {
-            circle.style.background = 'red';
-        } else if (markingCircleClass === 'jab-mark-circle') {
-            circle.style.background = 'blue';
-        } else if (markingCircleClass === 'mark-innercircle') {
-            circle.style.background = 'radial-gradient(circle, red 40%, transparent 40%)';
-            circle.style.border = '2px solid red';
-        }
-        else if (markingCircleClass === 'jabf-mark-innercircle') {
-            circle.style.background = 'radial-gradient(circle, blue 40%, transparent 40%)';
-            circle.style.border = '2px solid blue';
-        }
+        // Add the appropriate class to the circle element based on markingCircleClass
+        circle.classList.add(markingCircleClass);
     
         document.body.appendChild(circle);
     }
     
 
-    function uppercutHandler(player) {
+    function leaduppercutHandler(player) {
         return function () {
             marking = true;
             currentPlayer = player;
             markingCircleClass = 'mark-circle';
-            valueDisplays[player].innerHTML = "Value: Uppercut";
+            valueDisplays[player].innerHTML = "Value: leaduppercut";
         };
     }
 
-    function jabfHandler(player) {
+    function leadhookHandler(player) {
         return function () {
             marking = true;
             currentPlayer = player;
-            markingCircleClass = 'jabf-mark-innercircle';
-            valueDisplays[player].innerHTML = "Value: Jabf";
+            markingCircleClass = 'leadhook-mark-innercircle';
+            valueDisplays[player].innerHTML = "Value: leadhook";
         };
     }
 
@@ -81,12 +70,29 @@ document.addEventListener("DOMContentLoaded", function () {
         };
     }
 
-    function uppercutfHandler(player) {
+    function crossHandler(player) {
         return function () {
             marking = true;
             currentPlayer = player;
-            markingCircleClass = 'mark-innercircle';
-            valueDisplays[player].innerHTML = "Value: UppercutF";
+            markingCircleClass = 'croos-mark-innercircle';
+            valueDisplays[player].innerHTML = "Value: cross";
+        };
+    }
+    function rearuppercutHandler(player) {
+        return function () {
+            marking = true;
+            currentPlayer = player;
+            markingCircleClass = 'rear-uppercut-mark-circle';
+            valueDisplays[player].innerHTML = "Value: rearuppercut";
+        };
+    }
+    
+    function rearhookHandler(player) {
+        return function () {
+            marking = true;
+            currentPlayer = player;
+            markingCircleClass = 'rearhook-mark-innercircle';
+            valueDisplays[player].innerHTML = "Value: rearhook";
         };
     }
     function updateTimer(video) {
@@ -96,17 +102,24 @@ document.addEventListener("DOMContentLoaded", function () {
         timerDisplay.textContent = formattedTime;
     }
 
+    
+
     // Button click listeners for Player 1
-    document.getElementById('uppercut').addEventListener('click', uppercutHandler('Player'));
-    document.getElementById('UppercutF').addEventListener('click', uppercutfHandler('Player'));
+    document.getElementById('leaduppercut').addEventListener('click', leaduppercutHandler('Player'));
+    document.getElementById('cross').addEventListener('click', crossHandler('Player'));
     document.getElementById('jab').addEventListener('click', jabHandler('Player'));
-    document.getElementById('jabf').addEventListener('click', jabfHandler('Player'));
+    document.getElementById('leadhook').addEventListener('click', leadhookHandler('Player'));
+    document.getElementById('rearuppercut').addEventListener('click', rearuppercutHandler('Player'));
+    document.getElementById('rearhook').addEventListener('click', rearhookHandler('Player'));
+
 
     // Button click listeners for Player 2
-    document.getElementById('uppercutplayer2').addEventListener('click', uppercutHandler('Player2'));
-    document.getElementById('UppercutFp2').addEventListener('click', uppercutfHandler('Player2'));
+    document.getElementById('leaduppercutplayer2').addEventListener('click', leaduppercutHandler('Player2'));
+    document.getElementById('crossp2').addEventListener('click', crossHandler('Player2'));
     document.getElementById('jabplayer2').addEventListener('click', jabHandler('Player2'));
-    document.getElementById('jabfp2').addEventListener('click', jabfHandler('Player2'));
+    document.getElementById('leadhookp2').addEventListener('click', leadhookHandler('Player2'));
+    document.getElementById('rearuppercutp2').addEventListener('click', rearuppercutHandler('Player2'));
+    document.getElementById('rearhookp2').addEventListener('click', rearhookHandler('Player2'));
 
     // Ambil lokasi table
     const tableBody1 = document.getElementById("mark-table-body");

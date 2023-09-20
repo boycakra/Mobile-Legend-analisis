@@ -147,13 +147,61 @@ img {
 }
 
 /* Mark circle - sebagai penanda user ngeklik  */
-.mark-circle {
+.lead-uppercut-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background: red;
     position: absolute;
 }
+.rear-uppercut-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: orangered;
+    position: absolute;
+}
+.rear-uppercut-Fail-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, orangered 40%, transparent 40%);
+    border: 2px solid orangered;
+}
+.rear-uppercut-block-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;                 /* Makes it a circle */
+    border: 2px solid orangered;        /* Border around the circle */
+    position: relative;                 /* Enables absolute positioning of inner elements */
+    background-color: transparent;      /* Making the background transparent, so only the border is visible */
+}
+
+/* Vertical line of the crosshair */
+.rear-uppercut-block-mark-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background-color: orangered;
+    transform: translateX(-50%);        /* Centering the line */
+}
+
+/* Horizontal line of the crosshair */
+.rear-uppercut-block-mark-circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: orangered;
+    transform: translateY(-50%);        /* Centering the line */
+}
+
 
 .jab-mark-circle {
     width: 20px;
@@ -162,20 +210,32 @@ img {
     background: blue; /* Set the background color to blue */
     position: absolute;
 }
-
-.mark-innercircle {
+.croos-mark-innercircle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    background: yellow;
     position: absolute;
-    background: radial-gradient(circle, red 40%, transparent 40%);
-    border: 2px solid red;
 }
-.jabf-mark-innercircle {
+
+.leadhook-mark-innercircle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    background: green;
     position: absolute;
-    background: radial-gradient(circle, blue 40%, transparent 40%);
-    border: 2px solid blue;
+}
+.rearhook-mark-innercircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: greenyellow;
+    position: absolute;
+}
+.default-mark-innercircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: gray;
+    position: absolute;
 }
