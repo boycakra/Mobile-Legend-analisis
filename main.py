@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request, redirect
+from flask import Flask, render_template, url_for, request, redirect, send_file
 from flask_sqlalchemy import SQLAlchemy
 import os
 
@@ -10,6 +10,7 @@ class Video(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100))
     file_path = db.Column(db.String(255))
+    video_file = db.Column(db.String(255))
 
 @app.route('/')
 def index():
@@ -25,10 +26,10 @@ def uploads():
         video_file = request.files['video_file']
 
         if video_file:
-            video_path = os.path.join('uploads', video_file.filename)
+            video_path = os.path.join('./static/', video_file.filename)
             video_file.save(video_path)
 
-            new_video = Video(title=title, file_path=video_path)
+            new_video = Video(title=title, file_path=video_path, video_file = video_file.filename)
             db.session.add(new_video)
             db.session.commit()
 
@@ -58,7 +59,13 @@ def form():
 @app.route('/list')
 def query():
     videos = Video.query.all()
-    return render_template('query.html')
+    return render_template('query.html', videos = videos)
+
+
+#@app.route('/static/assets/video/video.mp4')
+#def video():
+#    return send_file('static/assets/video/video.mp4', mimetype='video/mp4')
+
 
 if __name__ == "__main__":
     with app.app_context():

@@ -8,6 +8,10 @@
 <body>
     {% for video in videos %}
         <p>{{ video.title }}</p>
+        <p>{{video.video_file}}</p>
+        <div id="video-co">
+            <video width="500px" src="/static/{{video.video_file}}" controls></video> 
+        </div>
     {% endfor %}
 </body>
 </html>
