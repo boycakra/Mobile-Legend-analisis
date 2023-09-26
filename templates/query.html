@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for video in videos %}
+        <p>{{ video.title }}</p>
+        <p>{{video.video_file}}</p>
+        <div id="video-co">
+            <video width="500px" src="/static/{{video.video_file}}" controls></video> 
+        </div>
+    {% endfor %}
+</body>
+</html>
