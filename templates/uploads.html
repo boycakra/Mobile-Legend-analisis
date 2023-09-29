@@ -20,11 +20,10 @@
         {% for video in videos %}
             <li>
                 <h3>{{ video.title }}</h3>
-                <p>{{video.file_path}}</p>
             </li>
 
             <div id="video-container">
-                <video width="500px" src="/static/{{video.video_file}}" controls></video> 
+                <video width="500px" src="{{video.file_path}}" controls></video> 
             </div>
         {% endfor %}
     </ul>
