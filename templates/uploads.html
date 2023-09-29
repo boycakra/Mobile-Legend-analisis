@@ -1,31 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form method="POST" action="/uploads" enctype="multipart/form-data">
-        <label for="title">Title:</label>
-        <input type="text" name="title" required><br><br>
+{% extends 'base.html' %}
 
-        <label for="video_file">Choose a Video:</label>
-        <input type="file" name="video_file" accept="video/*" required><br><br>
+{% block title %}Upload{%endblock%}
 
-        <input type="submit" value="Upload">
-    </form>
+{% block content %}
+<form method="POST" action="/uploads" enctype="multipart/form-data">
+    <label for="title">Title:</label>
+    <input type="text" name="title" required><br><br>
+    <label for="video_file">Choose a Video:</label>
+    <input type="file" name="video_file" accept="video/*" required><br><br>
+    <input type="submit" value="Upload">
+</form>
 
-    <ul>
-        {% for video in videos %}
-            <li>
-                <h3>{{ video.title }}</h3>
-            </li>
-
-            <div id="video-container">
-                <video width="500px" src="{{video.file_path}}" controls></video> 
-            </div>
-        {% endfor %}
-    </ul>
-</body>
-</html>
+{% endblock %}
