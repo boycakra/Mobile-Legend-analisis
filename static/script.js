@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let marking = false;
     let currentPlayer = "";
     let markingCircleClass = "mark-circle"; // By default
+    let currentMove = "";
 
     // Ambil ID dari image
     const imageDiv = document.querySelector("#image-container #image1");
@@ -18,108 +19,99 @@ document.addEventListener("DOMContentLoaded", function () {
         Player: document.getElementById("value-display"),
         Player2: document.getElementById("value-display_player2"),
     };
-    // Add the timer display element
-    const timerDisplay = document.getElementById("timer-display");
-
-    function printMousePos(event, element) {
-        const circle = document.createElement("div");
-    
-        // Using clientX and clientY to get coordinates relative to viewport
-        const x = event.clientX + window.scrollX - 10;
-        const y = event.clientY + window.scrollY - 10;
-    
-        circle.style.left = `${x}px`;
-        circle.style.top = `${y}px`;
-        circle.style.position = 'absolute';
-        circle.style.zIndex = 20;
-        circle.style.width = '20px';
-        circle.style.height = '20px';
-        circle.style.borderRadius = '50%';
-    
-        // Add the appropriate class to the circle element based on markingCircleClass
-        circle.classList.add(markingCircleClass);
-    
-        document.body.appendChild(circle);
-    }
-    
-
-    function leaduppercutHandler(player) {
-        return function () {
-            marking = true;
-            currentPlayer = player;
-            markingCircleClass = 'mark-circle';
-            valueDisplays[player].innerHTML = "Value: leaduppercut";
-        };
-    }
-
-    function leadhookHandler(player) {
-        return function () {
-            marking = true;
-            currentPlayer = player;
-            markingCircleClass = 'leadhook-mark-innercircle';
-            valueDisplays[player].innerHTML = "Value: leadhook";
-        };
-    }
-
-    function jabHandler(player) {
-        return function () {
-            marking = true;
-            currentPlayer = player;
-            markingCircleClass = 'jab-mark-circle';
-            valueDisplays[player].innerHTML = "Value: Jab";
-        };
-    }
-
-    function crossHandler(player) {
-        return function () {
-            marking = true;
-            currentPlayer = player;
-            markingCircleClass = 'croos-mark-innercircle';
-            valueDisplays[player].innerHTML = "Value: cross";
-        };
-    }
-    function rearuppercutHandler(player) {
-        return function () {
-            marking = true;
-            currentPlayer = player;
-            markingCircleClass = 'rear-uppercut-mark-circle';
-            valueDisplays[player].innerHTML = "Value: rearuppercut";
-        };
-    }
-    
-    function rearhookHandler(player) {
-        return function () {
-            marking = true;
-            currentPlayer = player;
-            markingCircleClass = 'rearhook-mark-innercircle';
-            valueDisplays[player].innerHTML = "Value: rearhook";
-        };
-    }
     function updateTimer(video) {
         const minutes = Math.floor(video.currentTime / 60);
         const seconds = Math.floor(video.currentTime % 60);
         const formattedTime = `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
         timerDisplay.textContent = formattedTime;
     }
+    // Add the timer display element
+    const timerDisplay = document.getElementById("timer-display");
 
-    
+    function printMousePos(event, element) {
+        const circle = document.createElement("div");
+
+        // Using clientX and clientY to get coordinates relative to viewport
+        const x = event.clientX + window.scrollX - 10;
+        const y = event.clientY + window.scrollY - 10;
+
+        circle.style.left = `${x}px`;
+        circle.style.top = `${y}px`;
+        circle.style.position = "absolute";
+        circle.style.zIndex = 20;
+        circle.style.width = "20px";
+        circle.style.height = "20px";
+        circle.style.borderRadius = "50%";
+
+        // Add the appropriate class to the circle element based on markingCircleClass
+        circle.classList.add(markingCircleClass);
+
+        document.body.appendChild(circle);
+    }
+
+    function boxingMoveHandler(player, move) {
+        return function () {
+            marking = true;
+            currentPlayer = player;
+            currentMove = move;
+            // Set the initial markingCircleClass and valueDisplays based on the currentMove
+            if (currentMove === "leaduppercut") {
+                markingCircleClass = "lead-uppercut-mark-circle";
+                valueDisplays[currentPlayer].innerHTML = "Value: leaduppercut";
+            } else if (currentMove === "rearuppercut") {
+                markingCircleClass = "rear-uppercut-mark-circle";
+                valueDisplays[currentPlayer].innerHTML = "Value: rearuppercut";
+            }
+            else if (currentMove === "cross") {
+                markingCircleClass = "croos-mark-innercircle";
+                valueDisplays[currentPlayer].innerHTML = "Value: cross";
+            }
+            else if (currentMove === "rearhook") {
+                markingCircleClass = "rearhook-mark-innercircle";
+                valueDisplays[currentPlayer].innerHTML = "Value: rearhook";
+            }
+            else if (currentMove === "leadhook") {
+                markingCircleClass = "leadhook-mark-innercircle";
+                valueDisplays[currentPlayer].innerHTML = "Value: leadhook";
+            }
+            else if (currentMove === "jab") {
+                markingCircleClass = "jab-mark-circle";
+                valueDisplays[currentPlayer].innerHTML = "Value: jab";
+            }
+        };
+    }
 
     // Button click listeners for Player 1
-    document.getElementById('leaduppercut').addEventListener('click', leaduppercutHandler('Player'));
-    document.getElementById('cross').addEventListener('click', crossHandler('Player'));
-    document.getElementById('jab').addEventListener('click', jabHandler('Player'));
-    document.getElementById('leadhook').addEventListener('click', leadhookHandler('Player'));
-    document.getElementById('rearuppercut').addEventListener('click', rearuppercutHandler('Player'));
-    document.getElementById('rearhook').addEventListener('click', rearhookHandler('Player'));
-
+    document.getElementById("leaduppercut").addEventListener("click", boxingMoveHandler("Player", "leaduppercut"));
+    document.getElementById("cross").addEventListener("click", boxingMoveHandler("Player", "cross"));
+    document.getElementById("jab").addEventListener("click", boxingMoveHandler("Player", "jab"));
+    document.getElementById("leadhook").addEventListener("click", boxingMoveHandler("Player", "leadhook"));
+    document.getElementById("rearuppercut").addEventListener("click", boxingMoveHandler("Player", "rearuppercut"));
+    document.getElementById("rearhook").addEventListener("click", boxingMoveHandler("Player", "rearhook"));
 
     // Button click listeners for Player 2
-    document.getElementById('leaduppercutplayer2').addEventListener('click', leaduppercutHandler('Player2'));
-    document.getElementById('crossp2').addEventListener('click', crossHandler('Player2'));
-    document.getElementById('jabplayer2').addEventListener('click', jabHandler('Player2'));
-    document.getElementById('leadhookp2').addEventListener('click', leadhookHandler('Player2'));
-    document.getElementById('rearuppercutp2').addEventListener('click', rearuppercutHandler('Player2'));
-    document.getElementById('rearhookp2').addEventListener('click', rearhookHandler('Player2'));
+    document.getElementById("leaduppercutplayer2").addEventListener("click", boxingMoveHandler("Player2", "leaduppercut"));
+    document.getElementById("crossp2").addEventListener("click", boxingMoveHandler("Player2", "cross"));
+    document.getElementById("jabplayer2").addEventListener("click", boxingMoveHandler("Player2", "jab"));
+    document.getElementById("leadhookp2").addEventListener("click", boxingMoveHandler("Player2", "leadhook"));
+    document.getElementById("rearuppercutp2").addEventListener("click", boxingMoveHandler("Player2", "rearuppercut"));
+    document.getElementById("rearhookp2").addEventListener("click", boxingMoveHandler("Player2", "rearhook"));
+
+    // Event listener for "miss" button
+    document.getElementById("miss").addEventListener("click", function () {
+        if (marking && currentPlayer && currentMove) {
+            markingCircleClass = `${currentMove}-Fail-mark-circle`;
+            valueDisplays[currentPlayer].innerHTML = `Value: miss ${currentMove}`;
+        }
+    });
+
+    // Event listener for "block" button
+    document.getElementById("block").addEventListener("click", function () {
+        if (marking && currentPlayer && currentMove) {
+            markingCircleClass = `${currentMove}-block-mark-circle`;
+            valueDisplays[currentPlayer].innerHTML = `Value: block ${currentMove}`;
+        }
+    });
 
     // Ambil lokasi table
     const tableBody1 = document.getElementById("mark-table-body");
@@ -127,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Event listener for image click (Player 1)
     imageDiv.addEventListener("click", function (event) {
-        if (marking && (currentPlayer === "Player")) {
+        if (marking && currentPlayer === "Player") {
             const rect = imageDiv.getBoundingClientRect();
             const x = event.clientX - rect.left;
             const y = event.clientY - rect.top;
@@ -151,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Event listener for image click (Player 2)
     imageDiv2.addEventListener("click", function (event) {
-        if (marking && (currentPlayer === "Player2")) {
+        if (marking && currentPlayer === "Player2") {
             const rect = imageDiv2.getBoundingClientRect();
             const x = event.clientX - rect.left;
             const y = event.clientY - rect.top;
