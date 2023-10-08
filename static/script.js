@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentPlayer = "";
     let markingCircleClass = "mark-circle"; // By default
     let currentMove = "";
+    let currentFormattedTime = ""; 
 
     // Ambil ID dari image
     const imageDiv = document.querySelector("#image-container #image1");
@@ -24,30 +25,38 @@ document.addEventListener("DOMContentLoaded", function () {
         const seconds = Math.floor(video.currentTime % 60);
         const formattedTime = `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
         timerDisplay.textContent = formattedTime;
+
+        currentFormattedTime = formattedTime; // Add this line
     }
     // Add the timer display element
     const timerDisplay = document.getElementById("timer-display");
 
-    function printMousePos(event, element) {
+    function printMousePos(event, element, relativeX, relativeY) { 
         const circle = document.createElement("div");
-
-        // Using clientX and clientY to get coordinates relative to viewport
-        const x = event.clientX + window.scrollX - 10;
-        const y = event.clientY + window.scrollY - 10;
-
-        circle.style.left = `${x}px`;
-        circle.style.top = `${y}px`;
+        
+        const imgWidth = element.offsetWidth;
+        const imgHeight = element.offsetHeight;
+        
+        // Calculate the percentage values based on relative coordinates
+        const percentageX = (relativeX / imgWidth) * 100;
+        const percentageY = (relativeY / imgHeight) * 100;
+    
+        circle.style.left = `${event.clientX + window.scrollX - 10}px`;
+        circle.style.top = `${event.clientY + window.scrollY - 10}px`;
         circle.style.position = "absolute";
         circle.style.zIndex = 20;
         circle.style.width = "20px";
         circle.style.height = "20px";
         circle.style.borderRadius = "50%";
-
+    
         // Add the appropriate class to the circle element based on markingCircleClass
         circle.classList.add(markingCircleClass);
-
+    
         document.body.appendChild(circle);
+        
+        return `(${percentageX.toFixed(2)}%, ${percentageY.toFixed(2)}%)`;
     }
+    
 
     function boxingMoveHandler(player, move) {
         return function () {
@@ -123,21 +132,27 @@ document.addEventListener("DOMContentLoaded", function () {
             const rect = imageDiv.getBoundingClientRect();
             const x = event.clientX - rect.left;
             const y = event.clientY - rect.top;
+            
+            const percentageText = printMousePos(event, imageDiv, x, y);
 
-            printMousePos(event, imageDiv);
+            coordinateDisplays[currentPlayer].innerHTML = `Coordinates: ${percentageText}`;
 
-            coordinateDisplays[currentPlayer].innerHTML = `Coordinates: (${x.toFixed(2)}, ${y.toFixed(2)})`;
             marking = false;
 
             // Add data to table for Player
+             // Record the current video time
             const newRow = tableBody1.insertRow();
             const Player1_cell1 = newRow.insertCell(0);
             const Player1_cell2 = newRow.insertCell(1);
             const Player1_cell3 = newRow.insertCell(2);
-
-            Player1_cell1.innerHTML = `${x.toFixed(2)}, ${y.toFixed(2)}`;
+            const Player1_cell4 = newRow.insertCell(3);
+            const currentTime =  currentFormattedTime;
+              // Update the "Time" column in the table
+            Player1_cell1.innerHTML = percentageText;
             Player1_cell2.innerHTML = valueDisplays[currentPlayer].innerText.split(": ")[1];
             Player1_cell3.innerHTML = currentPlayer;
+            Player1_cell4.innerHTML = `${currentTime}`;
+            
         }
     });
 
@@ -148,9 +163,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const x = event.clientX - rect.left;
             const y = event.clientY - rect.top;
 
-            printMousePos(event, imageDiv2);
+            const percentageText = printMousePos(event, imageDiv2, x, y);
 
-            coordinateDisplays[currentPlayer].innerHTML = `Coordinates: (${x.toFixed(2)}, ${y.toFixed(2)})`;
+            coordinateDisplays[currentPlayer].innerHTML = `Coordinates: ${percentageText}`;
+
             marking = false;
 
             // Add data to table for Player2
@@ -158,10 +174,13 @@ document.addEventListener("DOMContentLoaded", function () {
             const Player2_cell1 = newRow.insertCell(0);
             const Player2_cell2 = newRow.insertCell(1);
             const Player2_cell3 = newRow.insertCell(2);
+            const Player2_cell4 = newRow.insertCell(3);
+            const currentTime = currentFormattedTime;
 
-            Player2_cell1.innerHTML = `${x.toFixed(2)}, ${y.toFixed(2)}`;
+            Player2_cell1.innerHTML = percentageText;
             Player2_cell2.innerHTML = valueDisplays[currentPlayer].innerText.split(": ")[1];
             Player2_cell3.innerHTML = currentPlayer;
+            Player2_cell4.innerHTML = `${currentTime}`;
         }
     });
     // Add a timeupdate event listener to the video
