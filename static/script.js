@@ -89,6 +89,38 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         };
     }
+        // Function to convert a table to a CSV string
+    function tableToCSV(tableId) {
+        const table = document.getElementById(tableId);
+        const rows = Array.from(table.querySelectorAll('tr'));
+
+        // Extract table headers
+        const headers = Array.from(rows[0].querySelectorAll('th')).map(header => header.textContent);
+
+        // Extract table data rows
+        const dataRows = rows.slice(1).map(row => {
+            return Array.from(row.querySelectorAll('td')).map(cell => cell.textContent);
+        });
+
+        // Create CSV content
+        const csvContent = [headers, ...dataRows].map(row => row.join(',')).join('\n');
+
+        return csvContent;
+    }
+
+        // Function to download a CSV file
+    function downloadCSV(fileName, csvContent) {
+        const blob = new Blob([csvContent], { type: 'text/csv' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
 
     // Button click listeners for Player 1
     document.getElementById("leaduppercut").addEventListener("click", boxingMoveHandler("Player", "leaduppercut"));
@@ -120,6 +152,18 @@ document.addEventListener("DOMContentLoaded", function () {
             markingCircleClass = `${currentMove}-block-mark-circle`;
             valueDisplays[currentPlayer].innerHTML = `Value: block ${currentMove}`;
         }
+    });
+
+        // Event listener for Player 1 export button
+    document.getElementById('export-player1').addEventListener('click', function () {
+        const csvContent = tableToCSV('player1-table');
+        downloadCSV('player1.csv', csvContent);
+    });
+
+    // Event listener for Player 2 export button
+    document.getElementById('export-player2').addEventListener('click', function () {
+        const csvContent = tableToCSV('player2-table');
+        downloadCSV('player2.csv', csvContent);
     });
 
     // Ambil lokasi table

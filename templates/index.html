@@ -44,6 +44,7 @@
                 <!-- Lokasi table player sebelah kiri -->
                 <div id="stats1">
                     <h3>Status Fighter 1</h3>
+                    <div class="table-container">
                     <table id="player1-table">
                         <thead>
                             <tr>
@@ -57,6 +58,7 @@
                             <!-- Table rows will be inserted dynamically using JavaScript -->
                         </tbody>
                     </table>
+                    </div>
                 </div>
                 <!-- Lokasi gambar -->
                 <div id="image-container">
@@ -68,6 +70,7 @@
                 <!-- Lokasi table player sebelah kanan -->
                 <div id="stats2">
                     <h3>Status Fighter 2</h3>
+                    <div class="table-container">
                     <table id="player2-table">
                         <thead>
                             <tr>
@@ -79,6 +82,7 @@
                         </thead>
                         <tbody id="mark-table-body-2"></tbody>
                     </table>
+                    </div>
                 </div>
             </div>
             <div id="Confrim">
@@ -98,6 +102,7 @@
                     <button id="jab">Jab</button> <!-- New Jab button -->
                     <div id="coordinate-display"></div>
                     <div id="value-display"></div>
+                    <button id="export-player1">Export Player 1</button>
                 </div>
                 <div id="stats2-now">
                     <p>Ini yang kanan</p>
@@ -109,8 +114,10 @@
                     <button id="jabplayer2">Jab</button> <!-- New JabPlayer2 button -->
                     <div id="coordinate-display_player2"></div>
                     <div id="value-display_player2"></div>
+                    <button id="export-player2">Export Player 2</button>
                 </div>
             </div>
+                    
         </div>
         <script src="{{url_for('static', filename= 'script.js')}}" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

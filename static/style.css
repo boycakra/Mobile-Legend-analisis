@@ -80,7 +80,11 @@
 }
 
 #player2-table {
-    margin-left: 25%;
+    margin-left: 0%;
+    width: 100%;
+    justify-content: space-between;
+    display: grid;
+    margin-right: auto;
 }
 
 thead,
@@ -124,6 +128,13 @@ tbody {
     text-align: center;
     padding-right: 25px;
 }
+/* CSS for table container with horizontal scroll */
+.table-container {
+    width: 100%; /* Adjust the width as needed */
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent line breaks in table cells */
+}
+
 
 #stats-table th {
     background-color: #f2f2f2;
