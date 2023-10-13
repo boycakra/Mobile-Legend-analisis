@@ -1,9 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     let marking = false;
     let currentPlayer = "";
-    let markingCircleClass = "mark-circle"; // By default
     let currentMove = "";
-    let currentFormattedTime = ""; 
+    let currentFormattedTime = "";
+
+    // ...
+
+    // Initialize arrays to store marks for both players
+    const player1Marks = [];
+    const player2Marks = [];
 
     // Ambil ID dari image
     const imageDiv = document.querySelector("#image-container #image1");
@@ -41,12 +46,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const percentageX = (relativeX / imgWidth) * 100;
         const percentageY = (relativeY / imgHeight) * 100;
     
-        circle.style.left = `${event.clientX + window.scrollX - 10}px`;
-        circle.style.top = `${event.clientY + window.scrollY - 10}px`;
+        circle.style.left = `${event.clientX + window.scrollX - 5}px`;
+        circle.style.top = `${event.clientY + window.scrollY - 5}px`;
         circle.style.position = "absolute";
-        circle.style.zIndex = 20;
-        circle.style.width = "20px";
-        circle.style.height = "20px";
+        circle.style.zIndex = 10;
+        circle.style.width = "8px";
+        circle.style.height = "8px";
         circle.style.borderRadius = "50%";
     
         // Add the appropriate class to the circle element based on markingCircleClass
@@ -89,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         };
     }
+    
         // Function to convert a table to a CSV string
     function tableToCSV(tableId) {
         const table = document.getElementById(tableId);
@@ -154,6 +160,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+        // Event listener for "knock" button
+    document.getElementById("knock").addEventListener("click", function () {
+        if (marking && currentPlayer && currentMove) {
+            markingCircleClass = `${currentMove}-knock-mark-circle`;
+            valueDisplays[currentPlayer].innerHTML = `Value: knock ${currentMove}`;
+            const time = timerDisplay.textContent;
+            addDataToTable(time, currentPlayer, currentMove);
+        }
+    });
+
+    // Event listener for "knock_out" button
+    document.getElementById("knock_out").addEventListener("click", function () {
+        if (marking && currentPlayer && currentMove) {
+            markingCircleClass = `${currentMove}-knock-out-mark-circle`;
+            valueDisplays[currentPlayer].innerHTML = `Value: knock_out ${currentMove}`;
+            const time = timerDisplay.textContent;
+            addDataToTable(time, currentPlayer, currentMove);
+        }
+    });
+
         // Event listener for Player 1 export button
     document.getElementById('export-player1').addEventListener('click', function () {
         const csvContent = tableToCSV('player1-table');
@@ -170,33 +196,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const tableBody1 = document.getElementById("mark-table-body");
     const tableBody2 = document.getElementById("mark-table-body-2");
 
-    // Event listener for image click (Player 1)
+      // Event listener for image click (Player 1)
     imageDiv.addEventListener("click", function (event) {
         if (marking && currentPlayer === "Player") {
             const rect = imageDiv.getBoundingClientRect();
             const x = event.clientX - rect.left;
             const y = event.clientY - rect.top;
-            
+
             const percentageText = printMousePos(event, imageDiv, x, y);
 
-            coordinateDisplays[currentPlayer].innerHTML = `Coordinates: ${percentageText}`;
+            // Store the mark data in the array
+            player1Marks.push({
+                coordinates: percentageText,
+                value: valueDisplays[currentPlayer].innerText.split(": ")[1],
+                player: currentPlayer,
+                time: currentFormattedTime,
+            });
 
-            marking = false;
-
-            // Add data to table for Player
-             // Record the current video time
-            const newRow = tableBody1.insertRow();
-            const Player1_cell1 = newRow.insertCell(0);
-            const Player1_cell2 = newRow.insertCell(1);
-            const Player1_cell3 = newRow.insertCell(2);
-            const Player1_cell4 = newRow.insertCell(3);
-            const currentTime =  currentFormattedTime;
-              // Update the "Time" column in the table
-            Player1_cell1.innerHTML = percentageText;
-            Player1_cell2.innerHTML = valueDisplays[currentPlayer].innerText.split(": ")[1];
-            Player1_cell3.innerHTML = currentPlayer;
-            Player1_cell4.innerHTML = `${currentTime}`;
-            
+            // Render all marks for Player1
+            renderMarks(player1Marks, tableBody1);
         }
     });
 
@@ -209,24 +227,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const percentageText = printMousePos(event, imageDiv2, x, y);
 
-            coordinateDisplays[currentPlayer].innerHTML = `Coordinates: ${percentageText}`;
+            // Store the mark data in the array
+            player2Marks.push({
+                coordinates: percentageText,
+                value: valueDisplays[currentPlayer].innerText.split(": ")[1],
+                player: currentPlayer,
+                time: currentFormattedTime,
+            });
 
-            marking = false;
-
-            // Add data to table for Player2
-            const newRow = tableBody2.insertRow();
-            const Player2_cell1 = newRow.insertCell(0);
-            const Player2_cell2 = newRow.insertCell(1);
-            const Player2_cell3 = newRow.insertCell(2);
-            const Player2_cell4 = newRow.insertCell(3);
-            const currentTime = currentFormattedTime;
-
-            Player2_cell1.innerHTML = percentageText;
-            Player2_cell2.innerHTML = valueDisplays[currentPlayer].innerText.split(": ")[1];
-            Player2_cell3.innerHTML = currentPlayer;
-            Player2_cell4.innerHTML = `${currentTime}`;
+            // Render all marks for Player2
+            renderMarks(player2Marks, tableBody2);
         }
     });
+
+    function renderMarks(marks, tableBody) {
+        // Clear the table body before rendering
+        while (tableBody.firstChild) {
+            tableBody.removeChild(tableBody.firstChild);
+        }
+
+        // Render all marks in the array
+        marks.forEach((mark) => {
+            const newRow = tableBody.insertRow();
+            const cell1 = newRow.insertCell(0);
+            const cell2 = newRow.insertCell(1);
+            const cell3 = newRow.insertCell(2);
+            const cell4 = newRow.insertCell(3);
+
+            cell1.innerHTML = mark.coordinates;
+            cell2.innerHTML = mark.value;
+            cell3.innerHTML = mark.player;
+            cell4.innerHTML = mark.time;
+        });
+    }
+    
     // Add a timeupdate event listener to the video
     const video = document.querySelector("#video-container video");
     video.addEventListener("timeupdate", function () {
