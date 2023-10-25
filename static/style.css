@@ -164,6 +164,7 @@ img {
     border-radius: 50%;
     background: red;
     position: absolute;
+    pointer-events: none; 
 }
 
 .leaduppercut-Fail-mark-circle {
@@ -173,6 +174,7 @@ img {
     position: absolute;
     background: radial-gradient(circle, red 40%, transparent 40%);
     border: 2px solid red;
+    pointer-events: none; 
 }
 .leaduppercut-block-mark-circle {
     width: 20px;
@@ -181,6 +183,7 @@ img {
     border: 2px solid red;        /* Border around the circle */
     position: relative;                 /* Enables absolute positioning of inner elements */
     background-color: transparent;      /* Making the background transparent, so only the border is visible */
+    pointer-events: none; 
 }
 
 /* Vertical line of the crosshair */
@@ -206,6 +209,50 @@ img {
     background-color: red;
     transform: translateY(-50%);        /* Centering the line */
 }
+/* For -knock-out-mark-circle */
+.leaduppercut-knock-out-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, red 40%, transparent 40%);
+    border: 2px solid red;
+    pointer-events: none; 
+}
+
+.leaduppercut-knock-out-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For knock-mark-circle */
+.leaduppercut-knock-mark-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid red;
+    pointer-events: none; 
+}
+
+.leaduppercut-knock-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid red;
+}
 
 .rear-uppercut-mark-circle {
     width: 20px;
@@ -213,6 +260,7 @@ img {
     border-radius: 50%;
     background: rgb(155, 120, 107);
     position: absolute;
+    pointer-events: none; 
 }
 .rearuppercut-Fail-mark-circle {
     width: 20px;
@@ -221,6 +269,7 @@ img {
     position: absolute;
     background: radial-gradient(circle, rgb(155, 120, 107) 40%, transparent 40%);
     border: 2px solid rgb(155, 120, 107);
+    pointer-events: none; 
 }
 .rearuppercut-block-mark-circle {
     width: 20px;
@@ -229,6 +278,7 @@ img {
     border: 2px solid rgb(155, 120, 107);        /* Border around the circle */
     position: relative;                 /* Enables absolute positioning of inner elements */
     background-color: transparent;      /* Making the background transparent, so only the border is visible */
+    pointer-events: none; 
 }
 
 /* Vertical line of the crosshair */
@@ -256,12 +306,59 @@ img {
 }
 
 
+/* For -knock-out-mark-circle */
+.rearuppercut-knock-out-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  rgb(155, 120, 107) 40%, transparent 40%);
+    border: 2px solid  rgb(155, 120, 107);
+    pointer-events: none; 
+}
+
+.rearuppercut-knock-out-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For knock-mark-circle */
+.rearuppercut-knock-mark-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid  rgb(155, 120, 107);
+    pointer-events: none; 
+}
+
+.rearuppercut-knock-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid  rgb(155, 120, 107);
+}
+
+
 .jab-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background: blue; /* Set the background color to blue */
     position: absolute;
+    pointer-events: none; 
 }
 
 .jab-Fail-mark-circle {
@@ -271,6 +368,7 @@ img {
     position: absolute;
     background: radial-gradient(circle, blue 40%, transparent 40%);
     border: 2px solid blue;
+    pointer-events: none; 
 }
 .jab-block-mark-circle {
     width: 20px;
@@ -279,6 +377,7 @@ img {
     border: 2px solid blue;        /* Border around the circle */
     position: relative;                 /* Enables absolute positioning of inner elements */
     background-color: transparent;      /* Making the background transparent, so only the border is visible */
+    pointer-events: none; 
 }
 
 /* Vertical line of the crosshair */
@@ -305,12 +404,60 @@ img {
     transform: translateY(-50%);        /* Centering the line */
 }
 
+/* For -knock-out-mark-circle */
+.jab-knock-out-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  blue 40%, transparent 40%);
+    border: 2px solid  blue;
+    pointer-events: none; 
+}
+
+.jab-knock-out-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For knock-mark-circle */
+.jab-knock-mark-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid  blue;
+    pointer-events: none; 
+}
+
+.jab-knock-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid  blue;
+}
+
+
+
 .croos-mark-innercircle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background: yellow;
     position: absolute;
+    pointer-events: none; 
 }
 
 .cross-Fail-mark-circle {
@@ -320,6 +467,7 @@ img {
     position: absolute;
     background: radial-gradient(circle, yellow 40%, transparent 40%);
     border: 2px solid yellow;
+    pointer-events: none; 
 }
 .cross-block-mark-circle {
     width: 20px;
@@ -328,6 +476,7 @@ img {
     border: 2px solid yellow;        /* Border around the circle */
     position: relative;                 /* Enables absolute positioning of inner elements */
     background-color: transparent;      /* Making the background transparent, so only the border is visible */
+    pointer-events: none; 
 }
 
 /* Vertical line of the crosshair */
@@ -355,12 +504,61 @@ img {
 }
 
 
+
+/* For -knock-out-mark-circle */
+.cross-knock-out-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  yellow 40%, transparent 40%);
+    border: 2px solid  yellow;
+    pointer-events: none; 
+}
+
+.cross-knock-out-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For knock-mark-circle */
+.cross-knock-mark-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid  yellow;
+    pointer-events: none; 
+}
+
+.cross-knock-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid  yellow;
+}
+
+
+
 .leadhook-mark-innercircle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background: green;
     position: absolute;
+    pointer-events: none; 
 }
 
 .leadhook-Fail-mark-circle {
@@ -370,6 +568,7 @@ img {
     position: absolute;
     background: radial-gradient(circle, green 40%, transparent 40%);
     border: 2px solid green;
+    pointer-events: none; 
 }
 .leadhook-block-mark-circle {
     width: 20px;
@@ -378,6 +577,7 @@ img {
     border: 2px solid green;        /* Border around the circle */
     position: relative;                 /* Enables absolute positioning of inner elements */
     background-color: transparent;      /* Making the background transparent, so only the border is visible */
+    pointer-events: none; 
 }
 
 /* Vertical line of the crosshair */
@@ -404,12 +604,61 @@ img {
     transform: translateY(-50%);        /* Centering the line */
 }
 
+
+/* For -knock-out-mark-circle */
+.leadhook-knock-out-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  green 40%, transparent 40%);
+    border: 2px solid  green;
+    pointer-events: none; 
+}
+
+.leadhook-knock-out-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For knock-mark-circle */
+.leadhook-knock-mark-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid  green;
+    pointer-events: none; 
+}
+
+.leadhook-knock-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid  green;
+}
+
+
+
 .rearhook-mark-innercircle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background: greenyellow;
     position: absolute;
+    pointer-events: none; 
 }
 
 .rearhook-Fail-mark-circle {
@@ -419,6 +668,7 @@ img {
     position: absolute;
     background: radial-gradient(circle, greenyellow 40%, transparent 40%);
     border: 2px solid greenyellow;
+    pointer-events: none; 
 }
 .rearhook-block-mark-circle {
     width: 20px;
@@ -427,6 +677,7 @@ img {
     border: 2px solid greenyellow;        /* Border around the circle */
     position: relative;                 /* Enables absolute positioning of inner elements */
     background-color: transparent;      /* Making the background transparent, so only the border is visible */
+    pointer-events: none; 
 }
 
 /* Vertical line of the crosshair */
@@ -452,6 +703,55 @@ img {
     background-color: greenyellow;
     transform: translateY(-50%);        /* Centering the line */
 }
+
+
+
+/* For -knock-out-mark-circle */
+.rearhook-knock-out-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  greenyellow 40%, transparent 40%);
+    border: 2px solid  greenyellow;
+    pointer-events: none; 
+}
+
+.rearhook-knock-out-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For knock-mark-circle */
+.rearhook-knock-mark-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid  greenyellow;
+    pointer-events: none; 
+}
+
+.rearhook-knock-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid  greenyellow;
+}
+
+
 
 .default-mark-innercircle {
     width: 20px;
