@@ -1,8 +1,11 @@
 from flask import Flask, render_template, url_for, request, redirect
+from forms import RegistrationFrom, LoginFrom
 from flask_sqlalchemy import SQLAlchemy
 import os
 
 app = Flask(__name__)
+
+app.config['SECRET_KEY'] = '177boy013'
 # SQLITE DATABASE
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
 db = SQLAlchemy(app)
@@ -50,6 +53,18 @@ def form():
 
     return render_template("uploads.html", videos=videos)
 
+@app.route("/register")
+def register():
+    form = RegistrationFrom()
+
+    return render_template('register.html', form = form)
+
+
+@app.route("/login")
+def login():
+    form = LoginFrom()
+
+    return render_template('login.html', form = form)
 
 @app.route("/list")
 def query():
