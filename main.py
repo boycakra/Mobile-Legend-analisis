@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request, redirect
+from flask import Flask, render_template, url_for, request, redirect, flash
 from forms import RegistrationFrom, LoginFrom
 from flask_sqlalchemy import SQLAlchemy
 import os
@@ -53,10 +53,12 @@ def form():
 
     return render_template("uploads.html", videos=videos)
 
-@app.route("/register")
+@app.route("/register", methods = ['GET', 'POST'])
 def register():
     form = RegistrationFrom()
-
+    if form.validate_on_submit():
+        flash(f'Account created for {form.username.data}!', 'success')
+        return redirect(url_for('login'))
     return render_template('register.html', form = form)
 
 
