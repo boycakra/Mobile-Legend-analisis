@@ -1,3 +1,4 @@
+from datetime import datetime
 from flask import Flask, render_template, url_for, request, redirect, flash
 from forms import RegistrationFrom, LoginFrom
 from flask_sqlalchemy import SQLAlchemy
@@ -10,10 +11,20 @@ app.config['SECRET_KEY'] = '177boy013'
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
 db = SQLAlchemy(app)
 
+class User(db.Model):
+    id = db.Column(db.Interger, primary_key = True)
+    username = db.Column(db.String(20), unique = True, nullabel = False)
+    email  = db.Column(db.String(200), unique = False, nullabel = False)
+    password = db.Column(db.String(60), nullabel = False)
+
+    def __repr__(self):
+        return  f"User('{self.username}', '{self.email}')"
+
 
 class Video(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100))
+    date_time = db.Column(db.DateTime(), nullabel = False, default= datetime.utcnow())
     file_path = db.Column(db.String(255))
 
 
