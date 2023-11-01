@@ -22,7 +22,7 @@ Ini adalah alat analisis untuk pertandingan tinju. Alat ini membantu dalam menan
   ``` pip install -r requirement.txt ```
 
 * tinggal run
-  ``` python main.py```
+  ``` python app.py```
 
 
 ## **Penggunaan**
