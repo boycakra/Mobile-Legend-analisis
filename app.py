@@ -12,10 +12,12 @@ app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
 db = SQLAlchemy(app)
 
 class User(db.Model):
-    id = db.Column(db.Interger, primary_key = True)
-    username = db.Column(db.String(20), unique = True, nullabel = False)
-    email  = db.Column(db.String(200), unique = False, nullabel = False)
-    password = db.Column(db.String(60), nullabel = False)
+    id = db.Column(db.Integer, primary_key = True)
+    username = db.Column(db.String(20), unique = True, nullable = False)
+    email  = db.Column(db.String(200), unique = False, nullable = False)
+    password = db.Column(db.String(60), nullable = False)
+
+    video = db.relationship('Video', backref = 'author', lazy=True)
 
     def __repr__(self):
         return  f"User('{self.username}', '{self.email}')"
@@ -24,8 +26,11 @@ class User(db.Model):
 class Video(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100))
-    date_time = db.Column(db.DateTime(), nullabel = False, default= datetime.utcnow())
+    date_time = db.Column(db.DateTime(), nullable = False, default= datetime.utcnow())
     file_path = db.Column(db.String(255))
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable = False)
+    def __repr__(self):
+        return  f"User('{self.title}', '{self.file_path}')"
 
 
 @app.route("/")
