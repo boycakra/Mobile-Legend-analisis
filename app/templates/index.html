@@ -1,148 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tinju Anal</title>
-        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
-    </head>
-    <body>
-        <!--                                                                   -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Anal Boxing</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="{{url_for('index')}}">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ url_for('uploads') }}">Uploads</a>
-                </li>
-                {% if current_user.is_authenticated %}
-                    <li class="nav-item">
-                      <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>  
-                    </li>
-                {% else %}
-                    <li class="nav-item">
-                      <a class="nav-link" href="{{ url_for('register') }}">Sign up</a>  
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="{{ url_for('login') }}">Login</a>
-                    </li>
-                {% endif %}
-              </ul>
-            </div>
-        </nav>
+{% extends "base.html"%}
 
-        {% with messages = get_flashed_messages(with_categories = true) %}
-            {% if messages %}
-                {% for category, message in messages %}
-                  <div class="alert alert-{{ category }}">
-                    {{ message }}
-                  </div>
-                {% endfor %}
-            {% endif %}
-        {% endwith %}
 
-        <!-- VIDEO KONTAINER -->
-        <div id="video-container">
-            <video width="500px" src="/static/assets/video/video.mp4" controls></video> 
-        </div>
-        <!-- New timer-container div -->
-        <div id="timer-container">
-            <h3>Timer</h3>
-            <span id="timer-display">00:00</span>
-        </div>
-        
-        <div id="container">
-            <div id="stats">
-                <!-- Lokasi table player sebelah kiri -->
-                <div id="stats1">
-                    <h3>Status Fighter 1</h3>
-                    <div class="table-container">
-                    <table id="player1-table">
-                        <thead>
-                            <tr>
-                                <th>Mark Coordinate</th>
-                                <th>Value</th>
-                                <th>Player</th>
-                                <th>Timer</th> <!-- Add a new column for the timer -->
-                            </tr>
-                        </thead>
-                        <tbody id="mark-table-body">
-                            <!-- Table rows will be inserted dynamically using JavaScript -->
-                        </tbody>
-                    </table>
-                    </div>
-                </div>
-                <!-- Lokasi gambar -->
-                <div id="image-container">
-                    <div class="image-wrapper">
-                        <img id="image1" src="/static/assets/image/body.png" alt="body" />
-                        <img id="image2" src="/static/assets/image/body.png" alt="body2" />
-                    </div>
-                </div>
-                <!-- Lokasi table player sebelah kanan -->
-                <div id="stats2">
-                    <h3>Status Fighter 2</h3>
-                    <div class="table-container">
-                    <table id="player2-table">
-                        <thead>
-                            <tr>
-                                <th>Mark Coordinate</th>
-                                <th>Value</th>
-                                <th>Player</th>
-                                <th>Timer</th> <!-- Add a new column for the timer -->
-                            </tr>
-                        </thead>
-                        <tbody id="mark-table-body-2"></tbody>
-                    </table>
-                    </div>
-                </div>
-            </div>
-            <div id="Confrim">
-                <button id="miss">Miss</button>
-                <button id="block">Block</button>
-                <button id="knock">knock</button>
-                <button id="knock_out">knock_out</button>
-                
-            </div>
-            <!-- Footer | Text dan tombol bagian bawah pada masing-masing gambar -->
-            <div id="footer">
-                <div id="stats1-now">
-                    <p>Ini yang kiri</p>
-                    <button id="leaduppercut">leaduppercut</button>
-                    <button id="rearuppercut">rearuppercut</button>
-                    <button id="cross">cross</button>
-                    <button id="leadhook">leadhook</button>
-                    <button id="rearhook">rearhook</button>
-                    <button id="jab">Jab</button> <!-- New Jab button -->
-                    <div id="coordinate-display"></div>
-                    <div id="value-display"></div>
-                    <button id="export-player1">Export Player 1</button>
-                </div>
-                <div id="stats2-now">
-                    <p>Ini yang kanan</p>
-                    <button id="leaduppercutplayer2">leaduppercut</button>
-                    <button id="rearuppercutp2">rearuppercut</button>
-                    <button id="crossp2">cross</button>
-                    <button id="leadhookp2">leadhook</button> <!-- New JabPlayer2 button -->
-                    <button id="rearhookp2">rearhook</button>
-                    <button id="jabplayer2">Jab</button> <!-- New JabPlayer2 button -->
-                    <div id="coordinate-display_player2"></div>
-                    <div id="value-display_player2"></div>
-                    <button id="export-player2">Export Player 2</button>
-                </div>
-            </div>
-                    
-        </div>
-        <script src="{{url_for('static', filename= 'script.js')}}" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+{% block content %}
+    <!-- VIDEO KONTAINER -->
+    <div id="video-container">
+        <video width="500px" src="/static/assets/video/video.mp4" controls></video> 
+    </div>
+    <!-- New timer-container div -->
+    <div id="timer-container">
+        <h3>Timer</h3>
+        <span id="timer-display">00:00</span>
+    </div>
     
-    </body>
-
-</html>
+    <div id="container">
+        <div id="stats">
+            <!-- Lokasi table player sebelah kiri -->
+            <div id="stats1">
+                <h3>Status Fighter 1</h3>
+                <div class="table-container">
+                <table id="player1-table">
+                    <thead>
+                        <tr>
+                            <th>Mark Coordinate</th>
+                            <th>Value</th>
+                            <th>Player</th>
+                            <th>Timer</th> <!-- Add a new column for the timer -->
+                        </tr>
+                    </thead>
+                    <tbody id="mark-table-body">
+                        <!-- Table rows will be inserted dynamically using JavaScript -->
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            <!-- Lokasi gambar -->
+            <div id="image-container">
+                <div class="image-wrapper">
+                    <img id="image1" src="/static/assets/image/body.png" alt="body" />
+                    <img id="image2" src="/static/assets/image/body.png" alt="body2" />
+                </div>
+            </div>
+            <!-- Lokasi table player sebelah kanan -->
+            <div id="stats2">
+                <h3>Status Fighter 2</h3>
+                <div class="table-container">
+                <table id="player2-table">
+                    <thead>
+                        <tr>
+                            <th>Mark Coordinate</th>
+                            <th>Value</th>
+                            <th>Player</th>
+                            <th>Timer</th> <!-- Add a new column for the timer -->
+                        </tr>
+                    </thead>
+                    <tbody id="mark-table-body-2"></tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+        <div id="confirm">
+            <button id="miss">Miss</button>
+            <button id="block">Block</button>
+            <button id="knock">knock</button>
+            <button id="knock_out">knock_out</button>
+            
+        </div>
+        <!-- Footer | Text dan tombol bagian bawah pada masing-masing gambar -->
+        <div id="footer">
+            <div id="stats1-now">
+                <p>Ini yang kiri</p>
+                <button id="leaduppercut">leaduppercut</button>
+                <button id="rearuppercut">rearuppercut</button>
+                <button id="cross">cross</button>
+                <button id="leadhook">leadhook</button>
+                <button id="rearhook">rearhook</button>
+                <button id="jab">Jab</button> <!-- New Jab button -->
+                <div id="coordinate-display"></div>
+                <div id="value-display"></div>
+                <button id="export-player1">Export Player 1</button>
+            </div>
+            <div id="stats2-now">
+                <p>Ini yang kanan</p>
+                <button id="leaduppercutplayer2">leaduppercut</button>
+                <button id="rearuppercutp2">rearuppercut</button>
+                <button id="crossp2">cross</button>
+                <button id="leadhookp2">leadhook</button> <!-- New JabPlayer2 button -->
+                <button id="rearhookp2">rearhook</button>
+                <button id="jabplayer2">Jab</button> <!-- New JabPlayer2 button -->
+                <div id="coordinate-display_player2"></div>
+                <div id="value-display_player2"></div>
+                <button id="export-player2">Export Player 2</button>
+            </div>
+        </div>
+                
+    </div>
+    <script src="{{url_for('static', filename= 'script.js')}}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+{% endblock content %}
