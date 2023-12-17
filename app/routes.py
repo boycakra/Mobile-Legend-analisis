@@ -3,6 +3,7 @@ from app import app, db, bcrypt
 from app.models import User, Video
 from app.forms import RegistrationFrom, LoginFrom
 from flask_login import login_user, current_user, logout_user
+import os
 
 
 @app.route("/")
@@ -83,6 +84,13 @@ def logout():
 def query():
     videos = Video.query.all()
     return render_template("query.html", videos=videos)
+@app.route("/account")
+def account():
+    if current_user.is_authenticated: 
+        image_file  = url_for('static', filename=f'profile_pict/{current_user.image_file}')
+        return render_template('account.html', image_file=image_file)
+    else: 
+        return redirect(url_for('login'))
 
 
 # @app.route('/static/assets/video/video.mp4')
