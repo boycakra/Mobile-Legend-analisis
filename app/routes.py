@@ -1,7 +1,7 @@
 from flask import render_template, url_for, request, redirect, flash
 from app import app, db, bcrypt
 from app.models import User, Video
-from app.forms import RegistrationFrom, LoginFrom
+from app.forms import RegistrationFrom, LoginFrom, UpdateAccountFrom
 from flask_login import login_user, current_user, logout_user
 import os
 
@@ -84,11 +84,23 @@ def logout():
 def query():
     videos = Video.query.all()
     return render_template("query.html", videos=videos)
-@app.route("/account")
+
+@app.route("/account", methods=['GET', 'POST'])
 def account():
-    if current_user.is_authenticated: 
+    form =  UpdateAccountFrom()
+    
+    if form.validate_on_submit():
+        current_user.username =  form.username.data
+        current_user.email = form.email.data
+        db.session.commit()
+        flash("your account has been updated", "success")
+        return redirect(url_for('account'))
+    elif request.method == 'GET':
+        form.username.data = current_user.username
+        form.email.data = current_user.email
+    if current_user.is_authenticated:     
         image_file  = url_for('static', filename=f'profile_pict/{current_user.image_file}')
-        return render_template('account.html', image_file=image_file)
+        return render_template('account.html', image_file=image_file, form=form)
     else: 
         return redirect(url_for('login'))
 
