@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const player1Marks = [];
     const player2Marks = [];
 
+    const video = document.querySelector("#video-container video");
+    const skipBackwardButton = document.getElementById("skip-backward");
+    const skipForwardButton = document.getElementById("skip-forward");
+    
+
     // Ambil ID dari image
     const imageDiv = document.querySelector("#image-container #image1");
     const imageDiv2 = document.querySelector("#image-container #image2");
@@ -50,8 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
         circle.style.top = `${event.clientY + window.scrollY - 5}px`;
         circle.style.position = "absolute";
         circle.style.zIndex = 10;
-        circle.style.width = "8px";
-        circle.style.height = "8px";
+        circle.style.width = "16px";
+        circle.style.height = "16px";
         circle.style.borderRadius = "50%";
     
         // Add the appropriate class to the circle element based on markingCircleClass
@@ -69,24 +74,24 @@ document.addEventListener("DOMContentLoaded", function () {
             currentPlayer = player;
             currentMove = move;
             // Set the initial markingCircleClass and valueDisplays based on the currentMove
-            if (currentMove === "leaduppercut") {
+            if (currentMove === "Mid-lane") {
                 markingCircleClass = "lead-uppercut-mark-circle";
-                valueDisplays[currentPlayer].innerHTML = "Value: leaduppercut";
-            } else if (currentMove === "rearuppercut") {
+                valueDisplays[currentPlayer].innerHTML = "Value: Mid-lane";
+            } else if (currentMove === "gold-lane") {
                 markingCircleClass = "rear-uppercut-mark-circle";
-                valueDisplays[currentPlayer].innerHTML = "Value: rearuppercut";
+                valueDisplays[currentPlayer].innerHTML = "Value: gold-lane";
             }
-            else if (currentMove === "cross") {
+            else if (currentMove === "Exp-lane") {
                 markingCircleClass = "croos-mark-innercircle";
-                valueDisplays[currentPlayer].innerHTML = "Value: cross";
+                valueDisplays[currentPlayer].innerHTML = "Value: Exp-lane";
             }
-            else if (currentMove === "rearhook") {
-                markingCircleClass = "rearhook-mark-innercircle";
-                valueDisplays[currentPlayer].innerHTML = "Value: rearhook";
+            else if (currentMove === "Jungler-line") {
+                markingCircleClass = "Jungler-line-mark-innercircle";
+                valueDisplays[currentPlayer].innerHTML = "Value: Jungler-line";
             }
-            else if (currentMove === "leadhook") {
-                markingCircleClass = "leadhook-mark-innercircle";
-                valueDisplays[currentPlayer].innerHTML = "Value: leadhook";
+            else if (currentMove === "Roamer-lane") {
+                markingCircleClass = "Roamer-lane-mark-innercircle";
+                valueDisplays[currentPlayer].innerHTML = "Value: Roamer-lane";
             }
             else if (currentMove === "jab") {
                 markingCircleClass = "jab-mark-circle";
@@ -129,52 +134,52 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Button click listeners for Player 1
-    document.getElementById("leaduppercut").addEventListener("click", boxingMoveHandler("Player", "leaduppercut"));
-    document.getElementById("cross").addEventListener("click", boxingMoveHandler("Player", "cross"));
+    document.getElementById("Mid-lane").addEventListener("click", boxingMoveHandler("Player", "Mid-lane"));
+    document.getElementById("Exp-lane").addEventListener("click", boxingMoveHandler("Player", "Exp-lane"));
     document.getElementById("jab").addEventListener("click", boxingMoveHandler("Player", "jab"));
-    document.getElementById("leadhook").addEventListener("click", boxingMoveHandler("Player", "leadhook"));
-    document.getElementById("rearuppercut").addEventListener("click", boxingMoveHandler("Player", "rearuppercut"));
-    document.getElementById("rearhook").addEventListener("click", boxingMoveHandler("Player", "rearhook"));
+    document.getElementById("Roamer-lane").addEventListener("click", boxingMoveHandler("Player", "Roamer-lane"));
+    document.getElementById("gold-lane").addEventListener("click", boxingMoveHandler("Player", "gold-lane"));
+    document.getElementById("Jungler-line").addEventListener("click", boxingMoveHandler("Player", "Jungler-line"));
 
     // Button click listeners for Player 2
-    document.getElementById("leaduppercutplayer2").addEventListener("click", boxingMoveHandler("Player2", "leaduppercut"));
-    document.getElementById("crossp2").addEventListener("click", boxingMoveHandler("Player2", "cross"));
+    document.getElementById("Mid-laneplayer2").addEventListener("click", boxingMoveHandler("Player2", "Mid-lane"));
+    document.getElementById("Exp-lanep2").addEventListener("click", boxingMoveHandler("Player2", "Exp-lane"));
     document.getElementById("jabplayer2").addEventListener("click", boxingMoveHandler("Player2", "jab"));
-    document.getElementById("leadhookp2").addEventListener("click", boxingMoveHandler("Player2", "leadhook"));
-    document.getElementById("rearuppercutp2").addEventListener("click", boxingMoveHandler("Player2", "rearuppercut"));
-    document.getElementById("rearhookp2").addEventListener("click", boxingMoveHandler("Player2", "rearhook"));
+    document.getElementById("Roamer-lanep2").addEventListener("click", boxingMoveHandler("Player2", "Roamer-lane"));
+    document.getElementById("gold-lanep2").addEventListener("click", boxingMoveHandler("Player2", "gold-lane"));
+    document.getElementById("Jungler-linep2").addEventListener("click", boxingMoveHandler("Player2", "Jungler-line"));
 
-    // Event listener for "miss" button
-    document.getElementById("miss").addEventListener("click", function () {
+    // Event listener for "Kill" button
+    document.getElementById("Kill").addEventListener("click", function () {
         if (marking && currentPlayer && currentMove) {
             markingCircleClass = `${currentMove}-Fail-mark-circle`;
-            valueDisplays[currentPlayer].innerHTML = `Value: miss ${currentMove}`;
+            valueDisplays[currentPlayer].innerHTML = `Value: Kill ${currentMove}`;
         }
     });
 
-    // Event listener for "block" button
-    document.getElementById("block").addEventListener("click", function () {
+    // Event listener for "assisted" button
+    document.getElementById("assisted").addEventListener("click", function () {
         if (marking && currentPlayer && currentMove) {
-            markingCircleClass = `${currentMove}-block-mark-circle`;
-            valueDisplays[currentPlayer].innerHTML = `Value: block ${currentMove}`;
+            markingCircleClass = `${currentMove}-assisted-mark-circle`;
+            valueDisplays[currentPlayer].innerHTML = `Value: assisted ${currentMove}`;
         }
     });
 
-        // Event listener for "knock" button
-    document.getElementById("knock").addEventListener("click", function () {
+        // Event listener for "Death" button
+    document.getElementById("Death").addEventListener("click", function () {
         if (marking && currentPlayer && currentMove) {
-            markingCircleClass = `${currentMove}-knock-mark-circle`;
-            valueDisplays[currentPlayer].innerHTML = `Value: knock ${currentMove}`;
+            markingCircleClass = `${currentMove}-Death-mark-circle`;
+            valueDisplays[currentPlayer].innerHTML = `Value: Death ${currentMove}`;
             const time = timerDisplay.textContent;
             addDataToTable(time, currentPlayer, currentMove);
         }
     });
 
-    // Event listener for "knock_out" button
-    document.getElementById("knock_out").addEventListener("click", function () {
+    // Event listener for "Death_out" button
+    document.getElementById("Death_out").addEventListener("click", function () {
         if (marking && currentPlayer && currentMove) {
-            markingCircleClass = `${currentMove}-knock-out-mark-circle`;
-            valueDisplays[currentPlayer].innerHTML = `Value: knock_out ${currentMove}`;
+            markingCircleClass = `${currentMove}-Death-out-mark-circle`;
+            valueDisplays[currentPlayer].innerHTML = `Value: Death_out ${currentMove}`;
             const time = timerDisplay.textContent;
             addDataToTable(time, currentPlayer, currentMove);
         }
@@ -260,9 +265,25 @@ document.addEventListener("DOMContentLoaded", function () {
             cell4.innerHTML = mark.time;
         });
     }
-    
+   
+    video.addEventListener("timeupdate", function () {
+        updateTimer(video);
+    });
+
+    skipBackwardButton.addEventListener("click", function () {
+        skipTime(-10); // Skip backward 10 seconds
+    });
+
+    skipForwardButton.addEventListener("click", function () {
+        skipTime(10); // Skip forward 10 seconds
+    });
+
+    function skipTime(seconds) {
+        video.currentTime += seconds;
+        updateTimer(video);
+    }
     // Add a timeupdate event listener to the video
-    const video = document.querySelector("#video-container video");
+
     video.addEventListener("timeupdate", function () {
         updateTimer(video);
     });

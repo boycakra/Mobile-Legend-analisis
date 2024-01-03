@@ -4,19 +4,31 @@
 {% block content %}
     <!-- VIDEO KONTAINER -->
     <div id="video-container">
-        <video width="500px" src="/static/assets/video/video.mp4" controls></video> 
+        <video width="500px" src="/static/assets/video/trimmed_video.mp4" controls></video>
+        <div id="controls">
+            <button id="skip-backward">Skip Backward</button>
+            <button id="skip-forward">Skip Forward</button>
+        </div>
     </div>
+    
     <!-- New timer-container div -->
     <div id="timer-container">
         <h3>Timer</h3>
         <span id="timer-display">00:00</span>
+    </div>
+    <!-- Lokasi gambar -->
+    <div id="image-container">
+        <div class="image-wrapper">
+            <img id="image1" src="/static/assets/image/map_ml.jpg" alt="body" />
+            <img id="image2" src="/static/assets/image/map_ml.jpg" alt="body2" />
+        </div>
     </div>
     
     <div id="container">
         <div id="stats">
             <!-- Lokasi table player sebelah kiri -->
             <div id="stats1">
-                <h3>Status Fighter 1</h3>
+                <h3>Status blue team</h3>
                 <div class="table-container">
                 <table id="player1-table">
                     <thead>
@@ -33,16 +45,10 @@
                 </table>
                 </div>
             </div>
-            <!-- Lokasi gambar -->
-            <div id="image-container">
-                <div class="image-wrapper">
-                    <img id="image1" src="/static/assets/image/body.png" alt="body" />
-                    <img id="image2" src="/static/assets/image/body.png" alt="body2" />
-                </div>
-            </div>
+            
             <!-- Lokasi table player sebelah kanan -->
             <div id="stats2">
-                <h3>Status Fighter 2</h3>
+                <h3>Status Red team </h3>
                 <div class="table-container">
                 <table id="player2-table">
                     <thead>
@@ -59,21 +65,21 @@
             </div>
         </div>
         <div id="confirm">
-            <button id="miss">Miss</button>
-            <button id="block">Block</button>
-            <button id="knock">knock</button>
-            <button id="knock_out">knock_out</button>
+            <button id="Kill">Kill</button>
+            <button id="assisted">assisted</button>
+            <button id="Death">Death</button>
+            <button id="Death_out">Death_out</button>
             
         </div>
         <!-- Footer | Text dan tombol bagian bawah pada masing-masing gambar -->
         <div id="footer">
             <div id="stats1-now">
                 <p>Ini yang kiri</p>
-                <button id="leaduppercut">leaduppercut</button>
-                <button id="rearuppercut">rearuppercut</button>
-                <button id="cross">cross</button>
-                <button id="leadhook">leadhook</button>
-                <button id="rearhook">rearhook</button>
+                <button id="Mid-lane">Mid-lane</button>
+                <button id="gold-lane">gold-lane</button>
+                <button id="Exp-lane">Exp-lane</button>
+                <button id="Roamer-lane">Roamer-lane</button>
+                <button id="Jungler-line">Jungler-line</button>
                 <button id="jab">Jab</button> <!-- New Jab button -->
                 <div id="coordinate-display"></div>
                 <div id="value-display"></div>
@@ -81,11 +87,11 @@
             </div>
             <div id="stats2-now">
                 <p>Ini yang kanan</p>
-                <button id="leaduppercutplayer2">leaduppercut</button>
-                <button id="rearuppercutp2">rearuppercut</button>
-                <button id="crossp2">cross</button>
-                <button id="leadhookp2">leadhook</button> <!-- New JabPlayer2 button -->
-                <button id="rearhookp2">rearhook</button>
+                <button id="Mid-laneplayer2">Mid-lane</button>
+                <button id="gold-lanep2">gold-lane</button>
+                <button id="Exp-lanep2">Exp-lane</button>
+                <button id="Roamer-lanep2">Roamer-lane</button> <!-- New JabPlayer2 button -->
+                <button id="Jungler-linep2">Jungler-line</button>
                 <button id="jabplayer2">Jab</button> <!-- New JabPlayer2 button -->
                 <div id="coordinate-display_player2"></div>
                 <div id="value-display_player2"></div>
@@ -95,5 +101,5 @@
                 
     </div>
     <script src="{{url_for('static', filename= 'script.js')}}" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" Exp-laneorigin="anonymous"></script>
 {% endblock content %}

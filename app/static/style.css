@@ -8,6 +8,16 @@
     border-style: solid;
     border-color: red;
 }
+#controls {
+    margin-top: 10px;
+}
+
+#skip-backward, #skip-forward {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
 
 #timer-container {
     display: flex;
@@ -89,7 +99,7 @@
 
 thead,
 tbody {
-    display: block;
+    display: assisted;
 }
 
 #mark-table-body,
@@ -167,7 +177,7 @@ img {
     pointer-events: none; 
 }
 
-.leaduppercut-Fail-mark-circle {
+.Mid-lane-Fail-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -176,7 +186,7 @@ img {
     border: 2px solid red;
     pointer-events: none; 
 }
-.leaduppercut-block-mark-circle {
+.Mid-lane-assisted-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;                 /* Makes it a circle */
@@ -186,8 +196,8 @@ img {
     pointer-events: none; 
 }
 
-/* Vertical line of the crosshair */
-.leaduppercut-block-mark-circle::before {
+/* Vertical line of the Exp-lanehair */
+.Mid-lane-assisted-mark-circle::before {
     content: "";
     position: absolute;
     top: 0;
@@ -198,8 +208,8 @@ img {
     transform: translateX(-50%);        /* Centering the line */
 }
 
-/* Horizontal line of the crosshair */
-.leaduppercut-block-mark-circle::after {
+/* Horizontal line of the Exp-lanehair */
+.Mid-lane-assisted-mark-circle::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -209,8 +219,8 @@ img {
     background-color: red;
     transform: translateY(-50%);        /* Centering the line */
 }
-/* For -knock-out-mark-circle */
-.leaduppercut-knock-out-mark-circle {
+/* For -Death-out-mark-circle */
+.Mid-lane-Death-out-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -220,7 +230,7 @@ img {
     pointer-events: none; 
 }
 
-.leaduppercut-knock-out-mark-circle::before {
+.Mid-lane-Death-out-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -232,8 +242,8 @@ img {
     background: white;
 }
 
-/* For knock-mark-circle */
-.leaduppercut-knock-mark-circle {
+/* For Death-mark-circle */
+.Mid-lane-Death-mark-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -242,7 +252,7 @@ img {
     pointer-events: none; 
 }
 
-.leaduppercut-knock-mark-circle::before {
+.Mid-lane-Death-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -262,7 +272,7 @@ img {
     position: absolute;
     pointer-events: none; 
 }
-.rearuppercut-Fail-mark-circle {
+.gold-lane-Fail-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -271,7 +281,7 @@ img {
     border: 2px solid rgb(155, 120, 107);
     pointer-events: none; 
 }
-.rearuppercut-block-mark-circle {
+.gold-lane-assisted-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;                 /* Makes it a circle */
@@ -281,8 +291,8 @@ img {
     pointer-events: none; 
 }
 
-/* Vertical line of the crosshair */
-.rearuppercut-block-mark-circle::before {
+/* Vertical line of the Exp-lanehair */
+.gold-lane-assisted-mark-circle::before {
     content: "";
     position: absolute;
     top: 0;
@@ -293,8 +303,8 @@ img {
     transform: translateX(-50%);        /* Centering the line */
 }
 
-/* Horizontal line of the crosshair */
-.rearuppercut-block-mark-circle::after {
+/* Horizontal line of the Exp-lanehair */
+.gold-lane-assisted-mark-circle::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -306,8 +316,8 @@ img {
 }
 
 
-/* For -knock-out-mark-circle */
-.rearuppercut-knock-out-mark-circle {
+/* For -Death-out-mark-circle */
+.gold-lane-Death-out-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -317,7 +327,7 @@ img {
     pointer-events: none; 
 }
 
-.rearuppercut-knock-out-mark-circle::before {
+.gold-lane-Death-out-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -329,8 +339,8 @@ img {
     background: white;
 }
 
-/* For knock-mark-circle */
-.rearuppercut-knock-mark-circle {
+/* For Death-mark-circle */
+.gold-lane-Death-mark-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -339,7 +349,7 @@ img {
     pointer-events: none; 
 }
 
-.rearuppercut-knock-mark-circle::before {
+.gold-lane-Death-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -370,7 +380,7 @@ img {
     border: 2px solid blue;
     pointer-events: none; 
 }
-.jab-block-mark-circle {
+.jab-assisted-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;                 /* Makes it a circle */
@@ -380,8 +390,8 @@ img {
     pointer-events: none; 
 }
 
-/* Vertical line of the crosshair */
-.jab-block-mark-circle::before {
+/* Vertical line of the Exp-lanehair */
+.jab-assisted-mark-circle::before {
     content: "";
     position: absolute;
     top: 0;
@@ -392,8 +402,8 @@ img {
     transform: translateX(-50%);        /* Centering the line */
 }
 
-/* Horizontal line of the crosshair */
-.jab-block-mark-circle::after {
+/* Horizontal line of the Exp-lanehair */
+.jab-assisted-mark-circle::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -404,8 +414,8 @@ img {
     transform: translateY(-50%);        /* Centering the line */
 }
 
-/* For -knock-out-mark-circle */
-.jab-knock-out-mark-circle {
+/* For -Death-out-mark-circle */
+.jab-Death-out-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -415,7 +425,7 @@ img {
     pointer-events: none; 
 }
 
-.jab-knock-out-mark-circle::before {
+.jab-Death-out-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -427,8 +437,8 @@ img {
     background: white;
 }
 
-/* For knock-mark-circle */
-.jab-knock-mark-circle {
+/* For Death-mark-circle */
+.jab-Death-mark-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -437,7 +447,7 @@ img {
     pointer-events: none; 
 }
 
-.jab-knock-mark-circle::before {
+.jab-Death-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -460,7 +470,7 @@ img {
     pointer-events: none; 
 }
 
-.cross-Fail-mark-circle {
+.Exp-lane-Fail-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -469,7 +479,7 @@ img {
     border: 2px solid yellow;
     pointer-events: none; 
 }
-.cross-block-mark-circle {
+.Exp-lane-assisted-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;                 /* Makes it a circle */
@@ -479,8 +489,8 @@ img {
     pointer-events: none; 
 }
 
-/* Vertical line of the crosshair */
-.cross-block-mark-circle::before {
+/* Vertical line of the Exp-lanehair */
+.Exp-lane-assisted-mark-circle::before {
     content: "";
     position: absolute;
     top: 0;
@@ -491,8 +501,8 @@ img {
     transform: translateX(-50%);        /* Centering the line */
 }
 
-/* Horizontal line of the crosshair */
-.cross-block-mark-circle::after {
+/* Horizontal line of the Exp-lanehair */
+.Exp-lane-assisted-mark-circle::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -505,8 +515,8 @@ img {
 
 
 
-/* For -knock-out-mark-circle */
-.cross-knock-out-mark-circle {
+/* For -Death-out-mark-circle */
+.Exp-lane-Death-out-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -516,7 +526,7 @@ img {
     pointer-events: none; 
 }
 
-.cross-knock-out-mark-circle::before {
+.Exp-lane-Death-out-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -528,8 +538,8 @@ img {
     background: white;
 }
 
-/* For knock-mark-circle */
-.cross-knock-mark-circle {
+/* For Death-mark-circle */
+.Exp-lane-Death-mark-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -538,7 +548,7 @@ img {
     pointer-events: none; 
 }
 
-.cross-knock-mark-circle::before {
+.Exp-lane-Death-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -552,7 +562,7 @@ img {
 
 
 
-.leadhook-mark-innercircle {
+.Roamer-lane-mark-innercircle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -561,7 +571,7 @@ img {
     pointer-events: none; 
 }
 
-.leadhook-Fail-mark-circle {
+.Roamer-lane-Fail-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -570,7 +580,7 @@ img {
     border: 2px solid green;
     pointer-events: none; 
 }
-.leadhook-block-mark-circle {
+.Roamer-lane-assisted-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;                 /* Makes it a circle */
@@ -580,8 +590,8 @@ img {
     pointer-events: none; 
 }
 
-/* Vertical line of the crosshair */
-.leadhook-block-mark-circle::before {
+/* Vertical line of the Exp-lanehair */
+.Roamer-lane-assisted-mark-circle::before {
     content: "";
     position: absolute;
     top: 0;
@@ -592,8 +602,8 @@ img {
     transform: translateX(-50%);        /* Centering the line */
 }
 
-/* Horizontal line of the crosshair */
-.leadhook-block-mark-circle::after {
+/* Horizontal line of the Exp-lanehair */
+.Roamer-lane-assisted-mark-circle::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -605,8 +615,8 @@ img {
 }
 
 
-/* For -knock-out-mark-circle */
-.leadhook-knock-out-mark-circle {
+/* For -Death-out-mark-circle */
+.Roamer-lane-Death-out-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -616,7 +626,7 @@ img {
     pointer-events: none; 
 }
 
-.leadhook-knock-out-mark-circle::before {
+.Roamer-lane-Death-out-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -628,8 +638,8 @@ img {
     background: white;
 }
 
-/* For knock-mark-circle */
-.leadhook-knock-mark-circle {
+/* For Death-mark-circle */
+.Roamer-lane-Death-mark-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -638,7 +648,7 @@ img {
     pointer-events: none; 
 }
 
-.leadhook-knock-mark-circle::before {
+.Roamer-lane-Death-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -652,7 +662,7 @@ img {
 
 
 
-.rearhook-mark-innercircle {
+.Jungler-line-mark-innercircle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -661,7 +671,7 @@ img {
     pointer-events: none; 
 }
 
-.rearhook-Fail-mark-circle {
+.Jungler-line-Fail-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -670,7 +680,7 @@ img {
     border: 2px solid greenyellow;
     pointer-events: none; 
 }
-.rearhook-block-mark-circle {
+.Jungler-line-assisted-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;                 /* Makes it a circle */
@@ -680,8 +690,8 @@ img {
     pointer-events: none; 
 }
 
-/* Vertical line of the crosshair */
-.rearhook-block-mark-circle::before {
+/* Vertical line of the Exp-lanehair */
+.Jungler-line-assisted-mark-circle::before {
     content: "";
     position: absolute;
     top: 0;
@@ -692,8 +702,8 @@ img {
     transform: translateX(-50%);        /* Centering the line */
 }
 
-/* Horizontal line of the crosshair */
-.rearhook-block-mark-circle::after {
+/* Horizontal line of the Exp-lanehair */
+.Jungler-line-assisted-mark-circle::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -706,8 +716,8 @@ img {
 
 
 
-/* For -knock-out-mark-circle */
-.rearhook-knock-out-mark-circle {
+/* For -Death-out-mark-circle */
+.Jungler-line-Death-out-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -717,7 +727,7 @@ img {
     pointer-events: none; 
 }
 
-.rearhook-knock-out-mark-circle::before {
+.Jungler-line-Death-out-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -729,8 +739,8 @@ img {
     background: white;
 }
 
-/* For knock-mark-circle */
-.rearhook-knock-mark-circle {
+/* For Death-mark-circle */
+.Jungler-line-Death-mark-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -739,7 +749,7 @@ img {
     pointer-events: none; 
 }
 
-.rearhook-knock-mark-circle::before {
+.Jungler-line-Death-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
