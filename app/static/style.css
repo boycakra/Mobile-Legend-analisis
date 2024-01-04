@@ -9,8 +9,11 @@
     border-color: red;
 }
 #controls {
-    margin-top: 10px;
+    width: 50%;
+    margin: 10px auto; /* Center the controls horizontally with equal margins on the left and right */
+    align-items: center;
 }
+
 
 #skip-backward, #skip-forward {
     margin: 0 5px;
@@ -105,6 +108,7 @@ tbody {
 #mark-table-body,
 #mark-table-body-2 {
     height: 224px;
+    width: 110%;
     overflow: auto;
 }
 
@@ -141,8 +145,12 @@ tbody {
 /* CSS for table container with horizontal scroll */
 .table-container {
     width: 100%; /* Adjust the width as needed */
+    max-height: 200px;
     overflow-x: auto;
     white-space: nowrap; /* Prevent line breaks in table cells */
+}
+.table-container table {
+    overflow-x: auto;
 }
 
 
@@ -219,8 +227,8 @@ img {
     background-color: red;
     transform: translateY(-50%);        /* Centering the line */
 }
-/* For -Death-out-mark-circle */
-.Mid-lane-Death-out-mark-circle {
+/* For Buff-Merah-mark-circle */
+.Mid-laneBuff-Merah-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -230,7 +238,7 @@ img {
     pointer-events: none; 
 }
 
-.Mid-lane-Death-out-mark-circle::before {
+.Mid-laneBuff-Merah-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -241,6 +249,50 @@ img {
     transform: translate(-50%, -50%);
     background: white;
 }
+
+/* For Buff-biru-mark-circle */
+.Mid-laneBuff-biru-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, red 40%, transparent 40%);
+    border: 2px solid yellow;
+    pointer-events: none; 
+}
+
+.Mid-laneBuff-biru-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For Buff-lord-mark-square */
+.Mid-laneBuff-lord-mark-square {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: blue;
+    border: 2px solid yellow;
+    pointer-events: none;
+}
+
+.Mid-laneBuff-lord-mark-square::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background: white;
+}
+
 
 /* For Death-mark-circle */
 .Mid-lane-Death-mark-circle {
@@ -316,8 +368,8 @@ img {
 }
 
 
-/* For -Death-out-mark-circle */
-.gold-lane-Death-out-mark-circle {
+/* For Buff-Merah-mark-circle */
+.gold-laneBuff-Merah-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -327,7 +379,7 @@ img {
     pointer-events: none; 
 }
 
-.gold-lane-Death-out-mark-circle::before {
+.gold-laneBuff-Merah-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -338,6 +390,50 @@ img {
     transform: translate(-50%, -50%);
     background: white;
 }
+
+/* For Buff-biru-mark-circle */
+.gold-laneBuff-biru-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  rgb(155, 120, 107) 40%, transparent 40%);
+    border: 2px solid  yellow;
+    pointer-events: none; 
+}
+
+.gold-laneBuff-biru-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For Buff-lord-mark-square */
+.gold-laneBuff-lord-mark-square {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: blue;
+    border: 2px solid yellow;
+    pointer-events: none;
+}
+
+.gold-laneBuff-lord-mark-square::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background: white;
+}
+
 
 /* For Death-mark-circle */
 .gold-lane-Death-mark-circle {
@@ -414,8 +510,8 @@ img {
     transform: translateY(-50%);        /* Centering the line */
 }
 
-/* For -Death-out-mark-circle */
-.jab-Death-out-mark-circle {
+/* For Buff-Merah-mark-circle */
+.jabBuff-Merah-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -425,7 +521,7 @@ img {
     pointer-events: none; 
 }
 
-.jab-Death-out-mark-circle::before {
+.jabBuff-Merah-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -515,8 +611,8 @@ img {
 
 
 
-/* For -Death-out-mark-circle */
-.Exp-lane-Death-out-mark-circle {
+/* For Buff-Merah-mark-circle */
+.Exp-laneBuff-Merah-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -526,7 +622,7 @@ img {
     pointer-events: none; 
 }
 
-.Exp-lane-Death-out-mark-circle::before {
+.Exp-laneBuff-Merah-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -537,6 +633,48 @@ img {
     transform: translate(-50%, -50%);
     background: white;
 }
+
+/* For Buff-Merah-mark-circle */
+.Exp-laneBuff-biru-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  yellow 40%, transparent 40%);
+    border: 2px solid  yellow;
+    pointer-events: none; 
+}
+
+.Exp-laneBuff-biru-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+.Exp-laneBuff-lord-mark-square {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: blue;
+    border: 2px solid yellow;
+    pointer-events: none;
+}
+
+.Exp-laneBuff-lord-mark-square::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background: white;
+}
+
 
 /* For Death-mark-circle */
 .Exp-lane-Death-mark-circle {
@@ -615,8 +753,8 @@ img {
 }
 
 
-/* For -Death-out-mark-circle */
-.Roamer-lane-Death-out-mark-circle {
+/* For Buff-Merah-mark-circle */
+.Roamer-laneBuff-Merah-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -626,7 +764,7 @@ img {
     pointer-events: none; 
 }
 
-.Roamer-lane-Death-out-mark-circle::before {
+.Roamer-laneBuff-Merah-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -635,6 +773,47 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: white;
+}
+/* For Buff-Merah-mark-circle */
+.Roamer-laneBuff-biru-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  green 40%, transparent 40%);
+    border: 2px solid  yellow;
+    pointer-events: none; 
+}
+
+.Roamer-laneBuff-biru-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+.Roamer-laneBuff-lord-mark-square {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: blue;
+    border: 2px solid yellow;
+    pointer-events: none;
+}
+
+.Roamer-laneBuff-lord-mark-square::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
     background: white;
 }
 
@@ -716,8 +895,8 @@ img {
 
 
 
-/* For -Death-out-mark-circle */
-.Jungler-line-Death-out-mark-circle {
+/* For Buff-Merah-mark-circle */
+.Jungler-lineBuff-Merah-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -727,7 +906,7 @@ img {
     pointer-events: none; 
 }
 
-.Jungler-line-Death-out-mark-circle::before {
+.Jungler-lineBuff-Merah-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -736,6 +915,48 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For Buff-Merah-mark-circle */
+.Jungler-lineBuff-biru-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  greenyellow 40%, transparent 40%);
+    border: 2px solid  yellow;
+    pointer-events: none; 
+}
+
+.Jungler-lineBuff-biru-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+.Jungler-lineBuff-lord-mark-square {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: blue;
+    border: 2px solid yellow;
+    pointer-events: none;
+}
+
+.Jungler-lineBuff-lord-mark-square::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
     background: white;
 }
 
