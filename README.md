@@ -1,35 +1,32 @@
-# analisis-boxing
+# analisis-mobile-legends
 
-Sebuah web untuk menganalisis pertandingan boxing.
+Sebuah web untuk menganalisis pertandingan Mobile Legends: Bang Bang.
 
 ## **Deskripsi**
-Ini adalah alat analisis untuk pertandingan tinju. Alat ini membantu dalam menandai jenis pukulan dan menentukan apakah pukulan tersebut mengenai lawan atau tidak.
+Ini adalah alat analisis untuk pertandingan Mobile Legends: Bang Bang. Alat ini membantu dalam menandai peristiwa penting dalam pertandingan, seperti pertarungan tim, penyerangan turret, dan lainnya.
 
 ## Dependency
-- Pyhton 3.8 keatas
+- Python 3.8 ke atas
 - pip
 
-## cara run nya
+## Cara Menjalankan
+* Buat virtual environment
+  ```python -m venv env```
+* Aktifkan environment
+  ```env/Scripts/activate.bat // Di CMD```
+  ```env/Scripts/Activate.ps1 // Di PowerShell```
+  ```source env/bin/activate // Di Linux```
 
-* buat virtual enviroment
-  ``` python -m venv env ```
-* aktifkan enviromentnnya
-  ``` env/Scripts/activate.bat //In CMD ```
-  ``` env/Scripts/Activate.ps1 //In Powershel ```
-  ``` source env/bin/activate //in Linux ```
+* Install Dependency
+  ```pip install -r requirement.txt```
 
-* install Dependency
-  ``` pip install -r requirement.txt ```
-
-* tinggal run
-  ``` python app.py```
-
+* Jalankan aplikasi
+  ```python app.py```
 
 ## **Penggunaan**
-Setelah menjalankan aplikasi, Anda dapat mengunggah video pertandingan tinju yang ingin Anda analisis. Alat ini akan memungkinkan Anda untuk menandai jenis pukulan (seperti jab, hook, uppercut, dll.) dan menunjukkan apakah pukulan tersebut mengenai lawan atau tidak.
+Setelah aplikasi berjalan, Anda dapat mengunggah rekaman pertandingan Mobile Legends: Bang Bang yang ingin Anda analisis. Alat ini memungkinkan Anda untuk menandai peristiwa seperti pertarungan tim, penyerangan turret, dan kejadian penting lainnya dalam pertandingan.
 
 ## **Kontribusi**
-Kami menyambut kontribusi dan saran perbaikan untuk alat analisis pertandingan tinju ini. Jika Anda ingin berkontribusi, silakan buat _pull request_ ke repositori ini.
+Kami menyambut kontribusi dan saran perbaikan untuk alat analisis pertandingan Mobile Legends: Bang Bang ini. Jika Anda ingin berkontribusi, silakan buat _pull request_ ke repositori ini.
 
-Semoga alat ini bermanfaat dalam menganalisis pertandingan tinju!
-
+Semoga alat ini bermanfaat dalam menganalisis pertandingan Mobile Legends: Bang Bang!
