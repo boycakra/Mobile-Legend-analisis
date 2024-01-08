@@ -158,30 +158,36 @@ document.addEventListener("DOMContentLoaded", function () {
             addDataToTable(time, currentPlayer, currentMove);
         }
     });
+
     document.getElementById("Lord").addEventListener("click", function () {
-        if (marking && currentPlayer && currentMove) {
-            let markingCircleClass;
-    
-            // Check conditions and set the appropriate class
-            if (currentMove === 'gold') {
-                markingCircleClass = 'gold-laneBuff-lord-mark-square';
-            } else if (currentMove === 'jab') {
-                markingCircleClass = 'jabBuff-lord-mark-square';
-            } else if (currentMove === 'Exp-lane') {
-                markingCircleClass = 'Exp-laneBuff-lord-mark-square';
-            } else if (currentMove === 'Roamer-lane') {
-                markingCircleClass = 'Roamer-laneBuff-lord-mark-square';
-            } else if (currentMove === 'Jungler-line') {
-                markingCircleClass = 'Jungler-lineBuff-lord-mark-square';
-            } else {
-                markingCircleClass = 'default-mark-innercircle';
-            }
-    
-            valueDisplays[currentPlayer].innerHTML = `Value: lord ${currentMove}`;
+    if (marking && currentPlayer && currentMove) {
+            markingCircleClass = `${currentMove}Buff-lord-mark-square`;
+            valueDisplays[currentPlayer].innerHTML = `Value: Lord ${currentMove}`;
             const time = timerDisplay.textContent;
             addDataToTable(time, currentPlayer, currentMove);
-        }
+        
+    }
     });
+    
+    document.getElementById("Turtle").addEventListener("click", function () {
+    if (marking && currentPlayer && currentMove) {
+        const moveClassMap = {
+            "Mid-lane": "mid-lane-turtle-mark-circle",
+            "gold-lane": "gold-lane-turtle-mark-circle",
+            "Exp-lane": "exp-lane-turtle-mark-circle",
+            "Roamer-lane": "roamer-lane-turtle-mark-circle",
+            "Jungler-line": "jungle-lane-turtle-mark-circle",
+        };
+
+        markingCircleClass = moveClassMap[currentMove] || "";
+        valueDisplays[currentPlayer].innerHTML = `Value: turtle ${currentMove}`;
+        const time = timerDisplay.textContent;
+        addDataToTable(time, currentPlayer, currentMove);
+    }
+});
+
+
+
     
 
     document.getElementById("undo-player1").addEventListener("click", function () {
@@ -230,6 +236,128 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('export-player2').addEventListener('click', function () {
         const csvContent = tableToCSV('player2-table');
         downloadCSV('player2.csv', csvContent);
+    });
+
+
+       // Function to handle various actions based on key
+       function handleShortcut(key) {
+        switch (key) {
+            case "z":
+            case "Z":
+                // "Z" key is pressed, perform Mid-lane action
+                boxingMoveHandler("Player", "Mid-lane")();
+                break;
+            case "x":
+            case "X":
+                // "Z" key is pressed, perform Mid-lane action
+                boxingMoveHandler("Player", "gold-lane")();
+                break;
+            case "c":
+            case "C":
+                // "Z" key is pressed, perform Mid-lane action
+                boxingMoveHandler("Player", "Exp-lane")();
+                break;
+            case "v":
+            case "V":
+                // "Z" key is pressed, perform Mid-lane action
+                boxingMoveHandler("Player", "Roamer-lane")();
+                break;
+            case "b":
+            case "B":
+                // "Z" key is pressed, perform Mid-lane action
+                boxingMoveHandler("Player", "Jungler-line")();
+                break;
+            case "a":
+            case "A":
+                // "K" key is pressed, perform Kill action
+                if (marking && currentPlayer && currentMove) {
+                    markingCircleClass = `${currentMove}-Fail-mark-circle`;
+                    valueDisplays[currentPlayer].innerHTML = `Value: Kill ${currentMove}`;
+                }
+                break;
+            case "s":
+            case "S":
+                // "K" key is pressed, perform Kill action
+                if (marking && currentPlayer && currentMove) {
+                    markingCircleClass = `${currentMove}-assisted-mark-circle`;
+                    valueDisplays[currentPlayer].innerHTML = `Value: assisted ${currentMove}`;
+                }
+                break;
+            case "d":
+            case "D":
+                // "K" key is pressed, perform Kill action
+                if (marking && currentPlayer && currentMove) {
+                    markingCircleClass = `${currentMove}-Death-mark-circle`;
+                    valueDisplays[currentPlayer].innerHTML = `Value: Death ${currentMove}`;
+                }
+                break;
+            case "f":
+            case "F":
+                // "K" key is pressed, perform Kill action
+                if (marking && currentPlayer && currentMove) {
+                    markingCircleClass = `${currentMove}-Buff-Merah-mark-circle`;
+                    valueDisplays[currentPlayer].innerHTML = `Value: Buff Merah ${currentMove}`;
+                }
+                break;
+            case "g":
+            case "G":
+                // "K" key is pressed, perform Kill action
+                if (marking && currentPlayer && currentMove) {
+                    markingCircleClass = `${currentMove}Buff-Merah-mark-circle`;
+                    valueDisplays[currentPlayer].innerHTML = `Value: Buff Merah ${currentMove}`;
+                }
+                break;
+            case "h":
+            case "H":
+                // "K" key is pressed, perform Kill action
+                if (marking && currentPlayer && currentMove) {
+                    markingCircleClass = `${currentMove}Buff-biru-mark-circle`;
+                    valueDisplays[currentPlayer].innerHTML = `Value: Buff-biru ${currentMove}`;
+                }
+                break;
+            case "n":
+            case "N":
+                // "K" key is pressed, perform Kill action
+                if (marking && currentPlayer && currentMove) {
+                    markingCircleClass = `${currentMove}Buff-lord-mark-square`;
+                    valueDisplays[currentPlayer].innerHTML = `Value: Lord ${currentMove}`;
+                }
+                break;
+            
+            case "m":
+            case "M":
+                // "M" key is pressed, perform Turtle action
+                if (marking && currentPlayer && currentMove) {
+                    const moveClassMap = {
+                        "Mid-lane": "mid-lane-turtle-mark-circle",
+                        "gold-lane": "gold-lane-turtle-mark-circle",
+                        "Exp-lane": "exp-lane-turtle-mark-circle",
+                        "Roamer-lane": "roamer-lane-turtle-mark-circle",
+                        "Jungler-line": "jungle-lane-turtle-mark-circle",
+                    };
+
+                    markingCircleClass = moveClassMap[currentMove] || "";
+                    valueDisplays[currentPlayer].innerHTML = `Value: Turtle ${currentMove}`;
+                    const time = timerDisplay.textContent;
+                    addDataToTable(time, currentPlayer, currentMove);
+                }
+                break;
+            // Add more cases for other shortcuts as needed
+            // For example:
+            // case "x":
+            //     // "X" key is pressed, perform another action
+            //     // ...
+            //     break;
+            default:
+                // Do nothing for other keys
+                break;
+        }
+    }
+
+    // Event listener for keydown event
+    document.addEventListener("keydown", function (event) {
+        const key = event.key;
+        handleShortcut(key);
     });
 
     const tableBody1 = document.getElementById("mark-table-body");

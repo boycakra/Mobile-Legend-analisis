@@ -175,6 +175,125 @@ img {
     height: auto;
 }
 
+/* Mid Lane Turtle Mark Circle */
+.mid-lane-turtle-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, blue 40%, transparent 40%);
+    border: 2px solid orange;
+    pointer-events: none; 
+}
+
+.mid-lane-turtle-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: blue; /* Add a mark similar to Buff biru */
+}
+
+/* Gold Lane Turtle Mark Circle */
+.gold-lane-turtle-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, rgb(100, 150, 200) 40%, transparent 40%);
+    border: 2px solid purple;
+    pointer-events: none; 
+}
+
+.gold-lane-turtle-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white; /* Add a mark similar to Buff biru */
+}
+
+/* Exp Lane Turtle Mark Circle */
+.exp-lane-turtle-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, green 40%, transparent 40%);
+    border: 2px solid yellow;
+    pointer-events: none; 
+}
+
+.exp-lane-turtle-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white; /* Add a mark similar to Buff biru */
+}
+
+/* Roamer Lane Turtle Mark Circle */
+.roamer-lane-turtle-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, pink 40%, transparent 40%);
+    border: 2px solid red;
+    pointer-events: none; 
+}
+
+.roamer-lane-turtle-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white; /* Add a mark similar to Buff biru */
+}
+
+/* Jungle Lane Turtle Mark Circle */
+.jungle-lane-turtle-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, green 40%, transparent 40%);
+    border: 2px solid green;
+    pointer-events: none; 
+}
+
+.jungle-lane-turtle-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white; /* Add a mark similar to Buff biru */
+}
+
+
+
+
+
 /* Mark circle - sebagai penanda user ngeklik  */
 .lead-uppercut-mark-circle {
     width: 20px;
@@ -990,4 +1109,22 @@ img {
     border-radius: 50%;
     background: gray;
     position: absolute;
+}
+.jabBuff-lord-mark-square {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: blue;
+    border: 2px solid yellow;
+    pointer-events: none;
+}
+
+.jabBuff-lord-mark-square::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background: white;
 }
