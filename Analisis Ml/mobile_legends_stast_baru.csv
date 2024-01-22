@@ -1,0 +1,297 @@
+Name,Ability,Attributes
+Sea Halberd,"Upon dealing damage to the target, reduces Shield and HP Regen by  for 3s.","Attack Speed:: + 25%
+Attack Damage:: + 80
+Passive:: Life Drain"
+Rose Gold Meteor,"When HP is about to drop below 30%, gains a 510~1350 shield (scales with level) and 25 extra Magic Defense for 3s. Cooldown: 40s.","Physical Lifesteal:: + 5%
+Magic Resistance:: + 30
+Attack Damage:: + 60
+Passive:: Lifeline"
+Bloodlust Axe,+20% Spell Vamp,"Cooldown Reduction:: + 10%
+Attack Damage:: + 70
+Cooldown Reduction:: + 10%"
+Hunter Strike,+15 Physical PEN,"Cooldown Reduction:: + 10%
+Attack Damage:: + 80
+Cooldown Reduction:: + 10%
+Passive:: Retribution"
+Blade of Despair,Attacking enemy units that have HP below 50% will increase hero's Physical Attack by 25%. Lasts 2s. (Takes affect before damage is dealt),"Attack Damage:: + 160
+Movement Speed:: + 5%
+Passive:: Despair"
+Blade of the Heptaseas,+15 Physical PEN,"Health:: + 250
+Attack Damage:: + 70
+Passive:: Ambush"
+Great Dragon Spear,"After casting an Ultimate, increase Movement Speed by 15% for 7.5s. This effect has a 15s cooldown.","Cooldown Reduction:: + 10%
+Attack Damage:: + 70
+Cooldown Reduction:: + 10%
+Critical Chance:: + 20%
+Passive:: Supreme Warrior"
+Windtalker,"Every 5-3s, the next Basic Attack hits up to 3 enemy units and deals 150-362 Magic damage. The CD of this effect drops to the minimum when Crit Chance rises to 50%, while damage rises to the maximum when a Attack SPD rises to 3.00. This attack can cause Crit Damage. To minions, deals 200% increased Damage.","Attack Speed:: + 40%
+Critical Chance:: + 10%
+Movement Speed:: + 20
+Passive:: Typhoon, Activate"
+Endless Battle,"In 3s after using the skill, the caster's next Basic Attack will deal additional True Damage as much as 60% of Physical Attack with a cooldown of 1.5s.","Health:: + 250
+Mana Regen:: + 5
+Physical Lifesteal:: + 10%
+Cooldown Reduction:: + 10%
+Attack Damage:: + 65
+Cooldown Reduction:: + 10%
+Movement Speed:: + 5%
+Passive:: Divine Justice, Chase Fate"
+Berserker's Fury,+40% Critical Damage,"Attack Damage:: + 65
+Critical Chance:: + 25%
+Passive:: Doom"
+Haas's Claws,+25% Physical Lifesteal,"Attack Damage:: + 70
+Passive:: Insanity"
+Malefic Roar,+35% Physical PEN,"Attack Damage:: + 60
+Passive:: Armor Buster"
+War Axe,"Enter a battle stance upon dealing damage to any enemy unit. This increases the hero's Physical Attack by 9 and Physical Penetration by 3 each second for 3s, to a max of 8 stacks (Marksmen/Mages/Supports only receive 33% of these stacked effects); also grants 15% Movement Speed at full stacks.","Health:: + 550
+Cooldown Reduction:: + 10%
+Attack Damage:: + 35
+Cooldown Reduction:: + 10%
+Passive:: Fighting Spirit"
+Wind of Nature,Immune to all Physical Damage. Last 2s. (Duration becomes half when used by non-marksmen). CD 70s.,"Physical Lifesteal:: + 10%
+Attack Speed:: + 20%
+Attack Damage:: + 30
+Active:: Wind Chant"
+Golden Staff,Unable to increase critical chance. Every 1% of critical chance gained will increase attack speed by 1%.,"Attack Speed:: + 15%
+Attack Damage:: + 65
+Passive:: Swift, Endless Strike"
+Corrosion Scythe,"Each time a Basic Attack deals damage to enemies, reduces the target's Movement Speed by 8% (halved for ranged Basic Attacks) for 1.5s. Stacking up to 5 times.","Attack Speed:: + 25%
+Attack Damage:: + 50
+Movement Speed:: + 5%
+Passive:: Corrosive, Impulse"
+Demon Hunter Sword,Basic attacks will deal 9% of the target's current HP as additional physical damage (up to 60 against creeps and minions).,"Attack Speed:: + 25%
+Attack Damage:: + 35
+Passive:: Devour"
+Magic Blade,"When HP is about to drop below 30%, gains a 280~700 shield (scales with level) and 12 extra Magic Defense for 3s. Cooldown: 40s.","Magic Resistance:: + 24
+Attack Damage:: + 40
+Passive:: Lifeline"
+Fury Hammer,+12 Physical PEN,Attack Damage:: + 35
+Rogue Meteor,0,"Attack Speed:: + 15%
+Critical Chance:: + 10%"
+Ogre Tomahawk,Basic Attack will increase Movement Speed by 10%,"Health:: + 230
+Attack Damage:: + 30
+Passive:: Angry"
+Legion Sword,0,Attack Damage:: + 60
+Swift Crossbow,Each Basic Attack deals 40 extra Adaptive Damage.,Attack Speed:: + 20%
+Regular Spear,0,"Attack Speed:: + 10%
+Attack Damage:: + 20"
+Iron Hunting Bow,0,"Cooldown Reduction:: + 5%
+Attack Damage:: + 10
+Cooldown Reduction:: + 5%"
+Vampire Mallet,0,"Physical Lifesteal:: + 8%
+Attack Damage:: + 8"
+Javelin,0,Critical Chance:: + 8%
+Knife,0,Attack Speed:: + 10%
+Dagger,0,Attack Damage:: + 15
+Power Potion,"Automatically used after purchasing, increases Physical Attack by 30 and Physical Lifesteal by 5% for 120s.",Passive:: Increase Power
+Flask of the Oasis,+12% Healing Effect,"Health:: + 300
+Cooldown Reduction:: + 10%
+Magic Power:: + 60
+Cooldown Reduction:: + 10%
+Passive:: Blessing"
+Genius Wand,+10 Magic PEN,"Magic Power:: + 75
+Movement Speed:: + 5%
+Passive:: Magic"
+Lightning Truncheon,"Every 6s, the next skill echoes, dealing 20-1000 Magic Damage (scales with the hero's Max Mana) to up to 3 enemies..","Mana:: + 300
+Cooldown Reduction:: + 10%
+Magic Power:: + 75
+Cooldown Reduction:: + 10%
+Passive:: Resonate"
+Fleeting Time,Hero kills or assists reduce Ultimate's current cooldown by 30%.,"Mana:: + 350
+Cooldown Reduction:: + 15%
+Magic Power:: + 70
+Cooldown Reduction:: + 15%
+Passive:: Timestream"
+Blood Wings,Gain a Shield equal to 200% Magic Power. Gain another after 30s when it breaks.,"Health:: + 500
+Magic Power:: + 175
+Passive:: Guard"
+Clock of Destiny,Adds 25 HP and 4 Magic Power every 20s. Up to 12 times.,"Health:: + 615
+Mana:: + 600
+Magic Power:: + 60
+Passive:: Time, Reincarnate"
+Starlium Scythe,"Within 3s after casting a skill, the caster's next Basic Attack will deal additional True Damage equal to 100 plus 100% Magic Power and briefly grant 10% Movement Speed. This effect has a 1.5s cooldown.","Mana Regen:: + 6
+Cooldown Reduction:: + 10
+Magic Power:: + 70
+Cooldown Reduction:: + 10
+Passive:: Crisis"
+Glowing Wand,"Skills burn the target for 3s, dealing 1.5% of their Max HP as Magic Damage per second and increasing their Magic Damage taken by 2-4 (up to 6 stacks).","Health:: + 400
+Magic Power:: + 75
+Movement Speed:: + 5%
+Passive:: Scorch"
+Ice Queen Wand,Skills that deal damage to an enemy hero will slow them by 15%. This effect lasts 3s. Stacks up to 2 times.,"Health:: + 300
+Magic Power:: + 75
+Movement Speed:: + 7%
+Passive:: Ice Bound"
+Concentrated Energy,+25% Magic Lifesteal,"Health:: + 700
+Magic Power:: + 70
+Passive:: Recharge"
+Holy Crystal,Increases Magic Power by 21%~35% (Scales with level).,"Magic Power:: + 100
+Passive:: Mystery"
+Divine Glaive,+35% Magic PEN,"Magic Power:: + 65
+Passive:: Spellbreaker"
+Necklace of Durance,"Upon dealing damage to the target, reduces Shield and HP Regen of the target by 50% for 3s.","Magical Lifesteal:: + 10%
+Cooldown Reduction:: + 5%
+Magic Power:: + 60
+Cooldown Reduction:: + 5%
+Passive:: Life Drain"
+Feather of Heaven,Basic Attacks deal extra Magic Damage equal to 50 plus 30% Magic Power.,"Attack Speed:: + 30%
+Cooldown Reduction:: + 5%
+Magic Power:: + 55
+Cooldown Reduction:: + 5%
+Passive:: Affliction"
+Winter Truncheon,"Freeze upon using. The hero can't do anything but will be immune to all DMG and debuff. Last 2s, CD 100s.","Health:: + 400
+Armor:: + 25
+Magic Power:: + 60
+Active:: Frozen"
+Enchanted Talisman,Regenerates 15% of Max Mana every 10s in total.,"Health:: + 250
+Cooldown Reduction:: + 20%
+Magic Power:: + 50
+Cooldown Reduction:: + 20%
+Passive:: Mana Spring, Magic Mastery"
+Elegant Gem,Regens 20% HP and Mana within 2s of leveling up.,"Health:: + 300
+Mana:: + 380
+Passive:: Gift"
+Exotic Veil,0,"Magic Power:: + 30
+Movement Speed:: + 5%"
+Azure Blade,"In 3s after using the skill, the caster's next Basic Attack will deal additional 50 True Damage with a cooldown of 1.5s.","Mana Regen:: + 5
+Cooldown Reduction:: + 5%
+Cooldown Reduction:: + 5%
+Passive:: Judgement"
+Tome of Evil,0,"Mana Regen:: + 4
+Cooldown Reduction:: + 8%
+Magic Power:: + 35
+Cooldown Reduction:: + 8%"
+Magic Wand,0,Magic Power:: + 45
+Mystic Container,0,"Magical Lifesteal:: + 10%
+Magic Power:: + 15"
+Book of Sages,0,"Cooldown Reduction:: + 5%
+Magic Power:: + 8
+Cooldown Reduction:: + 5%"
+Magic Necklace,0,Mana Regen:: + 2
+Power Crystal,0,Mana:: + 280
+Mystery Codex,0,Magic Power:: + 15
+Lantern of Hope,The equipment's attributes scale with hero level.,"Cooldown Reduction:: + 4%
+Magic Power:: + 20
+Cooldown Reduction:: + 4%
+Movement Speed:: + 4%
+Passive:: Lantern of Hope"
+Flower of Hope,"Every 6s, a skill or Basic Attack deals 60(+30% Total Physical Attack)(+30% Total Magic Power) extra Magic Damage.",Passive:: Flower of Hope
+Magic Potion,"Automatically used after purchasing, increases Magic Power by 30 and Cooldown Reduction by 5% for 120s.",Passive:: Increase Power
+Throw Forbidden,Purchase this item and you will be immune when inflicted by an allied Jawhead.,Passive:: Heavy Mountain
+Allow Throw,Purchase to allow your Jawhead teammate to fling you.,Passive:: Trust
+Broken Heart,"After purchasing, Cecilion will not be able to use Moonlit Waltz on you during this game.",Passive:: Heart Broken
+Radiant Armor,"Increases own Magic Damage Reduction by 5-8 upon taking Magic Damage (scales with level), lasting for 3s and capped at 6 stacks.","Health:: + 950
+Health Regen:: + 12
+Magic Resistance:: + 52
+Passive:: Holy Blessing"
+Twilight Armor,"Every 1.5s, the next attack deals extra Magic Damage equal to 35 plus 5% of the hero's Extra HP.","Health:: + 1200
+Armor:: + 20
+Passive:: Twilight"
+Brute Force Breastplate,"Casting a skill or using Basic Attacks will increase Movement Speed by 2%, Physical & Magic Defense by 4. Lasts 4s. Stacks up to 5 times.","Armor:: + 45
+Passive:: Brute Force"
+Immortality,Resurrect 2.5s upon death and gets 16% Max HP and 220-1200 shield that lasts for 3s. (Scales with hero level) This effect has a CD of 210s.,"Health:: + 800
+Armor:: + 20
+Passive:: Immortal"
+Dominance Ice,+10% CD Reduction,"Mana:: + 500
+Armor:: + 70
+Movement Speed:: + 5%
+Passive:: Arctic Cold"
+Athena's Shield,Can be triggered when taking Magic Damage. Reduces Magic Damage taken by 25% for 3s (including the Magic Damage that triggers this effect). You will be able to trigger this effect again after leaving combat for 10s.,"Health:: + 900
+Health Regen:: + 2
+Magic Resistance:: + 62
+Passive:: Shield"
+Oracle,Raise shield absorption and HP regen effect by 30%.,"Health:: + 850
+Magic Resistance:: + 42
+Cooldown Reduction:: + 10%
+Cooldown Reduction:: + 10%
+Passive:: Bless"
+Antique Cuirass,"When hit by an enemy hero's skill, reduces their Physical ATK by 8% for 2s (up to 3 stacks).","Health:: + 920
+Health Regen:: + 4
+Armor:: + 54
+Passive:: Deter"
+Guardian Helmet,Regenerates 2.5% Max HP per second (reduced to 0.5% Max HP per second over 5s after taking damage).,"Health:: + 1550
+Health Regen:: + 20
+Passive:: Recovery"
+Cursed Helmet,Deals Magic Damage equal to 1.2% of hero's Max HP per second to nearby enemies. This damage is increased by 150% against minions.,"Health:: + 1200
+Magic Resistance:: + 25
+Passive:: Burning Soul"
+Thunder Belt,"In 3s after using the skill, the caster's next Basic Attack will deal True Damage as much as 50 plus 5% of the caster's Extra Max HP to the enemy target and surrounding units and slow them by 40-80% (increases with the caster's Extra Max HP) for 1s. This effect has a 1.5s cooldown.","Health:: + 800
+Mana Regen:: + 6
+Armor:: + 40
+Cooldown Reduction:: + 10%
+Cooldown Reduction:: + 10%
+Passive:: Thunderbolt"
+Queen's Wings,Reduces damage taken by 20% when health is less than 40% and increases your Spell Vamp by 35% for 5s. This effect has a cooldown of 60s.,"Health:: + 900
+Cooldown Reduction:: + 10%
+Attack Damage:: + 15
+Cooldown Reduction:: + 10%
+Passive:: Demonize"
+Blade Armor,+20% Crit Damage Reduction,"Armor:: + 90
+Passive:: Bladed Armor"
+Steel Legplates,0,Armor:: + 45
+Dreadnaught Armor,"When attacked by an enemy hero's skill, reduces their Physical ATK by 5% for 2s (up to 3 stacks).","Armor:: + 40
+Passive:: Deter"
+Black Ice Shield,0,"Mana:: + 400
+Armor:: + 22
+Cooldown Reduction:: + 10%
+Cooldown Reduction:: + 10%"
+Silence Robe,0,"Health:: + 540
+Magic Resistance:: + 30"
+Molten Essence,Deals Magic Damage equal to 0.8% of hero's Max HP per second to nearby enemies. This damage is increased by 150% against minions.,"Health:: + 540
+Passive:: Burning Soul"
+Ares Belt,0,Health:: + 770
+Hero's Ring,0,"Health:: + 150
+Cooldown Reduction:: + 5%
+Cooldown Reduction:: + 5%"
+Healing Necklace,0,Health Regen:: + 4
+Magic Resist Cloak,0,Magic Resistance:: + 18
+Leather Jerkin,0,Armor:: + 18
+Vitality Crystal,0,Health:: + 230
+Rock Potion,"Automatically used after purchasing, increases Max HP by 500 and reduces duration of being controlled by 15% for 120s",Passive:: Increase Power
+Demon Shoes,"Eliminations of enemy heroes and assists regenerates hero’s mana by 10%, while eliminating minions regenerates 4% of the hero’s mana.","Mana Regen:: + 6
+Movement Speed:: + 40
+Passive:: Mysticism"
+Rapid Boots,Dealing or taking damage slows hero's movement speed by 40 for 5s.,"Movement Speed:: + 80
+Passive:: Side Effect"
+Swift Boots,"After dealing damage to a creep, deals (+2*Hero Level)(+2%Total HP) True Damage to the target over 3s (damage is increased by 100% for non-marksmen).","Attack Speed:: + 15%
+Movement Speed:: + 40"
+Arcane Boots,"After dealing damage to a creep, deals (+2*Hero Level)(+2%Total HP) True Damage to the target over 3s (damage is increased by 100% for non-marksmen).","Magical Penetration:: + 10
+Movement Speed:: + 40"
+Magic Shoes,"After dealing damage to a creep, deals (+2*Hero Level)(+2%Total HP) True Damage to the target over 3s (damage is increased by 100% for non-marksmen).","Cooldown Reduction:: + 10%
+Cooldown Reduction:: + 10%
+Movement Speed:: + 40"
+Tough Boots,Duration of being controlled reduced by 30%.,"Magic Resistance:: + 22
+Movement Speed:: + 40
+Passive:: Fortitude"
+Warrior Boots,"For each Basic Attack received, gains 5 extra Physical Defense (up to 25) for 3s.","Armor:: + 22
+Movement Speed:: + 40
+Passive:: Valor"
+Boots,0,Movement Speed:: + 20
+Flame Retribution,"Retribution damage dealth to creeps or minions is increased to 150%. Can be used against heroes, dealing 100 True Damage and absorbing 58-100 Physical Attack and Magic Power from the target over 5s (scales with level).
+
+
+Only when total creep kills, hero kills, or hero kill assists reach 5 can Retribution be upgraded.",
+Ice Retribution,"Retribution damage dealth to creeps or minions is increased to 150%. Can be used against heroes, dealing 100 True Damage and absorbing 72-100 Movement Speed from the target over 5s (scales with level).
+
+
+Only when total creep kills, hero kills, or hero kill assists reach 5 can Retribution be upgraded.",
+Bloody Retribution,"Damage against minions or creeps is increased to 150%. Can be cast on enemy heroes, dealing 100 True Damage and absorbing HP equal to 250 plus 20% of the caster's extra HP from the target over 5s.
+
+
+Only when total creep kills, hero kills, or hero kill assists reach 5 can Retribution be upgraded.",
+Encourage,"Increases nearby allies heroes' Physical Attack and Magic Power by 12-30 (scales with Gold from Thriving) and Attack and Movement Speed by 15%.
+
+
+After purchase, you can no longer gain Gold and EXP from minions and creeps and must collect 600 Gold from Roaming Equipment to unlock this skill (up to 1500 Gold).",
+Favor,"Every 10s, the next healing or shield skill restores an extra 300-750 HP (scales with Gold from Thriving) for the allied hero with the lowest HP within 5 yards. Skills that only take effect on self cannot trigger this effect.
+
+
+After purchase, you can no longer gain Gold and EXP from minions and creeps and must collect 600 Gold from Roaming Equipment to unlock this skill (up to 1500 Gold).",
+Dire Hit,"Every 30s, the next damage that will make an enemy hero's HP drop below 35% deals extra damage equal to 7%-18% of the target's Max HP (hybrid damage, scales with Gold from Thriving).
+
+
+After purchase, you can no longer gain Gold and EXP from minions and creeps and must collect 600 Gold from Roaming Equipment to unlock this skill (up to 1500 Gold).",
+Conceal,"Conceals nearby allied heroes and increases their Movement Speed by 30%-75% (scales with Gold from Thriving) for 5s or until they deal or take damage.
+
+
+After purchase, you can no longer gain Gold and EXP from minions and creeps and must collect 600 Gold from Roaming Equipment to unlock this skill (up to 1500 Gold).",
