@@ -360,6 +360,12 @@ document.addEventListener("DOMContentLoaded", function () {
         handleShortcut(key);
     });
 
+        // Event listener for export button
+    document.getElementById("export-Match").addEventListener("click", function () {
+        const csvContent = tableToCSV("match-table");
+        downloadCSV("combined-marks.csv", csvContent);
+    });
+
     const tableBody1 = document.getElementById("mark-table-body");
     const tableBody2 = document.getElementById("mark-table-body-2");
 
@@ -377,8 +383,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 player: currentPlayer,
                 time: currentFormattedTime,
             });
+            
 
             renderMarks(player1Marks, tableBody1);
+            renderCombinedMarks();
         }
     });
 
@@ -398,9 +406,19 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             renderMarks(player2Marks, tableBody2);
+            renderCombinedMarks();
         }
     });
 
+     // Function to combine and render marks from both players
+     function renderCombinedMarks() {
+        const combinedMarks = [...player1Marks, ...player2Marks];
+        combinedMarks.sort((a, b) => a.time.localeCompare(b.time));
+    
+        renderMarks(combinedMarks, document.getElementById("match-table-body"));
+    }   
+
+    // Modify renderMarks function to accept the target table body
     function renderMarks(marks, tableBody) {
         while (tableBody.firstChild) {
             tableBody.removeChild(tableBody.firstChild);

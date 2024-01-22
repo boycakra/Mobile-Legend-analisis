@@ -1128,3 +1128,43 @@ img {
     left: 25%;
     background: white;
 }
+
+#full {
+    display: flex;
+}
+
+#stats {
+    flex: 1;
+    padding: 20px;
+}
+
+.match-container {
+    overflow-x: auto;
+}
+
+#match-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#match-table th, #match-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#export-Match {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#export-Match:hover {
+    background-color: #45a049;
+}
+
