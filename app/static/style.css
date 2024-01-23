@@ -577,7 +577,7 @@ img {
 }
 
 
-.jab-mark-circle {
+.Inisiasi-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -586,7 +586,7 @@ img {
     pointer-events: none; 
 }
 
-.jab-Fail-mark-circle {
+.Inisiasi-Fail-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -595,7 +595,7 @@ img {
     border: 2px solid blue;
     pointer-events: none; 
 }
-.jab-assisted-mark-circle {
+.Inisiasi-assisted-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;                 /* Makes it a circle */
@@ -606,7 +606,7 @@ img {
 }
 
 /* Vertical line of the Exp-lanehair */
-.jab-assisted-mark-circle::before {
+.Inisiasi-assisted-mark-circle::before {
     content: "";
     position: absolute;
     top: 0;
@@ -618,7 +618,7 @@ img {
 }
 
 /* Horizontal line of the Exp-lanehair */
-.jab-assisted-mark-circle::after {
+.Inisiasi-assisted-mark-circle::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -630,7 +630,7 @@ img {
 }
 
 /* For Buff-Merah-mark-circle */
-.jabBuff-Merah-mark-circle {
+.InisiasiBuff-Merah-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -640,7 +640,7 @@ img {
     pointer-events: none; 
 }
 
-.jabBuff-Merah-mark-circle::before {
+.InisiasiBuff-Merah-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -653,7 +653,7 @@ img {
 }
 
 /* For Death-mark-circle */
-.jab-Death-mark-circle {
+.Inisiasi-Death-mark-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -662,7 +662,7 @@ img {
     pointer-events: none; 
 }
 
-.jab-Death-mark-circle::before {
+.Inisiasi-Death-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -1110,7 +1110,7 @@ img {
     background: gray;
     position: absolute;
 }
-.jabBuff-lord-mark-square {
+.InisiasiBuff-lord-mark-square {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -1119,7 +1119,7 @@ img {
     pointer-events: none;
 }
 
-.jabBuff-lord-mark-square::before {
+.InisiasiBuff-lord-mark-square::before {
     content: "";
     width: 50%;
     height: 50%;

@@ -76,9 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (currentMove === "Roamer-lane") {
                 markingCircleClass = "Roamer-lane-mark-innercircle";
                 valueDisplays[currentPlayer].innerHTML = "Value: Roamer-lane";
-            } else if (currentMove === "jab") {
-                markingCircleClass = "jab-mark-circle";
-                valueDisplays[currentPlayer].innerHTML = "Value: jab";
+            } else if (currentMove === "Inisiasi") {
+                markingCircleClass = "Inisiasi-mark-circle";
+                valueDisplays[currentPlayer].innerHTML = "Value: Inisiasi";
             }
         };
     }
@@ -107,14 +107,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("Mid-lane").addEventListener("click", boxingMoveHandler("Player", "Mid-lane"));
     document.getElementById("Exp-lane").addEventListener("click", boxingMoveHandler("Player", "Exp-lane"));
-    document.getElementById("jab").addEventListener("click", boxingMoveHandler("Player", "jab"));
+    document.getElementById("Inisiasi").addEventListener("click", boxingMoveHandler("Player", "Inisiasi"));
     document.getElementById("Roamer-lane").addEventListener("click", boxingMoveHandler("Player", "Roamer-lane"));
     document.getElementById("gold-lane").addEventListener("click", boxingMoveHandler("Player", "gold-lane"));
     document.getElementById("Jungler-line").addEventListener("click", boxingMoveHandler("Player", "Jungler-line"));
 
     document.getElementById("Mid-laneplayer2").addEventListener("click", boxingMoveHandler("Player2", "Mid-lane"));
     document.getElementById("Exp-lanep2").addEventListener("click", boxingMoveHandler("Player2", "Exp-lane"));
-    document.getElementById("jabplayer2").addEventListener("click", boxingMoveHandler("Player2", "jab"));
+    document.getElementById("Inisiasiplayer2").addEventListener("click", boxingMoveHandler("Player2", "Inisiasi"));
     document.getElementById("Roamer-lanep2").addEventListener("click", boxingMoveHandler("Player2", "Roamer-lane"));
     document.getElementById("gold-lanep2").addEventListener("click", boxingMoveHandler("Player2", "gold-lane"));
     document.getElementById("Jungler-linep2").addEventListener("click", boxingMoveHandler("Player2", "Jungler-line"));
@@ -315,8 +315,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     valueDisplays[currentPlayer].innerHTML = `Value: Buff-biru ${currentMove}`;
                 }
                 break;
-            case "n":
-            case "N":
+            case "j":
+            case "J":
                 // "K" key is pressed, perform Kill action
                 if (marking && currentPlayer && currentMove) {
                     markingCircleClass = `${currentMove}Buff-lord-mark-square`;
@@ -324,8 +324,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
                 break;
             
-            case "m":
-            case "M":
+            case "k":
+            case "K":
                 // "M" key is pressed, perform Turtle action
                 if (marking && currentPlayer && currentMove) {
                     const moveClassMap = {
@@ -341,6 +341,32 @@ document.addEventListener("DOMContentLoaded", function () {
                     const time = timerDisplay.textContent;
                     addDataToTable(time, currentPlayer, currentMove);
                 }
+                break;
+           
+            case "q":
+            case "Q":
+                // "Q" key is pressed, perform Mid-lane action for Player 2
+                boxingMoveHandler("Player2", "Mid-lane")();
+                break;
+            case "w":
+            case "W":
+                // "W" key is pressed, perform gold-lane action for Player 2
+                boxingMoveHandler("Player2", "gold-lane")();
+                break;
+            case "e":
+            case "E":
+                // "E" key is pressed, perform Exp-lane action for Player 2
+                boxingMoveHandler("Player2", "Exp-lane")();
+                break;
+            case "r":
+            case "R":
+                // "R" key is pressed, perform Roamer-lane action for Player 2
+                boxingMoveHandler("Player2", "Roamer-lane")();
+                break;
+            case "t":
+            case "T":
+                // "T" key is pressed, perform Jungler-line action for Player 2
+                boxingMoveHandler("Player2", "Jungler-line")();
                 break;
             // Add more cases for other shortcuts as needed
             // For example:
