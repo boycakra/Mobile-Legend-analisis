@@ -72,6 +72,7 @@
     position: relative;
 }
 
+
 #stats {
     display: flex;
     justify-content: space-between;
@@ -84,25 +85,21 @@
     width: 50%;
 }
 
-#player1-table {
-    margin-left: 0%;
-    width: 100%;
-    justify-content: space-between;
-    display: grid;
-    margin-right: auto;
-}
-
+#player1-table,
 #player2-table {
-    margin-left: 0%;
     width: 100%;
     justify-content: space-between;
     display: grid;
-    margin-right: auto;
+    margin-top: 10px; /* Adjust as needed */
 }
 
-thead,
-tbody {
-    display: assisted;
+#player1-table th,
+#player2-table th,
+#player1-table td,
+#player2-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
 }
 
 #mark-table-body,
@@ -1168,3 +1165,6 @@ img {
     background-color: #45a049;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
