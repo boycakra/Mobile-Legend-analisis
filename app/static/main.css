@@ -1,0 +1,222 @@
+#video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: red;
+}
+#controls {
+    width: 50%;
+    margin: 10px auto; /* Center the controls horizontally with equal margins on the left and right */
+    align-items: center;
+}
+
+
+#skip-backward, #skip-forward {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+#timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Adjust the margin as needed for spacing */
+}
+
+/* Add any additional styles for #timer-container here */
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: red;
+}
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Membagi lebar container menjadi dua bagian */
+    height: 300px; /* Sesuaikan dengan tinggi gambar */
+}
+
+#image1,
+#image2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: aqua;
+    position: relative;
+}
+
+
+#stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px auto;
+}
+
+#stats1,
+#stats2 {
+    width: 50%;
+}
+
+#player1-table,
+#player2-table {
+    width: 100%;
+    justify-content: space-between;
+    display: grid;
+    margin-top: 10px; /* Adjust as needed */
+}
+
+#player1-table th,
+#player2-table th,
+#player1-table td,
+#player2-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#mark-table-body,
+#mark-table-body-2 {
+    height: 224px;
+    width: 110%;
+    overflow: auto;
+}
+
+/* Footer - Title and button */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px auto;
+}
+#stats1-now,
+#stats2-now {
+    width: 50%;
+}
+
+#fighter1,
+#fighter2 {
+    margin: 10px;
+}
+
+
+/* Table stats player kiri & kanan */
+#stats-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#stats-table th,
+#stats-table td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding-right: 25px;
+}
+/* CSS for table container with horizontal scroll */
+.table-container {
+    width: 100%; /* Adjust the width as needed */
+    max-height: 200px;
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent line breaks in table cells */
+}
+.table-container table {
+    overflow-x: auto;
+}
+
+
+#stats-table th {
+    background-color: #f2f2f2;
+}
+
+/* ========== Pemisah antar 2 gambar */
+#image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style untuk gambar */
+.image-wrapper {
+    margin-right: 10px;
+}
+
+/* Style untuk elemen gambar */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#full {
+    display: flex;
+}
+
+#stats {
+    flex: 1;
+    padding: 20px;
+}
+
+.match-container {
+    overflow-x: auto;
+}
+
+#match-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#match-table th, #match-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#export-Match {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#export-Match:hover {
+    background-color: #45a049;
+}
+
+.with-dropdowns {
+    display: inline-block;
+}
+
+.dropdownLeft,
+.dropdownRight {
+    width: calc(10% - 20px); /* Adjust the width and margin as needed */
+}

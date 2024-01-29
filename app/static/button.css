@@ -1,0 +1,954 @@
+
+/* Mid Lane Turtle Mark Circle */
+.mid-lane-turtle-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, blue 40%, transparent 40%);
+    border: 2px solid orange;
+    pointer-events: none; 
+}
+
+.mid-lane-turtle-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: blue; /* Add a mark similar to Buff biru */
+}
+
+/* Gold Lane Turtle Mark Circle */
+.gold-lane-turtle-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, rgb(100, 150, 200) 40%, transparent 40%);
+    border: 2px solid purple;
+    pointer-events: none; 
+}
+
+.gold-lane-turtle-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white; /* Add a mark similar to Buff biru */
+}
+
+/* Exp Lane Turtle Mark Circle */
+.exp-lane-turtle-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, green 40%, transparent 40%);
+    border: 2px solid yellow;
+    pointer-events: none; 
+}
+
+.exp-lane-turtle-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white; /* Add a mark similar to Buff biru */
+}
+
+/* Roamer Lane Turtle Mark Circle */
+.roamer-lane-turtle-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, pink 40%, transparent 40%);
+    border: 2px solid red;
+    pointer-events: none; 
+}
+
+.roamer-lane-turtle-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white; /* Add a mark similar to Buff biru */
+}
+
+/* Jungle Lane Turtle Mark Circle */
+.jungle-lane-turtle-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, green 40%, transparent 40%);
+    border: 2px solid green;
+    pointer-events: none; 
+}
+
+.jungle-lane-turtle-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white; /* Add a mark similar to Buff biru */
+}
+
+
+
+
+
+/* Mark circle - sebagai penanda user ngeklik  */
+.lead-uppercut-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    pointer-events: none; 
+}
+
+.Mid-lane-Fail-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, red 40%, transparent 40%);
+    border: 2px solid red;
+    pointer-events: none; 
+}
+.Mid-lane-assisted-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;                 /* Makes it a circle */
+    border: 2px solid red;        /* Border around the circle */
+    position: relative;                 /* Enables absolute positioning of inner elements */
+    background-color: transparent;      /* Making the background transparent, so only the border is visible */
+    pointer-events: none; 
+}
+
+/* Vertical line of the Exp-lanehair */
+.Mid-lane-assisted-mark-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background-color: red;
+    transform: translateX(-50%);        /* Centering the line */
+}
+
+/* Horizontal line of the Exp-lanehair */
+.Mid-lane-assisted-mark-circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: red;
+    transform: translateY(-50%);        /* Centering the line */
+}
+/* For Buff-Merah-mark-circle */
+.Mid-laneBuff-Merah-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, red 40%, transparent 40%);
+    border: 2px solid red;
+    pointer-events: none; 
+}
+
+.Mid-laneBuff-Merah-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For Buff-biru-mark-circle */
+.Mid-laneBuff-biru-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, red 40%, transparent 40%);
+    border: 2px solid yellow;
+    pointer-events: none; 
+}
+
+.Mid-laneBuff-biru-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For Buff-lord-mark-square */
+.Mid-laneBuff-lord-mark-square {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: blue;
+    border: 2px solid yellow;
+    pointer-events: none;
+}
+
+.Mid-laneBuff-lord-mark-square::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background: white;
+}
+
+
+/* For Death-mark-circle */
+.Mid-lane-Death-mark-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid red;
+    pointer-events: none; 
+}
+
+.Mid-lane-Death-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid red;
+}
+
+.rear-uppercut-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(155, 120, 107);
+    position: absolute;
+    pointer-events: none; 
+}
+.gold-lane-Fail-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, rgb(155, 120, 107) 40%, transparent 40%);
+    border: 2px solid rgb(155, 120, 107);
+    pointer-events: none; 
+}
+.gold-lane-assisted-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;                 /* Makes it a circle */
+    border: 2px solid rgb(155, 120, 107);        /* Border around the circle */
+    position: relative;                 /* Enables absolute positioning of inner elements */
+    background-color: transparent;      /* Making the background transparent, so only the border is visible */
+    pointer-events: none; 
+}
+
+/* Vertical line of the Exp-lanehair */
+.gold-lane-assisted-mark-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background-color: rgb(155, 120, 107);
+    transform: translateX(-50%);        /* Centering the line */
+}
+
+/* Horizontal line of the Exp-lanehair */
+.gold-lane-assisted-mark-circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(155, 120, 107);
+    transform: translateY(-50%);        /* Centering the line */
+}
+
+
+/* For Buff-Merah-mark-circle */
+.gold-laneBuff-Merah-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  rgb(155, 120, 107) 40%, transparent 40%);
+    border: 2px solid  rgb(155, 120, 107);
+    pointer-events: none; 
+}
+
+.gold-laneBuff-Merah-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For Buff-biru-mark-circle */
+.gold-laneBuff-biru-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  rgb(155, 120, 107) 40%, transparent 40%);
+    border: 2px solid  yellow;
+    pointer-events: none; 
+}
+
+.gold-laneBuff-biru-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For Buff-lord-mark-square */
+.gold-laneBuff-lord-mark-square {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: blue;
+    border: 2px solid yellow;
+    pointer-events: none;
+}
+
+.gold-laneBuff-lord-mark-square::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background: white;
+}
+
+
+/* For Death-mark-circle */
+.gold-lane-Death-mark-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid  rgb(155, 120, 107);
+    pointer-events: none; 
+}
+
+.gold-lane-Death-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid  rgb(155, 120, 107);
+}
+
+
+.Inisiasi-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: blue; /* Set the background color to blue */
+    position: absolute;
+    pointer-events: none; 
+}
+
+.Inisiasi-Fail-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, blue 40%, transparent 40%);
+    border: 2px solid blue;
+    pointer-events: none; 
+}
+.Inisiasi-assisted-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;                 /* Makes it a circle */
+    border: 2px solid blue;        /* Border around the circle */
+    position: relative;                 /* Enables absolute positioning of inner elements */
+    background-color: transparent;      /* Making the background transparent, so only the border is visible */
+    pointer-events: none; 
+}
+
+/* Vertical line of the Exp-lanehair */
+.Inisiasi-assisted-mark-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background-color:blue;
+    transform: translateX(-50%);        /* Centering the line */
+}
+
+/* Horizontal line of the Exp-lanehair */
+.Inisiasi-assisted-mark-circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: blue;
+    transform: translateY(-50%);        /* Centering the line */
+}
+
+/* For Buff-Merah-mark-circle */
+.InisiasiBuff-Merah-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  blue 40%, transparent 40%);
+    border: 2px solid  blue;
+    pointer-events: none; 
+}
+
+.InisiasiBuff-Merah-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For Death-mark-circle */
+.Inisiasi-Death-mark-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid  blue;
+    pointer-events: none; 
+}
+
+.Inisiasi-Death-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid  blue;
+}
+
+
+
+.croos-mark-innercircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: yellow;
+    position: absolute;
+    pointer-events: none; 
+}
+
+.Exp-lane-Fail-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, yellow 40%, transparent 40%);
+    border: 2px solid yellow;
+    pointer-events: none; 
+}
+.Exp-lane-assisted-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;                 /* Makes it a circle */
+    border: 2px solid yellow;        /* Border around the circle */
+    position: relative;                 /* Enables absolute positioning of inner elements */
+    background-color: transparent;      /* Making the background transparent, so only the border is visible */
+    pointer-events: none; 
+}
+
+/* Vertical line of the Exp-lanehair */
+.Exp-lane-assisted-mark-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background-color:yellow;
+    transform: translateX(-50%);        /* Centering the line */
+}
+
+/* Horizontal line of the Exp-lanehair */
+.Exp-lane-assisted-mark-circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: yellow;
+    transform: translateY(-50%);        /* Centering the line */
+}
+
+
+
+/* For Buff-Merah-mark-circle */
+.Exp-laneBuff-Merah-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  yellow 40%, transparent 40%);
+    border: 2px solid  yellow;
+    pointer-events: none; 
+}
+
+.Exp-laneBuff-Merah-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For Buff-Merah-mark-circle */
+.Exp-laneBuff-biru-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  yellow 40%, transparent 40%);
+    border: 2px solid  yellow;
+    pointer-events: none; 
+}
+
+.Exp-laneBuff-biru-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+.Exp-laneBuff-lord-mark-square {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: blue;
+    border: 2px solid yellow;
+    pointer-events: none;
+}
+
+.Exp-laneBuff-lord-mark-square::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background: white;
+}
+
+
+/* For Death-mark-circle */
+.Exp-lane-Death-mark-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid  yellow;
+    pointer-events: none; 
+}
+
+.Exp-lane-Death-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid  yellow;
+}
+
+
+
+.Roamer-lane-mark-innercircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: green;
+    position: absolute;
+    pointer-events: none; 
+}
+
+.Roamer-lane-Fail-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, green 40%, transparent 40%);
+    border: 2px solid green;
+    pointer-events: none; 
+}
+.Roamer-lane-assisted-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;                 /* Makes it a circle */
+    border: 2px solid green;        /* Border around the circle */
+    position: relative;                 /* Enables absolute positioning of inner elements */
+    background-color: transparent;      /* Making the background transparent, so only the border is visible */
+    pointer-events: none; 
+}
+
+/* Vertical line of the Exp-lanehair */
+.Roamer-lane-assisted-mark-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background-color:green;
+    transform: translateX(-50%);        /* Centering the line */
+}
+
+/* Horizontal line of the Exp-lanehair */
+.Roamer-lane-assisted-mark-circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: green;
+    transform: translateY(-50%);        /* Centering the line */
+}
+
+
+/* For Buff-Merah-mark-circle */
+.Roamer-laneBuff-Merah-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  green 40%, transparent 40%);
+    border: 2px solid  green;
+    pointer-events: none; 
+}
+
+.Roamer-laneBuff-Merah-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+/* For Buff-Merah-mark-circle */
+.Roamer-laneBuff-biru-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  green 40%, transparent 40%);
+    border: 2px solid  yellow;
+    pointer-events: none; 
+}
+
+.Roamer-laneBuff-biru-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+.Roamer-laneBuff-lord-mark-square {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: blue;
+    border: 2px solid yellow;
+    pointer-events: none;
+}
+
+.Roamer-laneBuff-lord-mark-square::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background: white;
+}
+
+/* For Death-mark-circle */
+.Roamer-lane-Death-mark-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid  green;
+    pointer-events: none; 
+}
+
+.Roamer-lane-Death-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid  green;
+}
+
+
+
+.Jungler-line-mark-innercircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: greenyellow;
+    position: absolute;
+    pointer-events: none; 
+}
+
+.Jungler-line-Fail-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, greenyellow 40%, transparent 40%);
+    border: 2px solid greenyellow;
+    pointer-events: none; 
+}
+.Jungler-line-assisted-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;                 /* Makes it a circle */
+    border: 2px solid greenyellow;        /* Border around the circle */
+    position: relative;                 /* Enables absolute positioning of inner elements */
+    background-color: transparent;      /* Making the background transparent, so only the border is visible */
+    pointer-events: none; 
+}
+
+/* Vertical line of the Exp-lanehair */
+.Jungler-line-assisted-mark-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background-color:greenyellow;
+    transform: translateX(-50%);        /* Centering the line */
+}
+
+/* Horizontal line of the Exp-lanehair */
+.Jungler-line-assisted-mark-circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: greenyellow;
+    transform: translateY(-50%);        /* Centering the line */
+}
+
+
+
+/* For Buff-Merah-mark-circle */
+.Jungler-lineBuff-Merah-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  greenyellow 40%, transparent 40%);
+    border: 2px solid  greenyellow;
+    pointer-events: none; 
+}
+
+.Jungler-lineBuff-Merah-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+/* For Buff-Merah-mark-circle */
+.Jungler-lineBuff-biru-mark-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle,  greenyellow 40%, transparent 40%);
+    border: 2px solid  yellow;
+    pointer-events: none; 
+}
+
+.Jungler-lineBuff-biru-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+.Jungler-lineBuff-lord-mark-square {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: blue;
+    border: 2px solid yellow;
+    pointer-events: none;
+}
+
+.Jungler-lineBuff-lord-mark-square::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background: white;
+}
+
+/* For Death-mark-circle */
+.Jungler-line-Death-mark-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid  greenyellow;
+    pointer-events: none; 
+}
+
+.Jungler-line-Death-mark-circle::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid  greenyellow;
+}
+
+
+
+.default-mark-innercircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: gray;
+    position: absolute;
+}
+.InisiasiBuff-lord-mark-square {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: blue;
+    border: 2px solid yellow;
+    pointer-events: none;
+}
+
+.InisiasiBuff-lord-mark-square::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background: white;
+}
