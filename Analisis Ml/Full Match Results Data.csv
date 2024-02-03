@@ -1,0 +1,571 @@
+Date,Match,Team,Ban,Players,Role Ban,Pick,Role Pick,Order Ban,Order Pick,MVP,Time,Spell,Emblem,Talent 1,Talent 2,Talent 3,K,D,A,Gold,Tower,Lord,Turtle,Buff Biru,Buff Merah
+12-09-2023,1,Fire Flux Esports,Wanwan,Rosa,Marksman,Lylia,Marksman,1,1,0,20:58,Purify,Mage,Inspire,Wilderness Blessing.,Impure Rage,4,2,1,12.9K,6,1,3,11,8
+12-09-2023,1,Fire Flux Esports,Arlott,Alien,Fighter/Assassin,Edith,Tank/Marksman,3,3,0,20:58,Flicker,Tank,Agility,Wilderness Blessing.,Quantum Charge,0,3,4,8.9K,6,1,3,11,8
+12-09-2023,1,Fire Flux Esports,Hilda,Tienzy,Tank/Fighter,Martis,Fighter,5,3,0,20:58,Retribution,Assassin,Thrill,Seasoned Hunter,Killing Spree,1,4,3,12.1K,6,1,3,11,8
+12-09-2023,1,Fire Flux Esports,Angela,APEX47,Support,Lapu-Lapu,Fighter,8,6,0,20:58,Flicker,Fighter,Firmness,Festival of Blood,Concussive Blast,2,4,1,10.8K,6,1,3,11,8
+12-09-2023,1,Fire Flux Esports,Bruno,Sunshine,Marksman,Beatrix,Marksman,10,6,0,20:58,Flicker,Assassin,Rupture,Tenacity,Quantum Charge,1,1,4,14.1K,6,1,3,11,8
+12-09-2023,1,Deus Vult,Nolan,Magistor,Assassin,Baxia,Tank,2,2,0,20:58,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,1,0,12,13.2K,9,2,0,11,13
+12-09-2023,1,Deus Vult,Guinevere,Kid Bomba,Fighter,Terizla,Fighter,4,2,1,20:58,Flicker,Fighter,Agility,Festival of Blood,Brave Smite,2,3,9,12.3,9,2,0,11,13
+12-09-2023,1,Deus Vult,Joy,Sunset Lover,Assassin,Novaria,Mage,6,4,0,20:58,Flicker,Assassin,Rupture,Wilderness Blessing.,Impure Rage,1,0,9,13,9,2,0,11,13
+12-09-2023,1,Deus Vult,Karrie,Carvi,Marksman,Brody,Marksman,7,5,0,20:58,Flicker,Assassin,Thrill,Weapons Master,Quantum Charge,8,1,5,16.3,9,2,0,11,13
+12-09-2023,1,Deus Vult,Ixia,SAWO,Marksman,Diggie,Support,9,7,0,20:58,Flicker,Support,Inspire,Wilderness Blessing.,Impure Rage,2,4,12,10.6,9,2,0,11,13
+12-09-2023,2,Fire Flux Esports,Wanwan,Alien,Marksman,Terizla,Fighter,1,1,0,16:35,Flicker,Fighter,Agility,Festival of Blood,Brave Smite,1,2,9,9.8,9,2,1,10,9
+12-09-2023,2,Fire Flux Esports,Diggie,Rosa,Support,Lylia,Mage,3,3,0,16:35,Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,4,0,8,11.2,9,2,1,10,9
+12-09-2023,2,Fire Flux Esports,Arlott,APEX47,Fighter/Assassin,Tigreal,Tank,5,3,1,16:35,Flicker,Tank,Firmness,Wilderness Blessing.,Quantum Charge,0,1,8,8.2,9,2,1,10,9
+12-09-2023,2,Fire Flux Esports,Lapu-Lapu,Tienzy,Fighter,Fanny,Assassin,8,6,0,16:35,Retribution,Assassin,Swift,Seasoned Hunter,Lethal Ignition,3,0,6,11.9,9,2,1,10,9
+12-09-2023,2,Fire Flux Esports,Valentina,Sunshine,Mage,Beatrix,Marksman,10,6,0,16:35,Flicker,Assassin,Rupture,Tenacity,Quantum Charge,7,0,3,13.8,9,2,1,10,9
+12-09-2023,2,Deus Vult,Joy,Magistor,Assassin,Baxia,Tank,2,2,0,16:35,Retribution,Tank,Firmness,Seasoned Hunter,Quantum Charge,1,3,2,7.7,2,0,1,8,6
+12-09-2023,2,Deus Vult,Guinevere,Carvi,Fighter,Bruno,Marksman,4,2,0,16:35,Purify,Assassin,Fatal,Tenacity,Quantum Charge,1,3,2,10.1,2,0,1,8,6
+12-09-2023,2,Deus Vult,Nolan,SAWO,Assassin,Minotaur,Tank/Support,6,4,0,16:35,Flicker,Tank,Firmness,Wilderness Blessing.,Concussive Blast,0,2,3,6.9,2,0,1,8,6
+12-09-2023,2,Deus Vult,Ixia,Kid Bomba,Marksman,Paquito,Fighter/Assassin,7,5,0,16:35,Sprint,Fighter,Agility,Festival of Blood,Quantum Charge,0,4,1,8.6,2,0,1,8,6
+12-09-2023,2,Deus Vult,Brody,Sunset Lover,Marksman,Faramis,Support/Mage,9,7,0,16:35,Purify,Mage,Agility,Wilderness Blessing.,Concussive Blast,1,3,1,85,2,0,1,8,6
+12-09-2023,3,Deus Vult,Lylia,Magistor,Mage,Nolan,Assassin,1,1,1,11:06,Retribution,Assassin,Thrill,Tenacity,Lethal Ignition,4,0,5,8.9,7,1,2,6,7
+12-09-2023,3,Deus Vult,Joy,Sunset Lover,Assassin,Faramis,Support/Mage,3,3,0,11:06,Flicker,Mage,Agility,Wilderness Blessing.,Lethal Ignition,2,2,6,6.3,7,1,2,6,7
+12-09-2023,3,Deus Vult,Terizla,Carvi,Fighter,Bruno,Marksman,5,3,0,11:06,Flicker,Marskman,Fatal,Tenacity,Quantum Charge,4,0,2,8.5,7,1,2,6,7
+12-09-2023,3,Deus Vult,Fanny,Kid Bomba,Assassin,Kaja,Support/Fighter,8,6,0,11:06,Flicker,Common,Agility,Wilderness Blessing.,Quantum Charge,0,1,7,5.5,7,1,2,6,7
+12-09-2023,3,Deus Vult,Ixia,SAWO,Marksman,Dyrroth,Fighter,10,6,0,11:06,Flicker,Tank,Rupture,Festival of Blood,Quantum Charge,3,2,9,6.7,7,1,2,6,7
+12-09-2023,3,Fire Flux Esports,Diggie,APEX47,Support,Hilda,Tank/Fighter,2,2,0,11:06,Flicker,Tank,Agility,Wilderness Blessing.,Brave Smite,2,3,1,4.4,3,0,1,6,4
+12-09-2023,3,Fire Flux Esports,Guinevere,Rosa,Fighter,Valentina,Mage,4,2,0,11:06,Flicker,Mage,Rupture,Wilderness Blessing.,Quantum Charge,0,1,4,5.9,3,0,1,6,4
+12-09-2023,3,Fire Flux Esports,Wanwan,Alien,Marksman,Khaleed,Fighter,6,4,0,11:06,Flicker,Assassin,Agility,Master Assassin,Lethal Ignition,1,5,2,5.4,3,0,1,6,4
+12-09-2023,3,Fire Flux Esports,Arlott,Sunshine,Fighter/Assassin,Irithel,Marksman,7,5,0,11:06,Sprint,Assassin,Fatal,Tenacity,Quantum Charge,1,1,0,7,3,0,1,6,4
+12-09-2023,3,Fire Flux Esports,Tigreal,Tienzy,Tank,Aamon,Assassin,9,7,0,11:06,Retribution,Assassin,Swift,Seasoned Hunter,Quantum Charge,1,3,1,7,3,0,1,6,4
+12-09-2023,4,Fire Flux Esports,Wanwan,Tienzy,Marksman,Guinevere,Fighter,1,1,0,21:21,Retribution,Mage,Swift,Seasoned Hunter,Impure Rage,1,5,3,11,3,0,3,8,8
+12-09-2023,4,Fire Flux Esports,Arlott,Rosa,Fighter/Assassin,Novaria,Mage,3,3,0,21:21,Flicker,Assassin,Rupture,Wilderness Blessing.,Impure Rage,2,1,3,12.5,3,0,3,8,8
+12-09-2023,4,Fire Flux Esports,Terizla,APEX47,Fighter,Tigreal,Fighter,5,3,0,21:21,Flicker,Tank,Firmness,Wilderness Blessing.,Quantum Charge,0,4,3,8.8,3,0,3,8,8
+12-09-2023,4,Fire Flux Esports,Bruno,Alien,Marksman,Thamuz,Fighter,8,6,0,21:21,Vengeance,Fighter,Swift,Festival of Blood,Brave Smite,1,4,2,12.9,3,0,3,8,8
+12-09-2023,4,Fire Flux Esports,Claude,Sunshine,Marksman,Irithel,Marksman,10,6,0,21:21,Sprint,Assassin,Fatal,Tenacity,Quantum Charge,2,3,1,12.7,3,0,3,8,8
+12-09-2023,4,Deus Vult,Lylia,Sunset Lover,Mage,Faramis,Support/Mage,2,2,0,21:21,Purify,Mage,Agility,Wilderness Blessing.,Lethal Ignition,7,3,9,13.5,9,3,0,15,11
+12-09-2023,4,Deus Vult,Joy,Magistor,Assassin,Nolan,Assassin,4,2,0,21:21,Retribution,Assassin,Thrill,Seasoned Hunter,Lethal Ignition,5,0,6,16.7,9,3,0,15,11
+12-09-2023,4,Deus Vult,Valentina,SAWO,Mage,Diggie,Support,6,4,0,21:21,Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,2,1,13,10.5,9,3,0,15,11
+12-09-2023,4,Deus Vult,Ixia,Carvi,Marksman,Beatrix,Marksman,7,5,0,21:21,Flicker,Assassin,Thrill,Weapons Master,Quantum Charge,1,1,12,15,9,3,0,15,11
+12-09-2023,4,Deus Vult,Lapu-Lapu,Kid Bomba,Fighter,Uranus,Tank,9,7,1,21:21,Purify,Common,Agility,Tenacity,Brave Smite,2,1,9,12.2,9,3,0,15,11
+12-09-2023,1,Blacklist Intl.,Fanny,Sensui,Assassin,Guinevere,Fighter,1,1,1,30:05,Retribution,Mage,Swift,Seasoned Hunter,Impure Rage,4,0,11,16.4,7,3,3,14,14
+12-09-2023,1,Blacklist Intl.,Nolan,Yue,Assassin,Faramis,Support/Mage,3,3,0,30:05,Purify,Mage,Rupture,Wilderness Blessing.,Lethal Ignition,3,2,9,16.1,7,3,3,14,14
+12-09-2023,1,Blacklist Intl.,Joy,Oheb,Assassin,Bruno,Marksman,5,3,0,30:05,Purify,Assassin,Fatal,Weapons Master,Quantum Charge,5,1,7,22.2,7,3,3,14,14
+12-09-2023,1,Blacklist Intl.,Tigreal,Renejay,Tank,Rafaela,Support,8,6,0,30:05,Purify,Support,Inspire,Wilderness Blessing.,Quantum Charge,0,1,14,14.5,7,3,3,14,14
+12-09-2023,1,Blacklist Intl.,Minotaur,Edward,Tank/Support,Khaleed,Fighter,10,6,0,30:05,Flicker,Assassin,Thrill,Master Assassin,Concussive Blast,4,3,5,18.7,7,3,3,14,14
+12-09-2023,1,ONIC Esports,Fredrinn,Kairi,Fighter/Tank,Benedetta,Assassin/Fighter,2,2,0,30:05,Retribution,Assassin,Thrill,Seasoned Hunter,Lethal Ignition,0,5,4,19,7,2,0,17,11
+12-09-2023,1,ONIC Esports,Wanwan,S A N Z,Marksman,Lylia,Mage,4,2,0,30:05,Purify,Mage,Inspire,Wilderness Blessing.,Lethal Ignition,4,0,2,20,7,2,0,17,11
+12-09-2023,1,ONIC Esports,Valentina,Butss,Mage,Arlott,Fighter/Assassin,6,4,0,30:05,Flicker,Common,Rupture,Tenacity,Brave Smite,0,6,5,12.7,7,2,0,17,11
+12-09-2023,1,ONIC Esports,Diggie,Kiboy,Support,Khufra,Tank,7,5,0,30:05,Flicker,Tank,Firmness,Wilderness Blessing.,Quantum Charge,0,5,5,12.7,7,2,0,17,11
+12-09-2023,1,ONIC Esports,Mathilda,CW,Support/Assassin,Claude,Marksman,9,7,0,30:05,Purify,Common,Agility,Tenacity,Quantum Charge,3,0,2,22.5,7,2,0,17,11
+12-09-2023,2,Blacklist Intl.,Fanny,Yue,Assassin,Lylia,Mage,1,1,0,22:54,Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,0,2,7,13,7,2,0,17,11
+12-09-2023,2,Blacklist Intl.,Nolan,Oheb,Assassin,Bruno,Marksman,3,3,0,22:54,Flicker,Assassin,Fatal,Weapons Master,Quantum Charge,3,4,5,15,7,2,0,17,11
+12-09-2023,2,Blacklist Intl.,Joy,Sensui,Assassin,Fredrinn,Fighter/Tank,5,3,0,22:54,Retribution,Tank,Firmness,Seasoned Hunter,Brave Smite,0,4,5,11.7,7,2,0,17,11
+12-09-2023,2,Blacklist Intl.,Tigreal,Renejay,Tank,Mathilda,Support/Assassin,8,6,0,22:54,Flicker,Support,Inspire,Wilderness Blessing.,Quantum Charge,4,3,4,10.7,7,2,0,17,11
+12-09-2023,2,Blacklist Intl.,Minotaur,Edward,Tank/Support,Edith,Tank/Marksman,10,6,0,22:54,Flicker,Tank,Swift,Tenacity,Quantum Charge,2,2,5,11.7,7,1,2,11,6
+12-09-2023,2,ONIC Esports,Wanwan,Kairi,Marksman,Dyrroth,Fighter,2,2,0,22:54,Retribution,Assassin,Rupture,Seasoned Hunter,Lethal Ignition,3,3,8,13.1,7,3,1,11,13
+12-09-2023,2,ONIC Esports,Guinevere,S A N Z,Fighter,Valentina,Mage,4,2,0,22:54,Flicker,Mage,Inspire,Wilderness Blessing.,Quantum Charge,1,1,11,14.7,7,3,1,11,13
+12-09-2023,2,ONIC Esports,Faramis,Butss,Support/Mage,Claude,Marksman,6,4,0,22:54,Purify,Common,Agility,Tenacity,Quantum Charge,7,1,6,17.6,7,3,1,11,13
+12-09-2023,2,ONIC Esports,Diggie,Kiboy,Support,Khaleed,Fighter,7,5,0,22:54,Flicker,Assassin,Rupture,Master Assassin,Concussive Blast,4,3,6,14.3,7,3,1,11,13
+12-09-2023,2,ONIC Esports,Estes,CW,Support,Kaja,Support/Fighter,9,7,1,22:54,Flicker,Tank,Agility,Wilderness Blessing.,Quantum Charge,0,1,9,10.2,7,3,1,11,13
+12-09-2023,3,Blacklist Intl.,Fanny,Yue,Assassin,Valentina,Mage,1,1,0,21:37,Purify,Mage,Rupture,Wilderness Blessing.,Impure Rage,6,3,3,14.5,8,2,1,8,9
+12-09-2023,3,Blacklist Intl.,Nolan,Oheb,Assassin,Claude,Marksman,3,3,0,21:37,Purify,Common,Agility,Tenacity,Quantum Charge,4,2,8,17,8,2,1,8,9
+12-09-2023,3,Blacklist Intl.,Joy,Sensui,Assassin,Akai,Tank,5,3,0,21:37,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,1,4,6,11.9,8,2,1,8,9
+12-09-2023,3,Blacklist Intl.,Khaleed,Edward,Fighter,Paquito,Fighter/Assassin,8,6,0,21:37,Flicker,Fighter,Agility,Festival of Blood,Quantum Charge,1,3,6,14.7,8,2,1,8,9
+12-09-2023,3,Blacklist Intl.,Arlott,Renejay,Fighter/Assassin,Floryn,Support,10,6,0,21:37,Purify,Support,Inspire,Wilderness Blessing.,Quantum Charge,1,6,9,11.2,8,2,1,8,9
+12-09-2023,3,ONIC Esports,Guinevere,S A N Z,Fighter,Kadita,Mage/Assassin,2,2,0,21:37,Sprint,Mage,Rupture,Pull Yourself Together,Lethal Ignition,3,1,12,12,8,1,2,10,10
+12-09-2023,3,ONIC Esports,Fredrinn,Kairi,Fighter/Tank,Lancelot,Assassin,4,2,0,21:37,Retribution,Assassin,Thrill,Seasoned Hunter,Impure Rage,3,3,6,16,8,1,2,10,10
+12-09-2023,3,ONIC Esports,Baxia,Kiboy,Tank,Minotaur,Tank/Support,6,4,0,21:37,Flicker,Tank,Firmness,Wilderness Blessing.,Concussive Blast,1,5,13,10.4,8,1,2,10,10
+12-09-2023,3,ONIC Esports,Diggie,Butss,Support,Terizla,Fighter,7,5,0,21:37,Flicker,Fighter,Rupture,Festival of Blood,Brave Smite,2,2,3,12.7,8,1,2,10,10
+12-09-2023,3,ONIC Esports,Phoveus,CW,Fighter,Wanwan,Marksman,9,7,1,21:37,Flicker,Assassin,Swift,Tenacity,Weakness Finder,9,2,5,17.4,8,1,2,10,10
+12-09-2023,4,Blacklist Intl.,Fanny,Yue,Assassin,Valentina,Mage,1,1,0,14:51,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,0,1,4,8.2,8,2,3,9,5
+12-09-2023,4,Blacklist Intl.,Nolan,Oheb,Assassin,Claude,Marksman,3,3,1,14:51,Sprint,Common,Agility,Tenacity,Quantum Charge,4,0,4,13,8,2,3,9,5
+12-09-2023,4,Blacklist Intl.,Joy,Sensui,Assassin,Akai,Tank,5,3,0,14:51,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,3,0,3,9.9,8,2,3,9,5
+12-09-2023,4,Blacklist Intl.,Kaja,Edward,Support/Fighter,Arlott,Fighter/Assassin,8,6,0,14:51,Flicker,Common,Thrill,Wilderness Blessing.,Brave Smite,2,0,5,9.8,8,2,3,9,5
+12-09-2023,4,Blacklist Intl.,Tigreal,Renejay,Tank,Minotaur,Tank/Support,10,6,0,14:51,Flicker,Tank,Firmness,Wilderness Blessing.,Concussive Blast,1,0,7,7.7,8,2,3,9,5
+12-09-2023,4,ONIC Esports,Guinevere,Kairi,Fighter,Lancelot,Assassin,2,2,0,14:51,Retribution,Assassin,Thrill,Seasoned Hunter,Impure Rage,0,1,1,10.5,3,0,0,5,9
+12-09-2023,4,ONIC Esports,Fredrinn,S A N Z,Fighter/Tank,Faramis,Support/Mage,4,2,0,14:51,Flicker,Mage,Inspire,Wilderness Blessing.,Lethal Ignition,1,4,0,6.7,3,0,0,5,9
+12-09-2023,4,ONIC Esports,Baxia,Kiboy,Tank,Wanwan,Marksman,6,4,0,14:51,Inspire,Assassin,Swift,Tenacity,Weakness Finder,0,1,1,9.2,3,0,0,5,9
+12-09-2023,4,ONIC Esports,Phoveus,CW,Fighter,Mathilda,Support/Assassin,7,5,0,14:51,Flicker,Support,Agility,Wilderness Blessing.,Quantum Charge,0,2,1,5.3,3,0,0,5,9
+12-09-2023,4,ONIC Esports,Hilda,Butss,Tank/Fighter,Khaleed,Tank,9,7,0,14:51,Flicker,Assassin,Rupture,Master Assassin,Concussive Blast,0,2,1,6.9,3,0,0,5,9
+12-09-2023,5,Blacklist Intl.,Fanny,Yue,Assassin,Lylia,Mage,1,1,0,13:38,Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,1,2,1,7.2,0,0,0,2,3
+12-09-2023,5,Blacklist Intl.,Nolan,Oheb,Assassin,Claude,Marksman,3,3,0,13:38,Sprint,Common,Agility,Tenacity,Quantum Charge,1,4,1,8.3,0,0,0,2,3
+12-09-2023,5,Blacklist Intl.,Joy,Sensui,Assassin,Baxia,Tank,5,3,0,13:38,Retribution,Tank,Firmness,Seasoned Hunter,Brave Smite,0,3,1,5.9,0,0,0,2,3
+12-09-2023,5,Blacklist Intl.,Dyrroth,Renejay,Fighter,Floryn,Support,8,6,0,13:38,Flicker,Support,Firmness,Wilderness Blessing.,Quantum Charge,0,0,2,5.3,0,0,0,2,3
+12-09-2023,5,Blacklist Intl.,Khaleed,Edward,Fighter,Arlott,Fighter/Assassin,10,6,0,13:38,Flicker,Common,Thrill,Wilderness Blessing.,Brave Smite,0,3,1,6.6,0,0,0,2,3
+12-09-2023,5,ONIC Esports,Guinevere,Kairi,Fighter,Martis,Fighter,2,2,0,13:38,Retribution,Assassin,Thrill,Seasoned Hunter,Impure Rage,3,1,6,9.2,9,2,3,10,10
+12-09-2023,5,ONIC Esports,Fredrinn,Butss,Fighter/Tank,Terizla,Fighter,4,2,1,13:38,Flicker,Fighter,Rupture,Festival of Blood,Brave Smite,1,0,9,9.5,9,2,3,10,10
+12-09-2023,5,ONIC Esports,Akai,CW,Tank,Valentina,Mage,6,4,0,13:38,Flicker,Mage,Inspire,Wilderness Blessing.,Quantum Charge,6,0,6,10.4,9,2,3,10,10
+12-09-2023,5,ONIC Esports,Phoveus,Kiboy,Fighter,Kaja,Support/Fighter,7,5,0,13:38,Flicker,Support,Agility,Wilderness Blessing.,Quantum Charge,0,0,10,7.1,9,2,3,10,10
+12-09-2023,5,ONIC Esports,Minsitthar,S A N Z,Fighter,Wanwan,Marksman,9,7,0,13:38,Inspire,Assassin,Swift,Tenacity,Weakness Finder,2,1,10,12.4,9,2,3,10,10
+12-10-2023,1,AP.Bren,Phoveus,KyleTzy,Fighter,Nolan,Assassin,1,1,0,14:52,Retribution,Assassin,Thrill,Seasoned Hunter,Lethal Ignition,2,0,6,11.3,9,2,2,11,10
+12-10-2023,1,AP.Bren,Joy,Super Marco,Assassin,Bruno,Marksman,3,3,0,14:52,Flicker,Assassin,Fatal,Weapons Master,Quantum Charge,5,0,2,13.4,9,2,2,11,10
+12-10-2023,1,AP.Bren,Guinevere,Owgwen,Fighter,Arlott,Fighter/Assassin,5,3,0,14:52,Flicker,Tank,Vitality,Wilderness Blessing.,Quantum Charge,0,4,7,7.8,9,2,2,11,10
+12-10-2023,1,AP.Bren,Terizla,FlapTzy,Fighter,Paquito,Fighter/Assassin,8,6,1,14:52,Flicker,Fighter,Agility,Festival of Blood,Quantum Charge,5,1,4,10.9,9,2,2,11,10
+12-10-2023,1,AP.Bren,Tigreal,Pheww,Tank,Novaria,Mage,10,6,0,14:52,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,1,0,10,8.9,9,2,2,11,10
+12-10-2023,1,See You Soon,Mathilda,Kousei,Support/Assassin,Claude,Marksman,2,2,0,14:52,Sprint,Common,Swift,Tenacity,Quantum Charge,2,1,1,8.5,0,0,1,5,6
+12-10-2023,1,See You Soon,Angela,Raa,Support,Faramis,Support/Mage,4,2,0,14:52,Flicker,Mage,Rupture,Wilderness Blessing.,Lethal Ignition,1,1,4,7.4,0,0,1,5,6
+12-10-2023,1,See You Soon,Wanwan,BOXI,Marksman,Kaja,Support/Fighter,6,4,0,14:52,Flicker,Tank,Agility,Wilderness Blessing.,Brave Smite,0,5,4,6.2,0,0,1,5,6
+12-10-2023,1,See You Soon,Valentina,MP the King,Mage,Lancelot,Assassin,7,5,0,14:52,Retribution,Assassin,Thrill,Seasoned Hunter,Quantum Charge,1,2,3,9.6,0,0,1,5,6
+12-10-2023,1,See You Soon,Minotaur,Felix,Tank/Support,Dyrroth,Fighter,9,7,0,14:52,Flicker,Tank,Thrill,Festival of Blood,Brave Smite,1,4,2,6.5,0,0,1,5,6
+12-10-2023,2,AP.Bren,Phoveus,FlapTzy,Fighter,Khaleed,Fighter,1,1,0,18:32,Flicker,Fighter,Thrill,Festival of Blood,Concussive Blast,2,4,8,9.9,6,1,2,9,7
+12-10-2023,2,AP.Bren,Joy,KyleTzy,Assassin,Guinevere,Fighter,3,3,0,18:32,Retribution,Mage,Thrill,Seasoned Hunter,Impure Rage,5,3,7,10.5,6,1,2,9,7
+12-10-2023,2,AP.Bren,Arlott,Owgwen,Fighter/Assassin,Tigreal,Tank,5,3,0,18:32,Flicker,Tank,Vitality,Wilderness Blessing.,Concussive Blast,0,3,8,9.1,6,1,2,9,7
+12-10-2023,2,AP.Bren,Martis,Super Marco,Fighter,Claude,Marksman,8,6,0,18:32,Purify,Common,Swift,Tenacity,Quantum Charge,5,0,5,14.5,6,1,2,9,7
+12-10-2023,2,AP.Bren,Dyrroth,Pheww,Fighter,Novaria,Mage,10,6,0,18:32,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,2,1,9,11.1,6,1,2,9,7
+12-10-2023,2,See You Soon,Mathilda,BOXI,Support/Assassin,Kaja,Support/Fighter,2,2,0,18:32,Flicker,Tank,Agility,Wilderness Blessing.,Brave Smite,1,3,8,9.5,8,2,1,9,9
+12-10-2023,2,See You Soon,Nolan,MP the King,Assassin,Helcurt,Assassin,4,2,1,18:33,Retribution,Assassin,Thrill,Seasoned Hunter,Quantum Charge,2,2,7,13.8,8,2,1,9,9
+12-10-2023,2,See You Soon,Angela,Felix,Support,Terizla,Fighter,6,4,0,18:34,Flicker,Fighter,Vitality,Festival of Blood,Brave Smite,1,4,8,9.9,8,2,1,9,9
+12-10-2023,2,See You Soon,Minotaur,Raa,Tank/Support,Wanwan,Marksman,7,5,0,18:35,Inspire,Marskman,Swift,Master Assassin,Weakness Finder,3,3,6,12.4,8,2,1,9,9
+12-10-2023,2,See You Soon,Valentina,Kousei,Mage,Faramis,Support/Mage,9,7,0,18:36,Purify,Assassin,Thrill,Master Assassin,Lethal Ignition,4,2,6,10.8,8,2,1,9,9
+12-10-2023,3,AP.Bren,Kaja,KyleTzy,Support/Fighter,Nolan,Assassin,1,1,1,11:05,Retribution,Assassin,Thrill,Seasoned Hunter,Lethal Ignition,5,0,3,10,8,1,3,10,6
+12-10-2023,3,AP.Bren,Faramis,Super Marco,Support/Mage,Bruno,Marksman,3,3,0,11:05,Purify,Assassin,Fatal,Weapons Master,Quantum Charge,1,0,4,9.2,8,1,3,10,6
+12-10-2023,3,AP.Bren,Phoveus,Owgwen,Fighter,Tigreal,Tank,5,3,0,11:05,Flicker,Tank,Vitality,Wilderness Blessing.,Concussive Blast,2,2,5,6,8,1,3,10,6
+12-10-2023,3,AP.Bren,Brody,FlapTzy,Marksman,Benedetta,Assassin/Fighter,8,6,0,11:05,Petrify,Fighter,Rupture,Festival of Blood,Impure Rage,0,2,2,7.8,8,1,3,10,6
+12-10-2023,3,AP.Bren,Minotaur,Pheww,Tank/Support,Odette,Mage,10,6,0,11:05,Flicker,Mage,Thrill,Bargain Hunter,Lethal Ignition,5,0,3,7.5,8,1,3,10,6
+12-10-2023,3,See You Soon,Mathilda,BOXI,Support/Assassin,Guinevere,Fighter,2,2,0,11:05,Flicker,Tank,Agility,Tenacity,Brave Smite,2,9,0,4.7,0,0,0,3,5
+12-10-2023,3,See You Soon,Wanwan,Felix,Marksman,Terizla,Fighter,4,2,0,11:05,Flicker,Fighter,Rupture,Festival of Blood,Brave Smite,0,3,3,5.5,0,0,0,3,5
+12-10-2023,3,See You Soon,Arlott,Raa,Fighter/Assassin,Angela,Support,6,4,0,11:05,Flicker,Mage,Inspire,Bargain Hunter,Focusing Mark,1,3,3,4.9,0,0,0,3,5
+12-10-2023,3,See You Soon,Paquito,MP the King,Fighter/Assassin,Joy,Assassin,7,5,0,11:05,Retribution,Mage,Inspire,Seasoned Hunter,Impure Rage,0,2,1,5.7,0,0,0,3,5
+12-10-2023,3,See You Soon,Khufra,Kousei,Tank,Karrie,Marksman,9,7,0,11:05,Purify,Assassin,Rupture,Master Assassin,Quantum Charge,1,2,0,6.5,0,0,0,3,5
+12-10-2023,4,See You Soon,Mathilda,Kousei,Support/Assassin,Dyrroth,Fighter,1,1,0,17:07,Flicker,Tank,Thrill,Festival of Blood,Brave Smite,2,4,2,8.4,2,0,0,6,6
+12-10-2023,4,See You Soon,Angela,BOXI,Support,Minotaur,Tank/Support,3,3,0,17:07,Flicker,Tank,Vitality,Wilderness Blessing.,Concussive Blast,1,7,5,7,2,0,0,6,6
+12-10-2023,4,See You Soon,Nolan,Raa,Assassin,Novaria,Mage,5,3,0,17:07,Flicker,Assassin,Agility,Wilderness Blessing.,Impure Rage,3,0,2,9.2,2,0,0,6,6
+12-10-2023,4,See You Soon,Fanny,Felix,Assassin,Bruno,Marksman,8,6,0,17:07,Flicker,Assassin,Fatal,Master Assassin,Quantum Charge,0,4,3,9.4,2,0,0,6,6
+12-10-2023,4,See You Soon,Martis,MP the King,Fighter,Guinevere,Fighter,10,6,0,17:07,Retribution,Mage,Thrill,Seasoned Hunter,Impure Rage,2,5,4,9.8,2,0,0,6,6
+12-10-2023,4,AP.Bren,Wanwan,FlapTzy,Marksman,Paquito,Fighter/Assassin,2,2,0,17:07,Flicker,Fighter,Agility,Festival of Blood,Quantum Charge,7,4,4,11.5,9,2,3,10,9
+12-10-2023,4,AP.Bren,Kaja,Owgwen,Support/Fighter,Arlott,Support/Mage,4,2,0,17:07,Flicker,Mage,Thrill,Wilderness Blessing.,Lethal Ignition,0,0,17,11.3,9,2,3,10,9
+12-10-2023,4,AP.Bren,Joy,Super Marco,Assassin,Brody,Marksman,6,4,1,17:07,Flicker,Assassin,Rupture,Weapons Master,Quantum Charge,11,1,3,15.1,9,2,3,10,9
+12-10-2023,4,AP.Bren,Helcurt,KyleTzy,Assassin,Akai,Tank,7,5,0,17:07,Retribution,Tank,Vitality,Seasoned Hunter,Quantum Charge,0,1,5,9.2,9,2,3,10,9
+12-10-2023,4,AP.Bren,Lylia,Pheww,Mage,Faramis,Fighter/Assassin,9,7,0,17:07,Purify,Mage,Thrill,Wilderness Blessing.,Lethal Ignition,0,0,17,11.3,9,2,3,10,9
+12-10-2023,1,Burmese Ghouls,Lylia,Niko,Mage,Guinevere,Fighter,1,1,0,"20:33",Flicker,Tank,Vitality,Wilderness Blessing.,Brave Smite,3,2,9,10.2,9,2,2,12,8
+12-10-2023,1,Burmese Ghouls,Khaleed,Lina,Fighter,Valentina,Mage,3,3,0,"20:33",Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,6,2,9,12.2,9,2,2,12,8
+12-10-2023,1,Burmese Ghouls,Mathilda,Shadow,Support/Assassin,Uranus,Tank,5,3,0,"20:33",Sprint,Common,Agility,Tenacity,Brave Smite,1,3,10,11.7,9,2,2,12,8
+12-10-2023,1,Burmese Ghouls,Angela,Blink,Support,Akai,Tank,8,6,0,"20:33",Retribution,Tank,Agility,Seasoned Hunter,Concussive Blast,2,1,16,11.5,9,2,2,12,8
+12-10-2023,1,Burmese Ghouls,Diggie,Stitch,Support,Ixia,Marksman,10,6,0,"20:33",Flicker,Assassin,Rupture,Tenacity,Quantum Charge,7,2,5,15.4,9,2,2,12,8
+12-10-2023,1,Geek Fam ID,Nolan,Aboy,Assassin,Faramis,Support/Mage,2,2,0,"20:33",Purify,Mage,Inspire,Wilderness Blessing.,Lethal Ignition,1,2,8,11.7,6,1,1,7,8
+12-10-2023,1,Geek Fam ID,Wanwan,Markyyyyy,Marksman,Bruno,Marksman,4,2,0,"20:33",Purify,Assassin,Fatal,Weapons Master,Quantum Charge,3,1,2,14,6,1,1,7,8
+12-10-2023,1,Geek Fam ID,Joy,Luke,Assassin,Yu Zhong,Fighter,6,4,0,"20:33",Petrify,Fighter,Rupture,Festival of Blood,Quantum Charge,3,5,4,11.1,6,1,1,7,8
+12-10-2023,1,Geek Fam ID,Minotaur,Baloyskie,Tank/Support,Tigreal,Tank,7,5,1,"20:33",Flicker,Tank,Firmness,Tenacity,Concussive Blast,1,8,6,9.8,6,1,1,7,8
+12-10-2023,1,Geek Fam ID,Claude,Caderaa,Marksman,Baxia,Tank,9,7,0,"20:33",Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,2,3,7,11.2,6,1,1,7,8
+12-10-2023,2,Geek Fam ID,Nolan,Aboy,Assassin,Valentina,Mage,1,1,0,23:05,Purify,Mage,Inspire,Wilderness Blessing.,Quantum Charge,4,2,7,14.4,7,1,3,11,11
+12-10-2023,2,Geek Fam ID,Uranus,Markyyyyy,Tank,Akai,Fighter,3,3,0,23:05,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,2,4,5,10.8,7,1,3,11,11
+12-10-2023,2,Geek Fam ID,Wanwan,Luke,Marksman,Lapu-Lapu,Tank,5,3,0,23:05,Flicker,Fighter,Rupture,Festival of Blood,Brave Smite,3,5,8,13.6,7,1,3,11,11
+12-10-2023,2,Geek Fam ID,Ixia,Baloyskie,Marksman,Arlott,Fighter/Assassin,8,6,0,23:05,Flicker,Tank,Firmness,Tenacity,Brave Smite,3,5,4,10.8,7,1,3,11,11
+12-10-2023,2,Geek Fam ID,Minotaur,Caderaa,Tank/Support,Bruno,Marksman,10,6,0,23:05,Purify,Assassin,Fatal,Weapons Master,Quantum Charge,3,6,7,15.4,7,1,3,11,11
+12-10-2023,2,Burmese Ghouls,Khaleed,Niko,Fighter,Guinevere,Fighter,2,2,1,23:05,Retribution,Mage,Rupture,Seasoned Hunter,Impure Rage,9,3,9,14.2,8,2,0,10,10
+12-10-2023,2,Burmese Ghouls,Mathilda,Lina,Support/Assassin,Lylia,Mage,4,2,0,23:05,Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,7,0,10,15.5,8,2,0,10,10
+12-10-2023,2,Burmese Ghouls,Joy,Shadow,Assassin,Gloo,Tank,6,4,0,23:05,Flicker,Common,Agility,Tenacity,Brave Smite,2,4,12,12.3,8,2,0,10,10
+12-10-2023,2,Burmese Ghouls,Diggie,Stitch,Support,Claude,Marksman,7,5,0,23:05,Sprint,Common,Swift,Tenacity,Quantum Charge,4,4,7,17.2,8,2,0,10,10
+12-10-2023,2,Burmese Ghouls,Angela,Blink,Support,Ruby,Fighter/Tank,9,7,0,23:05,Flicker,Tank,Firmness,Wilderness Blessing.,Brave Smite,0,4,15,11.8,8,2,0,10,10
+12-10-2023,3,Burmese Ghouls,Khaleed,Stitch,Fighter,Bruno,Marksman,1,1,0,18:09,Purify,Assassin,Fatal,Tenacity,Quantum Charge,6,2,6,13.4,9,3,1,11,8
+12-10-2023,3,Burmese Ghouls,Lylia,Shadow,Mage,Terizla,Fighter,3,3,0,18:09,Flicker,Fighter,Agility,Festival of Blood,Brave Smite,6,4,6,9.9,9,3,1,11,8
+12-10-2023,3,Burmese Ghouls,Mathilda,Lina,Support/Assassin,Valentina,Mage,5,3,1,18:09,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,1,0,15,10.3,9,3,1,11,8
+12-10-2023,3,Burmese Ghouls,Beatrix,Niko,Marksman,Joy,Assassin,8,6,0,18:09,Retribution,Assassin,Inspire,Seasoned Hunter,Impure Rage,3,1,6,13.7,9,3,1,11,8
+12-10-2023,3,Burmese Ghouls,Claude,Blink,Marksman,Ruby,Fighter/Tank,10,6,0,18:09,Flicker,Tank,Firmness,Wilderness Blessing.,Brave Smite,1,3,11,8.9,9,3,1,11,8
+12-10-2023,3,Geek Fam ID,Nolan,Baloyskie,Assassin,Minotaur,Tank/Support,2,2,0,18:09,Flicker,Tank,Firmness,Tenacity,Concussive Blast,1,3,7,8.4,2,0,2,7,8
+12-10-2023,3,Geek Fam ID,Wanwan,Luke,Marksman,Lapu-Lapu,Fighter,4,2,0,18:09,Flicker,Fighter,Rupture,Festival of Blood,Brave Smite,0,3,8,9.2,2,0,2,7,8
+12-10-2023,3,Geek Fam ID,Uranus,Aboy,Tank,Faramis,Support/Mage,6,4,0,18:09,Flicker,Mage,Inspire,Wilderness Blessing.,Lethal Ignition,1,5,7,10.8,2,0,2,7,8
+12-10-2023,3,Geek Fam ID,Diggie,Caderaa,Support,Karrie,Marksman,7,5,0,18:09,Flicker,Assassin,Swift,Tenacity,Quantum Charge,5,2,,13.2,2,0,2,7,8
+12-10-2023,3,Geek Fam ID,Angela,Markyyyyy,Support,Guinevere,Fighter,9,7,0,18:09,Retribution,Marskman,Thrill,Seasoned Hunter,Impure Rage,3,4,4,9.4,2,0,2,7,8
+12-10-2023,4,Geek Fam ID,Nolan,Baloyskie,Assassin,Grock,Fighter,1,1,0,"22:50",Flicker,Common,Agility,Wilderness Blessing.,Brave Smite,2,5,9,11.1,9,3,3,16,10
+12-10-2023,4,Geek Fam ID,Wanwan,Aboy,Marksman,Yve,Fighter,3,3,0,"22:50",Flicker,Mage,Agility,Wilderness Blessing.,Impure Rage,6,1,10,15,9,3,3,16,10
+12-10-2023,4,Geek Fam ID,Joy,Caderaa,Assassin,Bruno,Marksman,5,3,0,"22:50",Flicker,Assassin,Fatal,Weapons Master,Quantum Charge,5,3,11,16.1,9,3,3,16,10
+12-10-2023,4,Geek Fam ID,Ruby,Luke,Fighter/Tank,Dyrroth,Mage,8,6,0,"22:50",Flicker,Tank,Thrill,Festival of Blood,Quantum Charge,2,2,11,12.9,9,3,3,16,10
+12-10-2023,4,Geek Fam ID,Ixia,Markyyyyy,Marksman,Guinevere,Tank/Fighter,10,6,1,"22:50",Retribution,Mage,Thrill,Seasoned Hunter,Impure Rage,4,3,9,13.1,9,3,3,16,10
+12-10-2023,4,Burmese Ghouls,Khaleed,Niko,Fighter,Baxia,Tank,2,2,0,"22:50",Purify,Tank,Firmness,Seasoned Hunter,Concussive Blast,5,1,6,11.3,4,1,0,6,8
+12-10-2023,4,Burmese Ghouls,Lylia,Shadow,Mage,Uranus,Tank,4,2,0,"22:50",Purify,Common,Agility,Tenacity,Brave Smite,4,7,8,12.2,4,1,0,6,8
+12-10-2023,4,Burmese Ghouls,Mathilda,Lina,Support/Assassin,Faramis,Support/Mage,6,4,0,"22:50",Purify,Mage,Rupture,Weapons Master,Impure Rage,3,4,10,13.7,4,1,0,6,8
+12-10-2023,4,Burmese Ghouls,Minotaur,Blink,Tank/Support,Angela,Support,7,5,0,"22:50",Flicker,Support,Inspire,Bargain Hunter,Quantum Charge,0,4,12,10.6,4,1,0,6,8
+12-10-2023,4,Burmese Ghouls,Valentina,Stitch,Mage,Claude,Marksman,9,7,0,"22:50",Purify,Common,Swift,Tenacity,Quantum Charge,2,3,4,16.3,4,1,0,6,8
+12-10-2023,5,Burmese Ghouls,Khaleed,Stitch,Fighter,Bruno,Marksman,1,1,0,13:23,Flicker,Assassin,Fatal,Tenacity,Quantum Charge,1,3,2,8.1,2,0,3,6,5
+12-10-2023,5,Burmese Ghouls,Mathilda,Lina,Support/Assassin,Faramis,Support/Mage,3,3,0,13:23,Purify,Mage,Rupture,Weapons Master,Impure Rage,0,3,9,6.7,2,0,3,6,5
+12-10-2023,5,Burmese Ghouls,Lylia,Shadow,Mage,Gloo,Tank,5,3,0,13:23,Flicker,Common,Agility,Tenacity,Brave Smite,0,3,7,6.3,2,0,3,6,5
+12-10-2023,5,Burmese Ghouls,Terizla,Blink,Fighter,Tigreal,Tank,8,6,0,13:23,Flicker,Tank,Agility,Pull Yourself Together,Concussive Blast,0,4,7,5.1,2,0,3,6,5
+12-10-2023,5,Burmese Ghouls,Valentina,Niko,Mage,Martis,Fighter,10,6,0,13:23,Retribution,Assassin,Rupture,Seasoned Hunter,Impure Rage,8,3,1,7.5,2,0,3,6,5
+12-10-2023,5,Geek Fam ID,Wanwan,Caderaa,Marksman,Claude,Marksman,2,2,0,13:23,Purify,Common,Swift,Tenacity,Quantum Charge,4,0,8,11.7,9,1,0,6,7
+12-10-2023,5,Geek Fam ID,Joy,Aboy,Assassin,Yve,Mage,4,2,0,13:23,Purify,Mage,Agility,Wilderness Blessing.,Impure Rage,4,1,8,8.8,9,1,0,6,7
+12-10-2023,5,Geek Fam ID,Nolan,Baloyskie,Assassin,Ruby,Fighter/Tank,6,4,0,13:23,Flicker,Tank,Agility,Pull Yourself Together,Concussive Blast,1,4,9,6.3,9,1,0,6,7
+12-10-2023,5,Geek Fam ID,Minsitthar,Luke,Fighter,Arlott,Fighter/Assassin,7,5,1,13:23,Flicker,Fighter,Agility,Tenacity,Brave Smite,5,2,9,9.6,9,1,0,6,7
+12-10-2023,5,Geek Fam ID,Angela,Markyyyyy,Support,Guinevere,Assassin,9,7,0,13:23,Retribution,Mage,Thrill,Seasoned Hunter,Impure Rage,2,2,7,7.9,9,1,0,6,7
+12-11-2023,1,Blacklist Intl.,Fanny,Yue,Assassin,Valentina,Mage,1,1,1,15:04,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,3,0,3,8.3,9,2,1,10,7
+12-11-2023,1,Blacklist Intl.,Joy,Renejay,Assassin,Mathilda,Support/Assassin,3,3,0,15:04,Flicker,Support,Inspire,Wilderness Blessing.,Quantum Charge,1,1,7,7.4,9,2,1,10,7
+12-11-2023,1,Blacklist Intl.,Nolan,Sensui,Assassin,Fredrinn,Fighter/Tank,5,3,0,15:04,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,1,0,7,9.3,9,2,1,10,7
+12-11-2023,1,Blacklist Intl.,Tigreal,Oheb,Tank,Karrie,Marksman,8,6,0,15:04,Flicker,Assassin,Swift,Tenacity,Quantum Charge,4,1,1,12.3,9,2,1,10,7
+12-11-2023,1,Blacklist Intl.,Novaria,Edward,Mage,Edith,Tank/Marksman,10,6,0,15:04,Flicker,Tank,Swift,Tenacity,Quantum Charge,0,0,7,9,9,2,1,10,7
+12-11-2023,1,Fire Flux Esports,Wanwan,Tienzy,Marksman,Baxia,Tank,2,2,0,15:04,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,1,1,1,7,2,0,2,5,6
+12-11-2023,1,Fire Flux Esports,Lylia,Alien,Mage,Terizla,Fighter,4,2,0,15:04,Flicker,Fighter,Agility,Festival of Blood,Brave Smite,0,2,1,7.9,2,0,2,5,6
+12-11-2023,1,Fire Flux Esports,Guinevere,Sunshine,Fighter,Bruno,Marksman,6,4,0,15:04,Purify,Assassin,Fatal,Weapons Master,Quantum Charge,0,2,0,9.8,2,0,2,5,6
+12-11-2023,1,Fire Flux Esports,Claude,APEX47,Marksman,Kaja,Support/Fighter,7,5,0,15:04,Flicker,Tank,Firmness,Wilderness Blessing.,Quantum Charge,1,3,0,5.9,2,0,2,5,6
+12-11-2023,1,Fire Flux Esports,Benedetta,Rosa,Assassin/Fighter,Lunox,Mage,9,7,0,15:04,Flicker,Assassin,Agility,Weapons Master,Impure Rage,0,1,0,7.8,2,0,2,5,6
+12-11-2023,2,Fire Flux Esports,Wanwan,Rosa,Marksman,Lylia,Mage,1,1,0,15:08,Purify,Mage,Inspire,Wilderness Blessing.,Impure Rage,2,2,10,9.6,7,1,2,8,7
+12-11-2023,2,Fire Flux Esports,Mathilda,APEX47,Support/Assassin,Tigreal,Tank,3,3,0,15:08,Flicker,Tank,Firmness,Wilderness Blessing.,Quantum Charge,0,1,13,7.2,7,1,2,8,7
+12-11-2023,2,Fire Flux Esports,Diggie,Sunshine,Support,Ixia,Marksman,5,3,0,15:08,Flicker,Assassin,Swift,Tenacity,Quantum Charge,3,0,7,10.6,7,1,2,8,7
+12-11-2023,2,Fire Flux Esports,Claude,Tienzy,Marksman,Leomord,Fighter,8,6,1,15:08,Retribution,Assassin,Firmness,Seasoned Hunter,Quantum Charge,10,0,3,11.4,7,1,2,8,7
+12-11-2023,2,Fire Flux Esports,Rafaela,Alien,Support,Gloo,Tank,10,6,0,15:08,Flicker,Common,Agility,Wilderness Blessing.,Brave Smite,1,2,8,7.6,7,1,2,8,7
+12-11-2023,2,Blacklist Intl.,Joy,Edward,Assassin,Terizla,Fighter,2,2,0,15:08,Flicker,Fighter,Agility,Wilderness Blessing.,Brave Smite,0,2,3,7.5,0,0,1,8,7
+12-11-2023,2,Blacklist Intl.,Nolan,Sensui,Assassin,Fredrinn,Fighter/Tank,4,2,0,15:08,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,2,5,2,8.4,0,0,1,8,7
+12-11-2023,2,Blacklist Intl.,Gusion,Yue,Assassin,Valentina,Mage,6,4,0,15:08,Purify,Mage,Rupture,Wilderness Blessing.,Quantum Charge,0,2,5,7,0,0,1,8,7
+12-11-2023,2,Blacklist Intl.,Baxia,Owl,Tank,Karrie,Marksman,7,5,0,15:08,Flicker,Assassin,Swift,Tenacity,Quantum Charge,2,1,3,9.9,0,0,1,8,7
+12-11-2023,2,Blacklist Intl.,Xavier,Renejay,Mage,Hilda,Tank/Fighter,9,7,0,15:08,Flicker,Tank,Firmness,Tenacity,Concussive Blast,1,6,1,5.2,0,0,1,8,7
+12-11-2023,3,Blacklist Intl.,Fanny,Yue,Assassin,Valentina,Mage,1,1,0,17:55,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,5,2,10,11,9,2,3,10,9
+12-11-2023,3,Blacklist Intl.,Nolan,Oheb,Assassin,Claude,Marksman,3,3,1,17:55,Purify,Common,Agility,Tenacity,Quantum Charge,7,0,8,15.1,9,2,3,10,9
+12-11-2023,3,Blacklist Intl.,Joy,Renejay,Assassin,Rafaela,Support,5,3,0,17:55,Purify,Support,Inspire,Wilderness Blessing.,Impure Rage,0,3,15,8.8,9,2,3,10,9
+12-11-2023,3,Blacklist Intl.,Leomord,Sensui,Fighter,Paquito,Fighter/Assassin,8,6,0,17:55,Retribution,Assassin,Thrill,Seasoned Hunter,Lethal Ignition,0,2,9,12.2,9,2,3,10,9
+12-11-2023,3,Blacklist Intl.,Fredrinn,Edward,Fighter/Tank,Edith,Tank/Marksman,10,6,0,17:55,Flicker,Tank,Swift,Tenacity,Quantum Charge,4,2,5,11.1,9,2,3,10,9
+12-11-2023,3,Fire Flux Esports,Wanwan,Alien,Marksman,Terizla,Fighter,2,2,0,17:55,Flicker,Fighter,Agility,Festival of Blood,Brave Smite,1,3,5,9.6,2,1,0,7,7
+12-11-2023,3,Fire Flux Esports,Mathilda,Rosa,Support/Assassin,Lylia,Mage,4,2,0,17:55,Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,2,3,6,9.3,2,1,0,7,7
+12-11-2023,3,Fire Flux Esports,Guinevere,APEX47,Fighter,Minotaur,Tank/Support,6,4,0,17:55,Flicker,Tank,Firmness,Wilderness Blessing.,Concussive Blast,0,4,8,7.5,2,1,0,7,7
+12-11-2023,3,Fire Flux Esports,Martis,Sunshine,Fighter,Brody,Marksman,7,5,0,17:55,Flicker,Assassin,Thrill,Tenacity,Quantum Charge,4,3,3,11.1,2,1,0,7,7
+12-11-2023,3,Fire Flux Esports,Akai,Tienzy,Tank,Helcurt,Assassin,9,7,0,17:55,Retribution,Assassin,Thrill,Seasoned Hunter,Lethal Ignition,2,3,7,11.4,2,1,0,7,7
+12-11-2023,4,Fire Flux Esports,Wanwan,Rosa,Marksman,Lylia,Mage,1,1,0,17:37,Purify,Mage,Inspire,Wilderness Blessing.,Impure Rage,2,1,0,9.9,3,0,0,8,6
+12-11-2023,4,Fire Flux Esports,Mathilda,Tienzy,Support/Assassin,Leomord,Fighter,3,3,0,17:37,Retribution,Assassin,Firmness,Seasoned Hunter,Quantum Charge,0,4,3,9.8,3,0,0,8,6
+12-11-2023,4,Fire Flux Esports,Claude,APEX47,Marksman,Tigreal,Tank,5,3,0,17:37,Flicker,Tank,Agility,Wilderness Blessing.,Quantum Charge,2,2,0,6.8,3,0,0,8,6
+12-11-2023,4,Fire Flux Esports,Arlott,Sunshine,Fighter/Assassin,Beatrix,Marksman,8,6,0,17:37,Flicker,Assassin,Thrill,Tenacity,Quantum Charge,0,3,1,10.5,3,0,0,8,6
+12-11-2023,4,Fire Flux Esports,Edith,Alien,Tank/Marksman,Lapu-Lapu,Fighter,10,6,0,17:37,Flicker,Fighter,Rupture,Festival of Blood,Brave Smite,0,2,3,8.4,3,0,0,8,6
+12-11-2023,4,Blacklist Intl.,Joy,Yue,Assassin,Valentina,Mage,2,2,1,17:37,Purify,Mage,Rupture,Wilderness Blessing.,Impure Rage,4,1,4,11.3,9,2,3,8,10
+12-11-2023,4,Blacklist Intl.,Nolan,Renejay,Assassin,Rafaela,Support,4,2,0,17:37,Purify,Support,Inspire,Wilderness Blessing.,Impure Rage,1,1,8,8.6,9,2,3,8,10
+12-11-2023,4,Blacklist Intl.,Guinevere,Sensui,Fighter,Akai,Tank,6,4,0,17:37,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,1,0,4,10.1,9,2,3,8,10
+12-11-2023,4,Blacklist Intl.,Ixia,Oheb,Marksman,Bruno,Marksman,7,5,0,17:37,Purify,Assassin,Fatal,Weapons Master,Quantum Charge,4,1,3,13.5,9,2,3,8,10
+12-11-2023,4,Blacklist Intl.,Gloo,Edward,Tank,Khaleed,Fighter,9,7,0,17:37,Flicker,Assassin,Thrill,Master Assassin,Concussive Blast,2,1,4,10.5,9,2,3,8,10
+12-11-2023,1,Burmese Ghouls,Kaja,Lina,Support/Fighter,Angela,Support,1,1,0,"14:20",Flicker,Support,Agility,Bargain Hunter,Impure Rage,1,0,5,6.4,2,0,0,3,6
+12-11-2023,1,Burmese Ghouls,Joy,Blink,Assassin,Ruby,Fighter/Tank,3,3,0,"14:20",Flicker,Tank,Firmness,Wilderness Blessing.,Brave Smite,0,5,7,5.7,2,0,0,3,6
+12-11-2023,1,Burmese Ghouls,Faramis,Shadow,Support/Mage,Terizla,Fighter,5,3,0,"14:20",Flicker,Fighter,Agility,Festival of Blood,Brave Smite,2,7,4,6.8,2,0,0,3,6
+12-11-2023,1,Burmese Ghouls,Minotaur,Niko,Tank/Support,Fredrinn,Fighter/Tank,8,6,0,"14:20",Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,2,4,5,7,2,0,0,3,6
+12-11-2023,1,Burmese Ghouls,Mathilda,Stitch,Support/Assassin,Irithel,Marksman,10,6,0,"14:20",Purify,Assassin,Fatal,Weapons Master,Quantum Charge,2,2,2,10.9,2,0,0,3,6
+12-11-2023,1,See You Soon,Nolan,Felix,Assassin,Yu Zhong,Fighter,2,2,0,"14:20",Sprint,Fighter,Rupture,Festival of Blood,Quantum Charge,5,1,10,9.4,9,2,3,11,7
+12-11-2023,1,See You Soon,Wanwan,MP the King,Marksman,Martis,Fighter,4,2,1,"14:20",Retribution,Assassin,Thrill,Seasoned Hunter,Quantum Charge,9,1,7,11.8,9,2,3,11,7
+12-11-2023,1,See You Soon,Guinevere,Kousei,Fighter,Bruno,Mage,6,4,0,"14:20",Purify,Assassin,Fatal,Master Assassin,Quantum Charge,0,1,2,11.5,9,2,3,11,7
+12-11-2023,1,See You Soon,Baxia,BOXI,Tank,Tigreal,Tank,7,5,0,"14:20",Flicker,Tank,Firmness,Wilderness Blessing.,Concussive Blast,2,3,10,7.6,9,2,3,11,7
+12-11-2023,1,See You Soon,Claude,Raa,Marksman,Valentina,Marksman,9,7,0,"14:20",Flicker,Mage,Agility,Wilderness Blessing.,Quantum Charge,2,1,10,9.3,9,2,3,11,7
+12-11-2023,2,Burmese Ghouls,Kaja,Stitch,Support/Fighter,Bruno,Marksman,1,1,0,"15:13",Flicker,Assassin,Fatal,Weapons Master,Quantum Charge,0,2,3,10.7,1,0,0,5,4
+12-11-2023,2,Burmese Ghouls,Faramis,Niko,Support/Mage,Baxia,Tank,3,3,0,"15:13",Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,2,3,2,6.7,1,0,0,5,4
+12-11-2023,2,Burmese Ghouls,Joy,Lina,Assassin,Lylia,Mage,5,3,0,"15:13",Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,0,3,4,7.7,1,0,0,5,4
+12-11-2023,2,Burmese Ghouls,Lancelot,Blink,Assassin,Mathilda,Support/Assassin,8,6,0,"15:13",Flicker,Support,Inspire,Tenacity,Quantum Charge,0,3,4,6,1,0,0,5,4
+12-11-2023,2,Burmese Ghouls,Tigreal,Carbon,Tank,Lapu-Lapu,Fighter,10,6,0,"15:13",Flicker,Fighter,Rupture,Festival of Blood,Brave Smite,2,3,2,7,1,0,0,5,4
+12-11-2023,2,See You Soon,Wanwan,Raa,Marksman,Valentina,Mage,2,2,1,"15:13",Flicker,Mage,Agility,Wilderness Blessing.,Impure Rage,5,1,5,10,9,2,2,8,7
+12-11-2023,2,See You Soon,Nolan,MP the King,Assassin,Martis,Fighter,4,2,0,"15:13",Retribution,Assassin,Thrill,Seasoned Hunter,Quantum Charge,5,0,6,11.1,9,2,2,8,7
+12-11-2023,2,See You Soon,Guinevere,BOXI,Fighter,Minotaur,Tank/Support,6,4,0,"15:13",Flicker,Tank,Vitality,Wilderness Blessing.,Concussive Blast,0,1,13,7.9,9,2,2,8,7
+12-11-2023,2,See You Soon,Angela,Felix,Support,Arlott,Marksman,7,5,0,"15:13",Flicker,Tank,Firmness,Wilderness Blessing.,Concussive Blast,1,1,10,8.7,9,2,2,8,7
+12-11-2023,2,See You Soon,Diggie,Kousei,Support,Claude,Fighter/Assassin,9,7,0,"15:13",Sprint,Common,Swift,Tenacity,Quantum Charge,3,1,7,12.3,9,2,2,8,7
+12-11-2023,3,See You Soon,Wanwan,Felix,Marksman,Yu Zhong,Fighter,1,1,0,13:33,Sprint,Fighter,Rupture,Festival of Blood,Quantum Charge,3,2,5,8.2,6,2,3,9,7
+12-11-2023,3,See You Soon,Guinevere,MP the King,Fighter,Lancelot,Marksman,3,3,0,13:33,Retribution,Assassin,Thrill,Seasoned Hunter,Quantum Charge,1,0,6,10.9,6,2,3,9,7
+12-11-2023,3,See You Soon,Faramis,Kousei,Support/Mage,Claude,Assassin,5,3,0,13:33,Sprint,Common,Swift,Tenacity,Quantum Charge,1,2,6,9.9,6,2,3,9,7
+12-11-2023,3,See You Soon,Baxia,Raa,Tank,Valentina,Mage,8,6,1,13:33,Flicker,Mage,Agility,Wilderness Blessing.,Impure Rage,6,0,5,9.5,6,2,3,9,7
+12-11-2023,3,See You Soon,Akai,BOXI,Tank,Chou,Fighter,10,6,0,13:33,Flicker,Tank,Agility,Wilderness Blessing.,Concussive Blast,0,0,6,6.1,6,2,3,9,7
+12-11-2023,3,Burmese Ghouls,Joy,Carbon,Assassin,Arlott,Fighter/Assassin,2,2,0,13:33,Flicker,Tank,Firmness,Wilderness Blessing.,Brave Smite,0,1,4,6.7,2,0,0,4,6
+12-11-2023,3,Burmese Ghouls,Nolan,Stitch,Assassin,Bruno,Marksman,4,2,0,13:33,Purify,Assassin,Fatal,Weapons Master,Quantum Charge,1,3,2,8.6,2,0,0,4,6
+12-11-2023,3,Burmese Ghouls,Kaja,Lina,Support/Fighter,Angela,Support,6,4,0,13:33,Flicker,Support,Agility,Bargain Hunter,Impure Rage,1,0,1,6.8,2,0,0,4,6
+12-11-2023,3,Burmese Ghouls,Tigreal,Niko,Tank,Martis,Fighter,7,5,0,13:33,Retribution,Assassin,Thrill,Seasoned Hunter,Quantum Charge,2,3,2,7.4,2,0,0,4,6
+12-11-2023,3,Burmese Ghouls,Minotaur,Blink,Tank/Support,Franco,Tank,9,7,0,13:33,Flicker,Support,Agility,Pull Yourself Together,Focusing Mark,0,4,3,5.3,2,0,0,4,6
+12-12-2023,1,Deus Vult,Joy,Sunset Lover,Assassin,Valentina,Mage,1,1,0,18:49,Purify,Mage,Rupture,Wilderness Blessing.,Impure Rage,3,2,6,11.1,5,2,2,6,8
+12-12-2023,1,Deus Vult,Fanny,Kid Bomba,Assassin,Terizla,Fighter,3,3,0,18:49,Flicker,Fighter,Agility,Festival of Blood,Brave Smite,4,6,4,11.2,5,2,2,6,8
+12-12-2023,1,Deus Vult,Kaja,Carvi,Support/Fighter,Bruno,Marksman,5,3,0,18:49,Purify,Assassin,Fatal,Tenacity,Quantum Charge,3,3,2,11.6,5,2,2,6,8
+12-12-2023,1,Deus Vult,Minotaur,SAWO,Tank/Support,Mathilda,Support/Assassin,8,6,0,18:49,Flicker,Common,Agility,Wilderness Blessing.,Quantum Charge,0,4,10,8.5,5,2,2,6,8
+12-12-2023,1,Deus Vult,Chou,Magistor,Fighter,Akai,Tank,10,6,0,18:49,Retribution,Tank,Vitality,Seasoned Hunter,Quantum Charge,2,3,5,9.3,5,2,2,6,8
+12-12-2023,1,ONIC Esports,Faramis,Kiboy,Support/Mage,Kadita,Mage/Assassin,2,2,0,18:49,Petrify,Mage,Rupture,Wilderness Blessing.,Lethal Ignition,1,4,7,7.9,7,1,1,12,9
+12-12-2023,1,ONIC Esports,Guinevere,Kairi,Fighter,Fredrinn,Fighter/Tank,4,2,1,18:49,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,5,2,11,11.7,7,1,1,12,9
+12-12-2023,1,ONIC Esports,Nolan,Butss,Assassin,Dyrroth,Fighter,6,4,0,18:49,Flicker,Tank,Rupture,Festival of Blood,Quantum Charge,2,3,10,11.2,7,1,1,12,9
+12-12-2023,1,ONIC Esports,Diggie,S A N Z,Support,Gord,Mage,7,5,0,18:49,Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,4,2,8,13.1,7,1,1,12,9
+12-12-2023,1,ONIC Esports,Martis,CW,Fighter,Wanwan,Marksman,9,7,0,18:49,Inspire,Assassin,Swift,Tenacity,Weakness Finder,6,1,2,16.5,7,1,1,12,9
+12-12-2023,2,ONIC Esports,Faramis,Kairi,Support/Mage,Dyrroth,Marksman,1,1,1,17:15,Retribution,Assassin,Rupture,Seasoned Hunter,Lethal Ignition,7,0,8,13.4,9,3,3,13,10
+12-12-2023,2,ONIC Esports,Minotaur,S A N Z,Tank/Support,Valentina,Mage,3,3,0,17:15,Flicker,Mage,Inspire,Wilderness Blessing.,Quantum Charge,5,0,9,11.6,9,3,3,13,10
+12-12-2023,2,ONIC Esports,Bruno,Butss,Marksman,Fredrinn,Fighter/Tank,5,3,0,17:15,Flicker,Tank,Vitality,Tenacity,Brave Smite,3,3,9,9.7,9,3,3,13,10
+12-12-2023,2,ONIC Esports,Terizla,CW,Fighter,Claude,Fighter,8,6,0,17:15,Flicker,Common,Agility,Tenacity,Quantum Charge,1,0,11,15.2,9,3,3,13,10
+12-12-2023,2,ONIC Esports,Lapu-Lapu,Kiboy,Fighter,Chou,Fighter,10,6,0,17:15,Flicker,Tank,Agility,Wilderness Blessing.,Concussive Blast,0,2,8,7.9,9,3,3,13,10
+12-12-2023,2,Deus Vult,Guinevere,SAWO,Fighter,Angela,Support,2,2,0,17:15,Purify,Support,Inspire,Wilderness Blessing.,Focusing Mark,0,2,4,7.6,0,0,0,5,5
+12-12-2023,2,Deus Vult,Nolan,Magistor,Assassin,Baxia,Tank,4,2,0,17:15,Retribution,Tank,Vitality,Seasoned Hunter,Concussive Blast,1,4,3,8.4,0,0,0,5,5
+12-12-2023,2,Deus Vult,Joy,Carvi,Assassin,Brody,Marksman,6,4,0,17:15,Flicker,Assassin,Thrill,Weapons Master,Quantum Charge,4,4,0,10.4,0,0,0,5,5
+12-12-2023,2,Deus Vult,Mathilda,Kid Bomba,Support/Assassin,Arlott,Fighter/Assassin,7,5,0,17:15,Flicker,Common,Thrill,Wilderness Blessing.,Quantum Charge,0,6,4,7.7,0,0,0,5,5
+12-12-2023,2,Deus Vult,Tigreal,Sunset Lover,Tank,Novaria,Mage,9,7,0,17:15,Purify,Assassin,Rupture,Wilderness Blessing.,Impure Rage,0,0,5,9.6,0,0,0,5,5
+12-12-2023,3,Deus Vult,Fanny,Sunset Lover,Assassin,Valentina,Mage,1,1,0,21:42,Flicker,Mage,Rupture,Wilderness Blessing.,Quantum Charge,2,1,6,12.3,4,1,2,9,8
+12-12-2023,3,Deus Vult,Joy,Kid Bomba,Assassin,Terizla,Fighter,3,3,0,21:42,Flicker,Fighter,Agility,Festival of Blood,Brave Smite,2,6,5,10.6,4,1,2,9,8
+12-12-2023,3,Deus Vult,Kaja,SAWO,Support/Fighter,Tigreal,Tank,5,3,0,21:42,Flicker,Tank,Firmness,Wilderness Blessing.,Concussive Blast,0,4,5,9.2,4,1,2,9,8
+12-12-2023,3,Deus Vult,Lylia,Magistor,Mage,Lancelot,Assassin,8,6,0,21:42,Retribution,Assassin,Swift,Seasoned Hunter,Impure Rage,1,2,3,15.5,4,1,2,9,8
+12-12-2023,3,Deus Vult,Kadita,Carvi,Mage/Assassin,Irithel,Marksman,10,6,0,21:42,Sprint,Assassin,Fatal,Tenacity,Quantum Charge,5,4,2,14.4,4,1,2,9,8
+12-12-2023,3,ONIC Esports,Faramis,Kairi,Support/Mage,Fredrinn,Fighter/Tank,2,2,0,21:42,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,1,2,15,13.2,9,3,1,13,14
+12-12-2023,3,ONIC Esports,Guinevere,S A N Z,Fighter,Novaria,Marksman,4,2,0,21:42,Purify,Mage,Rupture,Wilderness Blessing.,Impure Rage,1,2,15,13.2,9,3,1,13,14
+12-12-2023,3,ONIC Esports,Nolan,Kiboy,Assassin,Diggie,Support,6,4,0,21:42,Flicker,Support,Inspire,Wilderness Blessing.,Impure Rage,0,2,17,11.2,9,3,1,13,14
+12-12-2023,3,ONIC Esports,Ixia,Butss,Marksman,Uranus,Tank,7,5,0,21:42,Purify,Common,Agility,Wilderness Blessing.,Brave Smite,2,4,11,13.6,9,3,1,13,14
+12-12-2023,3,ONIC Esports,Beatrix,CW,Marksman,Bruno,Mage,9,7,1,21:42,Flicker,Assassin,Fatal,Tenacity,Quantum Charge,8,0,7,17.4,9,3,1,13,14
+12-12-2023,1,Geek Fam ID,Joy,Caderaa,Assassin,Bruno,Marksman,1,1,0,"22:39",Flicker,Assassin,Fatal,Weapons Master,Quantum Charge,1,2,2,17.1,2,1,2,6,9
+12-12-2023,1,Geek Fam ID,Arlott,Aboy,Fighter/Assassin,Valentina,Mage,3,3,0,"22:39",Flicker,Mage,Inspire,Wilderness Blessing.,Quantum Charge,2,5,2,13,2,1,2,6,9
+12-12-2023,1,Geek Fam ID,Nolan,Baloyskie,Assassin,Tigreal,Tank,5,3,0,"22:39",Flicker,Tank,Firmness,Tenacity,Concussive Blast,1,7,1,10.3,2,1,2,6,9
+12-12-2023,1,Geek Fam ID,Paquito,Markyyyyy,Fighter/Assassin,Akai,Tank,8,6,0,"22:39",Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,1,3,3,11,2,1,2,6,9
+12-12-2023,1,Geek Fam ID,Benedetta,Luke,Assassin/Fighter,X.Borg,Fighter,10,6,0,"22:39",Flicker,Fighter,Vitality,Festival of Blood,Impure Rage,0,2,3,13.5,2,1,2,6,9
+12-12-2023,1,AP.Bren,Wanwan,Owgwen,Marksman,Mathilda,Support/Assassin,2,2,1,"22:39",Purify,Support,Inspire,Wilderness Blessing.,Quantum Charge,5,0,14,11.9,9,2,1,16,12
+12-12-2023,1,AP.Bren,Guinevere,KyleTzy,Fighter,Baxia,Tank,4,2,0,"22:39",Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,1,0,17,12,9,2,1,16,12
+12-12-2023,1,AP.Bren,Faramis,Super Marco,Support/Mage,Brody,Marksman,6,4,0,"22:39",Flicker,Assassin,Rupture,Master Assassin,Quantum Charge,8,2,6,16,9,2,1,16,12
+12-12-2023,1,AP.Bren,Terizla,FlapTzy,Fighter,Dyrroth,Fighter,7,5,0,"22:39",Flicker,Tank,Thrill,Festival of Blood,Brave Smite,2,2,7,15.3,9,2,1,16,12
+12-12-2023,1,AP.Bren,Minotaur,Pheww,Tank/Support,Novaria,Mage,9,7,0,"22:39",Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,3,1,14,15.2,9,2,1,16,12
+12-12-2023,2,Geek Fam ID,Joy,Caderaa,Assassin,Bruno,Marksman,1,1,0,19:32,Flicker,Assassin,Fatal,Weapons Master,Quantum Charge,7,1,4,16.1,8,2,3,8,9
+12-12-2023,2,Geek Fam ID,Nolan,Aboy,Assassin,Lylia,Mage,3,3,0,19:32,Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,4,1,10,12.4,8,2,3,8,9
+12-12-2023,2,Geek Fam ID,Arlott,Baloyskie,Fighter/Assassin,Ruby,Fighter/Tank,5,3,0,19:32,Flicker,Tank,Agility,Pull Yourself Together,Concussive Blast,1,3,11,8.9,8,2,3,8,9
+12-12-2023,2,Geek Fam ID,Fanny,Markyyyyy,Assassin,Baxia,Tank,8,6,0,19:32,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,1,3,1,9.4,8,2,3,8,9
+12-12-2023,2,Geek Fam ID,Akai,Luke,Tank,Khaleed,Fighter,10,6,1,19:32,Flicker,Assassin,Rupture,Master Assassin,Lethal Ignition,2,3,4,11.5,8,2,3,8,9
+12-12-2023,2,AP.Bren,Wanwan,Owgwen,Marksman,Mathilda,Support/Assassin,2,2,0,19:32,Flicker,Support,Inspire,Wilderness Blessing.,Quantum Charge,1,2,10,8.5,2,0,0,9,9
+12-12-2023,2,AP.Bren,Guinevere,FlapTzy,Fighter,Terizla,Fighter,4,2,0,19:32,Flicker,Fighter,Firmness,Festival of Blood,Brave Smite,1,5,5,9.6,2,0,0,9,9
+12-12-2023,2,AP.Bren,Faramis,Super Marco,Support/Mage,Claude,Marksman,6,4,0,19:32,Purify,Common,Swift,Master Assassin,Quantum Charge,1,1,4,14.3,2,0,0,9,9
+12-12-2023,2,AP.Bren,Paquito,KyleTzy,Fighter/Assassin,Martis,Fighter,7,5,0,19:32,Retribution,Assassin,Thrill,Seasoned Hunter,Quantum Charge,7,2,1,9.7,2,0,0,9,9
+12-12-2023,2,AP.Bren,Minotaur,Pheww,Tank/Support,Valentina,Mage,9,7,0,19:32,Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,1,5,5,9.4,2,0,0,9,9
+12-12-2023,3,Geek Fam ID,Joy,Caderaa,Assassin,Bruno,Marksman,1,1,0,15:23,Flicker,Assassin,Fatal,Weapons Master,Quantum Charge,0,2,0,9.3,3,0,0,5,6
+12-12-2023,3,Geek Fam ID,Nolan,Aboy,Assassin,Lylia,Mage,3,3,0,15:23,Sprint,Mage,Inspire,Wilderness Blessing.,Impure Rage,1,2,0,9,3,0,0,5,6
+12-12-2023,3,Geek Fam ID,Arlott,Baloyskie,Fighter/Assassin,Ruby,Fighter/Tank,5,3,0,15:23,Flicker,Tank,Agility,Pull Yourself Together,Concussive Blast,0,2,2,6.3,3,0,0,5,6
+12-12-2023,3,Geek Fam ID,Dyrroth,Luke,Fighter,Khaleed,Fighter,8,6,0,15:23,Flicker,Assassin,Rupture,Master Assassin,Lethal Ignition,1,3,0,8.2,3,0,0,5,6
+12-12-2023,3,Geek Fam ID,Ixia,Markyyyyy,Marksman,Akai,Tank,10,6,0,15:23,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,0,2,0,6.2,3,0,0,5,6
+12-12-2023,3,AP.Bren,Wanwan,Pheww,Marksman,Faramis,Support/Mage,2,2,1,15:23,Purify,Mage,Thrill,Wilderness Blessing.,Quantum Charge,4,0,5,11.2,9,2,3,9,6
+12-12-2023,3,AP.Bren,Guinevere,Owgwen,Fighter,Mathilda,Support/Assassin,4,2,0,15:23,Flicker,Support,Inspire,Wilderness Blessing.,Quantum Charge,1,0,9,7.9,9,2,3,9,6
+12-12-2023,3,AP.Bren,Baxia,KyleTzy,Tank,Fredrinn,Fighter/Tank,6,4,0,15:23,Retribution,Tank,Firmness,Seasoned Hunter,Brave Smite,4,0,4,9,9,2,3,9,6
+12-12-2023,3,AP.Bren,Minotaur,Super Marco,Tank/Support,Claude,Marksman,7,5,0,15:23,Purify,Common,Swift,Tenacity,Quantum Charge,2,0,5,13.4,9,2,3,9,6
+12-12-2023,3,AP.Bren,Lapu-Lapu,FlapTzy,Fighter,Phoveus,Fighter,9,7,0,15:23,Purify,Fighter,Vitality,Wilderness Blessing.,Brave Smite,0,2,3,7.9,9,2,3,9,6
+12-12-2023,4,Geek Fam ID,Nolan,Luke,Assassin,Yu Zhong,Fighter,1,1,0,16:41,Sprint,Fighter,Rupture,Festival of Blood,Quantum Charge,0,3,0,7.8,1,0,1,3,6
+12-12-2023,4,Geek Fam ID,Joy,Caderaa,Assassin,Bruno,Marksman,3,3,0,16:41,Flicker,Assassin,Fatal,Weapons Master,Quantum Charge,0,2,0,10.5,1,0,1,3,6
+12-12-2023,4,Geek Fam ID,Arlott,Baloyskie,Fighter/Assassin,Angela,Support,5,3,0,16:41,Flicker,Mage,Agility,Wilderness Blessing.,Focusing Mark,0,4,1,6.5,1,0,1,3,6
+12-12-2023,4,Geek Fam ID,Claude,Markyyyyy,Marksman,Akai,Tank,8,6,0,16:41,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,0,2,0,6.9,1,0,1,3,6
+12-12-2023,4,Geek Fam ID,Dyrroth,Aboy,Fighter,Lylia,Mage,10,6,0,16:41,Flicker,Mage,Agility,Wilderness Blessing.,Impure Rage,1,1,0,9.4,1,0,1,3,6
+12-12-2023,4,AP.Bren,Wanwan,Pheww,Marksman,Faramis,Support/Mage,2,2,0,16:41,Flicker,Mage,Agility,Wilderness Blessing.,Quantum Charge,3,1,7,104,8,3,2,12,10
+12-12-2023,4,AP.Bren,Guinevere,KyleTzy,Fighter,Fredrinn,Fighter/Tank,4,2,0,16:41,Retribution,Tank,Firmness,Seasoned Hunter,Brave Smite,2,0,5,10.1,8,3,2,12,10
+12-12-2023,4,AP.Bren,Baxia,Owgwen,Tank,Mathilda,Support/Assassin,6,4,1,16:41,Flicker,Support,Inspire,Wilderness Blessing.,Quantum Charge,1,0,9,8.8,8,3,2,12,10
+12-12-2023,4,AP.Bren,Minotaur,FlapTzy,Tank/Support,Khaleed,Fighter,7,5,0,16:41,Flicker,Assassin,Thrill,Master Assassin,Concussive Blast,2,0,5,11.9,8,3,2,12,10
+12-12-2023,4,AP.Bren,Lapu-Lapu,Super Marco,Fighter,Brody,Marksman,9,7,0,16:41,Flicker,Assassin,Rupture,Master Assassin,Quantum Charge,4,0,1,13.6,8,3,2,12,10
+12-15-2023,1,Blacklist Intl.,Fanny,Renejay,Assassin,Angela,Support,1,1,0,"14:55",Flicker,Support,Agility,Wilderness Blessing.,Impure Rage,0,1,0,5.5,0,0,0,6,4
+12-15-2023,1,Blacklist Intl.,Joy,Sensui,Assassin,Fredrinn,Fighter/Tank,3,3,0,"14:55",Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,1,3,0,7,0,0,0,6,4
+12-15-2023,1,Blacklist Intl.,Nolan,Oheb,Assassin,Wanwan,Marksman,5,3,0,"14:55",Inspire,Marskman,Swift,Tenacity,Weakness Finder,0,4,1,8.4,0,0,0,6,4
+12-15-2023,1,Blacklist Intl.,Khaleed,Edward,Fighter,Arlott,Fighter/Assassin,8,6,0,"14:55",Flicker,Common,Rupture,Wilderness Blessing.,Brave Smite,0,2,1,7,0,0,0,6,4
+12-15-2023,1,Blacklist Intl.,Phoveus,Yue,Fighter,Novaria,Mage,10,6,0,"14:55",Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,0,0,1,7.7,0,0,0,6,4
+12-15-2023,1,Geek Fam ID,Guinevere,Baloyskie,Fighter,Ruby,Fighter/Tank,2,2,0,"14:55",Flicker,Tank,Agility,Pull Yourself Together,Concussive Blast,1,1,4,7.3,8,2,3,11,11
+12-15-2023,1,Geek Fam ID,Lylia,Nnael,Mage,Baxia,Tank,4,2,0,"14:55",Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,2,0,5,10.9,8,2,3,11,11
+12-15-2023,1,Geek Fam ID,Bruno,Markyyyyy,Marksman,Claude,Marksman,6,4,1,"14:55",Sprint,Common,Swift,Tenacity,Quantum Charge,3,0,4,11,8,2,3,11,11
+12-15-2023,1,Geek Fam ID,Edith,Aboy,Tank/Marksman,Valentina,Mage,7,5,0,"14:55",Flicker,Mage,Inspire,Wilderness Blessing.,Quantum Charge,1,0,6,9.8,8,2,3,11,11
+12-15-2023,1,Geek Fam ID,Faramis,Luke,Support/Mage,Lapu-Lapu,Fighter,9,7,0,"14:55",Flicker,Fighter,Rupture,Festival of Blood,Brave Smite,3,0,3,10.2,8,2,3,11,11
+12-15-2023,2,Blacklist Intl.,Fanny,Yue,Assassin,Valentina,Mage,1,1,0,20:34,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,6,2,9,11.6,9,1,0,8,7
+12-15-2023,2,Blacklist Intl.,Joy,Renejay,Assassin,Mathilda,Support/Assassin,3,3,1,20:34,Flicker,Support,Inspire,Wilderness Blessing.,Quantum Charge,2,0,16,11.1,9,1,0,8,7
+12-15-2023,2,Blacklist Intl.,Nolan,Sensui,Assassin,Akai,Tank,5,3,0,20:34,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,0,0,13,11.1,9,1,0,8,7
+12-15-2023,2,Blacklist Intl.,Ruby,Oheb,Fighter/Tank,Ixia,Marksman,8,6,0,20:34,Flicker,Assassin,Thrill,Weapons Master,Quantum Charge,7,3,9,15.3,9,1,0,8,7
+12-15-2023,2,Blacklist Intl.,Minotaur,Edward,Tank/Support,Terizla,Fighter,10,6,0,20:34,Flicker,Fighter,Agility,Festival of Blood,Brave Smite,4,4,9,11.9,9,1,0,8,7
+12-15-2023,2,Geek Fam ID,Guinevere,Markyyyyy,Fighter,Bruno,Marksman,2,2,0,20:34,Flicker,Assassin,Fatal,Weapons Master,Quantum Charge,2,1,3,14.7,7,2,3,9,10
+12-15-2023,2,Geek Fam ID,Lylia,Luke,Mage,Lapu-Lapu,Fighter,4,2,0,20:34,Flicker,Fighter,Rupture,Festival of Blood,Brave Smite,4,4,3,12.5,7,2,3,9,10
+12-15-2023,2,Geek Fam ID,Baxia,Nnael,Tank,Fredrinn,Fighter/Tank,6,4,0,20:34,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,0,4,1,10.6,7,2,3,9,10
+12-15-2023,2,Geek Fam ID,Edith,Aboy,Tank/Marksman,Faramis,Support/Mage,7,5,0,20:34,Flicker,Mage,Inspire,Wilderness Blessing.,Lethal Ignition,3,5,3,11.9,7,2,3,9,10
+12-15-2023,2,Geek Fam ID,Wanwan,Baloyskie,Marksman,Grock,Tank/Fighter,9,7,0,20:34,Flicker,Common,Agility,Wilderness Blessing.,Brave Smite,0,5,3,9.3,7,2,3,9,10
+12-15-2023,3,Geek Fam ID,Valentina,Markyyyyy,Mage,Claude,Marksman,1,1,0,17:48,Sprint,Common,Swift,Tenacity,Quantum Charge,1,1,4,13.1,6,1,3,9,7
+12-15-2023,3,Geek Fam ID,Guinevere,Nnael,Fighter,Baxia,Tank,3,3,0,17:48,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,2,2,5,9.3,6,1,3,9,7
+12-15-2023,3,Geek Fam ID,Mathilda,Aboy,Support/Assassin,Lylia,Mage,5,3,0,17:48,Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,2,2,5,9.7,6,1,3,9,7
+12-15-2023,3,Geek Fam ID,Edith,Luke,Tank/Marksman,Arlott,Fighter/Assassin,8,6,0,17:48,Flicker,Fighter,Agility,Tenacity,Brave Smite,3,2,5,9.5,6,1,3,9,7
+12-15-2023,3,Geek Fam ID,Paquito,Baloyskie,Fighter/Assassin,Minotaur,Tank/Support,10,6,0,17:48,Flicker,Tank,Firmness,Tenacity,Concussive Blast,1,3,7,7.8,6,1,3,9,7
+12-15-2023,3,Blacklist Intl.,Joy,Yue,Assassin,Faramis,Support/Mage,2,2,0,17:48,Flicker,Mage,Rupture,Wilderness Blessing.,Lethal Ignition,1,2,8,9.9,7,2,0,7,9
+12-15-2023,3,Blacklist Intl.,Nolan,Sensui,Assassin,Akai,Tank,4,2,1,17:48,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,3,1,5,10.9,7,2,0,7,9
+12-15-2023,3,Blacklist Intl.,Bruno,Renejay,Marksman,Rafaela,Support,6,4,0,17:48,Flicker,Support,Inspire,Wilderness Blessing.,Impure Rage,1,2,8,8.6,7,2,0,7,9
+12-15-2023,3,Blacklist Intl.,Ruby,Edward,Fighter/Tank,Khaleed,Fighter,7,5,0,17:48,Flicker,Assassin,Rupture,Master Assassin,Concussive Blast,3,2,3,11.4,7,2,0,7,9
+12-15-2023,3,Blacklist Intl.,Lapu-Lapu,Oheb,Fighter,Karrie,Marksman,9,7,0,17:48,Flicker,Assassin,Swift,Tenacity,Quantum Charge,2,2,6,12.1,7,2,0,7,9
+12-15-2023,4,Geek Fam ID,Valentina,Aboy,Mage,Faramis,Support/Mage,1,1,0,17:49,Flicker,Mage,Inspire,Wilderness Blessing.,Lethal Ignition,3,4,4,9.3,3,0,3,7,8
+12-15-2023,4,Geek Fam ID,Guinevere,Baloyskie,Fighter,Arlott,Fighter/Assassin,3,3,0,17:49,Flicker,Tank,Firmness,Festival of Blood,Brave Smite,2,3,3,7.3,3,0,3,7,8
+12-15-2023,4,Geek Fam ID,Mathilda,Nnael,Support/Assassin,Baxia,Tank,5,3,0,17:49,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,0,1,6,9.3,3,0,3,7,8
+12-15-2023,4,Geek Fam ID,Edith,Markyyyyy,Tank/Marksman,Claude,Marksman,8,6,0,17:49,Sprint,Common,Swift,Tenacity,Quantum Charge,0,2,1,11.3,3,0,3,7,8
+12-15-2023,4,Geek Fam ID,Minotaur,Luke,Tank/Support,Lapu-Lapu,Fighter,10,6,0,17:49,Flicker,Fighter,Rupture,Festival of Blood,Brave Smite,2,3,4,9.6,3,0,3,7,8
+12-15-2023,4,Blacklist Intl.,Joy,Sensui,Assassin,Akai,Tank,2,2,0,17:49,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,0,1,9,9.7,9,2,0,8,8
+12-15-2023,4,Blacklist Intl.,Nolan,Oheb,Assassin,Bruno,Marksman,4,2,0,17:49,Flicker,Assassin,Fatal,Weapons Master,Quantum Charge,5,3,4,12.1,9,2,0,8,8
+12-15-2023,4,Blacklist Intl.,Lylia,Yue,Mage,Gord,Mage,6,4,0,17:49,Flicker,Mage,Thrill,Wilderness Blessing.,Impure Rage,3,0,9,11.4,9,2,0,8,8
+12-15-2023,4,Blacklist Intl.,Ruby,Edward,Fighter/Tank,Terizla,Fighter,7,5,0,17:49,Flicker,Fighter,Firmness,Festival of Blood,Brave Smite,2,0,9,10.9,9,2,0,8,8
+12-15-2023,4,Blacklist Intl.,Khaleed,Renejay,Fighter,Estes,Support,9,7,1,17:49,Flicker,Support,Agility,Wilderness Blessing.,Quantum Charge,3,3,10,9.4,9,2,0,8,8
+12-15-2023,1,Deus Vult,Joy,Sunset Lover,Assassin,Valentina,Mage,1,1,0,14:30,Purify,Mage,Rupture,Wilderness Blessing.,Quantum Charge,5,2,5,10,3,0,0,5,6
+12-15-2023,1,Deus Vult,Angela,Magistor,Support,Akai,Tank,3,3,0,14:30,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,0,4,9,7.4,3,0,0,5,6
+12-15-2023,1,Deus Vult,Wanwan,Carvi,Marksman,Brody,Marksman,5,3,0,14:30,Flicker,Assassin,Thrill,Master Assassin,Quantum Charge,2,5,4,9,3,0,0,5,6
+12-15-2023,1,Deus Vult,Tigreal,Kid Bomba,Tank,Dyrroth,Fighter,8,6,0,14:30,Flicker,Tank,Rupture,Festival of Blood,Quantum Charge,2,3,3,7.3,3,0,0,5,6
+12-15-2023,1,Deus Vult,Minotaur,SAWO,Tank/Support,Kaja,Support/Fighter,10,6,0,14:30,Flicker,Common,Agility,Wilderness Blessing.,Quantum Charge,2,4,7,7.4,3,0,0,5,6
+12-15-2023,1,See You Soon,Nolan,MP the King,Assassin,Lancelot,Assassin,2,2,1,14:30,Retribution,Assassin,Thrill,Seasoned Hunter,Impure Rage,4,1,9,12.9,7,2,3,8,8
+12-15-2023,1,See You Soon,Guinevere,BOXI,Fighter,Khufra,Tank,4,2,0,14:30,Flicker,Tank,Firmness,Tenacity,Concussive Blast,4,4,9,7.7,7,2,3,8,8
+12-15-2023,1,See You Soon,Faramis,Raa,Support/Mage,Kadita,Mage/Assassin,6,4,0,14:30,Purify,Assassin,Rupture,Pull Yourself Together,Lethal Ignition,3,0,11,8.5,7,2,3,8,8
+12-15-2023,1,See You Soon,Diggie,Kousei,Support,Bruno,Marksman,7,5,0,14:30,Flicker,Assassin,Fatal,Master Assassin,Quantum Charge,6,1,5,11.6,7,2,3,8,8
+12-15-2023,1,See You Soon,Uranus,Felix,Tank,Lapu-Lapu,Fighter,9,7,0,14:30,Flicker,Fighter,Rupture,Festival of Blood,Brave Smite,3,5,6,7.7,7,2,3,8,8
+12-15-2023,2,Deus Vult,Joy,Magistor,Assassin,Guinevere,Fighter,1,1,0,14:44,Retribution,Mage,Thrill,Seasoned Hunter,Impure Rage,1,6,7,6.7,4,0,0,7,5
+12-15-2023,2,Deus Vult,Lancelot,Carvi,Assassin,Bruno,Marksman,3,3,0,14:44,Purify,Assassin,Fatal,Master Assassin,Quantum Charge,3,4,6,10.2,4,0,0,7,5
+12-15-2023,2,Deus Vult,Angela,SAWO,Support,Minotaur,Tank/Support,5,3,0,14:44,Flicker,Tank,Firmness,Wilderness Blessing.,Concussive Blast,0,3,7,6.2,4,0,0,7,5
+12-15-2023,2,Deus Vult,Kaja,Kid Bomba,Support/Fighter,Terizla,Fighter,8,6,0,14:44,Flicker,Fighter,Agility,Festival of Blood,Brave Smite,1,5,5,7.8,4,0,0,7,5
+12-15-2023,2,Deus Vult,Tigreal,Sunset Lover,Tank,Lylia,Mage,10,6,0,14:44,Purify,Mage,Inspire,Wilderness Blessing.,Impure Rage,5,2,4,9.5,4,0,0,7,5
+12-15-2023,2,See You Soon,Nolan,BOXI,Assassin,Chou,Fighter,2,2,0,14:44,Flicker,Tank,Agility,Wilderness Blessing.,Concussive Blast,0,3,11,6.9,7,1,3,6,8
+12-15-2023,2,See You Soon,Faramis,Kousei,Support/Mage,Wanwan,Marksman,4,2,1,14:44,Inspire,Marskman,Swift,Master Assassin,Weakness Finder,7,1,9,11.8,7,1,3,6,8
+12-15-2023,2,See You Soon,Diggie,Raa,Support,Valentina,Mage,6,4,0,14:44,Purify,Mage,Agility,Wilderness Blessing.,Impure Rage,3,1,10,8.6,7,1,3,6,8
+12-15-2023,2,See You Soon,Novaria,MP the King,Mage,Martis,Fighter,7,5,0,14:44,Retribution,Assassin,Thrill,Seasoned Hunter,Quantum Charge,4,3,6,10.2,7,1,3,6,8
+12-15-2023,2,See You Soon,Phoveus,Felix,Fighter,Lapu-Lapu,Fighter,9,7,0,14:44,Flicker,Fighter,Rupture,Festival of Blood,Brave Smite,6,2,9,10,7,1,3,6,8
+12-15-2023,3,Deus Vult,Lancelot,SAWO,Assassin,Angela,Support,1,1,0,"31:56",Flicker,Support,Inspire,Wilderness Blessing.,Focusing Mark,1,2,17,16.1,9,1,2,14,11
+12-15-2023,3,Deus Vult,Joy,Carvi,Assassin,Bruno,Marksman,3,3,0,"31:56",Purify,Assassin,Fatal,Master Assassin,Quantum Charge,6,1,10,22.5,9,1,2,14,11
+12-15-2023,3,Deus Vult,Guinevere,Magistor,Fighter,Baxia,Tank,5,3,0,"31:56",Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,3,2,14,16.9,9,1,2,14,11
+12-15-2023,3,Deus Vult,Kaja,Sunset Lover,Support/Fighter,Lylia,Mage,8,6,1,"31:56",Purify,Mage,Inspire,Wilderness Blessing.,Impure Rage,8,3,12,22.2,9,1,2,14,11
+12-15-2023,3,Deus Vult,Minotaur,Kid Bomba,Tank/Support,Terizla,Fighter,10,6,0,"31:56",Flicker,Fighter,Agility,Festival of Blood,Brave Smite,3,7,12,17.8,9,1,2,14,11
+12-15-2023,3,See You Soon,Faramis,Kousei,Support/Mage,Wanwan,Marksman,2,2,0,"31:56",Inspire,Marskman,Swift,Master Assassin,Weakness Finder,4,1,8,23.7,8,4,1,16,13
+12-15-2023,3,See You Soon,Diggie,Felix,Support,Yu Zhong,Fighter,4,2,0,"31:56",Petrify,Fighter,Rupture,Festival of Blood,Quantum Charge,2,7,8,17.5,8,4,1,16,13
+12-15-2023,3,See You Soon,Nolan,MP the King,Assassin,Martis,Fighter,6,4,0,"31:56",Retribution,Assassin,Thrill,Seasoned Hunter,Quantum Charge,5,4,4,19.2,8,4,1,16,13
+12-15-2023,3,See You Soon,Phoveus,Raa,Fighter,Valentina,Mage,7,5,0,"31:56",Purify,Mage,Agility,Wilderness Blessing.,Impure Rage,3,4,10,16.8,8,4,1,16,13
+12-15-2023,3,See You Soon,Uranus,BOXI,Tank,Chou,Fighter,9,7,0,"31:56",Flicker,Tank,Agility,Wilderness Blessing.,Concussive Blast,1,5,8,14.4,8,4,1,16,13
+12-15-2023,4,See You Soon,Baxia,Kousei,Tank,Claude,Marksman,1,1,0,10:56,Purify,Common,Swift,Tenacity,Quantum Charge,1,1,3,6.4,2,0,0,5,4
+12-15-2023,4,See You Soon,Lylia,MP the King,Mage,Lancelot,Assassin,3,3,0,10:56,Retribution,Assassin,Thrill,Seasoned Hunter,Impure Rage,0,6,2,6.7,2,0,0,5,4
+12-15-2023,4,See You Soon,Faramis,Felix,Support/Mage,Arlott,Fighter/Assassin,5,3,0,10:56,Flicker,Common,Firmness,Tenacity,Brave Smite,2,5,1,5.2,2,0,0,5,4
+12-15-2023,4,See You Soon,Novaria,BOXI,Mage,Kaja,Support/Fighter,8,6,0,10:56,Flicker,Tank,Agility,Wilderness Blessing.,Brave Smite,0,2,5,4.4,2,0,0,5,4
+12-15-2023,4,See You Soon,Uranus,Raa,Tank,Valentina,Mage,10,6,0,10:56,Purify,Mage,Agility,Wilderness Blessing.,Impure Rage,2,4,3,5.5,2,0,0,5,4
+12-15-2023,4,Deus Vult,Angela,Magistor,Support,Guinevere,Fighter,2,2,1,10:56,Retribution,Mage,Thrill,Seasoned Hunter,Impure Rage,5,0,8,8.6,9,1,3,6,6
+12-15-2023,4,Deus Vult,Nolan,Carvi,Assassin,Wanwan,Marksman,4,2,0,10:56,Inspire,Marskman,Swift,Master Assassin,Weakness Finder,10,0,3,9.8,9,1,3,6,6
+12-15-2023,4,Deus Vult,Joy,SAWO,Assassin,Minotaur,Tank/Support,6,4,0,10:56,Flicker,Tank,Firmness,Wilderness Blessing.,Concussive Blast,0,1,15,6.2,9,1,3,6,6
+12-15-2023,4,Deus Vult,Lapu-Lapu,Sunset Lover,Fighter,Gord,Mage,7,5,0,10:56,Purify,Mage,Inspire,Wilderness Blessing.,Impure Rage,3,1,10,8,9,1,3,6,6
+12-15-2023,4,Deus Vult,Diggie,Kid Bomba,Support,Yu Zhong,Fighter,9,7,0,10:56,Petrify,Fighter,Rupture,Festival of Blood,Quantum Charge,0,3,6,7.1,9,1,3,6,6
+12-15-2023,5,Deus Vult,Joy,Sunset Lover,Assassin,Valentina,Mage,1,1,0,"10:37",Purify,Mage,Rupture,Wilderness Blessing.,Impure Rage,3,0,7,7,7,1,3,7,5
+12-15-2023,5,Deus Vult,Wanwan,Magistor,Marksman,Baxia,Tank,3,3,0,"10:37",Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,1,0,8,7.7,7,1,3,7,5
+12-15-2023,5,Deus Vult,Angela,SAWO,Support,Diggie,Support,5,3,0,"10:37",Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,2,2,8,6.2,7,1,3,7,5
+12-15-2023,5,Deus Vult,Lapu-Lapu,Carvi,Fighter,Ixia,Marksman,8,6,1,"10:37",Flicker,Assassin,Thrill,Master Assassin,Quantum Charge,4,2,4,7.5,7,1,3,7,5
+12-15-2023,5,Deus Vult,Lancelot,Kid Bomba,Assassin,Terizla,Fighter,10,6,0,"10:37",Flicker,Fighter,Agility,Festival of Blood,Brave Smite,2,2,1,6.3,7,1,3,7,5
+12-15-2023,5,See You Soon,Guinevere,BOXI,Fighter,Kaja,Support/Fighter,2,2,0,"10:37",Flicker,Tank,Agility,Wilderness Blessing.,Brave Smite,0,5,2,4,0,0,0,4,6
+12-15-2023,5,See You Soon,Nolan,MP the King,Assassin,Hayabusa,Assassin,4,2,0,"10:37",Retribution,Assassin,Thrill,Master Assassin,Lethal Ignition,3,3,0,6.7,0,0,0,4,6
+12-15-2023,5,See You Soon,Faramis,Felix,Support/Mage,Dyrroth,Fighter,6,4,0,"10:37",Flicker,Tank,Thrill,Festival of Blood,Brave Smite,1,1,3,5.7,0,0,0,4,6
+12-15-2023,5,See You Soon,Brody,Raa,Marksman,Kadita,Mage/Assassin,7,5,0,"10:37",Purify,Assassin,Rupture,Pull Yourself Together,Lethal Ignition,1,3,1,4.4,0,0,0,4,6
+12-15-2023,5,See You Soon,Beatrix,Kousei,Marksman,Bruno,Marksman,9,7,0,"10:37",Flicker,Assassin,Fatal,Master Assassin,Quantum Charge,1,0,3,6.3,0,0,0,4,6
+12-16-2023,1,Deus Vult,Mathilda,Magistor,Support/Assassin,Baxia,Tank,1,1,0,17:22,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,0,1,4,8.8,3,1,1,5,8
+12-16-2023,1,Deus Vult,Wanwan,Kid Bomba,Marksman,Terizla,Fighter,3,3,0,17:22,Flicker,Fighter,Agility,Festival of Blood,Brave Smite,2,3,4,9.7,3,1,1,5,8
+12-16-2023,1,Deus Vult,Akai,Sunset Lover,Tank,Faramis,Support/Mage,5,3,0,17:22,Purify,Mage,Agility,Wilderness Blessing.,Lethal Ignition,1,3,6,8.2,3,1,1,5,8
+12-16-2023,1,Deus Vult,Lapu-Lapu,Carvi,Fighter,Brody,Marksman,8,6,0,17:22,Flicker,Assassin,Thrill,Master Assassin,Quantum Charge,3,2,0,11.1,3,1,1,5,8
+12-16-2023,1,Deus Vult,Edith,SAWO,Tank/Marksman,Angela,Support,10,6,0,17:22,Flicker,Support,Inspire,Wilderness Blessing.,Focusing Mark,2,4,5,7.2,3,1,1,5,8
+12-16-2023,1,Blacklist Intl.,Nolan,Oheb,Assassin,Bruno,Marksman,2,2,1,17:22,Flicker,Assassin,Fatal,Tenacity,Quantum Charge,5,1,5,12.9,9,1,1,11,8
+12-16-2023,1,Blacklist Intl.,Guinevere,Yue,Fighter,Valentina,Mage,4,2,0,17:22,Purify,Mage,Rupture,Wilderness Blessing.,Impure Rage,3,2,7,9.4,9,1,1,11,8
+12-16-2023,1,Blacklist Intl.,Joy,Sensui,Assassin,Fredrinn,Fighter/Tank,6,4,0,17:22,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,2,0,7,11.2,9,1,1,11,8
+12-16-2023,1,Blacklist Intl.,Ixia,Edward,Marksman,Paquito,Fighter/Assassin,7,5,0,17:22,Flicker,Fighter,Firmness,Wilderness Blessing.,Concussive Blast,2,2,4,12.2,9,1,1,11,8
+12-16-2023,1,Blacklist Intl.,Minotaur,Renejay,Tank/Support,Tigreal,Tank,9,7,0,17:22,Flicker,Tank,Firmness,Wilderness Blessing.,Concussive Blast,1,3,7,8.2,9,1,1,11,8
+12-16-2023,2,Deus Vult,Wanwan,Magistor,Marksman,Baxia,Tank,1,1,0,14:24,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,0,2,4,7.3,1,0,0,5,5
+12-16-2023,2,Deus Vult,Mathilda,Kid Bomba,Support/Assassin,Terizla,Fighter,3,3,0,14:24,Flicker,Fighter,Agility,Festival of Blood,Brave Smite,2,4,3,7.8,1,0,0,5,5
+12-16-2023,2,Deus Vult,Akai,Sunset Lover,Tank,Faramis,Support/Mage,5,3,0,14:24,Flicker,Mage,Agility,Wilderness Blessing.,Lethal Ignition,2,1,3,7.6,1,0,0,5,5
+12-16-2023,2,Deus Vult,Lapu-Lapu,Carvi,Fighter,Brody,Marksman,8,6,0,14:24,Flicker,Assassin,Thrill,Master Assassin,Quantum Charge,0,2,0,9.1,1,0,0,5,5
+12-16-2023,2,Deus Vult,Edith,SAWO,Tank/Marksman,Angela,Support,10,6,0,14:24,Flicker,Support,Inspire,Wilderness Blessing.,Focusing Mark,1,1,4,6,1,0,0,5,5
+12-16-2023,2,Blacklist Intl.,Nolan,Yue,Assassin,Valentina,Mage,2,2,0,14:24,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,1,1,7,8.8,9,2,3,9,9
+12-16-2023,2,Blacklist Intl.,Guinevere,Oheb,Fighter,Bruno,Marksman,4,2,1,14:24,Flicker,Assassin,Fatal,Tenacity,Quantum Charge,6,1,2,12.3,9,2,3,9,9
+12-16-2023,2,Blacklist Intl.,Joy,Sensui,Assassin,Fredrinn,Fighter/Tank,6,4,0,14:24,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,3,0,4,9.3,9,2,3,9,9
+12-16-2023,2,Blacklist Intl.,Ixia,Edward,Marksman,Paquito,Fighter/Assassin,7,5,0,14:24,Flicker,Fighter,Agility,Festival of Blood,Quantum Charge,0,2,5,10.8,9,2,3,9,9
+12-16-2023,2,Blacklist Intl.,Minotaur,Renejay,Tank/Support,Estes,Support,9,7,0,14:24,Flicker,Support,Agility,Wilderness Blessing.,Quantum Charge,0,1,9,7.5,9,2,3,9,9
+12-16-2023,3,Blacklist Intl.,Nolan,Yue,Assassin,Valentina,Mage,1,1,0,13:29,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,3,3,6,8,9,1,2,8,5
+12-16-2023,3,Blacklist Intl.,Joy,Renejay,Assassin,Rafaela,Support,3,3,0,13:29,Flicker,Support,Inspire,Wilderness Blessing.,Impure Rage,1,0,10,7.5,9,1,2,8,5
+12-16-2023,3,Blacklist Intl.,Faramis,Sensui,Support/Mage,Fredrinn,Fighter/Tank,5,3,1,13:29,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,2,1,7,8.4,9,1,2,8,5
+12-16-2023,3,Blacklist Intl.,Minotaur,Edward,Tank/Support,Khaleed,Fighter,8,6,0,13:29,Flicker,Assassin,Rupture,Master Assassin,Concussive Blast,1,3,6,8.6,9,1,2,8,5
+12-16-2023,3,Blacklist Intl.,Tigreal,Oheb,Tank,Beatrix,Marksman,10,6,0,13:29,Flicker,Assassin,Thrill,Weapons Master,Quantum Charge,6,1,3,11.8,9,1,2,8,5
+12-16-2023,3,Deus Vult,Mathilda,Sunset Lover,Support/Assassin,Lylia,Mage,2,2,0,13:29,Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,3,1,5,8.1,1,0,1,6,6
+12-16-2023,3,Deus Vult,Wanwan,Magistor,Marksman,Baxia,Tank,4,2,0,13:29,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,1,1,3,7,1,0,1,6,6
+12-16-2023,3,Deus Vult,Guinevere,Carvi,Fighter,Ixia,Marksman,6,4,0,13:29,Flicker,Assassin,Thrill,Master Assassin,Quantum Charge,1,3,3,7.4,1,0,1,6,6
+12-16-2023,3,Deus Vult,Clint,Kid Bomba,Marksman,Terizla,Fighter,7,5,0,13:29,Flicker,Fighter,Agility,Festival of Blood,Brave Smite,2,5,3,6.7,1,0,1,6,6
+12-16-2023,3,Deus Vult,Lapu-Lapu,SAWO,Fighter,Kaja,Support/Fighter,9,7,0,13:29,Flicker,Common,Agility,Wilderness Blessing.,Quantum Charge,1,3,6,5.6,1,0,1,6,6
+12-16-2023,1,ONIC Esports,Faramis,S A N Z,Support/Mage,Lylia,Mage,1,1,0,22:37,Purify,Mage,Inspire,Wilderness Blessing.,Lethal Ignition,0,1,2,14.1,3,0,1,5,6
+12-16-2023,1,ONIC Esports,Minotaur,Kairi,Tank/Support,Nolan,Assassin,3,3,0,22:37,Retribution,Assassin,Thrill,Seasoned Hunter,Impure Rage,4,3,1,14.3,3,0,1,5,6
+12-16-2023,1,ONIC Esports,Wanwan,Kiboy,Marksman,Tigreal,Tank,5,3,1,22:37,Flicker,Tank,Firmness,Wilderness Blessing.,Brave Smite,0,5,5,10.9,3,0,1,5,6
+12-16-2023,1,ONIC Esports,Brody,Butss,Marksman,Terizla,Fighter,8,6,0,22:37,Flicker,Fighter,Firmness,Festival of Blood,Brave Smite,0,3,2,11,3,0,1,5,6
+12-16-2023,1,ONIC Esports,Claude,CW,Marksman,Bruno,Marksman,10,6,0,22:37,Purify,Assassin,Fatal,Weapons Master,Quantum Charge,2,3,4,16.3,3,0,1,5,6
+12-16-2023,1,AP.Bren,Kaja,Owgwen,Support/Fighter,Mathilda,Support/Assassin,2,2,0,22:37,Purify,Support,Inspire,Wilderness Blessing.,Quantum Charge,1,1,13,11.8,9,4,2,16,14
+12-16-2023,1,AP.Bren,Valentina,KyleTzy,Mage,Guinevere,Fighter,4,2,0,22:37,Retribution,Mage,Thrill,Seasoned Hunter,Impure Rage,3,1,12,12,9,4,2,16,14
+12-16-2023,1,AP.Bren,Joy,Pheww,Assassin,Phoveus,Fighter,6,4,0,22:37,Purify,Fighter,Agility,Tenacity,Brave Smite,3,1,9,14.3,9,4,2,16,14
+12-16-2023,1,AP.Bren,Khufra,FlapTzy,Tank,Khaleed,Fighter,7,5,0,22:37,Flicker,Assassin,Thrill,Master Assassin,Concussive Blast,5,2,4,15.7,9,4,2,16,14
+12-16-2023,1,AP.Bren,Kadita,Super Marco,Mage/Assassin,Clint,Tank,9,7,0,22:37,Flicker,Assassin,Rupture,Weapons Master,Quantum Charge,3,1,3,17.3,9,4,2,16,14
+12-16-2023,2,ONIC Esports,Faramis,Kairi,Support/Mage,Nolan,Assassin,1,1,0,"11:49",Retribution,Assassin,Thrill,Seasoned Hunter,Impure Rage,3,0,3,10.7,8,1,3,8,9
+12-16-2023,2,ONIC Esports,Phoveus,Kiboy,Fighter,Grock,Tank/Fighter,3,3,1,"11:49",Flicker,Tank,Firmness,Wilderness Blessing.,Concussive Blast,2,1,8,6.6,8,1,3,8,9
+12-16-2023,2,ONIC Esports,Mathilda,S A N Z,Support/Assassin,Novaria,Mage,5,3,0,"11:49",Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,2,0,8,7.7,8,1,3,8,9
+12-16-2023,2,ONIC Esports,Khaleed,CW,Fighter,Karrie,Marksman,8,6,0,"11:49",Flicker,Assassin,Swift,Tenacity,Quantum Charge,3,0,2,11.4,8,1,3,8,9
+12-16-2023,2,ONIC Esports,Paquito,Butss,Fighter/Assassin,Terizla,Fighter,10,6,0,"11:49",Flicker,Fighter,Firmness,Festival of Blood,Brave Smite,1,0,4,6.7,8,1,3,8,9
+12-16-2023,2,AP.Bren,Kaja,FlapTzy,Support/Fighter,Arlott,Fighter/Assassin,2,2,0,"11:49",Flicker,Tank,Firmness,Wilderness Blessing.,Brave Smite,0,1,1,5.3,0,0,0,4,3
+12-16-2023,2,AP.Bren,Valentina,KyleTzy,Mage,Guinevere,Fighter,4,2,0,"11:49",Retribution,Mage,Thrill,Seasoned Hunter,Impure Rage,0,3,1,4.4,0,0,0,4,3
+12-16-2023,2,AP.Bren,Wanwan,Super Marco,Marksman,Claude,Marksman,6,4,0,"11:49",Purify,Common,Swift,Tenacity,Quantum Charge,0,1,0,7.2,0,0,0,4,3
+12-16-2023,2,AP.Bren,Bruno,Pheww,Marksman,Odette,Mage,7,5,0,"11:49",Flicker,Mage,Thrill,Bargain Hunter,Lethal Ignition,1,3,0,5.4,0,0,0,4,3
+12-16-2023,2,AP.Bren,Tigreal,Owgwen,Tank,Minotaur,Tank/Support,9,7,0,"11:49",Flicker,Tank,Vitality,Wilderness Blessing.,Concussive Blast,0,3,1,4.2,0,0,0,4,3
+12-16-2023,3,ONIC Esports,Faramis,Kairi,Support/Mage,Nolan,Assassin,1,1,1,12:26,Retribution,Assassin,Thrill,Seasoned Hunter,Impure Rage,6,0,3,10.3,7,1,3,8,8
+12-16-2023,3,ONIC Esports,Phoveus,Kiboy,Fighter,Guinevere,Fighter,3,3,0,12:26,Flicker,Tank,Inspire,Wilderness Blessing.,Brave Smite,0,2,8,6,7,1,3,8,8
+12-16-2023,3,ONIC Esports,Mathilda,S A N Z,Support/Assassin,Gusion,Assassin,5,3,0,12:26,Petrify,Mage,Rupture,Wilderness Blessing.,Lethal Ignition,5,0,3,8.1,7,1,3,8,8
+12-16-2023,3,ONIC Esports,Paquito,CW,Fighter/Assassin,Harith,Mage,8,6,0,12:26,Purify,Mage,Inspire,Festival of Blood,Impure Rage,2,1,6,9.9,7,1,3,8,8
+12-16-2023,3,ONIC Esports,Claude,Butss,Marksman,Terizla,Fighter,10,6,0,12:26,Flicker,Fighter,Firmness,Festival of Blood,Brave Smite,2,0,5,7.6,7,1,3,8,8
+12-16-2023,3,AP.Bren,Kaja,FlapTzy,Support/Fighter,Arlott,Fighter/Assassin,2,2,0,12:26,Flicker,Tank,Firmness,Wilderness Blessing.,Brave Smite,1,3,0,5,1,0,0,6,5
+12-16-2023,3,AP.Bren,Valentina,Pheww,Mage,Novaria,Mage,4,2,0,12:26,Petrify,Mage,Rupture,Wilderness Blessing.,Impure Rage,1,2,1,6.5,1,0,0,6,5
+12-16-2023,3,AP.Bren,Wanwan,KyleTzy,Marksman,Joy,Assassin,6,4,0,12:26,Retribution,Mage,Thrill,Seasoned Hunter,Lethal Ignition,1,4,2,7.7,1,0,0,6,5
+12-16-2023,3,AP.Bren,Kadita,Super Marco,Mage/Assassin,Bruno,Marksman,7,5,0,12:26,Purify,Assassin,Fatal,Master Assassin,Quantum Charge,0,3,1,6,1,0,0,6,5
+12-16-2023,3,AP.Bren,Brody,Owgwen,Marksman,Khufra,Tank,9,7,0,12:26,Flicker,Tank,Vitality,Wilderness Blessing.,Concussive Blast,0,3,2,4.6,1,0,0,6,5
+12-16-2023,1,AP.Bren,Baxia,Owgwen,Tank,Mathilda,Support/Assassin,1,1,1,"15:15",Flicker,Support,Inspire,Wilderness Blessing.,Quantum Charge,2,0,10,8.4,9,2,3,9,9
+12-16-2023,1,AP.Bren,Fredrinn,KyleTzy,Fighter/Tank,Martis,Fighter,3,3,0,"15:15",Retribution,Assassin,Thrill,Seasoned Hunter,Quantum Charge,5,0,1,9.4,9,2,3,9,9
+12-16-2023,1,AP.Bren,Valentina,Super Marco,Mage,Wanwan,Marksman,5,3,0,"15:15",Inspire,Marskman,Swift,Master Assassin,Weakness Finder,3,0,6,13.6,9,2,3,9,9
+12-16-2023,1,AP.Bren,Estes,FlapTzy,Support,Paquito,Fighter/Assassin,8,6,0,"15:15",Flicker,Fighter,Agility,Master Assassin,Quantum Charge,1,1,4,10.3,9,2,3,9,9
+12-16-2023,1,AP.Bren,Minotaur,Pheww,Tank/Support,Novaria,Mage,10,6,0,"15:15",Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,2,0,8,10,9,2,3,9,9
+12-16-2023,1,Blacklist Intl.,Nolan,Yue,Assassin,Lylia,Mage,2,2,0,"15:15",Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,1,3,0,7.7,1,0,0,6,5
+12-16-2023,1,Blacklist Intl.,Joy,Sensui,Assassin,Akai,Tank,4,2,0,"15:15",Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,0,1,1,6.9,1,0,0,6,5
+12-16-2023,1,Blacklist Intl.,Guinevere,Oheb,Fighter,Claude,Marksman,6,4,0,"15:15",Sprint,Common,Swift,Tenacity,Quantum Charge,0,2,1,9.7,1,0,0,6,5
+12-16-2023,1,Blacklist Intl.,Faramis,Edward,Support/Mage,Arlott,Fighter/Assassin,7,5,0,"15:15",Flicker,Common,Agility,Wilderness Blessing.,Brave Smite,0,5,0,6.9,1,0,0,6,5
+12-16-2023,1,Blacklist Intl.,Khaleed,Renejay,Fighter,Angela,Support,9,7,0,"15:15",Flicker,Support,Agility,Wilderness Blessing.,Impure Rage,0,2,1,5.9,1,0,0,6,5
+12-16-2023,2,Blacklist Intl.,Fanny,Renejay,Assassin,Mathilda,Support/Assassin,1,1,0,15:23,Flicker,Support,Inspire,Wilderness Blessing.,Quantum Charge,1,3,3,6.3,2,0,0,3,5
+12-16-2023,2,Blacklist Intl.,Nolan,Sensui,Assassin,Martis,Fighter,3,3,0,15:23,Retribution,Assassin,Thrill,Seasoned Hunter,Quantum Charge,0,1,4,7.5,2,0,0,3,5
+12-16-2023,2,Blacklist Intl.,Joy,Yue,Assassin,Valentina,Mage,5,3,0,15:23,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,0,2,3,7,2,0,0,3,5
+12-16-2023,2,Blacklist Intl.,Minotaur,Oheb,Tank/Support,Claude,Marksman,8,6,0,15:23,Sprint,Common,Swift,Master Assassin,Quantum Charge,0,3,2,9.2,2,0,0,3,5
+12-16-2023,2,Blacklist Intl.,Angela,Edward,Support,Edith,Tank/Marksman,10,6,0,15:23,Flicker,Tank,Swift,Tenacity,Quantum Charge,3,4,1,7.1,2,0,0,3,5
+12-16-2023,2,AP.Bren,Baxia,Pheww,Tank,Faramis,Support/Mage,2,2,0,15:23,Flicker,Mage,Agility,Wilderness Blessing.,Quantum Charge,3,1,9,11,9,2,3,12,9
+12-16-2023,2,AP.Bren,Guinevere,KyleTzy,Fighter,Fredrinn,Fighter/Tank,4,2,0,15:23,Retribution,Tank,Firmness,Seasoned Hunter,Brave Smite,3,1,8,9.1,9,2,3,12,9
+12-16-2023,2,AP.Bren,Akai,Super Marco,Tank,Wanwan,Marksman,6,4,0,15:23,Inspire,Marskman,Swift,Master Assassin,Weakness Finder,2,0,9,12.5,9,2,3,12,9
+12-16-2023,2,AP.Bren,Ixia,Owgwen,Marksman,Arlott,Fighter,7,5,1,15:23,Flicker,Tank,Vitality,Wilderness Blessing.,Brave Smite,2,1,0,8.3,9,2,3,12,9
+12-16-2023,2,AP.Bren,Bruno,FlapTzy,Marksman,Paquito,Fighter/Assassin,9,7,0,15:23,Flicker,Fighter,Agility,Master Assassin,Quantum Charge,3,1,7,12.2,9,2,3,12,9
+12-16-2023,3,Blacklist Intl.,Nolan,Sensui,Assassin,Fredrinn,Fighter/Tank,1,1,0,18:21,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,0,2,3,8.5,4,0,1,7,7
+12-16-2023,3,Blacklist Intl.,Joy,Yue,Assassin,Valentina,Mage,3,3,0,18:21,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,1,3,3,8.7,4,0,1,7,7
+12-16-2023,3,Blacklist Intl.,Fanny,Renejay,Assassin,Estes,Support,5,3,0,18:21,Flicker,Support,Agility,Wilderness Blessing.,Quantum Charge,0,2,3,7.1,4,0,1,7,7
+12-16-2023,3,Blacklist Intl.,Ixia,Oheb,Marksman,Beatrix,Marksman,8,6,0,18:21,Flicker,Assassin,Thrill,Weapons Master,Quantum Charge,5,2,1,12.1,4,0,1,7,7
+12-16-2023,3,Blacklist Intl.,Wanwan,Edward,Marksman,Paquito,Fighter/Assassin,10,6,0,18:21,Flicker,Fighter,Agility,Festival of Blood,Quantum Charge,1,3,2,12,4,0,1,7,7
+12-16-2023,3,AP.Bren,Baxia,Pheww,Tank,Faramis,Support/Mage,2,2,0,18:21,Flicker,Mage,Agility,Wilderness Blessing.,Quantum Charge,3,1,6,11.1,8,2,2,8,9
+12-16-2023,3,AP.Bren,Guinevere,Owgwen,Fighter,Mathilda,Support/Assassin,4,2,0,18:21,Flicker,Mage,Inspire,Wilderness Blessing.,Quantum Charge,2,3,9,9.3,8,2,2,8,9
+12-16-2023,3,AP.Bren,Akai,KyleTzy,Tank,Martis,Fighter,6,4,0,18:21,Retribution,Assassin,Thrill,Seasoned Hunter,Quantum Charge,3,1,2,10.5,8,2,2,8,9
+12-16-2023,3,AP.Bren,Khaleed,Super Marco,Fighter,Brody,Marksman,7,5,1,18:21,Flicker,Assassin,Rupture,Master Assassin,Quantum Charge,4,0,5,14.4,8,2,2,8,9
+12-16-2023,3,AP.Bren,Bruno,FlapTzy,Marksman,Gloo,Tank,9,7,0,18:21,Flicker,Common,Firmness,Tenacity,Concussive Blast,0,2,7,8.7,8,2,2,8,9
+12-17-2023,1,AP.Bren,Karina,KyleTzy,Assassin,Fredrinn,Fighter/Tank,1,1,0,14:13,Retribution,nan,nan,nan,Brave Smite,3,0,4,nan,2,1,9,nan ,nan
+12-17-2023,1,AP.Bren,Joy,Owgwen,Assassin,Mathilda,Support/Assassin,3,3,0,14:13,Purify,nan,nan,nan,Quantum Charge,0,0,7,nan,2,1,9,nan ,nan
+12-17-2023,1,AP.Bren,Wanwan,Super Marco,Marksman,Brody,Marksman,5,3,0,14:13,Flicker,nan,nan,nan,Quantum Charge,1,0,0,nan,2,1,9,nan ,nan
+12-17-2023,1,AP.Bren,Khaleed,Pheww,Fighter,Novaria,Mage,8,6,0,14:13,Flicker,nan,nan,nan,Impure Rage,1,1,4,nan,2,1,9,nan ,nan
+12-17-2023,1,AP.Bren,Bruno,FlapTzy,Marksman,Thamuz,Fighter,10,6,1,14:13,Vengeance,nan,nan,nan,Impure Rage,2,0,5,nan,2,1,9,nan ,nan
+12-17-2023,1,ONIC Esports,Guinevere,Kiboy,Fighter,Tigreal,Mage,2,2,0,14:13,Flicker,nan,nan,nan,Brave Smite,0,1,1,nan,0,0,1,nan ,nan
+12-17-2023,1,ONIC Esports,Faramis,Kairi,Support/Mage,Dyrroth,Fighter,4,2,0,14:13,Retribution,nan,nan,nan,Lethal Ignition,0,2,0,nan,0,0,1,nan ,nan
+12-17-2023,1,ONIC Esports,Nolan,S A N Z,Assassin,Valentina,Tank,6,4,0,14:13,Flicker,nan,nan,nan,Quantum Charge,1,0,0,nan,0,0,1,nan ,nan
+12-17-2023,1,ONIC Esports,Paquito,Butss,Fighter/Assassin,Terizla,Fighter,7,5,0,14:13,Flicker,nan,nan,nan,Brave Smite,0,4,1,nan,0,0,1,nan ,nan
+12-17-2023,1,ONIC Esports,Lylia,CW,Mage,Claude,Marksman,9,7,0,14:13,Flicker,nan,nan,nan,Quantum Charge,0,0,0,nan,0,0,1,nan ,nan
+12-17-2023,2,ONIC Esports,Faramis,Kairi,Support/Mage,Joy,Assassin,1,1,0,22:48,Retribution,Assassin,Inspire,Seasoned Hunter,Lethal Ignition,4,1,3,17.9,8,4,1,14,12
+12-17-2023,2,ONIC Esports,Mathilda,Butss,Support/Assassin,Terizla,Fighter,3,3,0,22:48,Flicker,Fighter,Firmness,Festival of Blood,Brave Smite,1,5,2,10.8,8,4,1,14,12
+12-17-2023,2,ONIC Esports,Wanwan,CW,Marksman,Claude,Marksman,5,3,0,22:48,Purify,Common,Agility,Tenacity,Quantum Charge,4,3,8,18.3,8,4,1,14,12
+12-17-2023,2,ONIC Esports,Baxia,S A N Z,Tank,Gord,Mage,8,6,1,22:48,Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,4,0,10,14.9,8,4,1,14,12
+12-17-2023,2,ONIC Esports,Fredrinn,Kiboy,Fighter/Tank,Ruby,Fighter/Tank,10,6,0,22:48,Flicker,Tank,Vitality,Wilderness Blessing.,Brave Smite,2,4,9,11.2,8,4,1,14,12
+12-17-2023,2,AP.Bren,Kaja,Owgwen,Support/Fighter,Tigreal,Tank,2,2,0,22:48,Flicker,Tank,Vitality,Wilderness Blessing.,Quantum Charge,1,3,7,9.7,5,0,2,10,11
+12-17-2023,2,AP.Bren,Nolan,Super Marco,Assassin,Bruno,Marksman,4,2,0,22:48,Flicker,Assassin,Fatal,Master Assassin,Quantum Charge,3,1,6,16.9,5,0,2,10,11
+12-17-2023,2,AP.Bren,Guinevere,FlapTzy,Fighter,Paquito,Fighter/Assassin,6,4,0,22:48,Flicker,Fighter,Agility,Master Assassin,Quantum Charge,1,3,5,14.9,5,0,2,10,11
+12-17-2023,2,AP.Bren,Lylia,Pheww,Mage,Valentina,Mage,7,5,0,22:48,Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,0,3,12,12.2,5,0,2,10,11
+12-17-2023,2,AP.Bren,Kadita,KyleTzy,Mage/Assassin,Martis,Fighter,9,7,0,22:48,Retribution,Assassin,Thrill,Seasoned Hunter,Quantum Charge,8,5,2,12,5,0,2,10,11
+12-17-2023,3,AP.Bren,Kaja,KyleTzy,Assassin,Fredrinn,Fighter/Tank,1,1,0,14:41,Retribution,Tank,Firmness,Seasoned Hunter,Brave Smite,2,1,8,9.5,9,2,3,12,11
+12-17-2023,3,AP.Bren,Joy,Super Marco,Assassin,Brody,Support/Assassin,3,3,0,14:41,Flicker,Assassin,Rupture,Master Assassin,Quantum Charge,4,1,6,11.8,9,2,3,12,11
+12-17-2023,3,AP.Bren,Wanwan,Owgwen,Marksman,Arlott,Marksman,5,3,0,14:41,Flicker,Tank,Vitality,Wilderness Blessing.,Brave Smite,2,3,8,8,9,2,3,12,11
+12-17-2023,3,AP.Bren,Tigreal,FlapTzy,Fighter,Lapu-Lapu,Mage,8,6,0,14:41,Flicker,Fighter,Firmness,Festival of Blood,Brave Smite,3,3,7,9.5,9,2,3,12,11
+12-17-2023,3,AP.Bren,No Ban,Pheww,Marksman,Gord,Fighter,10,6,1,14:41,Flicker,Mage,Agility,Bargain Hunter,Impure Rage,4,0,5,11,9,2,3,12,11
+12-17-2023,3,ONIC Esports,Mathilda,Kairi,Fighter,Akai,Mage,2,2,0,14:41,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,0,1,7,6.1,1,0,0,2,2
+12-17-2023,3,ONIC Esports,Nolan,S A N Z,Support/Mage,Faramis,Fighter,4,2,0,14:41,Flicker,Mage,Inspire,Wilderness Blessing.,Lethal Ignition,2,4,6,8.3,1,0,0,2,2
+12-17-2023,3,ONIC Esports,Guinevere,Butss,Assassin,Yu Zhong,Tank,6,4,0,14:41,Petrify,Fighter,Rupture,Festival of Blood,Quantum Charge,3,3,3,8.2,1,0,0,2,2
+12-17-2023,3,ONIC Esports,Novaria,CW,Fighter/Assassin,Bruno,Fighter,7,5,0,14:41,Flicker,Assassin,Fatal,Weapons Master,Quantum Charge,3,2,4,10.4,1,0,0,2,2
+12-17-2023,3,ONIC Esports,Lylia,Kiboy,Mage,Chou,Marksman,9,7,0,14:41,Flicker,Tank,Firmness,Wilderness Blessing.,Concussive Blast,0,5,5,5.8,1,0,0,2,2
+12-17-2023,4,ONIC Esports,Faramis,Kairi,Support/Mage,Hayabusa,Assassin,1,1,0,14:49,Retribution,Assassin,Thrill,Seasoned Hunter,Impure Rage,0,2,1,9.3,3,0,1,3,8
+12-17-2023,4,ONIC Esports,Mathilda,Butss,Support/Assassin,Fredrinn,Fighter/Tank,3,3,0,14:49,Flicker,Tank,Vitality,Tenacity,Brave Smite,0,4,1,6,3,0,1,3,8
+12-17-2023,4,ONIC Esports,Minotaur,Kiboy,Tank/Support,Kaja,Support/Fighter,5,3,0,14:49,Flicker,Support,Agility,Wilderness Blessing.,Quantum Charge,0,4,1,5.4,3,0,1,3,8
+12-17-2023,4,ONIC Esports,Paquito,S A N Z,Fighter/Assassin,Valentina,Mage,8,6,0,14:49,Flicker,Mage,Inspire,Wilderness Blessing.,Quantum Charge,0,1,1,7.1,3,0,1,3,8
+12-17-2023,4,ONIC Esports,Khaleed,CW,Fighter,Claude,Marksman,10,6,0,14:49,Purify,Common,Agility,Tenacity,Quantum Charge,1,0,0,10.1,3,0,1,3,8
+12-17-2023,4,AP.Bren,Nolan,KyleTzy,Assassin,Akai,Tank,2,2,1,14:49,Retribution,Tank,Firmness,Seasoned Hunter,Quantum Charge,2,1,9,8.6,9,2,2,10,6
+12-17-2023,4,AP.Bren,Joy,Super Marco,Assassin,Wanwan,Marksman,4,2,0,14:49,Inspire,Marskman,Swift,Master Assassin,Weakness Finder,6,0,5,13,9,2,2,10,6
+12-17-2023,4,AP.Bren,Guinevere,Pheww,Fighter,Angela,Support,6,4,0,14:49,Flicker,Mage,Agility,Bargain Hunter,Impure Rage,0,0,9,8.2,9,2,2,10,6
+12-17-2023,4,AP.Bren,Kadita,FlapTzy,Mage/Assassin,Thamuz,Fighter,7,5,0,14:49,Vengeance,Fighter,Thrill,Festival of Blood,Impure Rage,2,0,4,10.6,9,2,2,10,6
+12-17-2023,4,AP.Bren,Dyrroth,Owgwen,Fighter,Edith,Tank/Marksman,9,7,0,14:49,Flicker,Tank,Vitality,Wilderness Blessing.,Brave Smite,1,0,9,8.1,9,2,2,10,6
+12-17-2023,5,ONIC Esports,Mathilda,Kairi,Support/Assassin,Baxia,Tank,1,1,0,27:10,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,2,4,10,13.9,9,4,1,9,12
+12-17-2023,5,ONIC Esports,Phoveus,Butss,Fighter,Paquito,Fighter/Assassin,3,3,0,27:10,Flicker,Fighter,Rupture,Festival of Blood,Quantum Charge,4,3,5,16.4,9,4,1,9,12
+12-17-2023,5,ONIC Esports,Faramis,CW,Support/Mage,Wanwan,Marksman,5,3,0,27:10,Inspire,Assassin,Swift,Tenacity,Weakness Finder,6,4,7,19.7,9,4,1,9,12
+12-17-2023,5,ONIC Esports,Fanny,Kiboy,Assassin,Minotaur,Tank/Support,8,6,0,27:10,Flicker,Tank,Firmness,Wilderness Blessing.,Concussive Blast,2,8,9,13.7,9,4,1,9,12
+12-17-2023,5,ONIC Esports,Khaleed,S A N Z,Fighter,Novaria,Mage,10,6,1,27:10,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,2,4,10,13.9,9,4,1,9,12
+12-17-2023,5,AP.Bren,Nolan,KyleTzy,Assassin,Fredrinn,Fighter/Tank,2,2,0,27:10,Retribution,Tank,Firmness,Seasoned Hunter,Brave Smite,1,4,14,14,8,1,2,15,13
+12-17-2023,5,AP.Bren,Joy,Super Marco,Assassin,Claude,Marksman,4,2,0,27:10,Purify,Common,Swift,Tenacity,Quantum Charge,4,2,9,20.5,8,1,2,15,13
+12-17-2023,5,AP.Bren,Guinevere,Pheww,Fighter,Lylia,Mage,6,4,0,27:10,Flicker,Mage,Agility,Bargain Hunter,Lethal Ignition,5,3,12,19.7,8,1,2,15,13
+12-17-2023,5,AP.Bren,Terizla,FlapTzy,Fighter,Arlott,Fighter/Assassin,7,5,0,27:10,Flicker,Tank,Firmness,Wilderness Blessing.,Brave Smite,7,5,7,15.7,8,1,2,15,13
+12-17-2023,5,AP.Bren,Dyrroth,Owgwen,Fighter,Grock,Tank/Fighter,9,7,0,27:10,Flicker,Common,Agility,Wilderness Blessing.,Quantum Charge,2,4,11,13,8,1,2,15,13
+12-17-2023,6,AP.Bren,Kaja,Super Marco,Support/Fighter,Wanwan,Marksman,1,1,0,15:00,Inspire,Marskman,Swift,Master Assassin,Weakness Finder,3,2,2,10.2,3,0,2,4,5
+12-17-2023,6,AP.Bren,Joy,FlapTzy,Assassin,Thamuz,Fighter,3,3,0,15:00,Vengeance,Fighter,Thrill,Festival of Blood,Impure Rage,4,5,5,9.1,3,0,2,4,5
+12-17-2023,6,AP.Bren,Novaria,KyleTzy,Mage,Akai,Tank,5,3,0,15:00,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,1,3,8,7.6,3,0,2,4,5
+12-17-2023,6,AP.Bren,Khaleed,Pheww,Fighter,Lylia,Mage,8,6,0,15:00,Purify,Mage,Agility,Bargain Hunter,Lethal Ignition,1,6,5,8.6,3,0,2,4,5
+12-17-2023,6,AP.Bren,Dyrroth,Owgwen,Fighter,Arlott,Fighter/Assassin,10,6,0,15:00,Flicker,Tank,Vitality,Wilderness Blessing.,Brave Smite,3,4,6,6.9,3,0,2,4,5
+12-17-2023,6,ONIC Esports,Mathilda,Butss,Support/Assassin,Phoveus,Fighter,2,2,0,15:00,Purify,Common,Thrill,Festival of Blood,Impure Rage,4,1,10,10.2,7,2,1,10,8
+12-17-2023,6,ONIC Esports,Nolan,Kairi,Assassin,Guinevere,Fighter,4,2,0,15:00,Retribution,Mage,Thrill,Seasoned Hunter,Impure Rage,2,4,8,8.7,7,2,1,10,8
+12-17-2023,6,ONIC Esports,Angela,CW,Support,Claude,Marksman,6,4,1,15:00,Purify,Common,Agility,Tenacity,Quantum Charge,9,1,8,14.8,7,2,1,10,8
+12-17-2023,6,ONIC Esports,Minotaur,S A N Z,Tank/Support,Faramis,Support/Mage,7,5,0,15:00,Purify,Mage,Inspire,Wilderness Blessing.,Quantum Charge,4,4,11,9.7,7,2,1,10,8
+12-17-2023,6,ONIC Esports,Gord,Kiboy,Mage,Grock,Tank/Fighter,9,7,0,15:00,Flicker,Tank,Firmness,Wilderness Blessing.,Concussive Blast,1,3,9,7.8,7,2,1,10,8
+12-17-2023,7,AP.Bren,Joy,KyleTzy,Assassin,Fredrinn,Fighter/Tank,1,1,0,14:02,Retribution,Tank,Firmness,Seasoned Hunter,Brave Smite,1,1,5,nan,3,1,9,nan,nan
+12-17-2023,7,AP.Bren,Novaria,Pheww,Mage,Faramis,Support/Mage,3,3,0,14:02,Purify,Mage,Agility,Wilderness Blessing.,Quantum Charge,0,1,8,nan,3,1,9,nan,nan
+12-17-2023,7,AP.Bren,Wanwan,Owgwen,Marksman,Edith,Tank/Marksman,5,3,0,14:02,Flicker,Tank,Vitality,Wilderness Blessing.,Brave Smite,1,2,5,nan,3,1,9,nan,nan
+12-17-2023,7,AP.Bren,Gord,FlapTzy,Mage,Khaleed,Fighter,8,6,1,14:02,Flicker,Assassin,Thrill,Master Assassin,Brave Smite,3,2,1,nan,3,1,9,nan,nan
+12-17-2023,7,AP.Bren,Lylia,Super Marco,Mage,Brody,Marksman,10,6,0,14:02,Flicker,Assassin,Rupture,Master Assassin,Quantum Charge,6,1,1,nan,3,1,9,nan,nan
+12-17-2023,7,ONIC Esports,Mathilda,Butss,Support/Assassin,Terizla,Fighter,2,2,0,14:02,Flicker,Fighter,Firmness,Festival of Blood,Brave Smite,0,2,1,nan,0,0,0,nan,nan
+12-17-2023,7,ONIC Esports,Nolan,Kiboy,Assassin,Kadita,Mage/Assassin,4,2,0,14:02,Petrify,Mage,Rupture,Wilderness Blessing.,Lethal Ignition,4,3,2,nan,0,0,0,nan,nan
+12-17-2023,7,ONIC Esports,Guinevere,S A N Z,Fighter,Yve,Mage,6,4,0,14:02,Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,2,3,3,nan,0,0,0,nan,nan
+12-17-2023,7,ONIC Esports,Thamuz,Kairi,Fighter,Baxia,Tank,7,5,0,14:02,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,0,2,5,nan,0,0,0,nan,nan
+12-17-2023,7,ONIC Esports,Grock,CW,Tank/Fighter,Claude,Marksman,9,7,0,14:02,Purify,Common,Agility,Tenacity,Quantum Charge,1,1,5,nan,0,0,0,nan,nan

@@ -1,0 +1,55 @@
+BATTLE SPELL,DESCRIPTION
+Execute,"Deals 100 (+10 × Hero Level) plus 13% of the target’s lost HP as true damage to the target enemy hero. This damage ignores shield. If the target is slain by this skill, its cooldown will be reduced by 40%.
+
+Unlock at level: 1
+Cooldown: 90 seconds"
+Retribution,"Deal 520 (+80 × Hero Level) true damage to the target creep or minion.
+
+Passive: Increases creep rewards by 60%, and reduces damage taken from creeps by 40%. Also grants 15% additional damage reduction in the allied jungle in the first two minutes. Cannot share minion rewards with allied heroes in the first five minutes.
+
+Blessing: Accumulate five creep kills, hero kills, or assists to upgrade the spell according to the Jungling Footwear’s Blessing, and 15 kills or assists to gain 10 physical attack and magic power, and 100 max HP.
+
+Unlock at level: 3
+Cooldown: 35 seconds"
+Inspire,"For up to eight basic attacks within the next five seonds, increase attack speed to 1.55 times and attack speed cap to 500%.
+
+The basic attacks also ignore 8(+1 x Hero Level) of the target’s physical defense, and restore 60(+15% total physical attack) (+15% total magic power) HP on hit.
+
+Unlock at level: 5
+Cooldown: 75 seconds"
+Sprint,"Gains 50% extra movement speed and slow immunity for six seconds.
+
+Unlock at level: 7
+Cooldown: 100 seconds"
+Revitalize,"Summons a healing spring that surrounds the hero and lasts four seconds, restoring 2.5% max HP every 0.4 seconds to affected allied heroes (including self), and increasing shield and HP regen effects received by 25% (this effect cannot stack).
+
+Unlock at level: 9
+Cooldown: 75 seconds"
+Aegis,"Gain a 750 (+90 x Hero Level) shield for five seconds.
+
+Unlock at level: 11
+Cooldown: 75 seconds"
+Petrify,"Deal 100 (+15 × Hero Level) magic damage to nearby enemies, petrify them for 0.8 seconds, and slow them by 50% for 0.8 seconds afterward.
+
+Unlock at level: 13
+Cooldown: 75 seconds"
+Purify,"Remove all debuffs (excluding suppression), and gain control immunity and 15% movement speed for 1.2 seconds.
+
+Unlock at level: 15
+Cooldown: 90 seconds"
+Flameshot,"Fire a flaming shot in the target direction, knocking back nearby enemies and dealing 200 (+50% total magic power) to 680 (+170% total magic power) magic damage (scales with flying distance) to the first enemy hero or creep hit.
+
+Unlock at level: 17
+Cooldown: 50 seconds"
+Flicker,"Blink a fixed distance in the target direction, and gain 5 (+1 x Hero Level) extra physical and magic defense afterward for one second.
+
+Unlock at level: 19
+Cooldown: 120 seconds"
+Arrival,"After channeling for three seconds, teleport to the target allied minion, structure, or trap, and gain 60% extra movement speed (decays over three seconds) afterward. If the channeling is canceled or interrupted, 30 seconds of the spell cooldown will be refunded.
+
+Unlock at level: 21
+Cooldown: 75 seconds"
+Vengeance,"For three seconds, gain 35% damage reduction and deal 35% magic damage back to the attacker each time you receive damage.
+
+Unlock at level: 21
+Cooldown 75 seconds"

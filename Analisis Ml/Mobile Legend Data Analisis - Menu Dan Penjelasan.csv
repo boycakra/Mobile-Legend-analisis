@@ -1,0 +1,63 @@
+,,,,,,,
+Nama ,Boy Cakraningrat,,Sheet,Data ban & pick ,,Sheet,Full Data
+Gmail ,boycakra69@gmail.com,,,,,,
+Linkedin,https://www.linkedin.com/in/boy-cakraningrat/,,,,,,
+Github,https://github.com/boycakra,,Kolom,Deskripsi,,Kolom,Deskripsi
+No contact,085156084644,,Date,Tanggal Bermain,,Date,Tanggal Bermain
+Link Sheet,https://docs.google.com/spreadsheets/d/1s_sHVODPs1Tte0L708CSzJTm4Wk0FZkzW93W7Wl_uB8/edit#gid=27249359,,Match,Match Saat Pertandingan,,Match,Match Saat Pertandingan
+,,,Team,Nama Team Bertanding,,Team,Nama Team Bertanding
+Sheet,Deskripsi,,Ban,Pemilihan Hero Ban yang di lakukan oleh team ,,Ban,Pemilihan Hero Ban yang di lakukan oleh team 
+Data ban & pick ,Data Ban dan pick dari players team,,Players,Nama Pemain,,Players,Nama Pemain
+Hero & Role ,Data Hero dan Stats,,Role Ban,Role permainan dari Hero tersebut ,,Role Ban,Role permainan dari Hero tersebut 
+Full Data,Full data Match,,Pick, Hero yang di pilih oleh player,,Pick,Pemilihan Hero yang di lakukan oleh player
+Team And Players,Data Team dan nama Player ,,Role Pick,Role dari Hero yang Di pilih,,Role Pick,Role dari Hero yang Di pilih
+Battel Spell,Data nama dan deskripsi Battel Spell,,Order Ban,Urutan Ban Hero yang di pilih player,,Order Ban,Urutan Ban Hero yang di pilih player
+Item Stas,Data nama dan deskripsi item,,Order Pick,Urutan Pick Hero yang di pilih player,,Order Pick,Urutan Pick Hero yang di pilih player
+Data nama dan deskripsi item,Data nama dan deskripsi Jungle&Roam,,,,,MVP,Player Yang mendapat kan MVP setelah pertandingan
+,,,,,,Time,Waktu jalan nya pertandingan
+Penjelasan,"Dari data data yang terdapat pada file ini dapat banyak melakukan beberapa analisis simple, dari 
+1. Jenis hero di pakai pada team
+2. Jenis Spell, Embelm dan telent yang di pakai team 
+3. Formasi suatu Tim 
+Dan lain lain ",,Sheet,Hero & Role ,,Spell,Spell yang digunakan Hero player pada saay pertandingan
+,,,,,,Emblem,Emblem yang digunakan Hero player
+,,,Hero,Nama Hero ,,Talent 1,Talent yangd i gunakan Hero player
+,,,Title,Title dari Hero ,,Talent 2,Talent yangd i gunakan Hero player
+,,,Hero Order,Urutan Hero keluar,,Talent 3,Talent yangd i gunakan Hero player
+,,,Role(s),Role bermain Hero,,K,Jumlah Kill pada pertandingan yang oleh player
+,,,Specialty(ies),Specialty dari Hero,,D,Jumlah Death pada player selama pertandingan
+,,,Lane Recommendation(s),Lane recommendation untuk Hero yang di mainkan,,A,Jumlah assist pada player selama pertandingan
+,,,Health,Darah maksimum dari hero,,Gold,Jumlah Gold pada player Selama Pertandingan
+,,,Health Regen,Tingkat regenerasi kesehatan hero,,Tower,Jumlah total yang tower yang di hancurkan Team Player
+,,,Mana,Kapasitas maksimum mana hero,,Lord,Jumlah total  lord yang di bunuh Team 
+,,,Mana Regen,Tingkat regenerasi mana hero,,Turtle,Jumlah total Turtle yang di bunuh Team
+,,,Attack Speed,Kecepatan serangan hero,,Buff Biru,Jumlah Total buff biru yang di ambil Team
+,,,Physical Damage,Jumlah kerusakan fisik yang dapat dihasilkan oleh hero,,Buff Merah,Jumlah Total buff merah yang di ambil team
+,,,Magical Damage,Jumlah kerusakan magis yang dapat dihasilkan oleh hero,,,
+,,,Physical Defense,Ketahanan fisik hero terhadap serangan musuh,,Sheet,Team And Players
+,,,Magical Defense,Ketahanan magis hero terhadap serangan musuh,,,
+,,,Movement Speed,Kecepatan pergerakan hero,,Team,Team yang lolos babak knouk out
+,,,Energy,Jumlah maksimum energi yang dimiliki hero,,ID,nama id game pemain
+,,,Energy Regen,Tingkat regenerasi energi hero,,Name,nama asli player
+,,,Price,Harga hero untuk dibeli atau digunakan,,Position,posisi bermain Player
+,,,Specialty,Keahlian khusus atau peran dari hero,,Join Date,Tanggal Player bergabung dengan Team
+,,,Win Rate,Tingkat kemenangan hero dalam pertandingan,,Signature Heroes,Hero Khas yang di pakai Player
+,,,Hero Name,Nama dari hero Mobile Legends: Bang Bang,,,
+,,,Passive Abilities,Kemampuan pasif yang dimiliki oleh hero,,Sheet,Battel Spell
+,,,Ability,Skill atau kemampuan aktif yang dimiliki oleh hero,,,
+,,,Passive Deskripsi,Deskripsi dari kemampuan pasif hero,,BATTLE SPELL, Nama dari Battel Spell
+,,,Skill 1 Name,Nama dari skill pertama hero,,DESCRIPTION,Deskripsi dari Battel Spell
+,,,Skill 1 Ability,Kemampuan aktif dari skill pertama hero,,,
+,,,Skill 1 Passive Deskripsi,Deskripsi dari kemampuan pasif skill pertama hero,,Sheet,Item Stas
+,,,Skill 2 Name,Nama dari skill kedua hero,,,
+,,,Skill 2 Ability,Kemampuan aktif dari skill kedua hero,,Name Item,Nama dari item Mobile Legends
+,,,Skill 2 Passive Deskripsi,Deskripsi dari kemampuan pasif skill kedua hero,,Name Ability,Nama kemampuan atau efek khusus yang dimiliki item
+,,,Skill 3 Name,Nama dari skill ketiga hero,,Ability Deskripsi,Deskripsi dari kemampuan atau efek khusus item
+,,,Skill 3 Ability,Kemampuan aktif dari skill ketiga hero,,Attributes,Attribut atau statistik tambahan yang diberikan oleh item
+,,,Skill 3 Passive Deskripsi,Deskripsi dari kemampuan pasif skill ketiga hero,,,
+,,,,,,,
+,,,,,,,
+,,,Sheet,Jungle&Roam,,,
+,,,,,,,
+,,,Name Item,Nama dari item Mobile Legends,,,
+,,,Ability Deskripsi,Deskripsi dari kemampuan atau efek khusus item,,,
