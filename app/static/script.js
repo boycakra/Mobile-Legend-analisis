@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("Buff Merah").addEventListener("click", function () {
         if (marking && currentPlayer && currentMove) {
             markingCircleClass = `${currentMove}Buff-Merah-mark-circle`;
-            valueDisplays[currentPlayer].innerHTML = `Value: Buff Merah ${currentMove}`;
+            valueDisplays[currentPlayer].innerHTML = `Value: Inner Tower Destroy ${currentMove}`;
             const time = timerDisplay.textContent;
             addDataToTable(time, currentPlayer, currentMove);
         }
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("Buff biru").addEventListener("click", function () {
         if (marking && currentPlayer && currentMove) {
             markingCircleClass = `${currentMove}Buff-biru-mark-circle`;
-            valueDisplays[currentPlayer].innerHTML = `Value: Buff Biru ${currentMove}`;
+            valueDisplays[currentPlayer].innerHTML = `Value: Base Tower Destroy ${currentMove}`;
             const time = timerDisplay.textContent;
             addDataToTable(time, currentPlayer, currentMove);
         }
