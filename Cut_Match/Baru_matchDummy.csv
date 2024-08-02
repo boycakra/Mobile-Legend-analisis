@@ -1,0 +1,93 @@
+Date,Stage,Match_id,Round,Team,Player,Pick,Win,Enemy,Role Pick,Ban,Role Ban,Spell,Emblem,Talent 1,Talent 2,Talent 3,Time,K,D,A,Gold,Level,Turtle,Lord ,Tower,"Buff
+ Biru","Buff 
+Merah"
+6/29/2024,Wildcard,11008,1, Brute Force,Marbon,X.Borg,Win,Trained to Kill,Fighter,Edith,Tank/Marksman,Flicker,Tank,Vitality,Festival of Blood,Impure Rage,18:10,3,3,5,10925,15,2,1,6,9,9
+6/29/2024,Wildcard,11008,1, Brute Force,Mashiro,Fredrinn,Win,Trained to Kill,Fighter/Tank,Angela,Support,Retribution,Tank,Vitality,Seasoned Hunter,Concussive Blast,18:10,2,2,7,10039,15,2,1,6,9,9
+6/29/2024,Wildcard,11008,1, Brute Force,Kodjik,Valentina,Win,Trained to Kill,Mage,Luo Yi,Mage,Flicker,Mage,Rupture,Wilderness Blessing.,Quantum Charge,18:10,3,2,7,9523,15,2,1,6,9,9
+6/29/2024,Wildcard,11008,1, Brute Force,Fangor,Hilda,Win,Trained to Kill,Tank/Fighter,Minotaur,Tank/Support,Sprint,Tank,Agility,Master Assassin,Concussive Blast,18:10,2,4,4,8409,15,2,1,6,9,9
+6/29/2024,Wildcard,11008,1, Brute Force,blackMarch,Moskov,Win,Trained to Kill,Marksman,Grock,Tank/Fighter,Purify,Common,Thrill,Master Assassin,Quantum Charge,18:10,1,2,4,11687,15,2,1,6,9,9
+6/29/2024,Wildcard,11008,1,Trained to Kill,Masarap,Terizla,Lose, Brute Force,Fighter,Paquito,Fighter/Assassin,Flicker,Fighter,Agility,Festival of Blood,Brave Smite,18:10,1,3,6,9394,15,1,2,8,10,8
+6/29/2024,Wildcard,11008,1,Trained to Kill,Yahiko,Ling,Lose, Brute Force,Assassin,Arlott,Fighter/Assassin,Retribution,Assassin,Fatal,Seasoned Hunter,Quantum Charge,18:10,6,1,2,14541,15,1,2,8,10,8
+6/29/2024,Wildcard,11008,1,Trained to Kill,Bobe,Zhask,Lose, Brute Force,Mage,Chip,Support/Tank,Flicker,Mage,Rupture,Bargain Hunter,War Cry,18:10,5,3,4,10852,15,1,2,8,10,8
+6/29/2024,Wildcard,11008,1,Trained to Kill,APEX,Khufra,Lose, Brute Force,Tank,Roger,Fighter/Marksman,Flicker,Tank,Firmness,Tenacity,Concussive Blast,18:10,1,3,6,8185,15,1,2,8,10,8
+6/29/2024,Wildcard,11008,1,Trained to Kill,VVitch,Claude,Lose, Brute Force,Marksman,Harith,Mage,Purify,Common,Agility,Tenacity,Quantum Charge,18:10,0,1,6,12087,15,1,2,8,10,8
+6/29/2024,Wildcard,11009,1,Trained to Kill,Masarap,Yu Zhong,Win, HomeBois,Fighter,Natan,Marksman,Petrify,Fighter,Rupture,Festival of Blood,War Cry,"14:45",2,2,6,8267,14,1,1,6,9,6
+6/29/2024,Wildcard,11009,1,Trained to Kill,Yahiko,Julian,Win, HomeBois,Fighter/Mage,Claude,Marksman,Retribution,Mage,Swift,Seasoned Hunter,Impure Rage,"14:45",1,3,8,9681,15,1,1,6,9,6
+6/29/2024,Wildcard,11009,1,Trained to Kill,Bobe,Angela,Win, HomeBois,Support,Harith,Mage,Flicker,Support,Inspire,Bargain Hunter,Impure Rage,"14:45",4,2,7,8568,14,1,1,6,9,6
+6/29/2024,Wildcard,11009,1,Trained to Kill,APEX,Ruby,Win, HomeBois,Fighter/Tank,Luo Yi,Mage,Flicker,Tank,Vitality,Tenacity,Brave Smite,"14:45",0,7,4,6266,13,1,1,6,9,6
+6/29/2024,Wildcard,11009,1,Trained to Kill,VVitch,Roger,Win, HomeBois,Fighter/Marksman,Chip,Support/Tank,Purify,Assassin,Thrill,Master Assassin,Quantum Charge,"14:45",4,2,2,9443,14,1,1,6,9,6
+6/29/2024,Wildcard,11009,1, HomeBois,Sepat,Edith,Lose,Trained to Kill,Tank/Marksman,Faramis,Support/Mage,Flicker,Tank,Agility,Pull Yourself Together,Quantum Charge,"14:45",4,1,8,9156,15,2,1,8,7,8
+6/29/2024,Wildcard,11009,1, HomeBois,Chibi,Ling,Lose,Trained to Kill,Assassin,Moskov,Marksman,Retribution,Assassin,Fatal,Seasoned Hunter,War Cry,"14:45",8,3,6,13482,15,2,1,8,7,8
+6/29/2024,Wildcard,11009,1, HomeBois,Udil,Vexana,Lose,Trained to Kill,Mage,Valentina,Mage,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,"14:45",2,4,8,7774,13,2,1,8,7,8
+6/29/2024,Wildcard,11009,1, HomeBois,Xorn,Minotaur,Lose,Trained to Kill,Tank/Support,Aamon,Assassin,Flicker,Tank,Inspire,Wilderness Blessing.,Concussive Blast,"14:45",0,2,14,6781,13,2,1,8,7,8
+6/29/2024,Wildcard,11009,1, HomeBois,Nets,Minsitthar,Lose,Trained to Kill,Fighter,Fanny,Assassin,Flicker,Assassin,Swift,Tenacity,Quantum Charge,"14:45",2,1,11,10749,15,2,1,8,7,8
+6/29/2024,Wildcard,11010,1,IHC Esports,Aizn,Terizla,Win, Brute Force,Fighter,Harith,Mage,Flicker,Tank,Rupture,Festival of Blood,Brave Smite,13:17,1,1,6,8273,13,3,2,8,8,6
+6/29/2024,Wildcard,11010,1,IHC Esports,Zxaura,Roger,Win, Brute Force,Fighter/Marksman,Chip,Support/Tank,Retribution,Assassin,Swift,Seasoned Hunter,Quantum Charge,13:17,9,0,5,13043,15,3,2,8,8,6
+6/29/2024,Wildcard,11010,1,IHC Esports,Forbid,Valentina,Win, Brute Force,Mage,Angela,Support,Flicker,Mage,Inspire,Wilderness Blessing.,Impure Rage,13:17,4,1,10,9049,15,3,2,8,8,6
+6/29/2024,Wildcard,11010,1,IHC Esports,Ethan,Minotaur,Win, Brute Force,Tank/Support,Ling,Assassin,Flicker,Tank,Agility,Pull Yourself Together,Concussive Blast,13:17,1,0,14,7581,13,3,2,8,8,6
+6/29/2024,Wildcard,11010,1,IHC Esports,Bebex,Ruby,Win, Brute Force,Fighter/Tank,Grock,Tank/Fighter,Flicker,Fighter,Thrill,Festival of Blood,Brave Smite,13:17,2,1,6,9639,14,3,2,8,8,6
+6/29/2024,Wildcard,11010,1, Brute Force,Marbon,Barats,Lose,IHC Esports,Tank/Fighter,Julian,Fighter/Mage,Flicker,Common,Agility,Tenacity,Brave Smite,13:17,1,4,1,6442,12,0,0,3,6,6
+6/29/2024,Wildcard,11010,1, Brute Force,Mashiro,Nolan,Lose,IHC Esports,Assassin,Mathilda,Support/Assassin,Retribution,Assassin,Thrill,Seasoned Hunter,Impure Rage,13:17,1,3,1,7962,15,0,0,3,6,6
+6/29/2024,Wildcard,11010,1, Brute Force,Kodjik,Pharsa,Lose,IHC Esports,Mage,Luo Yi,Mage,Flicker,Mage,Rupture,Wilderness Blessing.,Lethal Ignition,13:17,1,5,2,6650,12,0,0,3,6,6
+6/29/2024,Wildcard,11010,1, Brute Force,Fangor,Guinevere,Lose,IHC Esports,Fighter,Edith,Tank/Marksman,Flicker,Tank,Vitality,Wilderness Blessing.,Concussive Blast,13:17,0,3,3,5369,11,0,0,3,6,6
+6/29/2024,Wildcard,11010,1, Brute Force,blackMarch,Moskov,Lose,IHC Esports,Marksman,Arlott,Fighter/Assassin,Purify,Common,Thrill,Tenacity,Quantum Charge,13:17,0,2,2,8715,13,0,0,3,6,6
+6/29/2024,Wildcard,11011,1,Trained to Kill,Masarap,Yu Zhong,Win,IHC Esports,Fighter,Valentina,Mage,Petrify,Fighter,Rupture,Festival of Blood,War Cry,15:32,1,1,6,8273,13,3,2,8,8,6
+6/29/2024,Wildcard,11011,1,Trained to Kill,Yahiko,Roger,Win,IHC Esports,Fighter/Marksman,Ling,Assassin,Retribution,Assassin,Swift,Seasoned Hunter,War Cry,15:32,9,0,5,13043,15,3,2,8,8,6
+6/29/2024,Wildcard,11011,1,Trained to Kill,Bobe,Odette,Win,IHC Esports,Mage,Edith,Tank/Marksman,Flicker,Mage,Rupture,Pull Yourself Together,War Cry,15:32,4,1,10,9049,15,3,2,8,8,6
+6/29/2024,Wildcard,11011,1,Trained to Kill,APEX,Carmilla,Win,IHC Esports,Support/Tank,Nolan,Assassin,Flicker,Tank,Firmness,Tenacity,Concussive Blast,15:32,1,0,14,7581,13,3,2,8,8,6
+6/29/2024,Wildcard,11011,1,Trained to Kill,VVitch,Claude,Win,IHC Esports,Marksman,Leomord,Fighter,Purify,Common,Agility,Tenacity,Quantum Charge,15:32,2,1,6,9639,14,3,2,8,8,6
+6/29/2024,Wildcard,11011,1,IHC Esports,Aizn,Terizla,Lose,Trained to Kill,Fighter,Vexana,Mage,Flicker,Tank,Rupture,Festival of Blood,Brave Smite,15:32,1,4,1,6442,12,3,2,8,8,6
+6/29/2024,Wildcard,11011,1,IHC Esports,Zxaura,Fredrinn,Lose,Trained to Kill,Fighter/Tank,Fanny,Assassin,Retribution,Tank,Firmness,Seasoned Hunter,Concussive Blast,15:32,1,3,1,7962,15,3,2,8,8,6
+6/29/2024,Wildcard,11011,1,IHC Esports,Forbid,Faramis,Lose,Trained to Kill,Support/Mage,Angela,Support,Purify,Mage,Agility,Wilderness Blessing.,Lethal Ignition,15:32,1,5,2,6650,12,3,2,8,8,6
+6/29/2024,Wildcard,11011,1,IHC Esports,Ethan,Mathilda,Lose,Trained to Kill,Support/Assassin,Chip,Support/Tank,Purify,Common,Agility,Wilderness Blessing.,Quantum Charge,15:32,0,3,3,5369,11,3,2,8,8,6
+6/29/2024,Wildcard,11011,1,IHC Esports,Bebex,Harith,Lose,Trained to Kill,Mage,Luo Yi,Mage,Purify,Mage,Inspire,Bargain Hunter,Impure Rage,15:32,0,2,2,8715,13,3,2,8,8,6
+6/29/2024,Wildcard,11012,1, Brute Force,Marbon,Arlott,Lose, HomeBois,Fighter/Assassin,Terizla,Fighter,Flicker,Common,Thrill,Tenacity,Quantum Charge,15:31,0,6,4,6787,13,1,0,0,4,6
+6/29/2024,Wildcard,11012,1, Brute Force,Mashiro,Fredrinn,Lose, HomeBois,Fighter/Tank,Angela,Support,Retribution,Tank,Thrill,Seasoned Hunter,Concussive Blast,15:31,1,0,2,6744,14,1,0,0,4,6
+6/29/2024,Wildcard,11012,1, Brute Force,Kodjik,Novaria,Lose, HomeBois,Mage,Harith,Mage,Flicker,Assassin,Rupture,Wilderness Blessing.,Impure Rage,15:31,2,2,2,8795,14,1,0,0,4,6
+6/29/2024,Wildcard,11012,1, Brute Force,Fangor,Minotaur,Lose, HomeBois,Tank/Support,Claude,Marksman,Flicker,Tank,Vitality,Wilderness Blessing.,Concussive Blast,15:31,0,1,4,6111,13,1,0,0,4,6
+6/29/2024,Wildcard,11012,1, Brute Force,blackMarch,Roger,Lose, HomeBois,Fighter/Marksman,Edith,Tank/Marksman,Purify,Assassin,Thrill,Master Assassin,Quantum Charge,15:31,1,2,2,9664,14,1,0,0,4,6
+6/29/2024,Wildcard,11012,1, HomeBois,Sepat,Ruby,Win, Brute Force,Fighter/Tank,Moskov,Marksman,Flicker,Fighter,Agility,Festival of Blood,Brave Smite,15:31,1,1,4,8264,14,2,2,9,13,7
+6/29/2024,Wildcard,11012,1, HomeBois,Chibi,Ling,Win, Brute Force,Assassin,Chip,Support/Tank,Retribution,Assassin,Fatal,Seasoned Hunter,War Cry,15:31,7,1,1,14772,15,2,2,9,13,7
+6/29/2024,Wildcard,11012,1, HomeBois,Udil,Luo Yi,Win, Brute Force,Mage,Valentina,Mage,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,15:31,1,2,7,8550,14,2,2,9,13,7
+6/29/2024,Wildcard,11012,1, HomeBois,Xorn,Grock,Win, Brute Force,Tank/Fighter,Yu Zhong,Fighter,Flicker,Tank,Firmness,Tenacity,Quantum Charge,15:31,1,0,6,7307,14,2,2,9,13,7
+6/29/2024,Wildcard,11012,1, HomeBois,Nets,Karrie,Win, Brute Force,Marksman,Paquito,Fighter/Assassin,Flicker,Common,Firmness,Tenacity,Quantum Charge,15:31,1,0,6,12075,15,2,2,9,13,7
+6/30/2024,Wildcard,11013,1, HomeBois,Sepat,Ruby,Win, Entity7,Fighter/Tank,Lylia,Mage,Flicker,Fighter,Inspire,Festival of Blood,Brave Smite,16:25,0,4,8,8042,14,3,2,9,13,9
+6/30/2024,Wildcard,11013,1, HomeBois,Chibi,Joy,Win, Entity7,Assassin,Lunox,Mage,Retribution,Mage,Rupture,Seasoned Hunter,Lethal Ignition,16:25,5,1,6,13489,15,3,2,9,13,9
+6/30/2024,Wildcard,11013,1, HomeBois,Udil,Vexana,Win, Entity7,Mage,Valentina,Mage,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,16:25,5,0,8,10788,15,3,2,9,13,9
+6/30/2024,Wildcard,11013,1, HomeBois,Xorn,Akai,Win, Entity7,Tank,Moskov,Marksman,Flicker,Tank,Agility,Wilderness Blessing.,Concussive Blast,16:25,1,1,11,7964,14,3,2,9,13,9
+6/30/2024,Wildcard,11013,1, HomeBois,Nets,Claude,Win, Entity7,Marksman,Luo Yi,Mage,Purify,Common,Agility,Tenacity,Quantum Charge,16:25,6,1,7,15185,15,3,2,9,13,9
+6/30/2024,Wildcard,11013,1, Entity7,Markinho,Edith,Lose, HomeBois,Tank/Marksman,Chip,Support/Tank,Flicker,Tank,Swift,Tenacity,Quantum Charge,16:25,1,5,2,8186,14,0,0,0,5,6
+6/30/2024,Wildcard,11013,1, Entity7,Hide on bush,Bane,Lose, HomeBois,Fighter/Mage,Harith,Mage,Retribution,Assassin,Thrill,Seasoned Hunter,Impure Rage,16:25,1,2,6,10034,15,0,0,0,5,6
+6/30/2024,Wildcard,11013,1, Entity7,Chan,Nana,Lose, HomeBois,Mage,Roger,Fighter/Marksman,Flicker,Mage,Rupture,Bargain Hunter,Impure Rage,16:25,2,2,4,7978,13,0,0,0,5,6
+6/30/2024,Wildcard,11013,1, Entity7,Erwin,Minotaur,Lose, HomeBois,Tank/Support,Grock,Tank/Fighter,Flicker,Tank,Firmness,Tenacity,Concussive Blast,16:25,1,4,5,7195,13,0,0,0,5,6
+6/30/2024,Wildcard,11013,1, Entity7,Furyy,Karrie,Lose, HomeBois,Marksman,Carmilla,Support/Tank,Purify,Common,Firmness,Tenacity,Quantum Charge,16:25,2,4,3,9939,15,0,0,0,5,6
+6/30/2024,Wildcard,11013,2, HomeBois,Sepat,Ruby,Lose, Entity7,Fighter/Tank,Grock,Tank/Fighter,Flicker,Tank,Firmness,Tenacity,Concussive Blast,11:23,0,3,3,4880,10,0,0,1,5,3
+6/30/2024,Wildcard,11013,2, HomeBois,Chibi,Roger,Lose, Entity7,Fighter/Marksman,Terizla,Fighter,Retribution,Assassin,Thrill,Seasoned Hunter,War Cry,11:23,2,5,0,6351,12,0,0,1,5,3
+6/30/2024,Wildcard,11013,2, HomeBois,Udil,Vexana,Lose, Entity7,Mage,Valentina,Mage,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,11:23,1,1,0,4960,10,0,0,1,5,3
+6/30/2024,Wildcard,11013,2, HomeBois,Xorn,Mathilda,Lose, Entity7,Support/Assassin,Moskov,Marksman,Purify,Support,Agility,Wilderness Blessing.,Quantum Charge,11:23,0,1,4,4477,10,0,0,1,5,3
+6/30/2024,Wildcard,11013,2, HomeBois,Nets,Karrie,Lose, Entity7,Marksman,Luo Yi,Mage,Flicker,Common,Firmness,Tenacity,Quantum Charge,11:23,1,2,0,7897,13,0,0,1,5,3
+6/30/2024,Wildcard,11013,2, Entity7,Markinho,Edith,Win, HomeBois,Tank/Marksman,Chip,Support/Tank,Flicker,Tank,Swift,Tenacity,Quantum Charge,11:23,2,2,6,7319,12,3,1,9,6,8
+6/30/2024,Wildcard,11013,2, Entity7,Hide on bush,Bane,Win, HomeBois,Fighter/Mage,Harley,Assassin/Mage,Retribution,Assassin,Thrill,Seasoned Hunter,Quantum Charge,11:23,5,0,5,10303,15,3,1,9,6,8
+6/30/2024,Wildcard,11013,2, Entity7,Chan,Yve,Win, HomeBois,Mage,Claude,Marksman,Flicker,Mage,Inspire,Bargain Hunter,Impure Rage,11:23,3,1,7,7308,12,3,1,9,6,8
+6/30/2024,Wildcard,11013,2, Entity7,Erwin,Carmilla,Win, HomeBois,Support/Tank,Minotaur,Tank/Support,Flicker,Support,Firmness,Tenacity,Focusing Mark,11:23,1,1,7,6185,12,3,1,9,6,8
+6/30/2024,Wildcard,11013,2, Entity7,Furyy,Clint,Win, HomeBois,Marksman,Ling,Assassin,Flicker,Assassin,Fatal,Master Assassin,Quantum Charge,11:23,1,0,4,8880,13,3,1,9,6,8
+6/30/2024,Wildcard,11013,3, HomeBois,Sepat,Ruby,Win, Entity7,Fighter/Tank,Vexana,Mage,Flicker,Fighter,Inspire,Festival of Blood,Brave Smite,13:37,1,4,11,7450,13,2,2,9,10,8
+6/30/2024,Wildcard,11013,3, HomeBois,Chibi,Ling,Win, Entity7,Assassin,Lunox,Mage,Retribution,Assassin,Fatal,Seasoned Hunter,War Cry,13:37,10,1,9,13882,15,2,2,9,10,8
+6/30/2024,Wildcard,11013,3, HomeBois,Udil,Valentina,Win, Entity7,Mage,Bane,Fighter/Mage,Purify,Mage,Rupture,Wilderness Blessing.,Impure Rage,13:37,4,5,14,8972,15,2,2,9,10,8
+6/30/2024,Wildcard,11013,3, HomeBois,Xorn,Grock,Win, Entity7,Tank/Fighter,Moskov,Marksman,Flicker,Common,Agility,Wilderness Blessing.,Quantum Charge,13:37,2,0,20,7790,13,2,2,9,10,8
+6/30/2024,Wildcard,11013,3, HomeBois,Nets,Minsitthar,Win, Entity7,Fighter,Luo Yi,Mage,Flicker,Assassin,Swift,Tenacity,Quantum Charge,13:37,7,3,11,9559,14,2,2,9,10,8
+6/30/2024,Wildcard,11013,3, Entity7,Markinho,Edith,Lose, HomeBois,Tank/Marksman,Chou,Fighter,Flicker,Tank,Swift,Tenacity,Quantum Charge,13:37,2,5,7,7477,13,1,0,2,6,4
+6/30/2024,Wildcard,11013,3, Entity7,Hide on bush,Dyrroth,Lose, HomeBois,Fighter,Claude,Marksman,Retribution,Assassin,Thrill,Seasoned Hunter,Lethal Ignition,13:37,2,6,5,7575,14,1,0,2,6,4
+6/30/2024,Wildcard,11013,3, Entity7,Chan,Eudora,Lose, HomeBois,Mage,Harith,Mage,Flicker,Mage,Rupture,Wilderness Blessing.,Lethal Ignition,13:37,3,4,5,7297,12,1,0,2,6,4
+6/30/2024,Wildcard,11013,3, Entity7,Erwin,Khufra,Lose, HomeBois,Tank,Minotaur,Tank/Support,Flicker,Tank,Firmness,Tenacity,Concussive Blast,13:37,0,6,9,6128,11,1,0,2,6,4
+6/30/2024,Wildcard,11013,3, Entity7,Furyy,Roger,Lose, HomeBois,Fighter/Marksman,Akai,Tank,Purify,Common,Thrill,Master Assassin,Quantum Charge,13:37,6,3,2,10245,14,1,0,2,6,4
+6/30/2024,Wildcard,11013,4, HomeBois,Sepat,Terizla,Win, Entity7,Fighter,Roger,Fighter/Marksman,Flicker,Fighter,Firmness,Festival of Blood,Brave Smite,13:47,4,1,5,8332,14,2,1,8,9,5
+6/30/2024,Wildcard,11013,4, HomeBois,Chibi,Ling,Win, Entity7,Assassin,Julian,Fighter/Mage,Retribution,Assassin,Fatal,Seasoned Hunter,War Cry,13:47,7,3,5,12240,15,2,1,8,9,5
+6/30/2024,Wildcard,11013,4, HomeBois,Udil,Valentina,Win, Entity7,Mage,Bane,Fighter/Mage,Purify,Mage,Rupture,Wilderness Blessing.,Impure Rage,13:47,3,3,9,8810,15,2,1,8,9,5
+6/30/2024,Wildcard,11013,4, HomeBois,Xorn,Chou,Win, Entity7,Fighter,Luo Yi,Mage,Flicker,Tank,Thrill,Wilderness Blessing.,Concussive Blast,13:47,0,0,7,6556,13,2,1,8,9,5
+6/30/2024,Wildcard,11013,4, HomeBois,Nets,Bruno,Win, Entity7,Marksman,Moskov,Marksman,Purify,Assassin,Fatal,Tenacity,Quantum Charge,13:47,2,1,5,11359,15,2,1,8,9,5
+6/30/2024,Wildcard,11013,4, Entity7,Markinho,Edith,Lose, HomeBois,Tank/Marksman,Chip,Support/Tank,Flicker,Tank,Swift,Tenacity,Quantum Charge,13:47,0,4,3,7338,12,1,0,3,6,6
+6/30/2024,Wildcard,11013,4, Entity7,Hide on bush,Karina,Lose, HomeBois,Assassin,Claude,Marksman,Retribution,Mage,Thrill,Bargain Hunter,Lethal Ignition,13:47,1,3,3,8606,14,1,0,3,6,6
+6/30/2024,Wildcard,11013,4, Entity7,Chan,Lunox,Lose, HomeBois,Mage,Harley,Assassin/Mage,Flicker,Mage,Rupture,Wilderness Blessing.,Impure Rage,13:47,6,1,1,10552,14,1,0,3,6,6
+6/30/2024,Wildcard,11013,4, Entity7,Erwin,Grock,Lose, HomeBois,Tank/Fighter,Lapu-Lapu,Fighter,Flicker,Tank,Agility,Tenacity,Concussive Blast,13:47,0,3,5,6944,12,1,0,3,6,6
+6/30/2024,Wildcard,11013,4, Entity7,Furyy,Clint,Lose, HomeBois,Marksman,Minsitthar,Fighter,Flicker,Assassin,Fatal,Master Assassin,Quantum Charge,13:47,1,5,1,8847,13,1,0,3,6,6
