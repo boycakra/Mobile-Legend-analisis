@@ -1,14 +1,12 @@
 {% extends "base.html"%}
 
-
 {% block content %}
-    <!-- VIDEO KONTAINER -->
+    <!-- VIDEO CONTAINER -->
     <div id="video-container">
-        <video width="700px" src="/static/assets/video/VSG_fv1.mkv" controls></video>
-        
+        <video width="700px" src="/static/assets/video/Onicvsliq2.mp4" controls></video>
     </div>
     
-    <!-- New timer-container div -->
+    <!-- IMAGE CONTAINER -->
     <div id="image-container">
         <div class="image-wrapper">
             <img id="image1" src="/static/assets/image/map.PNG" alt="body" />
@@ -25,119 +23,125 @@
             <img id="image2" src="/static/assets/image/map.PNG" alt="body2" />
         </div>
     </div>
- 
-    <div class="dropdownLeft" style="float: left; margin-right: 100px;">
-        
-        <div class="dropdown-menu" aria-labelledby="leftDropdownMenu">
-            <label for="input1">Input 1:</label>
-            <input type="text" id="InputATeam1" name="input1">
-            <label for="input2">Input 2:</label>
-            <input type="text" id="InputATeam2" name="input2">
-            <!-- Left dropdown content here -->
+
+    <!-- TEAM AND PLAYER NAMES CONTAINER -->
+    <div id="team-container">
+        <h3>Team Names</h3>
+        <div>
+            <label for="team1">Blue Team Name:</label>
+            <input type="text" id="team1" placeholder="Enter Team 1 Name">
+        </div>
+        <div>
+            <label for="team2">Red Team Name:</label>
+            <input type="text" id="team2" placeholder="Enter Team 2 Name">
         </div>
     </div>
 
-    <div class="dropdownRight" style="float: right; margin-left: 20px;"> <!-- Adjusted margin-left -->
-        
-        <div class="dropdown-menu" aria-labelledby="rightDropdownMenu">
-            <!-- Right dropdown content here -->
-            <label for="input1">Input 1:</label>
-            <input type="text" id="InputBTeam1" name="input1">
-            <label for="input2">Input 2:</label>
-            <input type="text" id="InputBTeam2" name="input2">
+    <div id="player-container">
+        <h3>Player Names</h3>
+        <div>
+            <label for="player1">Player 1 (Blue Team):</label>
+            <input type="text" id="player1" placeholder="Enter Player 1 Name">
+        </div>
+        <div>
+            <label for="player2">Player 2 (Red Team):</label>
+            <input type="text" id="player2" placeholder="Enter Player 2 Name">
         </div>
     </div>
 
-
+    <!-- STATS CONTAINER -->
     <div id="container" class="with-dropdowns">
-         
-        
         <div id="stats">
-            <!-- Lokasi table player sebelah kiri -->
+            <!-- Blue Team Stats Table -->
             <div id="stats1">
-                <h3>Status blue team</h3>
+                <h3>Status Blue Team</h3>
                 <div class="table-container">
-                <table id="player1-table">
-                    <thead>
-                        <tr>
-                            <th>Mark Coordinate</th>
-                            <th>Value</th>
-                            <th>Player</th>
-                            <th>Timer</th> <!-- Add a new column for the timer -->
-                        </tr>
-                    </thead>
-                    <tbody id="mark-table-body">
-                        <!-- Table rows will be inserted dynamically using JavaScript -->
-                    </tbody>
-                </table>
+                    <table id="player1-table">
+                        <thead>
+                            <tr>
+                                <th>Mark Coordinate</th>
+                                <th>Value</th>
+                                <th>Player</th>
+                                <th>Team</th> <!-- Added Team Column -->
+                                <th>Time</th> <!-- Timer Column -->
+                            </tr>
+                        </thead>
+                        <tbody id="mark-table-body">
+                            <!-- Table rows will be inserted dynamically -->
+                        </tbody>
+                    </table>
                 </div>
             </div>
             
-            
-            <!-- Lokasi table player sebelah kanan -->
+            <!-- Red Team Stats Table -->
             <div id="stats2">
-                <h3>Status Red team </h3>
+                <h3>Status Red Team</h3>
                 <div class="table-container">
-                <table id="player2-table">
-                    <thead>
-                        <tr>
-                            <th>Mark Coordinate</th>
-                            <th>Value</th>
-                            <th>Player</th>
-                            <th>Timer</th> <!-- Add a new column for the timer -->
-                        </tr>
-                    </thead>
-                    <tbody id="mark-table-body-2"></tbody>
-                </table>
+                    <table id="player2-table">
+                        <thead>
+                            <tr>
+                                <th>Mark Coordinate</th>
+                                <th>Value</th>
+                                <th>Player</th>
+                                <th>Team</th> <!-- Added Team Column -->
+                                <th>Time</th> <!-- Timer Column -->
+                            </tr>
+                        </thead>
+                        <tbody id="mark-table-body-2">
+                            <!-- Table rows will be inserted dynamically -->
+                        </tbody>
+                    </table>
                 </div>
-                
             </div>
         </div>
+
+        <!-- Event Buttons -->
         <div id="confirm">
             <button id="Kill">Kill</button>
-            <button id="assisted">assisted</button>
+            <button id="assisted">Assisted</button>
             <button id="Death">Death</button>
             <button id="Buff Merah">Buff Merah</button>
-            <button id="Buff biru">Buff biru</button>
-            
+            <button id="Buff biru">Buff Biru</button>
         </div>
-        <button id="Lord">lord</button>
-        <button id="Turtle">turtle</button>
-        <!-- Footer | Text dan tombol bagian bawah pada masing-masing gambar -->
+        <button id="Lord">Lord</button>
+        <button id="Turtle">Turtle</button>
+
+        <!-- Footer -->
         <div id="footer">
             <div id="stats1-now">
-                <p>Ini yang kiri</p>
+                <p>Blue Team Actions</p>
                 <button id="undo-player1">Undo</button>
                 <button id="Mid-lane">Mid-lane</button>
-                <button id="gold-lane">gold-lane</button>
+                <button id="gold-lane">Gold-lane</button>
                 <button id="Exp-lane">Exp-lane</button>
                 <button id="Roamer-lane">Roamer-lane</button>
                 <button id="Jungler-line">Jungler-line</button>
-                <button id="Inisiasi">Inisiasi</button> <!-- New Inisiasi button -->
+                <button id="Inisiasi">Inisiasi</button>
                 <div id="coordinate-display"></div>
                 <div id="value-display"></div>
                 <button id="export-player1">Export Player 1</button>
             </div>
+
             <div id="stats2-now">
-                <p>Ini yang kanan</p>
+                <p>Red Team Actions</p>
                 <button id="undo-player2">Undo</button>
                 <button id="Mid-laneplayer2">Mid-lane</button>
-                <button id="gold-lanep2">gold-lane</button>
+                <button id="gold-lanep2">Gold-lane</button>
                 <button id="Exp-lanep2">Exp-lane</button>
-                <button id="Roamer-lanep2">Roamer-lane</button> <!-- New InisiasiPlayer2 button -->
+                <button id="Roamer-lanep2">Roamer-lane</button>
                 <button id="Jungler-linep2">Jungler-line</button>
-                <button id="Inisiasiplayer2">Inisiasi</button> <!-- New InisiasiPlayer2 button -->
+                <button id="Inisiasiplayer2">Inisiasi</button>
                 <div id="coordinate-display_player2"></div>
                 <div id="value-display_player2"></div>
                 <button id="export-player2">Export Player 2</button>
             </div>
         </div>
-                
     </div>
+
+    <!-- Full Match Stats -->
     <div id="full">
-        <!-- Lokasi table player sebelah kiri -->
-        <div id="stats all">
-            <h3>Status match</h3>
+        <div id="stats-all">
+            <h3>Status Match</h3>
             <div class="match-container">
                 <table id="match-table">
                     <thead>
@@ -145,15 +149,18 @@
                             <th>Coordinates</th>
                             <th>Value</th>
                             <th>Player</th>
+                            <th>Team</th>
                             <th>Time</th>
                         </tr>
                     </thead>
                     <tbody id="match-table-body"></tbody>
                 </table>
-                
             </div>
-            <button id="export-Match">Export Match </button>
+            <button id="export-Match">Export Match</button>
         </div>
+    </div>
+
+    <!-- Include Script and Bootstrap -->
     <script src="{{url_for('static', filename= 'script.js')}}" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" Exp-laneorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 {% endblock content %}

@@ -8,6 +8,16 @@
     border-style: solid;
     border-color: red;
 }
+#team-container, #player-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#team-container div, #player-container div {
+    margin-right: 10px;
+}
+
 #controls {
     width: 50%;
     margin: 10px auto; /* Center the controls horizontally with equal margins on the left and right */
@@ -58,6 +68,7 @@
     width: 50%; /* Membagi lebar container menjadi dua bagian */
     height: 300px; /* Sesuaikan dengan tinggi gambar */
 }
+
 
 #image1,
 #image2 {
