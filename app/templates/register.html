@@ -13,11 +13,18 @@
 {% endwith %}
 
 <form action="{{ url_for('register') }}" method=post>
+	<span>Username : </span>
 	<input type="text" name="username">
+	<br>
+	<span>Email : </span>
 	<input type="email" name="email">
+	<br>
+	<span>Password : </span>
 	<input type="password" name="password">
+	<br>
+	<span>Confirm Password : </span>
 	<input type="password" name="confirm_password">
-	
+	<br>
 	<button type="submit">Submit</button>
 </form>
 {% endblock content %}
