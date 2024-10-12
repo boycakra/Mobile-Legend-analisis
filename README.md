@@ -83,6 +83,9 @@ This is an analysis tool for Mobile Legends: Bang Bang matches. This tool helps 
   ```env/Scripts/Activate.ps1 // In PowerShell```
   ```source env/bin/activate // In Linux```
 
+* create env file
+Copy .env.example to your .env file
+
 * Install Dependencies
   ```pip install -r requirement.txt```
 
