@@ -1,5 +1,4 @@
 from flask import (
-    jsonify,
     make_response,
     render_template,
     url_for,
@@ -25,8 +24,9 @@ def unauthorized_loader(callback):
 
 
 @jwt.expired_token_loader
-def missing_token_callback():
-    return jsonify({"error": "missing token lmao"}), 401
+def expired_token_callback(jwt_header, jwt_payload):
+    flash("Your session has expired. Please login again.")
+    return redirect(url_for("login_view"))
 
 
 @app.route("/")
@@ -107,19 +107,3 @@ def login():
 
     flash("Please Check your email or password")
     return resp
-
-
-# @app.route("/form")
-# def form():
-#    videos = Video.query.all()
-#
-#    return render_template("uploads.html", videos=videos)
-
-
-# def query():
-#    videos = Video.query.all()
-#    return render_template("query.html", videos=videos)
-
-# @app.route('/static/assets/video/video.mp4')
-# def video():
-#    return send_file('static/assets/video/video.mp4', mimetype='video/mp4')
