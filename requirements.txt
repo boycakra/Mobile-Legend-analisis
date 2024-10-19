@@ -3,6 +3,7 @@ blinker==1.8.2
 click==8.1.7
 Flask==3.0.3
 Flask-Bcrypt==1.0.1
+Flask-JWT-Extended==4.6.0
 Flask-Login==0.6.3
 Flask-SQLAlchemy==3.1.1
 Flask-WTF==1.2.1
@@ -10,6 +11,7 @@ greenlet==3.1.1
 itsdangerous==2.2.0
 Jinja2==3.1.4
 MarkupSafe==3.0.0
+PyJWT==2.9.0
 python-dotenv==1.0.1
 SQLAlchemy==2.0.35
 typing_extensions==4.12.2

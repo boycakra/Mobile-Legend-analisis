@@ -1,21 +1,43 @@
-import flask
-from flask import make_response, render_template, url_for, request, redirect, flash
-from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity, get_jwt, set_access_cookies
-from hashlib import sha256
-from app import app, db
+from flask import (
+    jsonify,
+    make_response,
+    render_template,
+    url_for,
+    request,
+    redirect,
+    flash,
+)
+from flask_jwt_extended import (
+    create_access_token,
+    create_refresh_token,
+    jwt_required,
+    set_access_cookies,
+    set_refresh_cookies,
+)
+from app import app, db, jwt
 from app.models import User
+
+
+@jwt.unauthorized_loader
+def unauthorized_loader(callback):
+    flash("please login to access this page")
+    return redirect(url_for("login_view"))
+
+
+@jwt.expired_token_loader
+def missing_token_callback():
+    return jsonify({"error": "missing token lmao"}), 401
 
 
 @app.route("/")
 @jwt_required()
 def index():
-    current_user = get_jwt_identity()
-    print(f"hello {current_user}")
     return render_template("index.html")
 
 
 def allowed_file(filename):
     return "." in filename and filename.rsplit(".", 1)[1].lower() == "mp4"
+
 
 @app.route("/register", methods=["GET"])
 def register_view():
@@ -26,6 +48,8 @@ def register_view():
 
 @app.route("/register/api", methods=["POST"])
 def register():
+    if request.method != "POST":
+        return "Method in valid"
     # Get form data
     username = request.form.get("username")
     email = request.form.get("email")
@@ -66,18 +90,23 @@ def login_view():
 def login():
     email = request.form.get("email")
     password = request.form.get("password")
-    
+
     user = User.query.filter_by(email=email).first()
     if user and user.check_password(password):
         access_token = create_access_token(identity=user.id)
-        resp = make_response(redirect(url_for('index')))
+        refresh_token = create_refresh_token(identity=user.id)
+        resp = make_response(redirect(url_for("index")))
         set_access_cookies(resp, access_token)
+        set_refresh_cookies(resp, refresh_token)
         flash(f"Welcome {user.username}")
         return resp
-    
-    flash("Please Check your email or password")
-    return redirect(url_for('login'))
 
+    resp = make_response(redirect(url_for("login")))
+
+    resp.status_code = 400
+
+    flash("Please Check your email or password")
+    return resp
 
 
 # @app.route("/form")
