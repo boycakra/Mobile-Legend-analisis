@@ -1,12 +1,36 @@
-from flask import render_template, url_for, request, redirect, flash
-from app import app, db, bcrypt
-from app.models import User, Video
-from app.forms import RegistrationFrom, LoginFrom, UpdateAccountFrom
-from flask_login import login_user, current_user, logout_user
-import os
+from flask import (
+    make_response,
+    render_template,
+    url_for,
+    request,
+    redirect,
+    flash,
+)
+from flask_jwt_extended import (
+    create_access_token,
+    create_refresh_token,
+    jwt_required,
+    set_access_cookies,
+    set_refresh_cookies,
+)
+from app import app, db, jwt
+from app.models import User
+
+
+@jwt.unauthorized_loader
+def unauthorized_loader(callback):
+    flash("please login to access this page")
+    return redirect(url_for("login_view"))
+
+
+@jwt.expired_token_loader
+def expired_token_callback(jwt_header, jwt_payload):
+    flash("Your session has expired. Please login again.")
+    return redirect(url_for("login_view"))
 
 
 @app.route("/")
+@jwt_required()
 def index():
     return render_template("index.html")
 
@@ -15,96 +39,71 @@ def allowed_file(filename):
     return "." in filename and filename.rsplit(".", 1)[1].lower() == "mp4"
 
 
-@app.route("/uploads", methods=["GET", "POST"])
-def uploads():
-    if request.method == "POST":
-        title = request.form["title"]
-        video_file = request.files["video_file"]
-
-        if video_file:
-            video_path = os.path.join("./static/uploads/", video_file.filename)
-            video_file.save(video_path)
-
-            new_video = Video(title=title, file_path=video_path)
-
-            db.session.add(new_video)
-            db.session.commit()
-
-        return redirect(url_for("form"))
-
-    title = None
-    return render_template("uploads.html")
+@app.route("/register", methods=["GET"])
+def register_view():
+    if request.method == "GET":
+        return render_template("register.html")
+    return render_template("error.html")
 
 
-@app.route("/form")
-def form():
-    videos = Video.query.all()
-
-    return render_template("uploads.html", videos=videos)
-
-@app.route("/register", methods = ['GET', 'POST'])
+@app.route("/register/api", methods=["POST"])
 def register():
-    if current_user.is_authenticated:
-        return redirect(url_for('index'))
-    form = RegistrationFrom()
-    if form.validate_on_submit():
-        hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+    if request.method != "POST":
+        return "Method in valid"
+    # Get form data
+    username = request.form.get("username")
+    email = request.form.get("email")
+    password = request.form.get("password")
+    confirm_password = request.form.get("confirm_password")
 
-        user = User(username = form.username.data,
-                    email = form.email.data,
-                    password = hashed_password)
-        db.session.add(user)
-        db.session.commit()
-        flash('Your account has been created you are now be able to login !', 'success')
-        return redirect(url_for('login'))
-    return render_template('register.html', form = form)
+    # Validate form data
+    if not username or not email or not password or not confirm_password:
+        flash("Please fill in all fields", "error")
+        return render_template("register.html")
+
+    if password != confirm_password:
+        flash("Passwords do not match", "error")
+        return render_template("register.html")
+
+    # Check if user already exists
+    existing_user = User.query.filter_by(email=email).first()
+    if existing_user:
+        flash("Email already registered", "error")
+        return render_template("register.html")
+
+    # Create a new user and add to the database
+    new_user = User(username=username, email=email, password=password)
+    db.session.add(new_user)
+    db.session.commit()
+
+    # Success response
+    flash("Registration successful! You can now log in.", "success")
+    return redirect("/login")
 
 
-@app.route("/login", methods = ['GET', 'POST'])
+@app.route("/login", methods=["GET"])
+def login_view():
+    return render_template("login.html")
+
+
+@app.route("/login/api", methods=["POST"])
 def login():
-    if current_user.is_authenticated:
-        return redirect(url_for('index'))
-    form = LoginFrom()
-    if form.validate_on_submit():
-        user = User.query.filter_by(email=form.email.data).first()
-        if user and bcrypt.check_password_hash(user.password, form.password.data):
-            login_user(user, remember=form.remember.data)
-            return redirect(url_for('index'))
-        else:
-            flash('Login failed, please check your email or password', 'danger')
+    email = request.form.get("email")
+    password = request.form.get("password")
 
-    return render_template('login.html', form = form)
+    user = User.query.filter_by(email=email).first()
+    if user and user.check_password(password):
+        access_token = create_access_token(identity=user.id)
+        refresh_token = create_refresh_token(identity=user.id)
+        resp = make_response(redirect(url_for("index")))
+        set_access_cookies(resp, access_token)
+        set_refresh_cookies(resp, refresh_token)
+        flash(f"Welcome {user.username}")
+        return resp
 
-@app.route("/logout")
-def logout():
-    logout_user()
-    return redirect(url_for('login'))
+    resp = make_response(redirect(url_for("login")))
 
-@app.route("/list")
-def query():
-    videos = Video.query.all()
-    return render_template("query.html", videos=videos)
+    resp.status_code = 400
 
-@app.route("/account", methods=['GET', 'POST'])
-def account():
-    form =  UpdateAccountFrom()
-    
-    if form.validate_on_submit():
-        current_user.username =  form.username.data
-        current_user.email = form.email.data
-        db.session.commit()
-        flash("your account has been updated", "success")
-        return redirect(url_for('account'))
-    elif request.method == 'GET':
-        form.username.data = current_user.username
-        form.email.data = current_user.email
-    if current_user.is_authenticated:     
-        image_file  = url_for('static', filename=f'profile_pict/{current_user.image_file}')
-        return render_template('account.html', image_file=image_file, form=form)
-    else: 
-        return redirect(url_for('login'))
-
-
-# @app.route('/static/assets/video/video.mp4')
-# def video():
-#    return send_file('static/assets/video/video.mp4', mimetype='video/mp4')
+    flash("Please Check your email or password")
+    return resp

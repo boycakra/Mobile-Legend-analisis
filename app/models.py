@@ -1,30 +1,28 @@
-from datetime import datetime
-from app import db, login_manager
-from flask_login import UserMixin
+import uuid
+from app import db
+from hashlib import sha256
 
-@login_manager.user_loader
-def load_user(user_id):
-    return User.query.get(int(user_id))
 
-class User(db.Model, UserMixin):
-    id = db.Column(db.Integer, primary_key = True)
-    username = db.Column(db.String(20), unique = True, nullable = False)
-    email  = db.Column(db.String(200), unique = False, nullable = False)
-    image_file = db.Column(db.String(120), nullable = False, default = "profile.jpg")
-    password = db.Column(db.String(60), nullable = False)
+class User(db.Model):
+    __tablename__ = "users"
 
-    video = db.relationship('Video', backref = 'author', lazy=True)
+    id = db.Column(
+        db.String(36), primary_key=True, default=lambda: str(uuid.uuid4()), unique=True
+    )
+    username = db.Column(db.String(150), nullable=False, unique=True)
+    email = db.Column(db.String(150), nullable=False, unique=True)
+    password = db.Column(db.String(200), nullable=False)
+
+    def __init__(self, username, email, password):
+        self.id = str(uuid.uuid4())  # Automatically generate a UUID
+        self.username = username
+        self.email = email
+        self.password = sha256(password.encode("utf-8")).hexdigest()
+
+    def check_password(self, password):
+        """Verify the provided password against the hashed password stored in the database."""
+        hashed_password = sha256(password.encode("utf-8")).hexdigest()
+        return self.password == hashed_password
 
     def __repr__(self):
-        return  f"User('{self.username}', '{self.email}')"
-
-
-class Video(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(100))
-    date_time = db.Column(db.DateTime(), nullable = False, default= datetime.utcnow())
-    file_path = db.Column(db.String(255))
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable = False)
-    
-    def __repr__(self):
-        return  f"User('{self.title}', '{self.file_path}')"
+        return f"<User {self.username}>"

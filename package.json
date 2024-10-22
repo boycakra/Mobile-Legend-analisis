@@ -1,0 +1,15 @@
+{
+  "name": "mobile-legend-analisis",
+  "version": "1.0.0",
+  "description": "A web tool for analyzing Mobile Legends: Bang Bang matches.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
