@@ -1,166 +1,253 @@
-{% extends "base.html"%}
-
-{% block content %}
-    <!-- VIDEO CONTAINER -->
-    <div id="video-container">
-        <video width="700px" src="/static/assets/video/Onicvsliq2.mp4" controls></video>
-    </div>
-    
-    <!-- IMAGE CONTAINER -->
-    <div id="image-container">
-        <div class="image-wrapper">
-            <img id="image1" src="/static/assets/image/map.PNG" alt="body" />
-        </div>
-
-        <div id="timer-container">
-            <h3>Timer</h3>
-            <span id="timer-display">00:00</span>
-            <button id="skip-backward">Skip Backward</button>
-            <button id="skip-forward">Skip Forward</button>
-        </div>
-
-        <div class="image-wrapper">
-            <img id="image2" src="/static/assets/image/map.PNG" alt="body2" />
-        </div>
-    </div>
-
-    <!-- TEAM AND PLAYER NAMES CONTAINER -->
-    <div id="team-container">
-        <h3>Team Names</h3>
-        <div>
-            <label for="team1">Blue Team Name:</label>
-            <input type="text" id="team1" placeholder="Enter Team 1 Name">
-        </div>
-        <div>
-            <label for="team2">Red Team Name:</label>
-            <input type="text" id="team2" placeholder="Enter Team 2 Name">
-        </div>
+{% extends "base.html"%} {% block content %}
+<!-- MODAL -->
+<div
+  id="modalBackground"
+  class="hidden z-50 fixed inset-0 bg-gray-800 bg-opacity-75 items-center justify-center">
+  <div class="bg-white rounded-lg p-6 max-w-md w-full shadow-lg relative">
+    <button
+      id="closeModalBtn"
+      class="absolute top-2 right-2 text-gray-600 hover:text-gray-900">
+      &times;
+    </button>
+    <h2 class="text-2xl font-semibold text-gray-800">Set team name here</h2>
+    <div class="mt-4 gap-3 flex flex-col">
+      <label for="team">Team 1 (Blue)</label>
+      <input
+        type="text"
+        class="w-full p-2 border border-gray-400"
+        placeholder="Input here" />
+      <label for="team">Team 2 (Red)</label>
+      <input
+        type="text"
+        class="w-full p-2 border border-gray-400"
+        placeholder="Input here" />
     </div>
 
-    <div id="player-container">
-        <h3>Player Names</h3>
-        <div>
-            <label for="player1">Player 1 (Blue Team):</label>
-            <input type="text" id="player1" placeholder="Enter Player 1 Name">
-        </div>
-        <div>
-            <label for="player2">Player 2 (Red Team):</label>
-            <input type="text" id="player2" placeholder="Enter Player 2 Name">
-        </div>
+    <div class="mt-6 flex justify-end gap-3">
+      <button
+        id="saveModalBtn"
+        class="bg-green-500 text-white px-4 py-2 rounded hover:bg-red-700 transition">
+        Save
+      </button>
+      <button
+        id="closeModalBtn2"
+        class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700 transition">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+<!-- VIDEO CONTAINER -->
+<div class="flex w-full items-center justify-evenly">
+  <div class="text-md">
+    <h5 class="bg-blue-200 p-2 shadow-md rounded">Team Name</h5>
+    <ul>
+      <li>User 1</li>
+      <li>User 2</li>
+      <li>User 3</li>
+      <li>User 4</li>
+      <li>User 5</li>
+    </ul>
+  </div>
+
+  <div class="flex flex-col items-center justify-center">
+    <h1>Mobile Legend Tournament</h1>
+    <video
+      class="w-[500px] rounded"
+      src="/static/assets/video/Onicvsliq2.mp4"
+      controls></video>
+  </div>
+  <div class="text-md">
+    <h5 class="bg-red-200 p-2 shadow-md rounded">Team Name</h5>
+    <ul>
+      <li>User 1</li>
+      <li>User 2</li>
+      <li>User 3</li>
+      <li>User 4</li>
+      <li>User 5</li>
+    </ul>
+  </div>
+</div>
+
+<!-- IMAGE CONTAINER -->
+<div class="flex justify-center items-center mt-5">
+  <div class="flex gap-5">
+    <img
+      class="w-60 h-60 rounded"
+      src="/static/assets/image/map.PNG"
+      alt="body" />
+  </div>
+
+  <div class="mx-5 flex flex-col items-center">
+    <!-- <h3>Timer</h3> -->
+    <span class="font-medium text-4xl">00:00</span>
+    <div class="flex gap-5 mt-5">
+      <button class="w-auto p-2 bg-gray-200 shadow-md rounded">
+        Skip Backward
+      </button>
+      <button class="w-auto p-2 bg-gray-200 shadow-md rounded">
+        Skip Forward
+      </button>
+    </div>
+    <button
+      id="openModalBtn"
+      class="w-full p-2 mt-3 bg-gray-200 shadow-md rounded">
+      Setting
+    </button>
+  </div>
+
+  <div class="flex gap-5">
+    <img
+      class="w-60 h-60 rounded"
+      src="/static/assets/image/map.PNG"
+      alt="body2" />
+  </div>
+</div>
+
+<!-- TEAM AND PLAYER NAMES CONTAINER -->
+<div id="team-container">
+  <h3>Team Names</h3>
+  <div>
+    <label for="team1">Blue Team Name:</label>
+    <input type="text" id="team1" placeholder="Enter Team 1 Name" />
+  </div>
+  <div>
+    <label for="team2">Red Team Name:</label>
+    <input type="text" id="team2" placeholder="Enter Team 2 Name" />
+  </div>
+</div>
+
+<div id="player-container">
+  <h3>Player Names</h3>
+  <div>
+    <label for="player1">Player 1 (Blue Team):</label>
+    <input type="text" id="player1" placeholder="Enter Player 1 Name" />
+  </div>
+  <div>
+    <label for="player2">Player 2 (Red Team):</label>
+    <input type="text" id="player2" placeholder="Enter Player 2 Name" />
+  </div>
+</div>
+
+<!-- STATS CONTAINER -->
+<div id="container" class="with-dropdowns">
+  <div id="stats">
+    <!-- Blue Team Stats Table -->
+    <div id="stats1">
+      <h3>Status Blue Team</h3>
+      <div class="table-container">
+        <table id="player1-table">
+          <thead>
+            <tr>
+              <th>Mark Coordinate</th>
+              <th>Value</th>
+              <th>Player</th>
+              <th>Team</th>
+              <!-- Added Team Column -->
+              <th>Time</th>
+              <!-- Timer Column -->
+            </tr>
+          </thead>
+          <tbody id="mark-table-body">
+            <!-- Table rows will be inserted dynamically -->
+          </tbody>
+        </table>
+      </div>
     </div>
 
-    <!-- STATS CONTAINER -->
-    <div id="container" class="with-dropdowns">
-        <div id="stats">
-            <!-- Blue Team Stats Table -->
-            <div id="stats1">
-                <h3>Status Blue Team</h3>
-                <div class="table-container">
-                    <table id="player1-table">
-                        <thead>
-                            <tr>
-                                <th>Mark Coordinate</th>
-                                <th>Value</th>
-                                <th>Player</th>
-                                <th>Team</th> <!-- Added Team Column -->
-                                <th>Time</th> <!-- Timer Column -->
-                            </tr>
-                        </thead>
-                        <tbody id="mark-table-body">
-                            <!-- Table rows will be inserted dynamically -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            
-            <!-- Red Team Stats Table -->
-            <div id="stats2">
-                <h3>Status Red Team</h3>
-                <div class="table-container">
-                    <table id="player2-table">
-                        <thead>
-                            <tr>
-                                <th>Mark Coordinate</th>
-                                <th>Value</th>
-                                <th>Player</th>
-                                <th>Team</th> <!-- Added Team Column -->
-                                <th>Time</th> <!-- Timer Column -->
-                            </tr>
-                        </thead>
-                        <tbody id="mark-table-body-2">
-                            <!-- Table rows will be inserted dynamically -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+    <!-- Red Team Stats Table -->
+    <div id="stats2">
+      <h3>Status Red Team</h3>
+      <div class="table-container">
+        <table id="player2-table">
+          <thead>
+            <tr>
+              <th>Mark Coordinate</th>
+              <th>Value</th>
+              <th>Player</th>
+              <th>Team</th>
+              <!-- Added Team Column -->
+              <th>Time</th>
+              <!-- Timer Column -->
+            </tr>
+          </thead>
+          <tbody id="mark-table-body-2">
+            <!-- Table rows will be inserted dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 
-        <!-- Event Buttons -->
-        <div id="confirm">
-            <button id="Kill">Kill</button>
-            <button id="assisted">Assisted</button>
-            <button id="Death">Death</button>
-            <button id="Buff Merah">Buff Merah</button>
-            <button id="Buff biru">Buff Biru</button>
-        </div>
-        <button id="Lord">Lord</button>
-        <button id="Turtle">Turtle</button>
+  <!-- Event Buttons -->
+  <div id="confirm">
+    <button id="Kill">Kill</button>
+    <button id="assisted">Assisted</button>
+    <button id="Death">Death</button>
+    <button id="Buff Merah">Buff Merah</button>
+    <button id="Buff biru">Buff Biru</button>
+  </div>
+  <button id="Lord">Lord</button>
+  <button id="Turtle">Turtle</button>
 
-        <!-- Footer -->
-        <div id="footer">
-            <div id="stats1-now">
-                <p>Blue Team Actions</p>
-                <button id="undo-player1">Undo</button>
-                <button id="Mid-lane">Mid-lane</button>
-                <button id="gold-lane">Gold-lane</button>
-                <button id="Exp-lane">Exp-lane</button>
-                <button id="Roamer-lane">Roamer-lane</button>
-                <button id="Jungler-line">Jungler-line</button>
-                <button id="Inisiasi">Inisiasi</button>
-                <div id="coordinate-display"></div>
-                <div id="value-display"></div>
-                <button id="export-player1">Export Player 1</button>
-            </div>
-
-            <div id="stats2-now">
-                <p>Red Team Actions</p>
-                <button id="undo-player2">Undo</button>
-                <button id="Mid-laneplayer2">Mid-lane</button>
-                <button id="gold-lanep2">Gold-lane</button>
-                <button id="Exp-lanep2">Exp-lane</button>
-                <button id="Roamer-lanep2">Roamer-lane</button>
-                <button id="Jungler-linep2">Jungler-line</button>
-                <button id="Inisiasiplayer2">Inisiasi</button>
-                <div id="coordinate-display_player2"></div>
-                <div id="value-display_player2"></div>
-                <button id="export-player2">Export Player 2</button>
-            </div>
-        </div>
+  <!-- Footer -->
+  <div id="footer">
+    <div id="stats1-now">
+      <p>Blue Team Actions</p>
+      <button id="undo-player1">Undo</button>
+      <button id="Mid-lane">Mid-lane</button>
+      <button id="gold-lane">Gold-lane</button>
+      <button id="Exp-lane">Exp-lane</button>
+      <button id="Roamer-lane">Roamer-lane</button>
+      <button id="Jungler-line">Jungler-line</button>
+      <button id="Inisiasi">Inisiasi</button>
+      <div id="coordinate-display"></div>
+      <div id="value-display"></div>
+      <button id="export-player1">Export Player 1</button>
     </div>
 
-    <!-- Full Match Stats -->
-    <div id="full">
-        <div id="stats-all">
-            <h3>Status Match</h3>
-            <div class="match-container">
-                <table id="match-table">
-                    <thead>
-                        <tr>
-                            <th>Coordinates</th>
-                            <th>Value</th>
-                            <th>Player</th>
-                            <th>Team</th>
-                            <th>Time</th>
-                        </tr>
-                    </thead>
-                    <tbody id="match-table-body"></tbody>
-                </table>
-            </div>
-            <button id="export-Match">Export Match</button>
-        </div>
+    <div id="stats2-now">
+      <p>Red Team Actions</p>
+      <button id="undo-player2">Undo</button>
+      <button id="Mid-laneplayer2">Mid-lane</button>
+      <button id="gold-lanep2">Gold-lane</button>
+      <button id="Exp-lanep2">Exp-lane</button>
+      <button id="Roamer-lanep2">Roamer-lane</button>
+      <button id="Jungler-linep2">Jungler-line</button>
+      <button id="Inisiasiplayer2">Inisiasi</button>
+      <div id="coordinate-display_player2"></div>
+      <div id="value-display_player2"></div>
+      <button id="export-player2">Export Player 2</button>
     </div>
+  </div>
+</div>
 
-    <!-- Include Script and Bootstrap -->
-    <script src="{{url_for('static', filename= 'script.js')}}" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- Full Match Stats -->
+<div id="full">
+  <div id="stats-all">
+    <h3>Status Match</h3>
+    <div class="match-container">
+      <table id="match-table">
+        <thead>
+          <tr>
+            <th>Coordinates</th>
+            <th>Value</th>
+            <th>Player</th>
+            <th>Team</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody id="match-table-body"></tbody>
+      </table>
+    </div>
+    <button id="export-Match">Export Match</button>
+  </div>
+</div>
+
+<!-- Include Script and Bootstrap -->
+<script src="{{url_for('static', filename= 'script.js')}}" defer></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script>
 {% endblock content %}

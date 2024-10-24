@@ -87,7 +87,7 @@ This is an analysis tool for Mobile Legends: Bang Bang matches. This tool helps 
 Copy .env.example to your .env file
 
 * Install Dependencies
-  ```pip install -r requirement.txt```
+  ```pip install -r requirements.txt```
 
 * Run the application
   ```python app.py```
