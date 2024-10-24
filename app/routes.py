@@ -1,4 +1,5 @@
 from flask import (
+    jsonify,
     make_response,
     render_template,
     url_for,
@@ -95,15 +96,12 @@ def login():
     if user and user.check_password(password):
         access_token = create_access_token(identity=user.id)
         refresh_token = create_refresh_token(identity=user.id)
-        resp = make_response(redirect(url_for("index")))
+
+        resp = jsonify(success=True, redirect=url_for("index"))
         set_access_cookies(resp, access_token)
         set_refresh_cookies(resp, refresh_token)
-        flash(f"Welcome {user.username}")
+
         return resp
 
-    resp = make_response(redirect(url_for("login")))
+    return jsonify(success=False, message="Invalid email or password"), 400
 
-    resp.status_code = 400
-
-    flash("Please Check your email or password")
-    return resp

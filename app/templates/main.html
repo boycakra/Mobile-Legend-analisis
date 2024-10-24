@@ -17,4 +17,21 @@
 
 		{% endblock %}
 	</div>
+
+
+
+<script>
+    document.body.addEventListener('htmx:afterOnLoad', function(evt) {
+        var response = evt.detail.xhr.response;
+
+        // Parse the JSON response
+        var data = JSON.parse(response);
+
+        if (data.success) {
+            window.location.href = data.redirect;
+        } else {
+            alert(data.message); // Handle error message
+        }
+    });
+</script>
 </body>
