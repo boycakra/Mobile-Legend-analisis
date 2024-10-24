@@ -42,42 +42,39 @@ def allowed_file(filename):
 
 @app.route("/register", methods=["GET"])
 def register_view():
-    if request.method == "GET":
-        return render_template("register.html")
-    return render_template("error.html")
+    return render_template("register.html")
 
 
 @app.route("/register/api", methods=["POST"])
 def register():
-    if request.method != "POST":
-        return "Method in valid"
-    # Get form data
-    username = request.form.get("username")
-    email = request.form.get("email")
-    password = request.form.get("password")
-    confirm_password = request.form.get("confirm_password")
+   # Get form data
+   username = request.form.get("username")
+   email = request.form.get("email")
+   password = request.form.get("password")
+   confirm_password = request.form.get("confirm_password")
 
-    # Validate form data
-    if not username or not email or not password or not confirm_password:
-        return jsonify(success=False, message="Please fill in all fields"), 400
 
-    if password != confirm_password:
-        return jsonify(success=False, message="Passwords do not match"), 400
+   print(f"Username: {username}, Email: {email}, Password: {password}, Confirm Password: {confirm_password}")  # Debug
 
-    # Check if user already exists
-    existing_user = User.query.filter_by(email=email).first()
-    if existing_user:
-        return jsonify(success=False, message="Email is already used"), 400
+   # Validate form data
+   if not username or not email or not password or not confirm_password:
+       return redirect(url_for('register_view'))
+   if password != confirm_password:
+       return redirect(url_for('register_view'))
 
-    # Create a new user and add to the database
-    new_user = User(username=username, email=email, password=password)
-    db.session.add(new_user)
-    db.session.commit()
+   # Check if user already exists
+   existing_user = User.query.filter_by(email=email).first()
+   if existing_user:
+       return redirect(url_for('register_view'))
+   # Create a new user and add to the database
+   new_user = User(username=username, email=email, password=password)
+   db.session.add(new_user)
+   db.session.commit()
 
-    # Success response
+   # Success response
 
-    resp = jsonify(success=True, redirect=url_for("login"))
-    return resp
+   resp = make_response(redirect(url_for('login_view')))
+   return resp
 
 
 @app.route("/login", methods=["GET"])
