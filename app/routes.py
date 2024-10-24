@@ -59,18 +59,15 @@ def register():
 
     # Validate form data
     if not username or not email or not password or not confirm_password:
-        flash("Please fill in all fields", "error")
-        return render_template("register.html")
+        return jsonify(success=False, message="Please fill in all fields"), 400
 
     if password != confirm_password:
-        flash("Passwords do not match", "error")
-        return render_template("register.html")
+        return jsonify(success=False, message="Passwords do not match"), 400
 
     # Check if user already exists
     existing_user = User.query.filter_by(email=email).first()
     if existing_user:
-        flash("Email already registered", "error")
-        return render_template("register.html")
+        return jsonify(success=False, message="Email is already used"), 400
 
     # Create a new user and add to the database
     new_user = User(username=username, email=email, password=password)
@@ -78,8 +75,9 @@ def register():
     db.session.commit()
 
     # Success response
-    flash("Registration successful! You can now log in.", "success")
-    return redirect("/login")
+
+    resp = jsonify(success=True, redirect=url_for("login"))
+    return resp
 
 
 @app.route("/login", methods=["GET"])
