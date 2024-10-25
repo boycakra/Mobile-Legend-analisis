@@ -73,12 +73,12 @@ https://www.kaggle.com/datasets/bcakra/mobile-legend-m5-world-knockout-stage-res
 This is an analysis tool for Mobile Legends: Bang Bang matches. This tool helps in highlighting important events in the game, such as team fights, turret attacks, and more.
 
 
-## DEPENDENCY
+## Dependency
 - Python 3.8 and above
 - pip
 - npm
 
-## HOW TU RUN
+## How to run
 1. **Create a virtual environment**
    - `npm install`
    - `python -m venv env`
@@ -88,7 +88,8 @@ This is an analysis tool for Mobile Legends: Bang Bang matches. This tool helps 
    - Linux `source env/bin/activate`
 
 3. **Create env file**
-   Duplicate `.env.example` to your `.env file` and modified
+   
+   Duplicate `.env.example` modified the value
 
 4. **Install Dependencies**
    - `pip install -r requirements.txt`
