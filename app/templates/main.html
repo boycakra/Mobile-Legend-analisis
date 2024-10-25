@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} {% endblock %}</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{% block title %} {% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/output.css')}}" />
+    <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+  </head>
 
-	<link rel="stylesheet" href="{{url_for('static', filename='css/output.css')}}" />
-	<script src="https://unpkg.com/htmx.org@2.0.3"></script>
-</head>
+  <body>
+    <div class="container">{% block content %} {% endblock %}</div>
 
-<body>
-
-	<div class="container">
-		{% block content %}
-
-		{% endblock %}
-	</div>
-
-
-
-<script>
-    document.body.addEventListener('htmx:afterOnLoad', function(evt) {
+    <script>
+      document.body.addEventListener("htmx:afterOnLoad", function (evt) {
         var response = evt.detail.xhr.response;
 
         // Parse the JSON response
         var data = JSON.parse(response);
 
         if (data.success) {
-            window.location.href = data.redirect;
+          window.location.href = data.redirect;
         } else {
-            alert(data.message); // Handle error message
+          alert(data.message); // Handle error message
         }
-    });
-</script>
-</body>
+      });
+    </script>
+  </body>
+</html>

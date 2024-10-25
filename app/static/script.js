@@ -5,7 +5,7 @@ const closeModalBtn2 = document.getElementById("closeModalBtn2");
 const modalBackground = document.getElementById("modalBackground");
 
 // Function to open modal
-openModalBtn.addEventListener("click", () => {
+openModalBtn.addEventListener("click", () => {  
   modalBackground.classList.remove("hidden");
   modalBackground.classList.add("flex");
 });
