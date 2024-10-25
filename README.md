@@ -80,6 +80,7 @@ This is an analysis tool for Mobile Legends: Bang Bang matches. This tool helps 
 
 ## HOW TU RUN
 1. **Create a virtual environment**
+   - `npm install`
    - `python -m venv env`
 2. **Activate the environment**
    - Command Prompt `env/Scripts/activate.bat`
@@ -87,7 +88,7 @@ This is an analysis tool for Mobile Legends: Bang Bang matches. This tool helps 
    - Linux `source env/bin/activate`
 
 3. **Create env file**
-duplicate `.env.example` to your `.env file` and modified
+   Duplicate `.env.example` to your `.env file` and modified
 
 4. **Install Dependencies**
    - `pip install -r requirements.txt`
@@ -95,10 +96,10 @@ duplicate `.env.example` to your `.env file` and modified
 5. **Run the application**
    - `python app.py`
 
-## USAGE
+## Usage
 After the application is running, you can upload Mobile Legends: Bang Bang match recordings for analysis. This tool allows you to highlight events such as team fights, turret attacks, and other important occurrences in the game.
 
-## CONTRIBUTIONS
+## Contributions
 We welcome contributions and improvement suggestions for this Mobile Legends: Bang Bang match analysis tool. If you want to contribute, please create a pull request to this repository.
 
 We hope this tool is helpful in analyzing Mobile Legends: Bang Bang matches!
