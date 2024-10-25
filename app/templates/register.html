@@ -1,7 +1,7 @@
 {% extends "main.html"%} {% block content %}
 
 <div
-  class="flex flex-col justify-center min-h-full px-6 py-12 lg:px-8 bg-[#131313] text-[#cdcdcd] h-screen">
+  class="flex flex-col justify-center w-screen min-h-full px-6 py-12 lg:px-8 h-screen">
   <div class="sm:mx-auto sm:w-full sm:max-w-sm">
     <h2 class="mt-10 text-2xl font-bold leading-9 tracking-tight text-center">
       Register into your account
@@ -9,7 +9,7 @@
   </div>
 
   <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-	<form action="{{ url_for('register') }}" method="POST" >
+	<form action="{{ url_for('register') }}" method="POST" class="space-y-6">
 	  <div>
         <label for="username" class="block text-sm font-medium leading-6"
           >Username</label
