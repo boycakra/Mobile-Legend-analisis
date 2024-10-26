@@ -48,7 +48,7 @@ def revoked_token_callback(jwt_header, jwt_payload):
 
 
 @app.route("/")
-@jwt_required()
+@jwt_required(refresh=True)
 def index():
     return render_template("index.html")
 
@@ -110,14 +110,14 @@ def login():
         access_token = create_access_token(identity=user.id)
         refresh_token = create_refresh_token(identity=user.id)
 
-        resp = jsonify(success=True, redirect=url_for("index"))
+        resp = make_response(redirect(url_for('index')))
         set_access_cookies(resp, access_token)
         set_refresh_cookies(resp, refresh_token)
 
         return resp
-
-    return jsonify(success=False, message="Invalid email or password"), 400
-
+    
+    flash('Username or password salah')
+    return redirect(url_for(('login')))
 
 @app.route("/logout", methods=["POST", "GET"])
 @jwt_required()

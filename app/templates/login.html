@@ -10,12 +10,7 @@
     </div>
 
     <div class="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
-        <form
-            class="space-y-6"
-            hx-post="{{ url_for('login') }}"
-            hx-trigger="submit"
-            hx-target="this"
-            hx-swap="none">
+		<form action={{ url_for('login') }} method="post">
             <div>
                 <label for="email" class="block text-sm font-medium leading-6"
                     >Email address</label
