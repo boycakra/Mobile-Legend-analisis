@@ -1,6 +1,7 @@
 import uuid
 from app import db
 from hashlib import sha256
+from datetime import datetime
 
 
 class User(db.Model):
@@ -26,3 +27,25 @@ class User(db.Model):
 
     def __repr__(self):
         return f"<User {self.username}>"
+
+
+class TokenBlockList(db.Model):
+    __tablename__ = "token_block_list"
+
+    id = db.Column(db.Integer(), primary_key=True)
+    jti = db.Column(db.String(), nullable=False)
+    created_at = db.Column(db.DateTime(), default=datetime.now())
+
+    def __init__(self, jti) -> None:
+        self.jti = jti
+
+    def __repr__(self) -> str:
+        return f"<Token {self.jti}>"
+
+    def save(self):
+        try:
+            db.session.add(self)
+            db.session.commit()
+        except Exception as e:
+            db.session.rollback()
+            print(f"Error saving token to database: {e}")
