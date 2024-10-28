@@ -11,10 +11,6 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 app.config["JWT_SECRET_KEY"] = os.getenv('JWT_SECRET_KEY')
 app.config['JWT_TOKEN_LOCATION'] = ['headers', 'cookies'] 
 
-app.config['JWT_COOKIE_SECURE'] = False  # Set to True in production with HTTPS
-app.config['JWT_COOKIE_HTTPONLY'] = True
-app.config['JWT_COOKIE_SAMESITE'] = "None"
-
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
