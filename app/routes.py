@@ -48,7 +48,7 @@ def revoked_token_callback(jwt_header, jwt_payload):
 
 
 @app.route("/")
-@jwt_required(refresh=True)
+@jwt_required()
 def index():
     return render_template("index.html")
 
@@ -127,4 +127,8 @@ def logout():
 
     token_block_list_object.save()
 
-    return redirect(url_for('login_view'))
+    resp = make_response(redirect(url_for("login_view")))
+    unset_jwt_cookies(resp)  # Clear the JWT cookies
+    
+    flash("You have been logged out successfully.")
+    return resp
