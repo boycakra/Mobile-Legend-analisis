@@ -53,10 +53,6 @@ def index():
     return render_template("index.html")
 
 
-def allowed_file(filename):
-    return "." in filename and filename.rsplit(".", 1)[1].lower() == "mp4"
-
-
 @app.route("/register", methods=["GET"])
 def register_view():
     return render_template("register.html")
@@ -106,14 +102,24 @@ def login():
         access_token = create_access_token(identity=user.id)
         refresh_token = create_refresh_token(identity=user.id)
 
-        resp = make_response(redirect(url_for('index')))
+        # Create the response with HTMX redirect and set cookies
+        resp = make_response()
+        resp.headers["HX-Redirect"] = url_for(
+            "index"
+        )  # HTMX will handle the redirect on the client side
         set_access_cookies(resp, access_token)
         set_refresh_cookies(resp, refresh_token)
 
         return resp
-    
-    flash('Username or password salah')
-    return redirect(url_for(('login')))
+
+    # Return an error message with HTMX
+    flash("Username or password incorrect")
+    resp = make_response(redirect(url_for("login_view")))
+    resp.headers["HX-Trigger"] = (
+        "loginError"  # Trigger HTMX event on the client side if login fails
+    )
+    return resp
+
 
 @app.route("/logout", methods=["POST", "GET"])
 @jwt_required()
@@ -129,6 +135,6 @@ def logout():
 
     resp = make_response(redirect(url_for("login_view")))
     unset_jwt_cookies(resp)  # Clear the JWT cookies
-    
+
     flash("You have been logged out successfully.")
     return resp
