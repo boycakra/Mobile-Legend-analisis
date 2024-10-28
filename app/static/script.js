@@ -29,7 +29,7 @@ modalBackground.addEventListener("click", e => {
     }
 });
 
-// =====
+// ==========
 
 const togglePasswordButton = document.getElementById("toggle-password");
 const passwordInput = document.getElementById("password");
