@@ -10,18 +10,21 @@ from flask import (
 from flask_jwt_extended import (
     create_access_token,
     create_refresh_token,
+    get_jwt,
     jwt_required,
+    unset_jwt_cookies,
     set_access_cookies,
     set_refresh_cookies,
 )
+
 from app import app, db, jwt
-from app.models import User
+from app.models import TokenBlockList, User
 
 
 @jwt.unauthorized_loader
 def unauthorized_loader(callback):
     flash("please login to access this page")
-    return redirect(url_for("login_view"))
+    return redirect(url_for("register_view"))
 
 
 @jwt.expired_token_loader
@@ -30,8 +33,22 @@ def expired_token_callback(jwt_header, jwt_payload):
     return redirect(url_for("login_view"))
 
 
+@jwt.token_in_blocklist_loader
+def token_in_blocklist_callback(jwt_header, jwt_data):
+    jti = jwt_data["jti"]
+
+    token = db.session.query(TokenBlockList).filter(TokenBlockList.jti == jti).scalar()
+
+    return token is not None
+
+
+@jwt.revoked_token_loader
+def revoked_token_callback(jwt_header, jwt_payload):
+    return redirect(url_for("login_view"))
+
+
 @app.route("/")
-@jwt_required()
+@jwt_required(refresh=True)
 def index():
     return render_template("index.html")
 
@@ -47,34 +64,31 @@ def register_view():
 
 @app.route("/register/api", methods=["POST"])
 def register():
-   # Get form data
-   username = request.form.get("username")
-   email = request.form.get("email")
-   password = request.form.get("password")
-   confirm_password = request.form.get("confirm_password")
+    # Get form data
+    username = request.form.get("username")
+    email = request.form.get("email")
+    password = request.form.get("password")
+    confirm_password = request.form.get("confirm_password")
 
+    # Validate form data
+    if not username or not email or not password or not confirm_password:
+        return redirect(url_for("register_view"))
+    if password != confirm_password:
+        return redirect(url_for("register_view"))
 
-   print(f"Username: {username}, Email: {email}, Password: {password}, Confirm Password: {confirm_password}")  # Debug
+    # Check if user already exists
+    existing_user = User.query.filter_by(email=email).first()
+    if existing_user:
+        return redirect(url_for("register_view"))
+    # Create a new user and add to the database
+    new_user = User(username=username, email=email, password=password)
+    db.session.add(new_user)
+    db.session.commit()
 
-   # Validate form data
-   if not username or not email or not password or not confirm_password:
-       return redirect(url_for('register_view'))
-   if password != confirm_password:
-       return redirect(url_for('register_view'))
+    # Success response
 
-   # Check if user already exists
-   existing_user = User.query.filter_by(email=email).first()
-   if existing_user:
-       return redirect(url_for('register_view'))
-   # Create a new user and add to the database
-   new_user = User(username=username, email=email, password=password)
-   db.session.add(new_user)
-   db.session.commit()
-
-   # Success response
-
-   resp = make_response(redirect(url_for('login_view')))
-   return resp
+    resp = make_response(redirect(url_for("login_view")))
+    return resp
 
 
 @app.route("/login", methods=["GET"])
@@ -92,11 +106,25 @@ def login():
         access_token = create_access_token(identity=user.id)
         refresh_token = create_refresh_token(identity=user.id)
 
-        resp = jsonify(success=True, redirect=url_for("index"))
+        resp = make_response(redirect(url_for('index')))
         set_access_cookies(resp, access_token)
         set_refresh_cookies(resp, refresh_token)
 
         return resp
+    
+    flash('Username or password salah')
+    return redirect(url_for(('login')))
 
-    return jsonify(success=False, message="Invalid email or password"), 400
+@app.route("/logout", methods=["POST", "GET"])
+@jwt_required()
+def logout():
+    jwt = get_jwt()
+    jti = jwt.get("jti")
+    if not jti:
+        return jsonify(success=False, message="Missing JWT identifier"), 400
+    print(f"jti : {jti}")
+    token_block_list_object = TokenBlockList(jti=jti)
 
+    token_block_list_object.save()
+
+    return redirect(url_for('login_view'))
