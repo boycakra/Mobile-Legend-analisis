@@ -70,10 +70,6 @@ def register():
     password = request.form.get("password")
     confirm_password = request.form.get("confirm_password")
 
-    print(
-        f"Username: {username}, Email: {email}, Password: {password}, Confirm Password: {confirm_password}"
-    )  # Debug
-
     # Validate form data
     if not username or not email or not password or not confirm_password:
         return redirect(url_for("register_view"))
