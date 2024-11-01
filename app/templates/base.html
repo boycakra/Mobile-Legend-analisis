@@ -4,14 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{% block title %}Document{% endblock %}</title>
-        <!-- <script src="/app/components/modal/modal.js" type="module"></script> -->
         <link rel="stylesheet" href="../static//components//modal.html" />
         <script src="{{url_for('static', filename= 'script.js')}}" defer></script>
-        <!-- <script
-            src="{{url_for('static', filename= '../static/javascript/main.js')}}"
-            defer></script>
-        <link -->
-        <!-- rel="stylesheet" href="{{url_for('static', filename='button.css')}}" /> -->
+        <!-- <script src="{{url_for('static', filename= '../static/javascript/main.js')}}"defer></script>-->
+        <!-- <link rel="stylesheet" href="{{url_for('static', filename='button.css')}}" /> -->
         <!-- <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}" /> -->
         <link rel="stylesheet" href="{{url_for('static', filename='css/output.css')}}" />
         <link
@@ -27,9 +23,9 @@
         <script src="https://unpkg.com/htmx.org@2.0.3"></script>
     </head>
     <body>
-        <div>
+        <div class="bg-gray-800">
             <!-- NAVBAR -->
-            <div class="navbar bg-gray-100 shadow-md px-4">
+            <div class="navbar bg-gray-800 shadow-md px-4">
                 <div class="flex-1 items-center text-center">
                     <button class="rounded text-xl font-bold">Mobile Legend Analysis</button>
                 </div>
