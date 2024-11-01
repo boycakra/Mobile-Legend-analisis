@@ -114,7 +114,7 @@
 </div>
 
 <!-- VIDEO CONTAINER -->
-<div class="flex w-full items-center justify-evenly">
+<div class="flex w-full items-center justify-evenly text-white">
     <div class="text-md">
         <h5 class="bg-blue-200 p-2 shadow-md rounded">Team Name</h5>
         <ul>
@@ -160,9 +160,9 @@
         role="tabpanel"
         class="tab-content bg-base-100 border-base-300 rounded-box p-6">
         <!-- IMAGE CONTAINER -->
-        <div id="timer" class="flex justify-center items-center">
+        <div id="timer" class="flex justify-center items-center text-white">
             <div class="flex gap-5">
-                <img class="w-60 h-60 rounded" src="/static/assets/image/map.PNG" alt="body" />
+                <img id="image1" class="w-60 h-60 rounded" src="/static/assets/image/map.PNG" alt="body" />
             </div>
 
             <div class="mx-5 flex flex-col items-center">
@@ -171,39 +171,35 @@
                 <div class="flex gap-5 mt-5">
                     <button
                         id="skip-backward"
-                        class="w-auto p-2 bg-gray-200 hover:shadow-md rounded">
+                        class="w-auto p-2 bg-gray-700 hover:shadow-md rounded">
                         Skip Backward
                     </button>
                     <button
                         id="skip-forward"
-                        class="w-auto p-2 bg-gray-200 hover:shadow-md rounded">
+                        class="w-auto p-2 bg-gray-700 hover:shadow-md rounded">
                         Skip Forward
                     </button>
                 </div>
                 <button
                     id="openModalBtn"
-                    class="w-full p-2 mt-3 bg-gray-200 hover:shadow-md rounded">
+                    class="w-full p-2 mt-3 bg-gray-700 hover:shadow-md rounded">
                     Setting
                 </button>
             </div>
 
             <div class="flex gap-5">
-                <img class="w-60 h-60 rounded" src="/static/assets/image/map.PNG" alt="body2" />
+                <img id="image2" class="w-60 h-60 rounded" src="/static/assets/image/map.PNG" alt="body2" />
             </div>
         </div>
-    </div>
 
-    <input type="radio" name="my_tabs_2" role="tab" class="tab w-auto" aria-label="Player markup" />
-    <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-        <!-- STATS  CONTAINER -->
-        <div id="container" class="w-full">
+        <div id="container" class="w-full mt-3">
             <div id="stats" class="flex justify-between gap-3 text-center">
                 <!-- Blue Team Stats Table -->
                 <div id="stats1" class="w-1/2 bg-blue-200/50 rounded py-4">
                     <h3>Status Blue Team</h3>
-                    <div class="">
-                        <table class="w-full">
-                            <thead>
+                    <div class="p-2">
+                        <table class="w-full ">
+                            <thead class="bg-gray-500">
                                 <tr>
                                     <th>Mark Coordinate</th>
                                     <th>Value</th>
@@ -214,13 +210,13 @@
                                     <!-- Timer Column -->
                                 </tr>
                             </thead>
-                            <tbody id="mark-table-body">
+                            <tbody id="mark-table-body" class="bg-gray-500/50">
                                 <!-- Table rows will be inserted dynamically -->
                             </tbody>
                         </table>
                     </div>
                     <div id="stats1-now">
-                        <p>Blue Team Actions</p>
+                        <!-- <p>Blue Team Actions</p> -->
                         <button class="p-1 bg-gray-200 rounded" id="undo-player1">Undo</button>
                         <button class="p-1 bg-gray-200 rounded" id="Mid-lane">Mid-lane</button>
                         <button class="p-1 bg-gray-200 rounded" id="gold-lane">Gold-lane</button>
@@ -262,7 +258,7 @@
                         </table>
                     </div>
                     <div id="stats2-now">
-                        <p>Red Team Actions</p>
+                        <!-- <p>Red Team Actions</p> -->
                         <button class="p-1 bg-gray-200 rounded" id="undo-player2">Undo</button>
                         <button class="p-1 bg-gray-200 rounded" id="Mid-laneplayer2">
                             Mid-lane
@@ -315,7 +311,7 @@
     </div>
 
     <input type="radio" name="my_tabs_2" role="tab" class="tab w-auto" aria-label="Result" />
-    <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+    <div role="tabpanel" class="tab-content bg-base-100 text-white border-base-300 rounded-box p-6">
         <!-- Full Match Stats -->
         <div class="w-full rounded flex items-center justify-center text-center">
             <div id="stats-all" class="">

@@ -12,8 +12,184 @@ const player2Marks = [];
 const video = document.getElementById("video");
 const skipForwardButton = document.getElementById("skip-forward");
 const skipBackwardButton = document.getElementById("skip-backward");
-const imageDiv = document.getElementById("#image-container #image1");
-const imageDiv2 = document.getElementById("#image-container #image2");
+const imageDiv = document.getElementById("image1");
+const imageDiv2 = document.getElementById("image2");
+
+console.log(imageDiv)
+console.log(imageDiv2);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const coordinateDisplays = {
+        Player: document.getElementById("coordinate-display"),
+        Player2: document.getElementById("coordinate-display_player2"),
+    };
+
+    const valueDisplays = {
+        Player: document.getElementById("value-display"),
+        Player2: document.getElementById("value-display_player2"),
+    };
+
+    // 1. Team Handler
+    document
+        .getElementById("Mid-lane")
+        .addEventListener("click", boxingMoveHandler("Player", "Mid-lane"));
+    document
+        .getElementById("Exp-lane")
+        .addEventListener("click", boxingMoveHandler("Player", "Exp-lane"));
+    document
+        .getElementById("Inisiasi")
+        .addEventListener("click", boxingMoveHandler("Player", "Inisiasi"));
+    document
+        .getElementById("Roamer-lane")
+        .addEventListener("click", boxingMoveHandler("Player", "Roamer-lane"));
+    document
+        .getElementById("gold-lane")
+        .addEventListener("click", boxingMoveHandler("Player", "gold-lane"));
+    document
+        .getElementById("Jungler-line")
+        .addEventListener("click", boxingMoveHandler("Player", "Jungler-line"));
+    document
+        .getElementById("Mid-laneplayer2")
+        .addEventListener("click", boxingMoveHandler("Player2", "Mid-lane"));
+    document
+        .getElementById("Exp-lanep2")
+        .addEventListener("click", boxingMoveHandler("Player2", "Exp-lane"));
+    document
+        .getElementById("Inisiasiplayer2")
+        .addEventListener("click", boxingMoveHandler("Player2", "Inisiasi"));
+    document
+        .getElementById("Roamer-lanep2")
+        .addEventListener("click", boxingMoveHandler("Player2", "Roamer-lane"));
+    document
+        .getElementById("gold-lanep2")
+        .addEventListener("click", boxingMoveHandler("Player2", "gold-lane"));
+    document
+        .getElementById("Jungler-linep2")
+        .addEventListener("click", boxingMoveHandler("Player2", "Jungler-line"));
+
+    // 2. Event Handler
+    document.getElementById("Kill").addEventListener("click", () => {
+        if (marking && currentPlayer && currentMove) {
+            markingCircleClass = `${currentMove}-Fail-mark-circle`;
+            valueDisplays[currentPlayer].innerHTML = `Value: Kill ${currentMove}`;
+        }
+    });
+
+    document.getElementById("assisted").addEventListener("click", () => {
+        if (marking && currentPlayer && currentMove) {
+            markingCircleClass = `${currentMove}-assisted-mark-circle`;
+            valueDisplays[currentPlayer].innerHTML = `Value: assisted ${currentMove}`;
+        }
+    });
+
+    document.getElementById("Death").addEventListener("click", () => {
+        if (marking && currentPlayer && currentMove) {
+            markingCircleClass = `${currentMove}-Death-mark-circle`;
+            valueDisplays[currentPlayer].innerHTML = `Value: Death ${currentMove}`;
+            const time = timerDisplay.textContent;
+            addDataToTable(time, currentPlayer, currentMove);
+        }
+    });
+
+    document.getElementById("Buff Merah").addEventListener("click", () => {
+        if (marking && currentPlayer && currentMove) {
+            markingCircleClass = `${currentMove}Buff-Merah-mark-circle`;
+            valueDisplays[currentPlayer].innerHTML = `Value: Inner Tower Destroy ${currentMove}`;
+            const time = timerDisplay.textContent;
+            addDataToTable(time, currentPlayer, currentMove);
+        }
+    });
+
+    document.getElementById("Buff biru").addEventListener("click", () => {
+        if (marking && currentPlayer && currentMove) {
+            markingCircleClass = `${currentMove}Buff-biru-mark-circle`;
+            valueDisplays[currentPlayer].innerHTML = `Value: Base Tower Destroy ${currentMove}`;
+            const time = timerDisplay.textContent;
+            addDataToTable(time, currentPlayer, currentMove);
+        }
+    });
+
+    document.getElementById("Lord").addEventListener("click", () => {
+        if (marking && currentPlayer && currentMove) {
+            markingCircleClass = `${currentMove}Buff-lord-mark-square`;
+            valueDisplays[currentPlayer].innerHTML = `Value: Lord ${currentMove}`;
+            const time = timerDisplay.textContent;
+            addDataToTable(time, currentPlayer, currentMove);
+        }
+    });
+
+    document.getElementById("Turtle").addEventListener("click", () => {
+        if (marking && currentPlayer && currentMove) {
+            const moveClassMap = {
+                "Mid-lane": "mid-lane-turtle-mark-circle",
+                "gold-lane": "gold-lane-turtle-mark-circle",
+                "Exp-lane": "exp-lane-turtle-mark-circle",
+                "Roamer-lane": "roamer-lane-turtle-mark-circle",
+                "Jungler-line": "jungle-lane-turtle-mark-circle",
+            };
+
+            markingCircleClass = moveClassMap[currentMove] || "";
+            valueDisplays[currentPlayer].innerHTML = `Value: turtle ${currentMove}`;
+            const time = timerDisplay.textContent;
+            addDataToTable(time, currentPlayer, currentMove);
+        }
+    });
+
+    document.getElementById("undo-player1").addEventListener("click", () => {
+        console.log("Undo Player 1 clicked");
+        undoMark(player1Marks, tableBody1);
+    });
+
+    document.getElementById("undo-player2").addEventListener("click", () => {
+        console.log("Undo Player 2 clicked");
+        undoMark(player2Marks, tableBody2);
+    });
+
+    // 3. Another handler
+    const tableBody1 = document.getElementById("mark-table-body");
+    const tableBody2 = document.getElementById("mark-table-body-2");
+
+    imageDiv.addEventListener("click", event => {
+        console.log("gambar berhasil di klik");
+        if (marking && currentPlayer === "Player") {
+            const rect = imageDiv.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+
+            const percentageText = printMousePos(event, imageDiv, x, y);
+
+            player1Marks.push({
+                coordinates: percentageText,
+                value: valueDisplays[currentPlayer].innerText.split(": ")[1],
+                player: currentPlayer,
+                time: currentFormattedTime,
+            });
+
+            renderMarks(player1Marks, tableBody1);
+            renderCombinedMarks();
+        }
+    });
+
+    imageDiv2.addEventListener("click", event => {
+        if (marking && currentPlayer === "Player2") {
+            const rect = imageDiv2.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+
+            const percentageText = printMousePos(event, imageDiv2, x, y);
+
+            player2Marks.push({
+                coordinates: percentageText,
+                value: valueDisplays[currentPlayer].innerText.split(": ")[1],
+                player: currentPlayer,
+                time: currentFormattedTime,
+            });
+
+            renderMarks(player2Marks, tableBody2);
+            renderCombinedMarks();
+        }
+    });
+});
 
 function printMousePos(event, element, relativeX, relativeY) {
     const circle = document.createElement("div");
@@ -98,10 +274,10 @@ function updateTimer(video) {
 }
 
 // ValueDisplay
-const valueDisplays = {
-    Player: document.getElementById("value-display"),
-    Player2: document.getElementById("value-display_player2"),
-};
+// const valueDisplays = {
+//     Player: document.getElementById("value-display"),
+//     Player2: document.getElementById("value-display_player2"),
+// };
 
 function boxingMoveHandler(player, move) {
     return function () {
@@ -131,49 +307,6 @@ function boxingMoveHandler(player, move) {
 }
 
 const timerDisplay = document.getElementById("timer-display");
-
-const tableBody1 = document.getElementById("mark-table-body");
-const tableBody2 = document.getElementById("mark-table-body-2");
-
-imageDiv.addEventListener("click", function (event) {
-    if (marking && currentPlayer === "Player") {
-        const rect = imageDiv.getBoundingClientRect();
-        const x = event.clientX - rect.left;
-        const y = event.clientY - rect.top;
-
-        const percentageText = printMousePos(event, imageDiv, x, y);
-
-        player1Marks.push({
-            coordinates: percentageText,
-            value: valueDisplays[currentPlayer].innerText.split(": ")[1],
-            player: currentPlayer,
-            time: currentFormattedTime,
-        });
-
-        renderMarks(player1Marks, tableBody1);
-        renderCombinedMarks();
-    }
-});
-
-imageDiv2.addEventListener("click", function (event) {
-    if (marking && currentPlayer === "Player2") {
-        const rect = imageDiv2.getBoundingClientRect();
-        const x = event.clientX - rect.left;
-        const y = event.clientY - rect.top;
-
-        const percentageText = printMousePos(event, imageDiv2, x, y);
-
-        player2Marks.push({
-            coordinates: percentageText,
-            value: valueDisplays[currentPlayer].innerText.split(": ")[1],
-            player: currentPlayer,
-            time: currentFormattedTime,
-        });
-
-        renderMarks(player2Marks, tableBody2);
-        renderCombinedMarks();
-    }
-});
 
 // Function to combine and render marks from both players
 function renderCombinedMarks() {
@@ -413,118 +546,4 @@ document.addEventListener("keydown", function (event) {
 document.getElementById("export-Match").addEventListener("click", function () {
     const csvContent = tableToCSV("match-table");
     downloadCSV("combined-marks.csv", csvContent);
-});
-
-document
-    .getElementById("Mid-lane")
-    .addEventListener("click", boxingMoveHandler("Player", "Mid-lane"));
-document
-    .getElementById("Exp-lane")
-    .addEventListener("click", boxingMoveHandler("Player", "Exp-lane"));
-document
-    .getElementById("Inisiasi")
-    .addEventListener("click", boxingMoveHandler("Player", "Inisiasi"));
-document
-    .getElementById("Roamer-lane")
-    .addEventListener("click", boxingMoveHandler("Player", "Roamer-lane"));
-document
-    .getElementById("gold-lane")
-    .addEventListener("click", boxingMoveHandler("Player", "gold-lane"));
-document
-    .getElementById("Jungler-line")
-    .addEventListener("click", boxingMoveHandler("Player", "Jungler-line"));
-document
-    .getElementById("Mid-laneplayer2")
-    .addEventListener("click", boxingMoveHandler("Player2", "Mid-lane"));
-document
-    .getElementById("Exp-lanep2")
-    .addEventListener("click", boxingMoveHandler("Player2", "Exp-lane"));
-document
-    .getElementById("Inisiasiplayer2")
-    .addEventListener("click", boxingMoveHandler("Player2", "Inisiasi"));
-document
-    .getElementById("Roamer-lanep2")
-    .addEventListener("click", boxingMoveHandler("Player2", "Roamer-lane"));
-document
-    .getElementById("gold-lanep2")
-    .addEventListener("click", boxingMoveHandler("Player2", "gold-lane"));
-document
-    .getElementById("Jungler-linep2")
-    .addEventListener("click", boxingMoveHandler("Player2", "Jungler-line"));
-
-document.getElementById("Kill").addEventListener("click", () => {
-    if (marking && currentPlayer && currentMove) {
-        markingCircleClass = `${currentMove}-Fail-mark-circle`;
-        valueDisplays[currentPlayer].innerHTML = `Value: Kill ${currentMove}`;
-    }
-});
-
-document.getElementById("assisted").addEventListener("click", () => {
-    if (marking && currentPlayer && currentMove) {
-        markingCircleClass = `${currentMove}-assisted-mark-circle`;
-        valueDisplays[currentPlayer].innerHTML = `Value: assisted ${currentMove}`;
-    }
-});
-
-document.getElementById("Death").addEventListener("click", () => {
-    if (marking && currentPlayer && currentMove) {
-        markingCircleClass = `${currentMove}-Death-mark-circle`;
-        valueDisplays[currentPlayer].innerHTML = `Value: Death ${currentMove}`;
-        const time = timerDisplay.textContent;
-        addDataToTable(time, currentPlayer, currentMove);
-    }
-});
-
-document.getElementById("Buff Merah").addEventListener("click", () => {
-    if (marking && currentPlayer && currentMove) {
-        markingCircleClass = `${currentMove}Buff-Merah-mark-circle`;
-        valueDisplays[currentPlayer].innerHTML = `Value: Inner Tower Destroy ${currentMove}`;
-        const time = timerDisplay.textContent;
-        addDataToTable(time, currentPlayer, currentMove);
-    }
-});
-
-document.getElementById("Buff biru").addEventListener("click", () => {
-    if (marking && currentPlayer && currentMove) {
-        markingCircleClass = `${currentMove}Buff-biru-mark-circle`;
-        valueDisplays[currentPlayer].innerHTML = `Value: Base Tower Destroy ${currentMove}`;
-        const time = timerDisplay.textContent;
-        addDataToTable(time, currentPlayer, currentMove);
-    }
-});
-
-document.getElementById("Lord").addEventListener("click", () => {
-    if (marking && currentPlayer && currentMove) {
-        markingCircleClass = `${currentMove}Buff-lord-mark-square`;
-        valueDisplays[currentPlayer].innerHTML = `Value: Lord ${currentMove}`;
-        const time = timerDisplay.textContent;
-        addDataToTable(time, currentPlayer, currentMove);
-    }
-});
-
-document.getElementById("Turtle").addEventListener("click", () => {
-    if (marking && currentPlayer && currentMove) {
-        const moveClassMap = {
-            "Mid-lane": "mid-lane-turtle-mark-circle",
-            "gold-lane": "gold-lane-turtle-mark-circle",
-            "Exp-lane": "exp-lane-turtle-mark-circle",
-            "Roamer-lane": "roamer-lane-turtle-mark-circle",
-            "Jungler-line": "jungle-lane-turtle-mark-circle",
-        };
-
-        markingCircleClass = moveClassMap[currentMove] || "";
-        valueDisplays[currentPlayer].innerHTML = `Value: turtle ${currentMove}`;
-        const time = timerDisplay.textContent;
-        addDataToTable(time, currentPlayer, currentMove);
-    }
-});
-
-document.getElementById("undo-player1").addEventListener("click", () => {
-    console.log("Undo Player 1 clicked");
-    undoMark(player1Marks, tableBody1);
-});
-
-document.getElementById("undo-player2").addEventListener("click", () => {
-    console.log("Undo Player 2 clicked");
-    undoMark(player2Marks, tableBody2);
 });
