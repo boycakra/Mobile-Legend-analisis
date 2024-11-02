@@ -1,87 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}Document{% endblock %}</title>
-    <!-- <script src="/app/components/modal/modal.js" type="module"></script> -->
-    <link
-      rel="stylesheet"
-      href="{{url_for('static', filename='button.css')}}"
-    />
-    <!-- <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}" /> -->
-    <link
-      rel="stylesheet"
-      href="{{url_for('static', filename='css/output.css')}}"
-    />
-    <script src="https://unpkg.com/htmx.org@2.0.3"></script>
-  </head>
-  <body>
-    <div>
-      <!-- NAVBAR -->
-      <div class="navbar bg-gray-100 shadow-md px-4">
-        <div class="flex-1 items-center text-center">
-          <button class="rounded text-xl font-bold">
-            Mobile Legend Analysis
-          </button>
-        </div>
-        <div class="flex-none gap-2">
-          <div class="form-control">
-            <input
-              type="text"
-              placeholder="Search"
-              class="w-24 md:w-auto focus:outline-none"
-            />
-          </div>
-          <div class="dropdown dropdown-end">
-            <div tabindex="0" role="button">
-              <div class="w-10 rounded-full">
-                <img
-                  class="rounded-full"
-                  alt="Tailwind CSS Navbar component"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-                />
-              </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% block title %}Document{% endblock %}</title>
+        <link rel="stylesheet" href="../static//components//modal.html" />
+        <script src="{{url_for('static', filename= 'script.js')}}" defer></script>
+        <!-- <script src="{{url_for('static', filename= '../static/javascript/main.js')}}"defer></script>-->
+        <!-- <link rel="stylesheet" href="{{url_for('static', filename='button.css')}}" /> -->
+        <!-- <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}" /> -->
+        <link rel="stylesheet" href="{{url_for('static', filename='css/output.css')}}" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            integrity="sha384-rbsltsTS3LqFjSNW1KiL25F93qi5JKld9JZrYfL2RmkWcY6b5AiRvT47jpcoN/y"
+            crossorigin="anonymous" />
+        <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+    </head>
+    <body>
+        <div class="bg-gray-800">
+            <!-- NAVBAR -->
+            <div class="navbar text-white bg-gray-800 shadow-md px-4">
+                <div class="flex-1 items-center text-center">
+                    <button class="rounded text-xl font-bold">Mobile Legend Analysis</button>
+                </div>
+                <div class="flex-none gap-2">
+                    <div class="form-control ">
+                        <input
+                            type="text"
+                            placeholder="Search"
+                            class="w-24 md:w-auto focus:outline-none bg-transparent" />
+                    </div>
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button">
+                            <div class="w-10 rounded-full">
+                                <img
+                                    class="rounded-full"
+                                    alt="Tailwind CSS Navbar component"
+                                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                            </div>
+                        </div>
+                        <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li>
+                                <a> Profile </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li>
-                <a> Profile </a>
-              </li>
-              <li><a>Settings</a></li>
-
-              <li>
-                <form action="/logout" action="post">
-                  <button type="submit">Logout</button>
-                </form>
-              </li>
-            </ul>
-          </div>
+            <!-- MAIN CONTENT -->
+            {% with messages = get_flashed_messages(with_categories = true) %} {% if messages %} {%
+            for category, message in messages %}
+            <!-- NOTIFICATION -->
+            <div role="alert" class="alert alert-{{ category }}">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="h-6 w-6 shrink-0 stroke-current">
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span>{{ message }}</span>
+            </div>
+            {% endfor %} {% endif %} {% endwith %} {% block content %} {% endblock %}
         </div>
-      </div>
-      <!-- MAIN CONTENT -->
-      {% with messages = get_flashed_messages(with_categories = true) %} {% if
-      messages %} {% for category, message in messages %}
-      <!-- NOTIFICATION -->
-      <div role="alert" class="alert alert-{{ category }}">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          class="h-6 w-6 shrink-0 stroke-current"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          ></path>
-        </svg>
-        <span>{{ message }}</span>
-      </div>
-      {% endfor %} {% endif %} {% endwith %} {% block content %} {% endblock %}
-    </div>
-  </body>
+        <script>
+            // TOGGLE MODAL
+            const openModalBtn = document.getElementById("openModalBtn");
+            const closeModalBtn = document.getElementById("closeModalBtn");
+            const closeModalBtn2 = document.getElementById("closeModalBtn2");
+            const modalBackground = document.getElementById("modalBackground");
+
+            openModalBtn.addEventListener("click", () => {
+                modalBackground.classList.remove("hidden");
+                modalBackground.classList.add("flex");
+            });
+
+            closeModalBtn.addEventListener("click", () => {
+                modalBackground.classList.add("hidden");
+                modalBackground.classList.remove("flex");
+            });
+
+            closeModalBtn2.addEventListener("click", () => {
+                modalBackground.classList.add("hidden");
+                modalBackground.classList.remove("flex");
+            });
+
+            modalBackground.addEventListener("click", e => {
+                if (e.target === modalBackground) {
+                    modalBackground.classList.add("hidden");
+                    modalBackground.classList.remove("flex");
+                }
+            });
+
+            // 2. TOGGLE PASSWORD
+            const togglePasswordButton = document.getElementById("toggle-password");
+            const passwordInput = document.getElementById("password");
+
+            togglePasswordButton.addEventListener("click", () => {
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                    togglePasswordButton.innerHTML = `
+	  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+		<path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C0 13.658.126 15.508.756 17.258l6.764 6.764a1.2 1.2 0 001.707 0l6.764-6.764a1.2 1.2 0 000-1.707l-6.764-6.764A10.477 10.477 0 001.934 8.223z" />
+	  </svg>
+	`;
+                } else {
+                    passwordInput.type = "password";
+                    togglePasswordButton.innerHTML = `
+	  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+		<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 0 .39 1.618l7.494 7.494a1.2 1.2 0 0 0 1.707.39c1.523 0 2.755-.8 3.037-2.08a1.2 1.2 0 0 0-.39-1.708l-7.494-7.494z" />
+		<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+	  </svg>
+	`;
+                }
+            });
+        </script>
+    </body>
 </html>
