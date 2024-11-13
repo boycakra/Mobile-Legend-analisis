@@ -1,339 +1,421 @@
 {% extends "base.html"%} {% block content %}
 
 <!-- MODAL -->
-<div id="modalBackground" class="text-white hidden z-50 fixed inset-0 bg-gray-800 bg-opacity-75 items-center justify-center">
-    <div class="bg-gray-800 rounded-lg p-6 max-w-md xl:max-w-2xl w-full shadow-lg relative">
-        <button id="closeModalBtn" class="absolute top-2 right-2 text-gray-600 hover:text-gray-900">
-            &times;
-        </button>
-        <h2 class="text-2xl font-semibold uppercase">Settings</h2>
-        <div class="flex gap-3 ">
-            <div class="flex items-center justify-evenly gap-2 w-full rounded">
-                <div class="my-2">
-                    <h3>Blue Team</h3>
-                    <div class="flex flex-col">
-                        <label for="">Blue team name</label>
-                        <input
-                            class="p-1 rounded bg-transparent"
-                            type="text"
-                            required
-                            placeholder="input new team here" />
-                    </div>
-                    <div class="flex flex-col">
-                        <label for="">Player 1</label>
-                        <input
-                            class="p-1 rounded bg-transparent"
-                            type="text"
-                            required
-                            placeholder="input new player here" />
-                        <label for="">Player 2</label>
-                        <input
-                            class="p-1 rounded bg-transparent"
-                            type="text"
-                            required
-                            placeholder="input new player here" />
-                        <label for="">Player 3</label>
-                        <input
-                            class="p-1 rounded bg-transparent"
-                            type="text"
-                            required
-                            placeholder="input new player here" />
-                        <label for="">Player 4</label>
-                        <input
-                            class="p-1 rounded bg-transparent"
-                            type="text"
-                            required
-                            placeholder="input new player here" />
-                        <label for="">Player 5</label>
-                        <input
-                            class="p-1 rounded bg-transparent"
-                            type="text"
-                            required
-                            placeholder="input new player here" />
-                    </div>
-                </div>
-                <div class="my-2">
-                    <h3>Red Team</h3>
-                    <div class="flex flex-col">
-                        <label for="">Read team name</label>
-                        <input
-                            class="p-1 rounded bg-transparent"
-                            type="text"
-                            required
-                            placeholder="input new team here" />
-                    </div>
-                    <div class="mt-2 flex flex-col">
-                        <label for="">Player 1</label>
-                        <input
-                            class="p-1 rounded bg-transparent"
-                            type="text"
-                            required
-                            placeholder="input new player here" />
-                        <label for="">Player 2</label>
-                        <input
-                            class="p-1 rounded bg-transparent"
-                            type="text"
-                            required
-                            placeholder="input new player here" />
-                        <label for="">Player 3</label>
-                        <input
-                            class="p-1 rounded bg-transparent"
-                            type="text"
-                            required
-                            placeholder="input new player here" />
-                        <label for="">Player 4</label>
-                        <input
-                            class="p-1 rounded bg-transparent"
-                            type="text"
-                            required
-                            placeholder="input new player here" />
-                        <label for="">Player 5</label>
-                        <input
-                            class="p-1 rounded bg-transparent"
-                            type="text"
-                            required
-                            placeholder="input new player here" />
-                    </div>
-                </div>
-            </div>
+<div
+  id="modalBackground"
+  class="text-white hidden z-50 fixed inset-0 bg-gray-800 bg-opacity-75 items-center justify-center"
+>
+  <div
+    class="bg-gray-800 rounded-lg p-6 max-w-md xl:max-w-2xl w-full shadow-lg relative"
+  >
+    <button
+      id="closeModalBtn"
+      class="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
+    >
+      &times;
+    </button>
+    <h2 class="text-2xl font-semibold uppercase">Settings</h2>
+    <div class="flex gap-3">
+      <div class="flex items-center justify-evenly gap-2 w-full rounded">
+        <div class="my-2">
+          <h3>Blue Team</h3>
+          <div class="flex flex-col">
+            <label for="">Blue team name</label>
+            <input
+              class="p-1 rounded bg-transparent"
+              type="text"
+              required
+              placeholder="input new team here"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label for="">Player 1</label>
+            <input
+              class="p-1 rounded bg-transparent"
+              type="text"
+              required
+              placeholder="input new player here"
+            />
+            <label for="">Player 2</label>
+            <input
+              class="p-1 rounded bg-transparent"
+              type="text"
+              required
+              placeholder="input new player here"
+            />
+            <label for="">Player 3</label>
+            <input
+              class="p-1 rounded bg-transparent"
+              type="text"
+              required
+              placeholder="input new player here"
+            />
+            <label for="">Player 4</label>
+            <input
+              class="p-1 rounded bg-transparent"
+              type="text"
+              required
+              placeholder="input new player here"
+            />
+            <label for="">Player 5</label>
+            <input
+              class="p-1 rounded bg-transparent"
+              type="text"
+              required
+              placeholder="input new player here"
+            />
+          </div>
         </div>
-
-        <div class="mt-3 flex justify-end gap-3">
-            <button
-                id="saveModalBtn"
-                class="bg-green-500 text-white px-4 py-2 rounded hover:bg-red-700 transition">
-                Save
-            </button>
-            <button
-                id="closeModalBtn2"
-                class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700 transition">
-                Close
-            </button>
+        <div class="my-2">
+          <h3>Red Team</h3>
+          <div class="flex flex-col">
+            <label for="">Read team name</label>
+            <input
+              class="p-1 rounded bg-transparent"
+              type="text"
+              required
+              placeholder="input new team here"
+            />
+          </div>
+          <div class="mt-2 flex flex-col">
+            <label for="">Player 1</label>
+            <input
+              class="p-1 rounded bg-transparent"
+              type="text"
+              required
+              placeholder="input new player here"
+            />
+            <label for="">Player 2</label>
+            <input
+              class="p-1 rounded bg-transparent"
+              type="text"
+              required
+              placeholder="input new player here"
+            />
+            <label for="">Player 3</label>
+            <input
+              class="p-1 rounded bg-transparent"
+              type="text"
+              required
+              placeholder="input new player here"
+            />
+            <label for="">Player 4</label>
+            <input
+              class="p-1 rounded bg-transparent"
+              type="text"
+              required
+              placeholder="input new player here"
+            />
+            <label for="">Player 5</label>
+            <input
+              class="p-1 rounded bg-transparent"
+              type="text"
+              required
+              placeholder="input new player here"
+            />
+          </div>
         </div>
+      </div>
     </div>
+
+    <div class="mt-3 flex justify-end gap-3">
+      <button
+        id="saveModalBtn"
+        class="bg-green-500 text-white px-4 py-2 rounded hover:bg-red-700 transition"
+      >
+        Save
+      </button>
+      <button
+        id="closeModalBtn2"
+        class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700 transition"
+      >
+        Close
+      </button>
+    </div>
+  </div>
 </div>
 
 <!-- VIDEO CONTAINER -->
 <div class="flex w-full items-center justify-evenly text-white">
-    <div class="text-md">
-        <h5 class="bg-blue-200 p-2 shadow-md rounded">Team Name</h5>
-        <ul>
-            <li>User 1</li>
-            <li>User 2</li>
-            <li>User 3</li>
-            <li>User 4</li>
-            <li>User 5</li>
-        </ul>
-    </div>
+  <div class="text-md">
+    <h5 class="bg-blue-200 p-2 shadow-md rounded">Team Name</h5>
+    <ul>
+      <li>User 1</li>
+      <li>User 2</li>
+      <li>User 3</li>
+      <li>User 4</li>
+      <li>User 5</li>
+    </ul>
+  </div>
 
-    <div class="flex flex-col items-center justify-center">
-        <h1>Mobile Legend Tournament</h1>
-        <video
-            id="video"
-            class="w-[500px] rounded"
-            src="/static/assets/video/Onicvsliq2.mp4"
-            controls></video>
-    </div>
-    <div class="text-md">
-        <h5 class="bg-red-200 p-2 shadow-md rounded">Team Name</h5>
-        <ul>
-            <li>User 1</li>
-            <li>User 2</li>
-            <li>User 3</li>
-            <li>User 4</li>
-            <li>User 5</li>
-        </ul>
-    </div>
+  <div class="flex flex-col items-center justify-center">
+    <h1>Mobile Legend Tournament</h1>
+    <video
+      id="video"
+      class="w-[500px] rounded"
+      src="/static/assets/video/Onicvsliq2.mp4"
+      controls
+    ></video>
+  </div>
+  <div class="text-md">
+    <h5 class="bg-red-200 p-2 shadow-md rounded">Team Name</h5>
+    <ul>
+      <li>User 1</li>
+      <li>User 2</li>
+      <li>User 3</li>
+      <li>User 4</li>
+      <li>User 5</li>
+    </ul>
+  </div>
 </div>
 
 <!-- TAB -->
 <div id="tabs" role="tablist" class="tabs tabs-lifted mx-2">
-    <input
-        type="radio"
-        name="my_tabs_2"
-        role="tab"
-        class="tab w-auto"
-        checked="checked"
-        aria-label="Map and settings" />
-    <div
-        id="tabpanel"
-        role="tabpanel"
-        class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-        <!-- IMAGE CONTAINER -->
-        <div id="timer" class="flex justify-center items-center text-white">
-            <div class="flex gap-5">
-                <img id="image1" class="w-60 h-60 rounded" src="/static/assets/image/map.PNG" alt="body" />
-            </div>
+  <input
+    type="radio"
+    name="my_tabs_2"
+    role="tab"
+    class="tab w-auto"
+    checked="checked"
+    aria-label="Map and settings"
+  />
+  <div
+    id="tabpanel"
+    role="tabpanel"
+    class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+  >
+    <!-- IMAGE CONTAINER -->
+    <div id="timer" class="flex justify-center items-center text-white">
+      <div class="flex gap-5">
+        <img
+          id="image1"
+          class="w-60 h-60 rounded"
+          src="/static/assets/image/map.PNG"
+          alt="body"
+        />
+      </div>
 
-            <div class="mx-5 flex flex-col items-center">
-                <!-- <h3>Timer</h3> -->
-                <span class="font-medium text-4xl ">00:00</span>
-                <div class="flex gap-5 mt-5">
-                    <button
-                        id="skip-backward"
-                        class="w-auto p-2 bg-gray-700 hover:shadow-md rounded">
-                        Skip Backward
-                    </button>
-                    <button
-                        id="skip-forward"
-                        class="w-auto p-2 bg-gray-700 hover:shadow-md rounded">
-                        Skip Forward
-                    </button>
-                </div>
-                <button
-                    id="openModalBtn"
-                    class="w-full p-2 mt-3 bg-gray-700 hover:shadow-md rounded">
-                    Setting
-                </button>
-            </div>
-
-            <div class="flex gap-5">
-                <img id="image2" class="w-60 h-60 rounded" src="/static/assets/image/map.PNG" alt="body2" />
-            </div>
+      <div class="mx-5 flex flex-col items-center">
+        <!-- <h3>Timer</h3> -->
+        <span class="font-medium text-4xl">00:00</span>
+        <div class="flex gap-5 mt-5">
+          <button
+            id="skip-backward"
+            class="w-auto p-2 bg-gray-700 hover:shadow-md rounded"
+          >
+            Skip Backward
+          </button>
+          <button
+            id="skip-forward"
+            class="w-auto p-2 bg-gray-700 hover:shadow-md rounded"
+          >
+            Skip Forward
+          </button>
         </div>
+        <button
+          id="openModalBtn"
+          class="w-full p-2 mt-3 bg-gray-700 hover:shadow-md rounded"
+        >
+          Setting
+        </button>
+      </div>
 
-        <div id="container" class="w-full mt-3">
-            <div id="stats" class="flex justify-between gap-3 text-center">
-                <!-- Blue Team Stats Table -->
-                <div id="stats1" class="w-1/2 bg-blue-200/50 rounded py-4">
-                    <h3>Status Blue Team</h3>
-                    <div class="p-2">
-                        <table class="w-full ">
-                            <thead class="bg-gray-500">
-                                <tr>
-                                    <th>Mark Coordinate</th>
-                                    <th>Value</th>
-                                    <th>Player</th>
-                                    <th>Team</th>
-                                    <!-- Added Team Column -->
-                                    <th>Time</th>
-                                    <!-- Timer Column -->
-                                </tr>
-                            </thead>
-                            <tbody id="mark-table-body" class="bg-gray-500/50">
-                                <!-- Table rows will be inserted dynamically -->
-                            </tbody>
-                        </table>
-                    </div>
-                    <div id="stats1-now">
-                        <!-- <p>Blue Team Actions</p> -->
-                        <button class="p-1 bg-gray-200 rounded" id="undo-player1">Undo</button>
-                        <button class="p-1 bg-gray-200 rounded" id="Mid-lane">Mid-lane</button>
-                        <button class="p-1 bg-gray-200 rounded" id="gold-lane">Gold-lane</button>
-                        <button class="p-1 bg-gray-200 rounded" id="Exp-lane">Exp-lane</button>
-                        <button class="p-1 bg-gray-200 rounded" id="Roamer-lane">
-                            Roamer-lane
-                        </button>
-                        <button class="p-1 bg-gray-200 rounded" id="Jungler-line">
-                            Jungler-line
-                        </button>
-                        <button class="p-1 bg-gray-200 rounded" id="Inisiasi">Inisiasi</button>
-                        <div id="coordinate-display"></div>
-                        <div id="value-display"></div>
-                        <button class="p-1 bg-blue-500 rounded" id="export-player1">
-                            Export Player 1
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Red Team Stats Table -->
-                <div id="stats2" class="w-1/2 bg-red-200/50 rounded py-4">
-                    <h3>Status Red Team</h3>
-                    <div class="">
-                        <table class="w-full">
-                            <thead>
-                                <tr>
-                                    <th>Mark Coordinate</th>
-                                    <th>Value</th>
-                                    <th>Player</th>
-                                    <th>Team</th>
-                                    <!-- Added Team Column -->
-                                    <th>Time</th>
-                                    <!-- Timer Column -->
-                                </tr>
-                            </thead>
-                            <tbody id="mark-table-body-2">
-                                <!-- Table rows will be inserted dynamically -->
-                            </tbody>
-                        </table>
-                    </div>
-                    <div id="stats2-now">
-                        <!-- <p>Red Team Actions</p> -->
-                        <button class="p-1 bg-gray-200 rounded" id="undo-player2">Undo</button>
-                        <button class="p-1 bg-gray-200 rounded" id="Mid-laneplayer2">
-                            Mid-lane
-                        </button>
-                        <button class="p-1 bg-gray-200 rounded" id="gold-lanep2">Gold-lane</button>
-                        <button class="p-1 bg-gray-200 rounded" id="Exp-lanep2">Exp-lane</button>
-                        <button class="p-1 bg-gray-200 rounded" id="Roamer-lanep2">
-                            Roamer-lane
-                        </button>
-                        <button class="p-1 bg-gray-200 rounded" id="Jungler-linep2">
-                            Jungler-line
-                        </button>
-                        <button class="p-1 bg-gray-200 rounded" id="Inisiasiplayer2">
-                            Inisiasi
-                        </button>
-                        <div id="coordinate-display_player2"></div>
-                        <div id="value-display_player2"></div>
-                        <button class="p-1 bg-red-500 rounded" id="export-player2">
-                            Export Player 2
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!-- Event Buttons -->
-            <div id="confirm" class="flex flex-auto items-center justify-center gap-2 mt-2">
-                <!-- Existing buttons -->
-                <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="Kill">Kill</button>
-                <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="assisted">
-                    Assisted
-                </button>
-                <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="Death">Death</button>
-                <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="Buff Merah">
-                    Buff Merah
-                </button>
-                <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="Buff biru">
-                    Buff Biru
-                </button>
-                <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="Lord">Lord</button>
-                <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="Turtle">Turtle</button>
-
-                <!-- New Skip Backward and Skip Forward buttons -->
-                <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="skipbackward">
-                    Skip Backward
-                </button>
-                <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="skipforward">
-                    Skip Forward
-                </button>
-            </div>
-        </div>
+      <div class="flex gap-5">
+        <img
+          id="image2"
+          class="w-60 h-60 rounded"
+          src="/static/assets/image/map.PNG"
+          alt="body2"
+        />
+      </div>
     </div>
 
-    <input type="radio" name="my_tabs_2" role="tab" class="tab w-auto" aria-label="Result" />
-    <div role="tabpanel" class="tab-content bg-base-100 text-white border-base-300 rounded-box p-6">
-        <!-- Full Match Stats -->
-        <div class="w-full rounded flex items-center justify-center text-center">
-            <div id="stats-all" class="">
-                <h3>Status Match</h3>
-                <div class="flex flex-col items-center justify-center">
-                    <table id="match-table">
-                        <thead>
-                            <tr class="flex gap-2">
-                                <th>Coordinates</th>
-                                <th>Value</th>
-                                <th>Player</th>
-                                <th>Team</th>
-                                <th>Time</th>
-                            </tr>
-                        </thead>
-                        <tbody id="match-table-body"></tbody>
-                    </table>
-                </div>
-                <button class="p-2 mt-2 w-full bg-green-200 rounded">Export Match</button>
-            </div>
+    <div id="container" class="w-full mt-3">
+      <div id="stats" class="flex justify-between gap-3 text-center">
+        <!-- Blue Team Stats Table -->
+        <div id="stats1" class="w-1/2 bg-blue-200/50 rounded py-4">
+          <h3>Status Blue Team</h3>
+          <div class="p-2">
+            <table class="w-full">
+              <thead class="bg-gray-500">
+                <tr>
+                  <th>Mark Coordinate</th>
+                  <th>Value</th>
+                  <th>Player</th>
+                  <th>Team</th>
+                  <!-- Added Team Column -->
+                  <th>Time</th>
+                  <!-- Timer Column -->
+                </tr>
+              </thead>
+              <tbody id="mark-table-body" class="bg-gray-500/50">
+                <!-- Table rows will be inserted dynamically -->
+              </tbody>
+            </table>
+          </div>
+          <div id="stats1-now">
+            <!-- <p>Blue Team Actions</p> -->
+            <button class="p-1 bg-gray-200 rounded" id="undo-player1">
+              Undo
+            </button>
+            <button class="p-1 bg-gray-200 rounded" id="Mid-lane">
+              Mid-lane
+            </button>
+            <button class="p-1 bg-gray-200 rounded" id="gold-lane">
+              Gold-lane
+            </button>
+            <button class="p-1 bg-gray-200 rounded" id="Exp-lane">
+              Exp-lane
+            </button>
+            <button class="p-1 bg-gray-200 rounded" id="Roamer-lane">
+              Roamer-lane
+            </button>
+            <button class="p-1 bg-gray-200 rounded" id="Jungler-line">
+              Jungler-line
+            </button>
+            <button class="p-1 bg-gray-200 rounded" id="Inisiasi">
+              Inisiasi
+            </button>
+            <div id="coordinate-display"></div>
+            <div id="value-display"></div>
+            <button class="p-1 bg-blue-500 rounded" id="export-player1">
+              Export Player 1
+            </button>
+          </div>
         </div>
+
+        <!-- Red Team Stats Table -->
+        <div id="stats2" class="w-1/2 bg-red-200/50 rounded py-4">
+          <h3>Status Red Team</h3>
+          <div class="">
+            <table class="w-full">
+              <thead>
+                <tr>
+                  <th>Mark Coordinate</th>
+                  <th>Value</th>
+                  <th>Player</th>
+                  <th>Team</th>
+                  <!-- Added Team Column -->
+                  <th>Time</th>
+                  <!-- Timer Column -->
+                </tr>
+              </thead>
+              <tbody id="mark-table-body-2">
+                <!-- Table rows will be inserted dynamically -->
+              </tbody>
+            </table>
+          </div>
+          <div id="stats2-now">
+            <!-- <p>Red Team Actions</p> -->
+            <button class="p-1 bg-gray-200 rounded" id="undo-player2">
+              Undo
+            </button>
+            <button class="p-1 bg-gray-200 rounded" id="Mid-laneplayer2">
+              Mid-lane
+            </button>
+            <button class="p-1 bg-gray-200 rounded" id="gold-lanep2">
+              Gold-lane
+            </button>
+            <button class="p-1 bg-gray-200 rounded" id="Exp-lanep2">
+              Exp-lane
+            </button>
+            <button class="p-1 bg-gray-200 rounded" id="Roamer-lanep2">
+              Roamer-lane
+            </button>
+            <button class="p-1 bg-gray-200 rounded" id="Jungler-linep2">
+              Jungler-line
+            </button>
+            <button class="p-1 bg-gray-200 rounded" id="Inisiasiplayer2">
+              Inisiasi
+            </button>
+            <div id="coordinate-display_player2"></div>
+            <div id="value-display_player2"></div>
+            <button class="p-1 bg-red-500 rounded" id="export-player2">
+              Export Player 2
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Event Buttons -->
+      <div
+        id="confirm"
+        class="flex flex-auto items-center justify-center gap-2 mt-2"
+      >
+        <!-- Existing buttons -->
+        <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="Kill">
+          Kill
+        </button>
+        <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="assisted">
+          Assisted
+        </button>
+        <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="Death">
+          Death
+        </button>
+        <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="Buff Merah">
+          Buff Merah
+        </button>
+        <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="Buff biru">
+          Buff Biru
+        </button>
+        <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="Lord">
+          Lord
+        </button>
+        <button class="p-2 rounded bg-gray-200 hover:shadow-md" id="Turtle">
+          Turtle
+        </button>
+
+        <!-- New Skip Backward and Skip Forward buttons -->
+        <button
+          class="p-2 rounded bg-gray-200 hover:shadow-md"
+          id="skipbackward"
+        >
+          Skip Backward
+        </button>
+        <button
+          class="p-2 rounded bg-gray-200 hover:shadow-md"
+          id="skipforward"
+        >
+          Skip Forward
+        </button>
+      </div>
     </div>
+  </div>
+
+  <input
+    type="radio"
+    name="my_tabs_2"
+    role="tab"
+    class="tab w-auto"
+    aria-label="Result"
+  />
+  <div
+    role="tabpanel"
+    class="tab-content bg-base-100 text-white border-base-300 rounded-box p-6"
+  >
+    <!-- Full Match Stats -->
+    <div class="w-full rounded flex items-center justify-center text-center">
+      <div id="stats-all" class="">
+        <h3>Status Match</h3>
+        <div class="flex flex-col items-center justify-center">
+          <table id="match-table">
+            <thead>
+              <tr class="flex gap-2">
+                <th>Coordinates</th>
+                <th>Value</th>
+                <th>Player</th>
+                <th>Team</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody id="match-table-body"></tbody>
+          </table>
+        </div>
+        <button class="p-2 mt-2 w-full bg-green-200 rounded">
+          Export Match
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- SCRIPT -->

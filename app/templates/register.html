@@ -24,6 +24,9 @@
             required
             class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
           />
+          {% if errors.username %}
+          <p style="color: red">{{ errors.username }}</p>
+          {% endif %}
         </div>
       </div>
 
@@ -40,6 +43,9 @@
             required
             class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
           />
+          {% if errors.email %}
+          <p style="color: red">{{ errors.email }}</p>
+          {% endif %}
         </div>
       </div>
 
@@ -58,6 +64,9 @@
             required
             class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
           />
+          {% if errors.password %}
+          <p style="color: red">{{ errors.password }}</p>
+          {% endif %}
         </div>
       </div>
       <div>
@@ -75,6 +84,9 @@
             required
             class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
           />
+          {% if errors.confirm_password %}
+          <p style="color: red">{{ errors.confirm_password }}</p>
+          {% endif %}
         </div>
       </div>
 

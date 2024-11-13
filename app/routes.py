@@ -19,7 +19,7 @@ from flask_jwt_extended import (
 
 from app import app, db, jwt
 from app.models import TokenBlockList, User
-
+from app.auth import validate_register
 
 @jwt.unauthorized_loader
 def unauthorized_loader(callback):
@@ -55,7 +55,7 @@ def index():
 
 @app.route("/register", methods=["GET"])
 def register_view():
-    return render_template("register.html")
+    return render_template("register.html", errors=None)
 
 
 @app.route("/register/api", methods=["POST"])
@@ -69,13 +69,12 @@ def register():
     # Validate form data
     if not username or not email or not password or not confirm_password:
         return redirect(url_for("register_view"))
-    if password != confirm_password:
-        return redirect(url_for("register_view"))
+    
+    is_valid_and_errors = validate_register(username, email, password, confirm_password)
+    if not is_valid_and_errors[0]:
+        print(is_valid_and_errors[1])
+        return render_template("register.html", errors = is_valid_and_errors[1])
 
-    # Check if user already exists
-    existing_user = User.query.filter_by(email=email).first()
-    if existing_user:
-        return redirect(url_for("register_view"))
     # Create a new user and add to the database
     new_user = User(username=username, email=email, password=password)
     db.session.add(new_user)
