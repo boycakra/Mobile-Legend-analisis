@@ -15,9 +15,6 @@ const skipBackwardButton = document.getElementById("skip-backward");
 const imageDiv = document.getElementById("image1");
 const imageDiv2 = document.getElementById("image2");
 
-console.log(imageDiv)
-console.log(imageDiv2);
-
 document.addEventListener("DOMContentLoaded", () => {
     const coordinateDisplays = {
         Player: document.getElementById("coordinate-display"),
@@ -150,7 +147,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const tableBody2 = document.getElementById("mark-table-body-2");
 
     imageDiv.addEventListener("click", event => {
-        console.log("gambar berhasil di klik");
         if (marking && currentPlayer === "Player") {
             const rect = imageDiv.getBoundingClientRect();
             const x = event.clientX - rect.left;
@@ -205,6 +201,7 @@ function printMousePos(event, element, relativeX, relativeY) {
     circle.style.width = "16px";
     circle.style.height = "16px";
     circle.style.borderRadius = "50%";
+    circle.style.color = "#FF0000"
     circle.classList.add(markingCircleClass);
 
     document.body.appendChild(circle);

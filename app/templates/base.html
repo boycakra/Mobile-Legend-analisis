@@ -30,9 +30,9 @@
   <body>
     <div class="bg-gray-800">
       <!-- NAVBAR -->
-      <div class="navbar text-white bg-gray-800 shadow-md px-4">
-        <div class="flex-1 items-center text-center">
-          <button class="rounded text-xl font-bold">
+      <div class="px-4 text-white bg-gray-800 shadow-md navbar">
+        <div class="items-center flex-1 text-center">
+          <button class="text-xl font-bold rounded">
             Mobile Legend Analysis
           </button>
         </div>
@@ -41,7 +41,7 @@
             <input
               type="text"
               placeholder="Search"
-              class="w-24 md:w-auto focus:outline-none bg-transparent"
+              class="w-24 bg-transparent md:w-auto focus:outline-none"
             />
           </div>
           <div class="dropdown dropdown-end">
@@ -76,7 +76,7 @@
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          class="h-6 w-6 shrink-0 stroke-current"
+          class="w-6 h-6 stroke-current shrink-0"
         >
           <path
             stroke-linecap="round"
@@ -85,7 +85,7 @@
             d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
           ></path>
         </svg>
-        <span>{{ message }}</span>
+        <span class="dark:text-white">{{ message }}</span>
       </div>
       {% endfor %} {% endif %} {% endwith %} {% block content %} {% endblock %}
     </div>
