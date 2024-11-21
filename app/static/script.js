@@ -149,7 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const tableBody2 = document.getElementById("mark-table-body-2");
 
   imageDiv.addEventListener("click", event => {
-    // console.log("gambar berhasil di klik");
     if (marking && currentPlayer === "Player") {
       const rect = imageDiv.getBoundingClientRect();
       const x = event.clientX - rect.left;
@@ -247,7 +246,6 @@ function printMousePos(event, element, relativeX, relativeY) {
 function renderCombinedMarks() {
   const combinedMarks = [...player1Marks, ...player2Marks];
   combinedMarks.sort((a, b) => a.time.localeCompare(b.time));
-
   renderMarks(combinedMarks, document.getElementById("match-table-body"));
 }
 
@@ -319,6 +317,7 @@ function removeTableEntry(mark, tableBody) {
   if (rowIndex !== -1) {
     tableBody.deleteRow(rowIndex);
   }
+
 }
 
 video.addEventListener("timeupdate", function () {
@@ -360,6 +359,7 @@ function undoMark(playerMarks, tableBody) {
 //     lastCircle.parentNode.removeChild(lastCircle);
 //   }
 // }
+
 
 document.getElementById("export-player1").addEventListener("click", function () {
   const csvContent = tableToCSV("player1-table");
