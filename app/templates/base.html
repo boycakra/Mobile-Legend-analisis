@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,40 +9,32 @@
     <!-- <script src="{{url_for('static', filename= '../static/javascript/main.js')}}"defer></script>-->
     <!-- <link rel="stylesheet" href="{{url_for('static', filename='button.css')}}" /> -->
     <!-- <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}" /> -->
-    <link
-      rel="stylesheet"
-      href="{{url_for('static', filename='css/output.css')}}"
-    />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/output.css')}}" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       integrity="sha384-rbsltsTS3LqFjSNW1KiL25F93qi5JKld9JZrYfL2RmkWcY6b5AiRvT47jpcoN/y"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <script src="https://unpkg.com/htmx.org@2.0.3"></script>
   </head>
   <body>
     <div class="bg-gray-800">
       <!-- NAVBAR -->
-      <div class="navbar text-white bg-gray-800 shadow-md px-4">
-        <div class="flex-1 items-center text-center">
-          <button class="rounded text-xl font-bold">
-            Mobile Legend Analysis
-          </button>
+      <div class="px-4 text-white bg-gray-800 shadow-md navbar">
+        <div class="items-center flex-1 text-center">
+          <button class="text-xl font-bold rounded">Mobile Legend Analysis</button>
         </div>
         <div class="flex-none gap-2">
           <div class="form-control">
             <input
               type="text"
               placeholder="Search"
-              class="w-24 md:w-auto focus:outline-none bg-transparent"
-            />
+              class="w-24 bg-transparent md:w-auto focus:outline-none" />
           </div>
           <div class="dropdown dropdown-end">
             <div tabindex="0" role="button">
@@ -50,42 +42,42 @@
                 <img
                   class="rounded-full"
                   alt="Tailwind CSS Navbar component"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-                />
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
               </div>
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
               <li>
                 <a> Profile </a>
               </li>
               <li><a>Settings</a></li>
-              <li><a>Logout</a></li>
+              <li>
+                <form action="/logout" action="post">
+                  <button type="submit">Logout</button>
+                </form>
+              </li>
             </ul>
           </div>
         </div>
       </div>
       <!-- MAIN CONTENT -->
-      {% with messages = get_flashed_messages(with_categories = true) %} {% if
-      messages %} {% for category, message in messages %}
+      {% with messages = get_flashed_messages(with_categories = true) %} {% if messages %} {% for
+      category, message in messages %}
       <!-- NOTIFICATION -->
       <div role="alert" class="alert alert-{{ category }}">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          class="h-6 w-6 shrink-0 stroke-current"
-        >
+          class="w-6 h-6 stroke-current shrink-0">
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          ></path>
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
         </svg>
-        <span>{{ message }}</span>
+        <span class="dark:text-white">{{ message }}</span>
       </div>
       {% endfor %} {% endif %} {% endwith %} {% block content %} {% endblock %}
     </div>
@@ -111,7 +103,7 @@
         modalBackground.classList.remove("flex");
       });
 
-      modalBackground.addEventListener("click", (e) => {
+      modalBackground.addEventListener("click", e => {
         if (e.target === modalBackground) {
           modalBackground.classList.add("hidden");
           modalBackground.classList.remove("flex");

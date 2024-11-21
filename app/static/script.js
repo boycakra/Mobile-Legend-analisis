@@ -149,7 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const tableBody2 = document.getElementById("mark-table-body-2");
 
   imageDiv.addEventListener("click", event => {
-    console.log("gambar berhasil di klik");
     if (marking && currentPlayer === "Player") {
       const rect = imageDiv.getBoundingClientRect();
       const x = event.clientX - rect.left;
@@ -161,7 +160,8 @@ document.addEventListener("DOMContentLoaded", () => {
         coordinates: percentageText,
         value: valueDisplays[currentPlayer].innerText.split(": ")[1],
         player: currentPlayer,
-        time: currentFormattedTime,
+        team: "Blue",
+        time: "00:00",
       });
 
       renderMarks(player1Marks, tableBody1);
@@ -181,7 +181,8 @@ document.addEventListener("DOMContentLoaded", () => {
         coordinates: percentageText,
         value: valueDisplays[currentPlayer].innerText.split(": ")[1],
         player: currentPlayer,
-        time: currentFormattedTime,
+        team: "Red",
+        time: "00:00",
       });
 
       renderMarks(player2Marks, tableBody2);
@@ -191,11 +192,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function boxingMoveHandler(player, move) {
-  //   console.log(player, move);
   return function () {
     marking = true;
-    currentMove = move;
     currentPlayer = player;
+    currentMove = move;
     if (currentMove === "Mid-lane") {
       markingCircleClass = "lead-uppercut-mark-circle";
       valueDisplays[currentPlayer].innerHTML = "Value: Mid-lane";
@@ -229,7 +229,7 @@ function printMousePos(event, element, relativeX, relativeY) {
   circle.style.left = `${event.clientX + window.scrollX - 5}px`;
   circle.style.top = `${event.clientY + window.scrollY - 5}px`;
   circle.style.position = "absolute";
-  circle.style.zIndex = 10;
+  circle.style.zIndex = 50;
   circle.style.width = "16px";
   circle.style.height = "16px";
   circle.style.borderRadius = "50%";
@@ -242,34 +242,14 @@ function printMousePos(event, element, relativeX, relativeY) {
   return `(${percentageX.toFixed(2)}%, ${percentageY.toFixed(2)}%)`;
 }
 
-function boxingMoveHandler(player, move) {
-  return function () {
-    marking = true;
-    currentPlayer = player;
-    currentMove = move;
-
-    if (currentMove === "Mid-lane") {
-      markingCircleClass = "lead-uppercut-mark-circle";
-      valueDisplays[currentPlayer].innerHTML = "Value: Mid-lane";
-    } else if (currentMove === "gold-lane") {
-      markingCircleClass = "rear-uppercut-mark-circle";
-      valueDisplays[currentPlayer].innerHTML = "Value: gold-lane";
-    } else if (currentMove === "Exp-lane") {
-      markingCircleClass = "croos-mark-innercircle";
-      valueDisplays[currentPlayer].innerHTML = "Value: Exp-lane";
-    } else if (currentMove === "Jungler-line") {
-      markingCircleClass = "Jungler-line-mark-innercircle";
-      valueDisplays[currentPlayer].innerHTML = "Value: Jungler-line";
-    } else if (currentMove === "Roamer-lane") {
-      markingCircleClass = "Roamer-lane-mark-innercircle";
-      valueDisplays[currentPlayer].innerHTML = "Value: Roamer-lane";
-    } else if (currentMove === "Inisiasi") {
-      markingCircleClass = "Inisiasi-mark-circle";
-      valueDisplays[currentPlayer].innerHTML = "Value: Inisiasi";
-    }
-  };
+// Function to combine and render marks from both players
+function renderCombinedMarks() {
+  const combinedMarks = [...player1Marks, ...player2Marks];
+  combinedMarks.sort((a, b) => a.time.localeCompare(b.time));
+  renderMarks(combinedMarks, document.getElementById("match-table-body"));
 }
 
+// Download data table
 function tableToCSV(tableId) {
   const table = document.getElementById(tableId);
   const rows = Array.from(table.querySelectorAll("tr"));
@@ -281,6 +261,7 @@ function tableToCSV(tableId) {
   return csvContent;
 }
 
+// Download result data
 function downloadCSV(fileName, csvContent) {
   const blob = new Blob([csvContent], { type: "text/csv" });
   const url = URL.createObjectURL(blob);
@@ -302,17 +283,7 @@ function updateTimer(video) {
   currentFormattedTime = formattedTime;
 }
 
-
-
 const timerDisplay = document.getElementById("timer-display");
-
-// Function to combine and render marks from both players
-function renderCombinedMarks() {
-  const combinedMarks = [...player1Marks, ...player2Marks];
-  combinedMarks.sort((a, b) => a.time.localeCompare(b.time));
-
-  renderMarks(combinedMarks, document.getElementById("match-table-body"));
-}
 
 // Modify renderMarks function to accept the target table body
 function renderMarks(marks, tableBody) {
@@ -326,12 +297,27 @@ function renderMarks(marks, tableBody) {
     const cell2 = newRow.insertCell(1);
     const cell3 = newRow.insertCell(2);
     const cell4 = newRow.insertCell(3);
+    const cell5 = newRow.insertCell(4);
 
-    cell1.innerHTML = mark.coordinates;
-    cell2.innerHTML = mark.value;
-    cell3.innerHTML = mark.player;
-    cell4.innerHTML = mark.time;
+    cell1.innerHTML = mark.coordinates ?? "Coordinates here";
+    cell2.innerHTML = mark.value ?? "Value here";
+    cell3.innerHTML = mark.player && "Player here";
+    cell4.innerHTML = mark.team ?? "Team here";
+    cell5.innerHTML = mark.time ?? "Time here";
   });
+}
+
+function removeTableEntry(mark, tableBody) {
+  const rowIndex = Array.from(tableBody.children).findIndex(row => {
+    const cellCoordinates = row.cells[0].innerText;
+    const cellTime = row.cells[3].innerText;
+    return cellCoordinates === mark.coordinates && cellTime === mark.time;
+  });
+
+  if (rowIndex !== -1) {
+    tableBody.deleteRow(rowIndex);
+  }
+
 }
 
 video.addEventListener("timeupdate", function () {
@@ -359,29 +345,21 @@ function undoMark(playerMarks, tableBody) {
   if (playerMarks.length > 0) {
     const lastMark = playerMarks.pop();
     removeTableEntry(lastMark, tableBody);
-    removeLastCircle();
+    if (addedCircles.length > 0) {
+      const lastCircle = addedCircles.pop();
+      lastCircle.parentNode.removeChild(lastCircle);
+    }
     renderMarks(playerMarks, tableBody);
   }
 }
 
-function removeLastCircle() {
-  if (addedCircles.length > 0) {
-    const lastCircle = addedCircles.pop();
-    lastCircle.parentNode.removeChild(lastCircle);
-  }
-}
+// function removeLastCircle() {
+//   if (addedCircles.length > 0) {
+//     const lastCircle = addedCircles.pop();
+//     lastCircle.parentNode.removeChild(lastCircle);
+//   }
+// }
 
-function removeTableEntry(mark, tableBody) {
-  const rowIndex = Array.from(tableBody.children).findIndex(row => {
-    const cellCoordinates = row.cells[0].innerText;
-    const cellTime = row.cells[3].innerText;
-    return cellCoordinates === mark.coordinates && cellTime === mark.time;
-  });
-
-  if (rowIndex !== -1) {
-    tableBody.deleteRow(rowIndex);
-  }
-}
 
 document.getElementById("export-player1").addEventListener("click", function () {
   const csvContent = tableToCSV("player1-table");
