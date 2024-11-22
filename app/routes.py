@@ -127,7 +127,6 @@ def logout():
     jti = jwt.get("jti")
     if not jti:
         return jsonify(success=False, message="Missing JWT identifier"), 400
-    print(f"jti : {jti}")
     token_block_list_object = TokenBlockList(jti=jti)
 
     token_block_list_object.save()
